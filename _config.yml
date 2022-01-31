@@ -2,7 +2,7 @@
 title: "pragmaxim"
 description: "company"
 permalink: "/stories/:title"
-url: https://pragmaxim.github.io
+url: https://pragmaxim.com
 relative_permalinks: false
 
 # build settings

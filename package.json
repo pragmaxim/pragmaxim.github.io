@@ -17,7 +17,7 @@
   "bugs": {
     "url": "https://github.com/github/pragmaxim.github.io/issues"
   },
-  "homepage": "http://pragmaxim.github.io",
+  "homepage": "https://pragmaxim.github.io",
   "dependencies": {
     "octicons": "^5.0.1",
     "primer-core": "^6.2.0",
