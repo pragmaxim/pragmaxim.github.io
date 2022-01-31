@@ -1,0 +1,17 @@
+{
+  "name": "pragmaxim.github.io",
+  "version": "0.0.1",
+  "homepage": "https://pragmaxim.github.io/",
+  "authors": [
+    "GitHub, Inc."
+  ],
+  "description": "Decentralization, blockchain, cardano, ergo",
+  "main": "index.html",
+  "license": "MIT",
+  "dependencies": {
+    "jquery": "~2.2",
+    "anchor-js": "~3.1",
+    "octicons": "~3.5",
+    "bootstrap-sass": "~3.3.6"
+  }
+}
