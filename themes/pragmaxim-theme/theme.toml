@@ -1,0 +1,10 @@
+name = "Pragmaxim Theme"
+license = "MIT"
+homepage = "https://www.pragmaxim.com/"
+tags = ['personal-website', 'personal', 'portfolio', 'single-page', 'one-page', 'fast', 'typography', 'customizable', 'mobile', 'resume', 'fresh', 'modern', 'flexbox', 'hugo-theme', 'hugo', 'bootstrap', 'responsive', 'clean', 'simple', 'creative', 'contact form', 'light', 'white', 'custom-design', 'minimal', 'minimalistic', 'minimalist', 'portfolio', 'customizable', 'flexbox', 'starter', 'theme']
+features = ['responsive', 'bootstrap']
+min_version = "0.59.0"
+
+[author]
+  name = "Jakub Liška"
+  homepage = "https://www.pragmaxim.com/"
