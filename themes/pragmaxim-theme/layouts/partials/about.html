@@ -1,0 +1,44 @@
+{{ if .Site.Data.homepage.about.enable }}
+<section class="section rad-animation-group pb-0" id="about">
+  <div class="container rad-fade-down">
+    <div class="row d-flex flex-column-reverse flex-md-row">
+      <div class="col-12 col-md-6">
+        {{ $img := resources.Get .Site.Data.homepage.about.image.x }}
+        {{ $img2x := resources.Get .Site.Data.homepage.about.image._2x }}
+        <a href="{{ .Site.BaseURL | absURL }}">
+          <div class="profile-image">
+            <picture>
+              <source srcset="{{ $img.RelPermalink }} 1x, {{ $img2x.RelPermalink }} 2x" type="image/webp">
+              <img
+                class="lozad img-responsive"
+                src="data:image/gif;base64,R0lGODlhBwACAIAAAP///wAAACH5BAEAAAEALAAAAAAHAAIAAAIDjI9YADs="
+                srcset="{{ $img.RelPermalink }} 1x, {{ $img2x.RelPermalink }} 2x"
+                data-src="{{ $img.RelPermalink }}"
+                data-srcset="{{ $img.RelPermalink }} 1x, {{ $img2x.RelPermalink }} 2x"
+                alt="Profile Picture"
+              />
+            </picture>
+          </div>
+        </a>
+      </div>
+      <div class="col-12 col-md-6 pr-3 pl-3 my-auto text-left">
+        <h3>{{ .Site.Data.homepage.about.title }}</h3>
+        <p class="lead">
+        {{ .Site.Data.homepage.about.intro | safeHTML }}
+        </p>
+        <figure class="figure bg-white p-3 rounded">
+          <blockquote class="blockquote">
+            {{ .Site.Data.homepage.about.quote | safeHTML }}
+          </blockquote>
+          <figcaption class="blockquote-footer">
+            {{ .Site.Data.homepage.about.author }}
+          </figcaption>
+        </figure>
+        <p class="lead">
+          {{ .Site.Data.homepage.about.ending | safeHTML }}
+        </p>
+      </div>
+    </div>
+  </div>
+</section>
+{{ end }}
