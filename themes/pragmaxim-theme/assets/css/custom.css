@@ -1,0 +1,150 @@
+/* You can customize theme styles here */
+.header .navbar-brand span:first-child{
+    color: #00688f;
+}
+
+.header .navbar-brand span:nth-child(7){
+    color: #00688f;
+}
+
+html body ::selection{
+    background-color:#00688f;color:#fff
+}
+
+.profile-image img{
+    opacity: 0.7;
+    margin-top: 50px;
+}
+.profile-image  img:hover {
+    opacity: 1;
+}
+.rad-showcase__bg img{
+    margin-top: 0;
+    margin-left: 100px;
+    max-width: 100%;
+}
+@media only screen and (min-width : 768px) {
+    .rad-showcase__bg img{
+        height: 400px;
+    }
+}
+
+.header .navbar-brand{
+    flex-direction: row;
+}
+
+.header .navbar-brand span{
+    display: inline;
+}
+
+.header .navbar-brand span:nth-child(n+1):nth-child(-n+9){
+    font-family: inherit;
+    margin-top: 0;
+}
+
+#breadcrumb-bar{
+    position: relative;
+    padding-top: 120px;
+}
+
+ul.breadcrumbs{
+    display: inline;
+    padding-left: 0;
+}
+ul.breadcrumbs li:not(:last-child):after{
+    content: ">";
+    margin-left: 10px;
+    margin-right: 10px;
+}
+ul.breadcrumbs li{
+    display: inline;
+}
+
+.book-category{
+    font-size: 1.5em;
+    padding-bottom: .3em;
+    border-bottom: 1px solid rgb(200, 200, 200);
+    width: 100%;
+}
+.book-category-anchor .icon{
+    font-size: 12px
+}
+ul.book-category-content{
+    padding-left: 0;
+}
+.book-card a.goodreads{
+    float: right;
+}
+.goodreads-search{
+    margin-left: 64px;
+    width: 16px;
+}
+.book-content{
+    width: 100%;
+}
+
+.book-content h5,
+.book-content h6{
+    display: inline;
+    font-weight: 300;
+}
+.book-content h5{
+    margin-right: 2px;
+}
+.book-content .goodreads-link{
+    float: right;
+}
+
+#books .row{
+    margin: 0;
+}
+
+ul.book-category-content {
+    list-style: none;
+}
+.book-content.featured::before {
+    content: "\2605"; /* Unicode bullet symbol */
+    color: #00688f;  /* Bullet color */
+	/* Optional tweaks */
+    font-weight: bold;
+    padding-right: 10px;
+    background-color: transparent;
+    top: 4px;
+    left: -5px;
+}
+
+
+.about__profile-picture img{
+    object-fit: contain;
+}
+
+.experience__company{
+    color: #00688f;
+}
+
+.experience__location{
+    color: #000;
+}
+
+div.experience{
+    padding-top: 50px;
+}
+
+.all-experience-container{
+    margin-top: 50px;
+}
+.footer__copy a{
+    color: white;
+}
+
+@media only screen and (max-width : 768px) {
+    .header .navbar-brand{
+        margin-top: 10px;
+    }
+}
+
+@media only screen and (max-width : 990px) {
+    .rad-showcase__bg img{
+        margin-left: 0;
+    }
+}
