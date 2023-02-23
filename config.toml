@@ -1,0 +1,86 @@
+baseURL = "https://www.pragmaxim.com/"
+languageCode = "en-us"
+theme = "pragmaxim-theme"
+
+# Plugins
+[params.plugins]
+
+  # CSS Plugins
+  [[params.plugins.css]]
+  URL = "css/main.css"
+  [[params.plugins.css]]
+  URL = "css/rad-icons.css"
+  [[params.plugins.css]]
+  URL = "css/custom.css"
+
+  # JS Plugins
+  [[params.plugins.js]]
+  URL = "js/rad-animations.js"
+  [[params.plugins.js]]
+  URL = "js/sticky-header.js"
+  [[params.plugins.js]]
+  URL = "js/library/fontfaceobserver.js"
+
+
+# navigation
+[menu]
+
+  [[menu.header]]
+  name = "About"
+  URL = "#about"
+  weight = 2
+
+  [[menu.header]]
+  name = "Portfolio"
+  URL = "#portfolio"
+  weight = 3
+
+  [[menu.header]]
+  name = "Experience"
+  URL = "#experience"
+  weight = 4
+
+  [[menu.header]]
+  name = "Contact"
+  URL = "#contact"
+  weight = 5
+
+
+  [[menu.footer]]
+  name = "About"
+  URL = "#about"
+  weight = 2
+
+  [[menu.footer]]
+  name = "Portfolio"
+  URL = "#portfolio"
+  weight = 3
+
+  [[menu.footer]]
+  name = "Experience"
+  URL = "#experience"
+  weight = 4
+
+  [[menu.footer]]
+  name = "Contact"
+  URL = "#contact"
+  weight = 5
+
+
+[params]
+
+  sections = ["showcase", "about", "education", "experience", "values", "client-and-work", "contact"]
+
+  [params.logo]
+    char1 = "P"
+    char2 = "r"
+    char3 = "a"
+    char4 = "g"
+    char5 = "m"
+    char6 = "a"
+    char7 = "x"
+    char8 = "i"
+    char9 = "m"
+
+  [params.footer]
+      copyright = "© Pragmaxim 2023"
