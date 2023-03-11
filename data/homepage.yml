@@ -1,0 +1,178 @@
+# showcase
+showcase:
+  enable: true
+  quote: "A pragmatist is concerned with results, not reality."
+  author: "J. Robert Oppenheimer"
+  intro: "Provides software development and consultation services with specialization on distributed data processing using mainly 
+         <a target='_blank' href='https://www.scala-lang.org/'>Scala</a> 
+         ecosystem and decentralized apps on 
+         <a target='_blank' href='https://www.hyperledger.org'>Hyperledger</a>, 
+         <a target='_blank' href='https://www.digitalasset.com/developers'>Daml</a>, 
+         <a target='_blank' href='https://cardano.org/'>Cardano</a> and 
+         <a target='_blank' href='https://ergoplatform.org/'>Ergo</a>."
+  ending: "Pragmaxim is concerned with both results and reality. We love participating on green projects 
+           that lead to better sustainability, synergy and harmony with nature. That includes many aspects of the world from healthcare, 
+           fintech on blockchains or anything that eliminates or reduces toxic environmental effects."
+  image:
+    alt: "px-logo"
+    x: "images/showcase/px-logo-flapless-blur-640.png"
+    _2x: "images/showcase/px-logo-flapless-blur-1280.png"
+  imageMobile:
+    alt: "Profile picture of Jakub Liška"
+    x: "images/px-logo-blur-640.png"
+
+  button:
+    icon: "icon-mail-fill"
+    btnText: "Contact"
+    URL: "#contact"
+
+  socialLinks:
+    - icon: "github"
+      URL: "https://github.com/pragmaxim"
+
+    - icon: "linkedin"
+      URL: "https://www.linkedin.com/in/jakubliska/"
+
+    - icon: "twitter"
+      URL: "https://twitter.com/pragmaxim"
+
+    - icon: "youtube"
+      URL: "https://www.youtube.com/@pragmaxim5101"
+
+    - icon: "github"
+      URL: "https://github.com/l15k4"
+
+
+# about
+about:
+  enable: true
+  title: "Jakub Liška"
+  quote: "If a job's worth doing, it's worth doing well.<br> If it's not worth doing, give it to Rimmer."
+  author: "Holly"
+  intro: "I've been working in SW engineering since 2009 on various projects meeting great people I could learn from. 
+          Applying technology that I like in a meaningful way gives me joy, purpose and I do it with pleasure."
+  ending: "I could be considered a fullstack developer with leading potential and main specialization 
+          on Scala backend, distributed, high-throughput data stream processing and persistence, blockchains, healthcare, etc."
+  button:
+    icon: "icon-smile-fill"
+    btnText: "About Me"
+    URL: "https://www.linkedin.com/in/jakubliska/"
+  image:
+    x: "images/about/jakub.jpg"
+    _2x: "images/about/jakub@2x.jpg"
+
+# education
+education:
+  enable: true
+  title: "Education"
+  items:
+    - university: "Czech University of Life Sciences"
+      year: "2005-2010"
+      degree: "Economics, Master’s degree"
+
+    - university: "Waterford Institute of Technology"
+      year: "2009-2010"
+      degree: "SW Development & Applied Computing, Master studies"
+
+# experience
+experience:
+  enable: true
+  title: "Experience"
+  image:
+    alt: "px-logo"
+    x: "images/experience/px-logo-tear-blur-640.png"
+    _2x: "images/experience/px-logo-tear-blur-1280.png"
+  description: "Currently researching and implementing e-government level decentralized Health Care system using Daml and Hyperledger :
+                <a target='_blank' href='https://github.com/pragmaxim/daml-healthcare'>Daml Healthcare</a>."
+  button:
+    icon: "icon-linkedin-fill"
+    btnText: "Linkedin"
+    URL: "https://www.linkedin.com/in/jakubliska/"
+  button2:
+    icon: "icon-profile-fill"
+    btnText: "Download résumé"
+    URL: "/files/cv_jakub_liska.pdf"
+  button3:
+    icon: "icon-arrow-right"
+    btnText: "All experience"
+    URL: "/experience"
+
+# Values
+values:
+  enable: true
+  title: "Values"
+  items:
+    - content: "Better to serve in Heaven than reign in Hell."
+      image: "images/values/knight.jpg"
+
+    - content: "Truth and Love prevails over Lies and Hatred."
+      image: "images/values/guatemala-flag-heart.png"
+
+# Client & Work
+client_and_work:
+  enable: true
+
+  clients:
+    - logo:
+        x: "images/clients/ergo.jpeg"
+      alt: "Ergo"
+      url: "https://ergoplatform.org/"
+
+    - logo:
+        x: "images/clients/gwi.png"
+      alt: "GWI"
+      url: "https://www.gwi.com/"
+
+    - logo:
+        x: "images/clients/fg.png"
+      alt: "FG"
+      url: "https://www.fg.cz/"
+
+    - logo:
+        x: "images/clients/lang-bay.png"
+      alt: "LangBay"
+      url: "https://www.langbay.io/"
+
+    - logo:
+        x: "images/clients/komix.jpeg"
+      alt: "Komix"
+      url: "https://komix.cz/"
+
+  works:
+    - description: "Decentralized Healthcare application for healthcare claims processing, starting with the referral from the Primary Care Provider to a specialist until the payment for procedure by Insurance Company."
+      button:
+        icon: "icon-arrow-right"
+        btnText: "Case Study"
+        URL: "https://github.com/pragmaxim/daml-healthcare"
+      image:
+        x: "images/works/daml7.jpeg"
+      is_even: true
+
+    - description: "Supplementary, lightweight (μ = micro) Ergo chain explorer & analyzer with Cassandra backend, designed and implemented after researching current blockchains weak spots."
+      button:
+        icon: "icon-arrow-right"
+        btnText: "Case Study"
+        URL: "https://github.com/pragmaxim/ergo-uexplorer"
+      image:
+        x: "images/works/blockchain.png"
+      is_even: true
+
+# contact
+contact:
+  enable: true
+  title: "Contact"
+  form:
+    action: "https://formspree.io/f/moqzrrve"
+    method: "POST"
+    name: "Full Name"
+    email: "Email Address"
+    message: "Type Your Message Here"
+  office:
+    title: "Office"
+    address: "Prague, Troja"
+  address:
+    title: "Legal address"
+    address: "Sepapaja tn 6, Tallinn, 15551, Estonia"
+  button:
+    icon: "icon-mail-fill"
+    btnText: "Send Message"
