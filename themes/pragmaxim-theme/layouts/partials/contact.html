@@ -8,18 +8,15 @@
                     <form action="{{ .Site.Data.homepage.contact.form.action }}" method="{{ .Site.Data.homepage.contact.form.method }}">
                         <div class="row">
                             <div class="col-12 col-sm-6">
-                                <input type="text" name="name" id="name"
-                                       placeholder="{{ .Site.Data.homepage.contact.form.name }}"/>
+                                <input type="text" name="name" id="name" placeholder="{{ .Site.Data.homepage.contact.form.name }}" minlength="3" maxlength="30" required />
                             </div>
                             <div class="col-12 col-sm-6">
-                                <input type="text" name="email" id="email"
-                                       placeholder="{{ .Site.Data.homepage.contact.form.email }}"/>
+                                <input type="email" name="email" id="email" placeholder="{{ .Site.Data.homepage.contact.form.email }}" minlength="5" maxlength="40" required />
                             </div>
                         </div>
                         <div class="row pt-4">
                             <div class="col-12">
-                                <textarea name="message" id="message"
-                                          cols="30" rows="3" placeholder="{{ .Site.Data.homepage.contact.form.message }}"></textarea>
+                                <textarea name="message" id="message" cols="30" rows="3" placeholder="{{ .Site.Data.homepage.contact.form.message }}" minlength="10" required ></textarea>
                             </div>
                         </div>
                         <div class="row pt-4">
