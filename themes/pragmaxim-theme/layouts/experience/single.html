@@ -26,16 +26,16 @@
               <div class="experience__location">{{ .Params.location }}</div>
               <div class="experience__company">
                 <span class="experience__item">
-                          <a href="https://{{ .Params.url }}">
-                              <img
-                                      class="lozad img-responsive"
-                                      src="data:image/gif;base64,R0lGODlhBwACAIAAAP///wAAACH5BAEAAAEALAAAAAAHAAIAAAIDjI9YADs="
-                                      data-src="{{ .Params.logo | absURL }}"
-                                      height="40"
-                              />
-                              {{ .Params.company }}
-                          </a>
-                      </span>
+                  <a href="https://{{ .Params.url }}">
+                    <img
+                      class="lozad img-responsive"
+                      src="data:image/gif;base64,R0lGODlhBwACAIAAAP///wAAACH5BAEAAAEALAAAAAAHAAIAAAIDjI9YADs="
+                      data-src="{{ .Params.logo | absURL }}"
+                      height="40"
+                    />
+                    {{ .Params.company }}
+                  </a>
+                </span>
               </div>
             </div>
             {{ end }}
