@@ -103,6 +103,11 @@ experience:
     URL: "/experience"
 
 # Values
+blog:
+  enable: true
+  title: "Captain's bLog"
+
+# Values
 values:
   enable: true
   title: "Values"
