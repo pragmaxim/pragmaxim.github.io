@@ -9752,6 +9752,39 @@ html body {
         margin-right: 0;
     }
 }
+.blog__content {
+    margin-top: 40px;
+    font-size: 16px;
+}
+.blog__content p {
+    text-indent: 8px;
+}
+.blog__title {
+    position: relative;
+    font-size: 22px;
+    font-weight: 600;
+    z-index: 2;
+}
+.blog__description {
+    position: relative;
+    font-size: 18px;
+    font-weight: 500;
+    z-index: 2;
+}
+@media (min-width: 992px) {
+    .blog__title {
+        font-size: 24px;
+    }
+    .blog__description {
+        font-size: 20px;
+    }
+    .blog__content {
+        font-size: 18px;
+    }
+    .blog__content p {
+        text-indent: 12px;
+    }
+}
 .experience__title {
     position: relative;
     font-size: 20px;
