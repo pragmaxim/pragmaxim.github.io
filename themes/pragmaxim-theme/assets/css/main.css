@@ -9752,6 +9752,19 @@ html body {
         margin-right: 0;
     }
 }
+.blog__header_img {
+    opacity: 0.7;
+}
+.blog__header_img:hover {
+    opacity: 1;
+}
+.blog__footer_img {
+    opacity: 0.7;
+}
+.blog__footer_img:hover {
+    opacity: 1;
+}
+
 .blog__content {
     margin-top: 40px;
     font-size: 16px;
