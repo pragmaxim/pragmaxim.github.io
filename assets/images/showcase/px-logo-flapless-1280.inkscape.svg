@@ -27,9 +27,9 @@
      inkscape:deskcolor="#d1d1d1"
      inkscape:document-units="mm"
      showgrid="false"
-     inkscape:zoom="0.28824085"
-     inkscape:cx="-209.89391"
-     inkscape:cy="754.57729"
+     inkscape:zoom="3.1853584"
+     inkscape:cx="431.81954"
+     inkscape:cy="941.65227"
      inkscape:window-width="3840"
      inkscape:window-height="2089"
      inkscape:window-x="0"
@@ -257,4 +257,5 @@
        id="path10830" /><path
        id="rect1045"
        style="fill:#00688f;fill-opacity:1;stroke-width:0.369369;filter:url(#filter3934)"
-       d="m 153.59894,251.75974 h -11.36985 v 242.20134 h 34.87333 V 302.36595 Z" /></g></svg>
+       d="m 153.59894,251.75974 h -11.36985 v 242.20134 h 34.87333 V 302.36595 Z"
+       transform="matrix(1.0354704,0,0,1,-5.0220779,0)" /></g></svg>

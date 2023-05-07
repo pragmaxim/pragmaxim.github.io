@@ -20,8 +20,8 @@ showcase:
            fintech on blockchains or anything that eliminates or reduces toxic environmental effects."
   image:
     alt: "px-logo"
-    x: "images/showcase/px-logo-flapless-blur-640.png"
-    _2x: "images/showcase/px-logo-flapless-blur-1280.png"
+    x: "images/showcase/px-logo-blur-border-flapless-640.png"
+    _2x: "images/showcase/px-logo-blur-border-flapless-1280.png"
   imageMobile:
     alt: "Profile picture of Jakub Liška"
     x: "images/px-logo-blur-640.png"
