@@ -30,6 +30,7 @@
     "gulp-uglify": "^3.0.2",
     "node-gyp": "^9.3.1",
     "postcss": "^8.4.21",
-    "postcss-cli": "^10.1.0"
+    "postcss-cli": "^10.1.0",
+    "autoprefixer": "^10.4.14"
   }
 }
