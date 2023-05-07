@@ -6,6 +6,7 @@
 <!-- endinject -->
 <title>{{ .Site.Data.homepage.head.title }}</title>
 <meta name="description" content="{{ .Site.Data.homepage.head.description }}">
+<meta name="keywords" content="{{ .Site.Data.homepage.head.keywords }}"/>
 
 {{ $critical := resources.Get "css/critical.css" | resources.ToCSS | resources.Minify }}
 <style data-generator="critical-css">
