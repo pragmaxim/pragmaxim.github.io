@@ -31,13 +31,13 @@ theme = "pragmaxim-theme"
   weight = 2
 
   [[menu.header]]
-  name = "Portfolio"
-  URL = "#portfolio"
+  name = "Experience"
+  URL = "#experience"
   weight = 3
 
   [[menu.header]]
-  name = "Experience"
-  URL = "#experience"
+  name = "Portfolio"
+  URL = "#portfolio"
   weight = 4
 
   [[menu.header]]
@@ -52,13 +52,13 @@ theme = "pragmaxim-theme"
   weight = 2
 
   [[menu.footer]]
-  name = "Portfolio"
-  URL = "#portfolio"
+  name = "Experience"
+  URL = "#experience"
   weight = 3
 
   [[menu.footer]]
-  name = "Experience"
-  URL = "#experience"
+  name = "Portfolio"
+  URL = "#portfolio"
   weight = 4
 
   [[menu.footer]]
