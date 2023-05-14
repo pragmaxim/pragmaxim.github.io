@@ -113,10 +113,10 @@ values:
   title: "Values"
   items:
     - content: "Better to serve in Heaven than reign in Hell."
-      image: "images/values/knight.jpg"
+      image: "images/values/knight.png"
 
     - content: "Truth, Love and Humour prevails over Lies and Hatred."
-      image: "images/values/guatemala-flag-heart.png"
+      image: "images/values/guatemala-flag-heart-shadow.png"
 
 # Client & Work
 client_and_work:
@@ -155,7 +155,7 @@ client_and_work:
         btnText: "Case Study"
         URL: "https://github.com/pragmaxim/daml-healthcare"
       image:
-        x: "images/works/daml7.jpeg"
+        x: "images/works/daml7-shadow.png"
       is_even: true
 
     - description: "Supplementary, lightweight (μ = micro) Ergo chain explorer & analyzer with Cassandra backend, designed and implemented after researching current blockchains weak spots."
@@ -164,7 +164,7 @@ client_and_work:
         btnText: "Case Study"
         URL: "https://github.com/pragmaxim/ergo-uexplorer"
       image:
-        x: "images/works/blockchain.png"
+        x: "images/works/blockchain-shadow.png"
       is_even: true
 
 # contact
