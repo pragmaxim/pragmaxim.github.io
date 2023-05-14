@@ -34,7 +34,7 @@
             <div class="blog__content">
               {{ .Content | safeHTML }}
             </div>
-            <div class="blog__header_footer">
+            <div class="blog__footer_img">
               {{ if .Params.imageFooter }}
               {{ $imgFooter := resources.Get .Params.imageFooter }}
               <picture>

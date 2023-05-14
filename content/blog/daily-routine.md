@@ -4,6 +4,7 @@ title: "Sustainable self-care and daily routine"
 description: "From a seed to a flower in 60 seconds"
 imageFront: "images/blog/daily-routine/brain-plant.jpg"
 imageHeader: "images/blog/daily-routine/sustainable-self-care.png"
+imageFooter: "images/blog/daily-routine/seed.png"
 ---
 
 
