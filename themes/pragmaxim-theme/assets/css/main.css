@@ -9792,6 +9792,7 @@ html body {
         font-size: 20px;
     }
     .blog__content {
+        margin-top: 70px;
         font-size: 18px;
     }
     .blog__content p {
