@@ -3,7 +3,7 @@ date: 2012-01-01T00:00:00+01:00
 title: "Sustainable self-care and daily routine"
 description: "From a seed to a flower in 60 seconds"
 imageFront: "images/blog/daily-routine/brain-plant.jpg"
-imageHeader: "images/blog/daily-routine/seed.png"
+imageHeader: "images/blog/daily-routine/sustainable-self-care.png"
 ---
 
 
