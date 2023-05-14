@@ -9,7 +9,7 @@ imageFooter: "images/blog/daily-routine/seed.png"
 
 
 Chemistry that keeps us running is a valuable resource and recommended to be nurtured daily.
-Neglecting it in the long term may often lead to a strategic failure while succeeding on operative basis only.
+Neglecting it in the long term may often lead to a chronic fatigue and disharmony.
 There are many aspects of self-care and ways of doing it, but one should always start with the mood in order
 to do as much as possible with love, passion and joy.
 
