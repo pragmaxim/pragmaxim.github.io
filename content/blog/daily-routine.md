@@ -21,10 +21,15 @@ Yes, even love must be nourished, ideally the first thing in the morning.
 Waking up welcoming new day, going out with a bottle of water for a walk, stretching the body on the way and returning in good spirits while looking forward to
 the daily tasks ahead of us or figuring out how to make them more pleasant so we can look forward to them next time.
 
-And yes, there are physical limits, fatigue and pain. Let's have an after-lunch nap to recover! Why not?
-Because you are in an office? Why not to communicate our needs diplomatically with our superiors?
-Can you imagine the boss telling you that you can't grab a yoga mat to have a 30 minutes long nap after a lunch?
-Perhaps only if you don't love interacting with people.
-
 Now, we need to make a habit of it, a routine. Let the body and soul get used to something that works until we have a whole bunch of useful habits we can choose from,
 slowly squeezing out the bad ones. Yeah, nothing is ever easy, nothing happens quickly, but it might eventually grow from a little seed to a beautiful flower :)
+
+---
+
+It is easier said than done, there are physical limits, fatigue and pain. Let's practice new habits step by step, brick by brick and day by day
+so that we are driven by little victories :
+ - morning walk with stretching
+ - after-lunch nap to recover (can be done anywhere even on a yoga mat if you are willing to communicate your needs diplomatically with others)
+ - retaining connection with nature
+ - helping others
+ - dropping bad influences, hateful, ungrateful or cunning people :)
