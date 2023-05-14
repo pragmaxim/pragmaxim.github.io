@@ -9752,6 +9752,9 @@ html body {
         margin-right: 0;
     }
 }
+.blog__header_img img {
+    height: 150px;
+}
 .blog__header_img {
     opacity: 0.7;
 }
@@ -9786,6 +9789,9 @@ html body {
     z-index: 2;
 }
 @media (min-width: 992px) {
+    .blog__header_img img {
+        height: auto;
+    }
     .blog__title {
         font-size: 24px;
     }
