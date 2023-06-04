@@ -1,11 +1,11 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
 <svg
    version="1.1"
-   viewBox="0 0 350 500"
+   viewBox="0 0 350 510"
    id="svg3076"
    sodipodi:docname="knight.svg"
    width="350"
-   height="500"
+   height="510"
    inkscape:version="1.2.2 (1:1.2.2+202305151915+b0a8486541)"
    inkscape:export-filename="titan-logo2.png"
    inkscape:export-xdpi="96"
@@ -33,7 +33,7 @@
        fx="288.84991"
        fy="510.30441"
        r="134.15248"
-       gradientTransform="matrix(0.9481634,0,0,0.09172497,-102.25143,440.54222)"
+       gradientTransform="matrix(1.2735974,0,0,0.12320733,-196.25302,424.47663)"
        gradientUnits="userSpaceOnUse" /></defs><sodipodi:namedview
      id="namedview3078"
      pagecolor="#ffffff"
@@ -53,12 +53,12 @@
      inkscape:window-y="34"
      inkscape:window-maximized="1"
      inkscape:current-layer="svg3076" /><ellipse
-     style="mix-blend-mode:normal;fill:url(#radialGradient9653);fill-opacity:1;stroke-width:1.1092"
+     style="mix-blend-mode:normal;fill:url(#radialGradient9653);fill-opacity:1;stroke-width:1.48991"
      id="path6156"
      cx="171.6255"
      cy="487.34988"
-     rx="127.19848"
-     ry="12.305132" /><image
+     rx="170.85626"
+     ry="16.528568" /><image
      width="320.81253"
      height="456.2597"
      preserveAspectRatio="none"

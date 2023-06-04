@@ -20,8 +20,8 @@ showcase:
            fintech on blockchains or anything that eliminates or reduces toxic environmental effects."
   image:
     alt: "px-logo"
-    x: "images/showcase/px-logo-flapless-narrow-blur-640.png"
-    _2x: "images/showcase/px-logo-flapless-narrow-blur-1280.png"
+    x: "images/showcase/px-logo-flapless-narrow-blur-shadow-640.png"
+    _2x: "images/showcase/px-logo-flapless-narrow-blur-shadow-1280.png"
   imageMobile:
     alt: "Profile picture of Jakub Liška"
     x: "images/px-logo-blur-640.png"
@@ -85,8 +85,8 @@ experience:
   title: "Experience"
   image:
     alt: "px-logo"
-    x: "images/experience/px-logo-tear-blur-640.png"
-    _2x: "images/experience/px-logo-tear-blur-1280.png"
+    x: "images/experience/px-logo-tear-narrow-blur-shadow-640.png"
+    _2x: "images/experience/px-logo-tear-narrow-blur-shadow-1280.png"
   description: "Currently researching and implementing e-government level decentralized Health Care system using Daml and Hyperledger :
                 <a target='_blank' href='https://github.com/pragmaxim/daml-healthcare'>Daml Healthcare</a>."
   button:
@@ -105,18 +105,24 @@ experience:
 # Values
 blog:
   enable: true
-  title: "Captain's bLog"
+  title: "Captain's log"
 
 # Values
 values:
   enable: true
   title: "Values"
   items:
-    - content: "Better to serve in Heaven than reign in Hell."
-      image: "images/values/knight.png"
+    - content: "Mindfulness is merely just deep awareness of causality."
+      image: "images/values/titan-logo2.png"
+      height: 270
 
-    - content: "Truth, Love and Humour prevails over Lies and Hatred."
+    - content: "Narrative written with virtue and merit shall be lived fearlessly."
+      image: "images/values/knight.png"
+      height: 210
+
+    - content: "Bend the knee with love and smile before time does."
       image: "images/values/guatemala-flag-heart-shadow.png"
+      height: 200
 
 # Client & Work
 client_and_work:
