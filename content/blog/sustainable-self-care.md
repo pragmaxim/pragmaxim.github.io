@@ -15,8 +15,9 @@ and answers for relationships, profession, leisure and understanding of life in 
 
 Whatever reasons have nurtured many into world of paradox, a labyrinth to solve, ignoring it is bliss at first but chaos
 comes later when a pile of dirty laundry grows and washing it becomes inevitable. At that point, remorse expressed to the right 
-people is the true conductor of the orchestra playing a symphony, peacefully and humbly, composed by evolution towards love,
-a symphony called life. Times of great sacrifices, greed and lust are offerings rarely refused, going all the way is just a choice.
+people is the true conductor of the orchestra playing a symphony, peacefully and humbly, composed by evolution towards love.
+Remorse towards immoral people is destructive yet very common as they are feared. These are times of great sacrifices,
+greed and lust are offerings rarely refused, there can be hardly a balance without them.
 
 Pushing the wheel when it stands with single pair of hands is certainly the hardest but the more inspiration,
 role models and sustainable habits the fewer bad ones and the less toxic routine that poison our lives. Physical limits, 
