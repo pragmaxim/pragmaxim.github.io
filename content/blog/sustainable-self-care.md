@@ -17,7 +17,7 @@ Whatever reasons have nurtured many into world of paradox, a labyrinth to solve,
 comes later when a pile of dirty laundry grows and washing it becomes inevitable. As there is no bridge over the past,
 remorse expressed to the right people is the true conductor of the orchestra playing a symphony, peacefully and humbly,
 composed by evolution towards love. Feeling remorse towards wrong people is destructive yet very common.
-These are times of great sacrifices, greed and lust are offerings rarely refused, there can be hardly a balance without them.
+These are times of great sacrifices, especially greed and lust are offerings rarely refused, there can hardly be a balance without them.
 
 Pushing the wheel when it stands with single pair of hands is certainly the hardest but the more inspiration,
 role models and sustainable habits the fewer bad ones and the less toxic routine that poison our lives. Physical limits, 
