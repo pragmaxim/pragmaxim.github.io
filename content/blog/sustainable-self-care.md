@@ -14,10 +14,10 @@ watering, weeding, harvesting, grinding and baking bread is a relief, order in c
 and answers for relationships, profession, leisure and understanding of life in general.
 
 Whatever reasons have nurtured many into world of paradox, a labyrinth to solve, ignoring it is bliss at first but chaos
-comes later when a pile of dirty laundry grows and washing it becomes inevitable. At that point, remorse expressed to the right 
-people is the true conductor of the orchestra playing a symphony, peacefully and humbly, composed by evolution towards love.
-Remorse towards immoral people is destructive yet very common as they are feared. These are times of great sacrifices,
-greed and lust are offerings rarely refused, there can be hardly a balance without them.
+comes later when a pile of dirty laundry grows and washing it becomes inevitable. As there is no bridge over the past,
+remorse expressed to the right people is the true conductor of the orchestra playing a symphony, peacefully and humbly,
+composed by evolution towards love. Feeling remorse towards wrong people is destructive yet very common.
+These are times of great sacrifices, greed and lust are offerings rarely refused, there can be hardly a balance without them.
 
 Pushing the wheel when it stands with single pair of hands is certainly the hardest but the more inspiration,
 role models and sustainable habits the fewer bad ones and the less toxic routine that poison our lives. Physical limits, 
@@ -34,7 +34,7 @@ A wheel called healthy relationship based on mutual respect needs 2 pairs of han
 while fighting minotaurs from past. Showing no compassion, honesty, remorse, encouragement, rarely helping is a one-way ticket
 to cheerleader pyramid which eventually causes addiction to anything that lack of love is compensated with. One can bounce off
 this bottom back to surface by deeply understanding causality / evolution of life and nature (karma), crafting philosophy
-that complies with the formula of life and nurturing approximation of reality that allows for perceiving life in its true beauty.
+that complies with the formula of life.
 
 Any trauma, complex or health issue is a labyrinth to be solved otherwise fear, addiction and eventually anger become
 the Minotaur worsening the blunder. Writing a desired narrative is a privilege of those who face him fearlessly while
@@ -42,20 +42,14 @@ looking for means and ways out until it becomes a virtue that extends the depths
 breeds either violence or cowardice, black or white reality, not balance. Any new belief or assumption that either contradicts
 reality or is not constructive without any value for anyone gives birth to another Minotaur to be confronted. 
 
-Predators inspired by wild animals or kings, addicted to taste of blood in a fearful world of games, power, competition
-and schemes, haunted by memories of their pray. Hypocrites believing in close to nothing, left to compare their value
-and worth to others, competing over helping, hiding behind paramoralism, empowered by schadenfreude of those they compare to,
-haunted by their own shadow. Naive idealists living a fairy tale through lens of an innocent, having their dreams torn apart
-by the system and predators while hypocrites giggling.
-
 Realistic idealists, constructive problem solvers, pragmatists, optimists, better treat those who lost ideals and love
 frankly or stay away as it is not a burden to bear. We are probably the only species that were given the ability to day-dream
-and fulfil our dreams, yet not many who were lucky admire causality enough to even start writing narrative worth living
-let alone work hard for it. Lack of dreaming or inability to take action without hesitation is just an acceptance of fate
-that we were born into, a self-fulfilling prophecy crafted by nature of the era and social bubble we live in, not by us.
+and fulfil our dreams, yet it is so hard in times we live in. Lack of dreaming or inability to take action without hesitation
+is just an acceptance of fate that we were born into, a self-fulfilling prophecy crafted by nature of the era and social
+bubble we live in, not by us.
 
 ---
 
 I sincerely hope this will encourage you to dream and work hard for it.
 
-P.S. This writing targets mostly people in their twenties. Neither predators nor hypocrites are people I know, these are just archetypes on compass of my morality.
+P.S. These writings target mostly people in their twenties to save tons of dirty laundry washing :) 
