@@ -44,9 +44,9 @@ reality or is not constructive without any value for anyone gives birth to anoth
 
 Realistic idealists, constructive problem solvers, pragmatists, optimists, better treat those who lost ideals and love
 frankly or stay away as it is not a burden to bear. We are probably the only species that were given the ability to day-dream
-and fulfil our dreams, yet it is so hard in times we live in. Lack of dreaming or inability to take action without hesitation
-is just an acceptance of fate that we were born into, a self-fulfilling prophecy crafted by nature of the era and social
-bubble we live in, not by us.
+and fulfil our dreams, yet it is so hard in comfortable times we live in. Lack of dreaming or inability to take action without
+hesitation is just an acceptance of fate that we were born into, a self-fulfilling prophecy crafted by nature of the era and
+social bubble we live in, not by us.
 
 ---
 
