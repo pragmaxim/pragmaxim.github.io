@@ -13,11 +13,11 @@ Simple realization that all we do should comply with evolution of life and be an
 watering, weeding, harvesting, grinding and baking bread is a relief, order in chaos. Nature has both questions
 and answers for relationships, profession, leisure and understanding of life in general.
 
-Whatever reasons have nurtured many into world of paradox, a labyrinth to solve, ignoring it is bliss at first but chaos
-comes later when a pile of dirty laundry grows and washing it becomes inevitable. As there is no bridge over the past,
+Whatever reasons have nurtured many into world of paradox, a labyrinth to solve, ignorance is bliss at first but chaos lurks
+in the shadows until a pile of dirty laundry stinks too much. As there is no bridge over the past,
 remorse expressed to the right people is the true conductor of the orchestra playing a symphony, peacefully and humbly,
-composed by evolution towards love. Feeling remorse towards wrong people is destructive yet very common.
-These are times of great sacrifices, especially greed and lust are offerings rarely refused, there can hardly be a balance without them.
+composed by evolution with love, although unsolicited remorse is destructive yet very common.
+These are times of great sacrifices revealing new paths towards balance, especially greed and lust are offerings rarely refused.
 
 Pushing the wheel when it stands with single pair of hands is certainly the hardest but the more inspiration,
 role models and sustainable habits the fewer bad ones and the less toxic routine that poison our lives. Physical limits, 
