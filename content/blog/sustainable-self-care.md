@@ -50,6 +50,4 @@ social bubble we live in, not by us.
 
 ---
 
-I sincerely hope this will encourage you to dream and work hard for it.
-
-P.S. These writings target mostly people in their twenties to save tons of dirty laundry washing :) 
+P.S. For the eyes of people in their twenties to save tons of dirty laundry washing :) I sincerely hope this will iencourage you to dream and work hard for it. 
