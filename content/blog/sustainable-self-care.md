@@ -16,8 +16,8 @@ and answers for relationships, profession, leisure and understanding of life in 
 Whatever reasons have nurtured many into world of paradox, a labyrinth to solve, ignorance is bliss at first but chaos lurks
 in the shadows until a pile of dirty laundry stinks too much. As there is no bridge over the past,
 remorse expressed to the right people is the true conductor of the orchestra playing a symphony, peacefully and humbly,
-composed by evolution with love, although unsolicited remorse is destructive yet very common.
-These are times of great sacrifices revealing new paths towards balance, especially greed and lust are offerings rarely refused.
+composed by evolution with love. These are times of great sacrifices revealing new paths towards balance,
+especially greed and lust are offerings rarely refused.
 
 Pushing the wheel when it stands with single pair of hands is certainly the hardest but the more inspiration,
 role models and sustainable habits the fewer bad ones and the less toxic routine that poison our lives. Physical limits, 
