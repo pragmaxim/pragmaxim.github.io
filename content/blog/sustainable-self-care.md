@@ -3,6 +3,7 @@ date: 2012-01-01T00:00:00+01:00
 title: "Sustainable self-care"
 description: "From a seed to flower in 60 seconds"
 imageFront: "images/blog/sustainable-self-care/brain-plant.jpg"
+imageFrontHeight: "300"
 imageHeader: "images/blog/sustainable-self-care/sustainable-self-care.png"
 imageFooter: "images/blog/sustainable-self-care/seed.png"
 ---
@@ -15,7 +16,7 @@ and answers for relationships, profession, leisure and understanding of life in 
 
 Whatever reasons have nurtured many into world of paradox, a labyrinth to solve, ignorance is bliss at first but chaos lurks
 in the shadows until a pile of dirty laundry stinks too much. As there is no bridge over the past,
-remorse expressed to the right people is the true conductor of the orchestra playing a symphony, peacefully and humbly,
+remorse or gratitude expressed to the right people is the true conductor of the orchestra playing a symphony, peacefully and humbly,
 composed by evolution with love. These are times of great sacrifices revealing new paths towards balance,
 especially greed and lust are offerings rarely refused.
 
