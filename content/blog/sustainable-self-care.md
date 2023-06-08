@@ -7,7 +7,7 @@ imageHeader: "images/blog/sustainable-self-care/sustainable-self-care.png"
 imageFooter: "images/blog/sustainable-self-care/seed.png"
 ---
 
-Nature versus Nurture. Mankind has evolved for survival in ages of Uroboros, yet we were born into comfort, empire of Paradox.
+Nature versus Nurture. Mankind has evolved for survival in ages of Uroboros, yet many were born into comfort, empire of Paradox.
 In all times though, love shall be nourished, pain endured, puzzles solved, demons faced or befriended.
 Simple realization that all we do should comply with evolution of life and be analogical to planting seeds,
 watering, weeding, harvesting, grinding and baking bread is a relief, order in chaos. Nature has both questions
@@ -20,7 +20,7 @@ composed by evolution with love. These are times of great sacrifices revealing n
 especially greed and lust are offerings rarely refused.
 
 Pushing the wheel when it stands with single pair of hands is certainly the hardest but the more inspiration,
-role models and sustainable habits the fewer bad ones and the less toxic routine that poison our lives. Physical limits, 
+role models and sustainable habits the less toxic routine and discords that poison our lives. Physical limits, 
 fatigue, pain, responsibilities, disabilities, health or Ego shall not stop us from getting our hands dirty, take risks
 and make sacrifices for the greater good. Knowing value and dynamics of our emotions and feelings eliminates fear, sadness or anger
 while enjoying and sharing the good parts with people around. Know thyself, care for others and you shall know the universe.
