@@ -22,7 +22,7 @@ especially greed and lust are offerings rarely refused.
 Pushing the wheel when it stands with single pair of hands is certainly the hardest but the more inspiration,
 role models and sustainable habits the fewer bad ones and the less toxic routine that poison our lives. Physical limits, 
 fatigue, pain, responsibilities, disabilities, health or Ego shall not stop us from getting our hands dirty, take risks
-and make sacrifices for the greater good. Knowing value and dynamics of our emotions and feelings eliminates fear or anger
+and make sacrifices for the greater good. Knowing value and dynamics of our emotions and feelings eliminates fear, sadness or anger
 while enjoying and sharing the good parts with people around. Know thyself, care for others and you shall know the universe.
 
 Chemistry that keeps us running is a product of our long-term struggle for ideals that reflects our ability to perceive
@@ -36,7 +36,7 @@ to cheerleader pyramid which eventually causes addiction to anything that lack o
 this bottom back to surface by deeply understanding causality / evolution of life and nature (karma), crafting philosophy
 that complies with the formula of life.
 
-Any trauma, complex or health issue is a labyrinth to be solved otherwise fear, addiction and eventually anger become
+Any trauma, complex or health issue is a labyrinth to be solved otherwise fear, grief, addiction and eventually anger become
 the Minotaur worsening the blunder. Writing a desired narrative is a privilege of those who face him fearlessly while
 looking for means and ways out until it becomes a virtue that extends the depths of merit. Loosing this personal struggle
 breeds either violence or cowardice, black or white reality, not balance. Any new belief or assumption that either contradicts
