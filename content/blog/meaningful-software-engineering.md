@@ -11,9 +11,7 @@ Software development is a craft as any other and virtue of the craftsman is refl
 Good work is born out of passion, believe, patience and balance. In distress, code written is buggy, wooden chair crooked,
 article affective, roof leaky. Ultimate goal of a craftsman is mastering his character, not his craft. Craft improves with
 experience shared with his peers, having their work reviewed and passionately discussing its progress like a family cares about
-well-being of their offspring and observing causality closely back and forth to simulate further development. Theoretical
-physicists have many answers about the universe because they are in love with observing and describing causality in
-multidimensional space using math. Life is no different however intelligence adds complexity.
+well-being of their offspring and observing causality closely back and forth to simulate further development.
 
 Strong philosophical foundation compliant with principles of life is born from within, from the character and
 relationships of the craftsmen and from properties of the system. Transparent, open-source software with added value
@@ -47,8 +45,11 @@ AI software resembles digital organism, having a brain that decides what is goin
 neural networks using vast amounts of text gathered from the internet, so machines can even talk now, as collective
 consciousness has propagated into them. They are making deep causal effects in the universe, both reflecting and 
 influencing human psyche. Many argue that AI does not have emotions, so it cannot get angry, yet it is continuously
-trained on collective knowledge which reflects human emotions to a certain extent. Many decades of research, shared
-passion and cooperation that leads to machines being able to automate repetitive human labor, have huge impact on society.
-Regulation of AI towards sustainability is inevitable as immoral entities can exploit this technology in bad ways.
-Building useful software is harder to develop, it requires real life experiences, good philosophy and many years of research.
+trained on collective knowledge which reflects human emotions to a certain extent. Theoretical physicists have many answers
+about the universe because they are in love with observing and describing causality in multidimensional space using math.
+Life is no different however complexity goes through the roof due to DNA, intelligence and free will, which makes any
+approximations of future ridiculous. Many decades of research, shared passion and cooperation that leads to machines
+being able to automate repetitive human labor, have huge impact on society. Regulation of AI towards sustainability is
+inevitable as immoral entities can exploit this technology in bad ways. Building useful software is harder to develop,
+it requires real life experiences, good philosophy and many years of research.
 
