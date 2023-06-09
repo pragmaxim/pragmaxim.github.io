@@ -1,0 +1,33 @@
+{{ if .Site.Data.homepage.cooperation.enable }}
+<section class="section rad-animation-group section--border-bottom">
+    <div class="container">
+        <h3 class="rad-fade-down">{{ .Site.Data.homepage.cooperation.title }}</h3>
+        <div class="row row--padded mb-0 rad-fade-down">
+            {{ range $index, $element := .Site.Data.homepage.cooperation.items }}
+            <div class="col-12 col-md-6 mt-4 mt-md-0 my-md-auto">
+                <p class="lead values__description">
+                    {{ .content }}
+                </p>
+            </div>
+            <div class="col-12 col-md-6 pl-md-0 text-center">
+                {{ $img := resources.Get .image }}
+                <div class="values__item">
+                    <picture>
+                        <source srcset="{{ $img.RelPermalink }}" type="image">
+                        <img
+                                class="lozad img-responsive"
+                                src="data:image/gif;base64,R0lGODlhBwACAIAAAP///wAAACH5BAEAAAEALAAAAAAHAAIAAAIDjI9YADs="
+                                srcset="{{ $img.RelPermalink }}"
+                                data-src="{{ $img.RelPermalink }}"
+                                data-srcset="{{ $img.RelPermalink }}"
+                                height="{{ .height }}"
+                                alt="{{ .Site.Data.homepage.showcase.image.alt }}"
+                        />
+                    </picture>
+                </div>
+            </div>
+            {{ end }}
+        </div>
+    </div>
+</section>
+{{ end }}

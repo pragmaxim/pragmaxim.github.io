@@ -70,7 +70,7 @@ theme = "pragmaxim-theme"
 
 [params]
 
-  sections = ["showcase", "about", "education", "experience", "values", "blog", "client-and-work", "contact"]
+  sections = ["showcase", "about", "education", "experience", "values", "blog", "client-and-work", "cooperation", "contact"]
 
   [params.logo]
     char1 = "P"
