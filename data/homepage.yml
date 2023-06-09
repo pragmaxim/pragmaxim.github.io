@@ -128,7 +128,7 @@ cooperation:
   enable: true
   title: "Cooperation"
   items:
-    - content: "Any software engineer of similar values and experience with technology we use is welcome to join."
+    - content: "Any software engineer of similar values and experience with Tech we use is welcome to join."
       image: "images/cooperation/brother-handshake.png"
       height: 200
 

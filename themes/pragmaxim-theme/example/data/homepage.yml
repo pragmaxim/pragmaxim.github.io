@@ -124,6 +124,18 @@ values:
       image: "images/values/guatemala-flag-heart-shadow.png"
       height: 200
 
+cooperation:
+  enable: true
+  title: "Cooperation"
+  items:
+    - content: "Any software engineer of similar values and experience with Tech we use is welcome to join."
+      image: "images/cooperation/brother-handshake.png"
+      height: 200
+
+    - content: "Any business that requires software engineers or skill set that fit our profile is welcome to reach out to us."
+      image: "images/cooperation/b2b-handshake.png"
+      height: 200
+
 # Client & Work
 client_and_work:
   enable: true
