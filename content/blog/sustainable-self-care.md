@@ -1,6 +1,6 @@
 ---
 date: 2012-01-01T00:00:00+01:00
-title: "Sustainable self-care"
+title: "Sustainable Self Care"
 description: "From a seed to flower in 60 seconds"
 imageFront: "images/blog/sustainable-self-care/brain-plant.jpg"
 imageFrontHeight: "300"

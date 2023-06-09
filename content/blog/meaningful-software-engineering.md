@@ -9,11 +9,11 @@ imageFooter: "images/blog/meaningful-software-engineering/yin-yang-2.png"
 
 Software development is a craft as any other and virtue of the craftsman is reflected in his work.
 Good work is born out of passion, believe, patience and balance. In distress, code written is buggy, wooden chair crooked,
-article affective, roof leaky. Ultimate goal of a craftsman is mastering his craft and sharing it with others, having his
-work reviewed by peers and passionately discussing its progress like a family cares about well-being of their offspring,
-observing causality closely back and forth to simulate further development. There is no thrive unless general principles
-of life are deeply understood and debated. Many "agile" paradigms resembling this form of cooperation evolved over time
-like Kanban or Scrum, yet they are only as good as the craftsmen in it.
+article affective, roof leaky. Ultimate goal of a craftsman is mastering his character, not his craft. Craft improves with
+experience shared with peers, having his work reviewed and passionately discussing its progress like a family cares about
+well-being of their offspring and observing causality closely back and forth to simulate further development. There is no
+thrive unless general principles of life are deeply understood and debated. Many "agile" paradigms resembling this form of
+cooperation evolved over time like Kanban or Scrum, yet they are only as good as the craftsmen in it.
 
 Strong philosophical foundation compliant with principles of life is born from within, from the character and
 relationships of the craftsmen and from properties of the system. Transparent, open-source software with added value
