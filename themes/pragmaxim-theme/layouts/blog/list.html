@@ -34,7 +34,7 @@
                         srcset="{{ $img.RelPermalink }}"
                         data-src="{{ $img.RelPermalink }}"
                         data-srcset="{{ $img.RelPermalink }}"
-                        height="{{ .Params.imageFrontHeight }}"
+                        height="{{ div (.Params.imageFrontHeight | int) 2 }}"
                 />
               </picture>
             </div>
