@@ -1,9 +1,9 @@
 ---
 date: 2012-01-01T00:00:00+01:00
 title: "Meaningful Software Engineering"
-description: "If you're going to try, start with research"
+description: "If you're going to try, start with a research"
 imageFront: "images/blog/meaningful-software-engineering/yin-yang-front.png"
-imageFrontHeight: "210"
+imageFrontHeight: "180"
 imageFooter: "images/blog/meaningful-software-engineering/yin-yang-2.png"
 ---
 
@@ -11,14 +11,16 @@ Software development is a craft as any other and virtue of the craftsman is refl
 Good work is born out of passion, believe, patience and balance. In distress, code written is buggy, wooden chair crooked,
 article affective, roof leaky. Ultimate goal of a craftsman is mastering his character, not his craft. Craft improves with
 experience shared with his peers, having their work reviewed and passionately discussing its progress like a family cares about
-well-being of their offspring and observing causality closely back and forth to simulate further development.
+well-being of their offspring and observing causality closely back and forth to simulate further development, none of it
+can be faked in long-term.
 
 Strong philosophical foundation compliant with principles of life is born from within, from the character and
 relationships of the craftsmen and from properties of the system. Transparent, open-source software with added value
 and benefits for the world, people, nature or overall sustainability, built on top of research, peer-reviewed White
 Papers and evolving through Improvement Proposals, is compliant with principles of life as it is heavily reasoned and
 thus craftsmen do not question its meaningfulness and morality, they believe in it and feel comfortable being part of it.
-People in some blockchain, green/eco-friendly/sustainable and scientific projects understand that.
+People in some blockchain, green/eco-friendly/sustainable and scientific projects understand that however majority of
+companies are just exploiting naivety of society.
 
 Software often evolves for decades even, accumulating complexity of macro-anatomy of human body.
 That requires deep awareness of the system's evolution as one design mistake has a causal effect like a bad injury.
@@ -26,30 +28,15 @@ Elimination of a single point of failure in both runtime and design has eventual
 Paradigms like separation of concerns or dependency management for building modular software were inevitable
 to adopt decades ago, followed by microservices in centralized world and peer-to-peer system in decentralized world.
 
-Modern software adopts more and more paradigms which puts pressure on the craftsmen, they either specialize
-or lose their craftsmanship while juggling with too many balls, programmers better be loyal and faithful.
+Increasing amount of paradigms is getting adopted by modern software which puts pressure on the craftsmen, narrow specialization
+becomes similar to being loyal and faithful, juggling with too many balls is just a way of revealing new, dead-end paths.
 If motivation is money, ego or social status instead of exploration and wonder to eventually become useful to the world,
-one might not get any respect as people can tell a difference between wasps and bees. The right question is, how can I be
-useful to the society which I live in, answering that requires good philosophy, research and real life experiences.
-In past decades, 2 impactful industries have emerged : 
+one might not get any respect as people can tell a difference between wasps and bees. Greed and competitive environment
+force people to give up on usefulness while being part of society, but the right question is and always will be:
+how can I be useful to the society which I live in? 
 
-Blockchain and peer-to-peer network are built on top of strong philosophical and moral principles, solving especially
-consequences related to centralization of power. If a very powerful entity acts or decides to act immorally, inflicting
-harm to others for the purpose of enrichment, it might eventually become unstoppable like in case of huge financial
-institutions. Eventual bankruptcy of such institution is averted by governments printing money and causing inflation
-that makes common folks pay for it while bankers sail on a yacht. Decentralization is applicable to all sorts of 
-sustainable sectors as not only finance but all kinds of services can be decentralized and transparent, allowing for
-sensitive data storage, digital identity, etc. via smart contracts. E-government is a classic example.
-
-AI software resembles digital organism, having a brain that decides what is going to happen based on trained
-neural networks using vast amounts of text gathered from the internet, so machines can even talk now, as collective
-consciousness has propagated into them. They are making deep causal effects in the universe, both reflecting and 
-influencing human psyche. Many argue that AI does not have emotions, so it cannot get angry, yet it is continuously
-trained on collective knowledge which reflects human emotions to a certain extent. Theoretical physicists have many answers
-about the universe because they are in love with observing and describing causality in multidimensional space using math.
-Life is no different however complexity goes through the roof due to DNA, intelligence and free will, which makes any
-approximations of future ridiculous. Many decades of research, shared passion and cooperation that leads to machines
-being able to automate repetitive human labor, have huge impact on society. Regulation of AI towards sustainability is
-inevitable as immoral entities can exploit this technology in bad ways. Building useful software is harder to develop,
-it requires real life experiences, good philosophy and many years of research.
-
+Answering that to eventually become useful requires a good philosophy, research and real life experiences.
+Many impactful industries towards meaningfulness have emerged but as a software engineer you often need deep specialization
+in a secondary industry like biology or genetics, fortunately there are new areas that can be useful without PhD. : 
+[decentralized software](../in-the-footsteps-of-decentralization) and
+[artificial intelligence](../ethical-dilemmas-of-ai).
