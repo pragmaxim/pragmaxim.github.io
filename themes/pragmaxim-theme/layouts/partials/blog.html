@@ -5,7 +5,9 @@
             {{ .Site.Data.homepage.blog.title }}
         </h3>
         <div class="row row--padded mb-0 rad-fade-down">
-            {{ range where .Site.RegularPages.ByDate.Reverse "Type" "blog" }}
+            {{ $xp := (where .Site.RegularPages.ByDate "Type" "blog") }}
+            {{ $xpCount := len $xp }}
+            {{ range first 3 $xp }}
             <div class="col-12 col-md-6 mt-4 mt-md-0 my-md-auto">
                 <a href="{{.Permalink}}">
                     <div class="blog__title">{{ .Params.title }}</div>
@@ -29,6 +31,12 @@
                         />
                     </picture>
                 </div>
+            </div>
+            {{ end }}
+            {{ if gt $xpCount 3 }}
+            <div class="col-12 col-md-6 mt-4 mt-md-0 my-md-auto">
+                {{ $xpExtra := sub $xpCount 3 }}
+                <a href="{{ absURL "blog" }}"> And {{ $xpExtra }} more</a>
             </div>
             {{ end }}
         </div>

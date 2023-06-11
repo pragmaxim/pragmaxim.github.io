@@ -114,15 +114,15 @@ values:
   items:
     - content: "Mindfulness is merely just deep awareness of causality."
       image: "images/values/titan-logo2.png"
-      height: 270
+      height: 250
 
     - content: "Narrative written with virtue and merit shall be lived fearlessly."
       image: "images/values/knight.png"
-      height: 210
+      height: 190
 
     - content: "Bend the knee with love and smile before time does."
       image: "images/values/guatemala-flag-heart-shadow.png"
-      height: 200
+      height: 180
 
 cooperation:
   enable: true
