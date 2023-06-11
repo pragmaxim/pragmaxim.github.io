@@ -15,10 +15,10 @@ watering, weeding, harvesting, grinding and baking bread is a relief, order in c
 and answers for relationships, profession, leisure and understanding of life in general.
 
 Whatever reasons have nurtured many into world of paradox, a labyrinth to solve, ignorance is bliss at first but chaos lurks
-in the shadows until a pile of dirty laundry stinks too much. As there is no bridge over the past,
-remorse or gratitude expressed to the right people is the true conductor of the orchestra playing a symphony, peacefully and humbly,
-composed by evolution with love. These are times of great sacrifices revealing new paths towards balance,
-especially greed and lust are offerings rarely refused.
+in the shadows until the pile of dirty laundry turns into muck. There is no bridge over the past, only stitch in time,
+as we are all responsible for ourselves, remorse or gratitude expressed to the right people is the true conductor of the
+orchestra playing a symphony, peacefully and humbly, composed by evolution with love. These are times of great sacrifices
+revealing new paths towards balance, especially greed and lust are offerings rarely refused.
 
 Pushing the wheel when it stands with single pair of hands is certainly the hardest but the more inspiration,
 role models and sustainable habits the less toxic routine and discords that poison our lives. Physical limits, 
@@ -37,11 +37,12 @@ to cheerleader pyramid which eventually causes addiction to anything that lack o
 this bottom back to surface by deeply understanding causality / evolution of life and nature (karma), crafting philosophy
 that complies with the formula of life.
 
-Any trauma, complex or health issue is a labyrinth to be solved otherwise fear, grief, addiction and eventually anger become
-the Minotaur worsening the blunder. Writing a desired narrative is a privilege of those who face him fearlessly while
-looking for means and ways out until it becomes a virtue that extends the depths of merit. Loosing this personal struggle
-breeds either violence or cowardice, black or white reality, not balance. Any new belief or assumption that either contradicts
-reality or is not constructive without any value for anyone gives birth to another Minotaur to be confronted. 
+Any trauma, complex or health issue is a labyrinth to be solved no matter how big the sacrifice is, otherwise fear, grief,
+addiction and eventual anger become the Minotaur worsening the blunder. Writing a desired narrative is a privilege of
+those who face him fearlessly while looking for means and ways out until it becomes a virtue that extends the depths of
+merit. Loosing this personal struggle breeds either violence or cowardice, black or white reality, not balance. Any new
+belief or assumption that either contradicts reality or is not constructive without any value for anyone gives birth to
+another Minotaur to be confronted. 
 
 Realistic idealists, constructive problem solvers, pragmatists, optimists, better treat those who lost ideals and love
 frankly or stay away as it is not a burden to bear. We are probably the only species that were given the ability to day-dream
