@@ -25,8 +25,8 @@ utopian level, democracy would be eventually fully replaced with so-called DAO, 
 
 DAO is governed from within in contrast to democracy where you delegate your vote and will to a representative. 
 All the legislation would be replaced by transparent smart contracts corresponding to legislative changes and government
-events and persisted indefinitely to a blockchain. Voting about legislation changes would be done by any citizen who is
-interested through a decentralized application. Utopian vision that will be possible at times when AI automates repetitive
-labor and people will have more time to wonder about life, times of no government corruption in games of thrones. Utopia
-is not really imaginary, it is just an era of society when being good and mindful wins over evil and ignorance, times of
-great prosperity. No one ever knows where the balance really is :)
+events and persisted indefinitely to a blockchain. Voting would be done by any citizen who is interested through a
+decentralized application. Utopian vision that will be possible at times when AI automates repetitive labor and people
+will have more time to wonder about life, times of no government corruption in games of thrones. Utopia is not really
+imaginary, it is just an era of society when being good and mindful wins over evil and ignorance, times of great
+prosperity. No one ever knows where the balance really is :)
