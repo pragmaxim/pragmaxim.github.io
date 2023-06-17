@@ -24,6 +24,9 @@
         <p class="lead">
         {{ .Site.Data.homepage.about.intro | safeHTML }}
         </p>
+        <p class="lead">
+          {{ .Site.Data.homepage.about.ending | safeHTML }}
+        </p>
         <figure class="figure bg-white p-3 rounded">
           <blockquote class="blockquote">
             {{ .Site.Data.homepage.about.quote | safeHTML }}
@@ -32,9 +35,6 @@
             {{ .Site.Data.homepage.about.author }}
           </figcaption>
         </figure>
-        <p class="lead">
-          {{ .Site.Data.homepage.about.ending | safeHTML }}
-        </p>
       </div>
     </div>
   </div>
