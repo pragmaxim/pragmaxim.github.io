@@ -16,11 +16,12 @@ collective knowledge which reflects human emotions to a certain extent. Many dec
 cooperation that leads to machines being able to mimic and surpass humans, have huge impact on society already. 
 
 The weakest who were the least lucky end up doing repetitive and hard labour like waste sorting with the other unluckiest
-which paradoxically prevents them from sorting out their family issues, eventually ending up living on welfare or homeless.
+which paradoxically prevents them from sorting out their family and child issues, eventually ending up living on welfare or homeless.
 Could AI also teach people the art of life? Fixing lack of upbringing or broken school system that had worked before
 digital era, but it is failing nowadays? Of course, any child could have a wise AI friend that would teach
 it responsibilities and slowly walk it through realities of life, so it can make a real friend, probably one of the most
-important use case for AI as children should not be responsible for dysfunctional family.
+important use case for AI as children should not be responsible for dysfunctional systems, social groups or era they 
+were born into.
 
 Regulation of AI towards sustainability is inevitable as immoral entities can exploit this technology in bad ways.
 Building useful software is harder to develop, it requires real life experiences, good philosophy and many years of research.
