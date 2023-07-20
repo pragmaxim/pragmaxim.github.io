@@ -14,7 +14,7 @@
           {{ .Site.Data.homepage.blog.title }}
         </h3>
         <div class="row row--padded mb-0 rad-fade-down">
-          {{ range where .Site.RegularPages.ByDate "Type" "blog" }}
+          {{ range where .Site.RegularPages.ByDate.Reverse "Type" "blog" }}
           <div class="col-12 col-md-6 mt-4 mt-md-0 my-md-auto">
             <a href="{{.Permalink}}">
               <div class="blog__title">{{ .Params.title }}</div>
