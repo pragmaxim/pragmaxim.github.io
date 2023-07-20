@@ -18,14 +18,18 @@ inflation that makes common folks pay for it while property of responsible banke
 The original reason behind decentralization is fair incentivization and transparency, morality and sustainability is part
 of the design in order to prevent corrupted and immoral entities to play the system or others and to limit cancel culture
 as those warning about evil should not be ostracised by centralized power. Powerful entities tend to be unstoppable because
-naive individuals incline to join it and become part of it by slowly selling their souls. Decentralization gets us a bit
-closer to the utopian idea of a society living in synergy, peace and love. It is applicable to all sorts of sustainable
-sectors as many services can be implemented as decentralized application on blockchain using smart contracts, allowing systems
-to leverage sensitive data storage, digital identity, etc. E-government is a classic example, at the utopian level,
-democracy would be eventually fully replaced with so-called DAO, a decentralized autonomous organization.
+naive individuals incline to join it and become part of it by slowly selling their souls. 
+
+> In a time of deceit telling the truth is a revolutionary act. - George Orwell
+
+Decentralization might be considered the First Amendment of the digital era, getting us a bit closer to the utopian idea
+of a society living in synergy, peace and love. It is applicable to all sorts of sustainable sectors as many services can
+be implemented as decentralized application on blockchain using smart contracts, allowing systems to leverage sensitive
+data storage, digital identity, etc. E-government is a classic example, at the utopian level, democracy would be eventually
+fully replaced with so-called DAO, a decentralized autonomous organization.
 
 DAO is governed from within in contrast to democracy where you delegate your vote and will to a representative. 
-All the legislation would be replaced by transparent smart contracts corresponding to legislative changes and government
+The legislation would be partially replaced by transparent smart contracts corresponding to legislative changes and government
 events and persisted indefinitely to a blockchain. Voting would be done by any citizen who is interested through a
 decentralized application. Utopian vision that will be possible at times when AI automates repetitive labor and people
 will have more time to wonder about life, times of no government corruption in games of thrones. Utopia is not really
