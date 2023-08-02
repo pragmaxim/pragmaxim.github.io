@@ -12,7 +12,8 @@ Nature versus Nurture. Mankind has evolved for survival in ages of Uroboros, yet
 In all times though, love shall be nourished, pain endured, puzzles solved, demons faced or befriended.
 Simple realization that all we do should comply with evolution of life and be analogical to planting seeds,
 watering, weeding, harvesting, grinding and baking bread is a relief, order in chaos. Nature has both questions
-and answers for relationships, profession, leisure and understanding of life in general.
+and answers for relationships, profession, leisure and understanding of life in general. There is a reason why mosquitoes get
+killed and bees get saved from drowning, yet so few give it a thought. 
 
 Whatever reasons have nurtured many into world of paradox, a labyrinth to solve, ignorance is bliss at first but chaos lurks
 in the shadows until the pile of dirty laundry turns into muck. There is no bridge over the past, only stitch in time,
