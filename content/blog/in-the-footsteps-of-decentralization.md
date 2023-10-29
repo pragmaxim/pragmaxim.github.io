@@ -15,10 +15,14 @@ weakness or fear. Selling something harmful to people is a classic example, any 
 stake is questionable. Eventual bankruptcy of such institution is averted by governments printing money and causing
 inflation that makes common folks pay for it while property of responsible bankers gets valorized even more. 
 
-The original reason behind decentralization is fair incentivization and transparency, morality and sustainability is part
-of the design in order to prevent corrupted and immoral entities to play the system or others and to limit cancel culture
-as those warning about evil should not be ostracised by centralized power. Powerful entities tend to be unstoppable because
-naive individuals incline to join it and become part of it by slowly selling their souls. 
+The original reason behind decentralization is fair incentivization, transparency, morality, humanity and sustainability.
+It is all part of the design in order to prevent corrupted and immoral entities to play the system or others and to limit cancel
+culture as those warning about evil should not be ostracised by the powerful and greedy. This is very common effect of mass
+psychology often driven simply by absence of love, lust for making money, having influence over people but perhaps combination
+of everything. Powerful entities tend to be unstoppable because naive individuals incline to join it and become part of it by
+slowly selling their souls. When small businesses and individuals cannot thrive as corporations eliminate competition, we
+go back to times of East India Company which had ruled the world for 2 centuries by violence and slavery, starting massive
+industrialization by pumping people with tea, coffee, tobacco and alcohol.
 
 > In a time of deceit telling the truth is a revolutionary act. - George Orwell
 
@@ -26,12 +30,12 @@ Decentralization might be considered the First Amendment of the digital era, get
 of a society living in synergy, peace and love. It is applicable to all sorts of sustainable sectors as many services can
 be implemented as decentralized application on blockchain using smart contracts, allowing systems to leverage sensitive
 data storage, digital identity, etc. E-government is a classic example, at the utopian level, democracy would be eventually
-fully replaced with so-called DAO, a decentralized autonomous organization.
+fully replaced with so-called DAO.
 
-DAO is governed from within in contrast to democracy where you delegate your vote and will to a representative. 
-The legislation would be partially replaced by transparent smart contracts corresponding to legislative changes and government
-events and persisted indefinitely to a blockchain. Voting would be done by any citizen who is interested through a
-decentralized application. Utopian vision that will be possible at times when AI automates repetitive labor and people
-will have more time to wonder about life, times of no government corruption in games of thrones. Utopia is not really
-imaginary, it is just an era of society when being good and mindful wins over evil and ignorance, times of great
-prosperity. No one ever knows where the balance really is :)
+DAO (Decentralized autonomous organization) is governed from within in contrast to democracy where you delegate your vote
+and will to a representative. The legislation would be partially replaced by transparent smart contracts corresponding to
+legislative changes and government events and persisted indefinitely to a blockchain. Voting would be done by any citizen
+who is interested through a decentralized application. Utopian vision that will be possible at times when AI automates
+repetitive labor and people will have more time to wonder about life, times of no government corruption in games of thrones.
+Utopia is not really imaginary, it is just an era of society when being good and mindful wins over evil and ignorance,
+times of great prosperity. No one ever knows where the balance really is :)

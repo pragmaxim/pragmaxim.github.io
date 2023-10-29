@@ -1,7 +1,7 @@
 head:
   title: Pragmaxim
   description: Software development company
-  keywords: "Jakub Liska, software development, fullstack developer, scala, blockchain, environmental, social, economic, welfare, fintech, distributed data processing, decentralized apps, decentralization, sustainability, synergy, harmony with nature, healthcare, e-government, hyperledger, daml, cardano, ergo, cassandra, explorer"
+  keywords: "Jakub Liska, software development, fullstack developer, scala, blockchain, environmental, social, economic, welfare, fintech, distributed data processing, decentralized apps, decentralization, sustainability, synergy, harmony with nature, healthcare, e-government, hyperledger, daml, cardano, ergo, solana, polkadot, substrate, cassandra, explorer"
 
 # showcase
 showcase:
@@ -13,7 +13,10 @@ showcase:
          ecosystem and decentralized apps on 
          <a target='_blank' href='https://www.hyperledger.org'>Hyperledger</a>, 
          <a target='_blank' href='https://www.digitalasset.com/developers'>Daml</a>, 
-         <a target='_blank' href='https://cardano.org/'>Cardano</a> and 
+         <a target='_blank' href='https://cardano.org/'>Cardano</a>, 
+         <a target='_blank' href='https://www.polkadot.network/'>Polkadot</a> /  
+         <a target='_blank' href='https://substrate.io/'>Substrate</a>,  
+         <a target='_blank' href='https://solana.com/'>Solana</a> and 
          <a target='_blank' href='https://ergoplatform.org/'>Ergo</a>."
   ending: "Pragmaxim is concerned with both results and reality. We love participating on projects with positive environmental, 
           social and economic impact towards better sustainability, synergy and harmony, including fintech on blockchains,
