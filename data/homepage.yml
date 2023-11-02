@@ -10,17 +10,10 @@ showcase:
   author: "J. Robert Oppenheimer"
   intro: "Provides software development and consultation services with specialization on distributed data processing using mainly 
          <a target='_blank' href='https://www.scala-lang.org/'>Scala</a> 
-         ecosystem and decentralized apps on 
-         <a target='_blank' href='https://www.hyperledger.org'>Hyperledger</a>, 
-         <a target='_blank' href='https://www.digitalasset.com/developers'>Daml</a>, 
-         <a target='_blank' href='https://cardano.org/'>Cardano</a>, 
-         <a target='_blank' href='https://www.polkadot.network/'>Polkadot</a> /  
-         <a target='_blank' href='https://substrate.io/'>Substrate</a>,  
-         <a target='_blank' href='https://solana.com/'>Solana</a> and 
-         <a target='_blank' href='https://ergoplatform.org/'>Ergo</a>."
+         ecosystem and decentralized apps on various eco-friendly blockchains."
   ending: "Pragmaxim is concerned with both results and reality. We love participating on projects with positive environmental, 
-          social and economic impact towards better sustainability, synergy and harmony, including fintech on blockchains,
-          healthcare, welfare or anything eco-friendly that reduces toxic environmental effects."
+          social and economic impact towards better sustainability, synergy and harmony, including healthcare, welfare, fintech or 
+          anything eco-friendly that reduces toxic environmental effects."
   image:
     alt: "px-logo"
     x: "images/showcase/px-logo-flapless-narrow-blur-shadow-640.png"

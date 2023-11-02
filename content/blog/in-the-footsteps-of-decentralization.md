@@ -10,10 +10,10 @@ imageHeader: "images/blog/in-the-footsteps-of-decentralization/blockchain-header
 Blockchain and peer-to-peer network are built on top of strong philosophical and moral principles, solving especially
 problems related to centralization of power. If a very powerful entity acts or decides to act immorally, inflicting
 harm to others for any kind of selfish or greedy purpose, it might eventually become unstoppable like in case of huge 
-financial institutions. As it happens, powerful entities emerge through making money at someone's expense, exploiting greed,
-weakness or fear. Selling something harmful to people is a classic example, any kind of game play with human lives at
-stake is questionable. Eventual bankruptcy of such institution is averted by governments printing money and causing
-inflation that makes common folks pay for it while property of responsible bankers gets valorized even more. 
+financial institutions. As it happens, powerful entities emerge through enriching themselves at someone's expense,
+exploiting greed, weakness or fear. Selling something harmful to people is a classic example, any kind of game play
+with human lives at stake is questionable. Eventual bankruptcy of such institution is averted by governments printing
+money and causing inflation that makes common folks pay for it while property of responsible bankers gets valorized even more. 
 
 The original reason behind decentralization is fair incentivization, transparency, morality, humanity and sustainability.
 It is all part of the design in order to prevent corrupted and immoral entities to play the system or others and to limit cancel
@@ -33,9 +33,10 @@ data storage, digital identity, etc. E-government is a classic example, at the u
 fully replaced with so-called DAO.
 
 DAO (Decentralized autonomous organization) is governed from within in contrast to democracy where you delegate your vote
-and will to a representative. The legislation would be partially replaced by transparent smart contracts corresponding to
-legislative changes and government events and persisted indefinitely to a blockchain. Voting would be done by any citizen
-who is interested through a decentralized application. Utopian vision that will be possible at times when AI automates
-repetitive labor and people will have more time to wonder about life, times of no government corruption in games of thrones.
-Utopia is not really imaginary, it is just an era of society when being good and mindful wins over evil and ignorance,
+and will to a representative. Whether it is a business organization, non-profit institution or government. The governance would
+be partially replaced by transparent smart contracts corresponding to organizational changes and persisted indefinitely to a blockchain.
+Voting would be done by any member or citizen who is interested through a decentralized application. A treasury would 
+be raised and accessed transparently for everyone. Utopian vision that will be possible at times when AI automates
+repetitive labor and people will have more time to wonder about life, times of minimal corruption in games of thrones.
+Utopia is not really imaginary, it is just an era of society when being good and mindful wins over being evil and ignorant,
 times of great prosperity. No one ever knows where the balance really is :)
