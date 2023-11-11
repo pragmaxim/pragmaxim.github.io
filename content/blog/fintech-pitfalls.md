@@ -19,7 +19,7 @@ regardless of what assets and entities mean.
 
 Complexity of effects that one Visa payment triggers in the banking system is mind-blowing and thus even finality of settling 
 such transaction (reaching consensus in all involved systems) might take up to 3 days in international transfers.
-That's why the payment Fee is usually ~ 2% on account of both the merchant and the customer.
+That's why the payment Fee is usually ~ 2% on account of the merchant which is leading to more expensive goods.
 
 This is the reason why banking system is moving to blockchain technology, slowly replacing the prehistoric systems running on mainframes.
 New blockchain-enabled payment processors won't issue transaction to the old systems anymore when you buy groceries, it will be settled on blockchain,
