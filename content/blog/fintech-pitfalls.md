@@ -42,8 +42,8 @@ Imports           --> queue              rest --> Query State       --> |_______
 
 It is still a centralized solution living in a single cluster. Most of the time we still interact with the outside world (eg. other banks, partners) so the
 software needs to reach consensus for the settlement to happen. At this point it is clear that centralization does not make sense anymore, as new entities need
-to join the system. Costs and time for settling one transaction increases exponentially as reaching consensus is a n^2 problem, so blockchains are used where :
- - decentralized settlement of transactions allows new parties to join the system without any additional costs
+to join the system. Costs and time for settling one transaction increases exponentially as reaching consensus is a n^2 problem, so on blockchain network :
+ - decentralized settlement of transactions allows new parties to join the system without too high overhead and costs
  - cryptographical proofs allow for safety, consistency, fast consensus and finality 
  - each node keeps a replica of transaction ledger with a persistent version of state of all accounts (ideally in merkle tree database)
  - projections must be done externally by subscribing and querying blockchain Node
@@ -67,10 +67,10 @@ This decentralized solution eventually replaces the current cooperation of Visa/
 As all the parties involved would just focus on making Projections and data views that are important only for them, while blockchain being shared by all.
 It will replace even non-financial day-to-day services and reduce the need for middlemen and manual, repetitive labor: smart-contracts for paper contracts.
 
-There are many very tough challenges regardless of using blockchain or not, especially regarding data persistence due to unbalanced data distribution,
-so make blockchain/ledger projections is hard. Can we persist transactions of Sharks and Whales the same way as transactions of small fish?
-  - yes, but probably not to relational database, so that some queries with JOIN take 10ms and some 10s and indexing is super-slow
-    - this eventually leads to enforcing pagination until someone forgets and brings down the whole system
+There are many very tough challenges regardless of using blockchain or not, especially related to data persistence due to unbalanced data distribution,
+so making ledger projections is hard. Can we persist transactions of Sharks and Whales the same way as transactions of small fish?
+  - yes, but probably not to relational database where indexing is super-slow and some queries with JOIN take 10ms and some 10s
+    - this eventually leads huge, sharded db clusters and to enforcing pagination until someone forgets and brings down the whole system
   - we probably need some KV store like Cassandra and use well-designed partitions
     - Whales usually don't fit into partitions so using hash/time/range based sub-partitioning is necessary, but indexing is very fast
 
