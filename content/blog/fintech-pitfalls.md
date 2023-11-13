@@ -10,14 +10,17 @@ imageHeader: "images/blog/fintech-pitfalls/bank.png"
 [Notes to my presentation](https://prezi.com/view/nPM9GQAVOodaZSFxKY9g/)
 
 Banks has always been major influential drivers of the economy, depending on the level of regulation :
-    - after World War II : 3 decades of strong regulation, fixed exchange and interest rates worldwide
-        - provided some financial stability
-    - 1970s - 2008 : deregulation
-    - 2008+ : cooperation with governments to prevent another financial crisis
-        - printing money out of thin air
-            - increasing debts on account of future generations 
-        - more space for speculations
-            - amount of financial transactions is increasing exponentially especially since Web2.0 era and the rise of e-commerce
+  - after World War II : 3 decades of strong regulation, fixed exchange and interest rates worldwide
+      - provided some financial stability
+  - 1970s - 2008 : deregulation probably boosted the massive techno-feudalism as we know it today
+      - 1970s : Nixon shock, end of Bretton Woods system, floating exchange rates
+      - 1980s : rise of derivatives, junk bonds, etc.
+      - 1990s : rise of securitization, subprime mortgages, etc.
+  - 2008+ : cooperation with governments to prevent another financial crisis
+      - printing money out of thin air
+          - increasing debts on account of future generations 
+      - more space for speculations
+          - amount of financial transactions is increasing exponentially especially since Web2.0 era and the rise of e-commerce
 
 As a result, banking systems became unsustainable both economically (inflation, manipulations) and technologically (mainframes, queues, batch processing, consensus, etc.).
 Bright minds like Satoshi Nakamoto have been trying to tackle these problems which is basically how blockchain technology was born.
@@ -41,9 +44,9 @@ Any system that handles people's money has certain similarities that have materi
 
 Now, how to tame complexity of processing 1M txs/s while maintaining Account Balances consistent with Transaction log across all parties involved
 and having some analytical insights? How to reach consensus fast and reduce finality to a second? 
-    - without blockchain technology, this can currently be done only on a single cluster of machines with Event-Sourcing / CQRS where : 
-        - millions of actors are distributed in a cluster consuming transaction log, each maintaining its account state in memory
-        - projections are made so we can answer queries from UI and provide some insights
+  - without blockchain technology, this can currently be done only on a single cluster of machines with Event-Sourcing / CQRS where : 
+      - millions of actors are distributed in a cluster consuming transaction log, each maintaining its account state in memory
+      - projections are made so we can answer queries from UI and provide some insights
 
 ```
                             C L U S T E R
