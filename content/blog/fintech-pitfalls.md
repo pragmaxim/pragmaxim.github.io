@@ -9,26 +9,24 @@ imageHeader: "images/blog/fintech-pitfalls/bank.png"
 
 [Notes to my presentation](https://prezi.com/view/nPM9GQAVOodaZSFxKY9g/)
 
-Banks has always been major influential drivers of the economy, depending on the level of regulation :
+Banks have always been major influential drivers of the economy, depending on the level of regulation :
   - after World War II : 3 decades of strong regulation, fixed exchange and interest rates worldwide
       - provided some financial stability
-  - 1970s - 2008 : deregulation probably boosted the massive techno-feudalism as we know it today
+  - 1970s - 2008 : deregulation had probably boosted massive techno-feudalism as we know it today
       - 1970s : Nixon shock, end of Bretton Woods system, floating exchange rates
       - 1980s : rise of derivatives, junk bonds, etc.
       - 1990s : rise of securitization, subprime mortgages, etc.
   - 2008+ : cooperation with governments to prevent another financial crisis
       - printing money out of thin air
           - increasing debts on account of future generations 
-      - more space for speculations
-          - amount of financial transactions is increasing exponentially especially since Web2.0 era and the rise of e-commerce
+          - more space for speculations, more capital for businesses
+            - amount of financial transactions is increasing exponentially especially since Web2.0 era and the rise of e-commerce
+            - complexity of effects that one Visa payment triggers in the banking system is mind-blowing and thus :
+               - finality of settling such transaction (reaching consensus in all involved systems) might take up to 3 days in international transfers
+               - the payment Fee is usually ~ 2% on account of the merchant which is leading to more expensive goods
 
 As a result, banking systems became unsustainable both economically (inflation, manipulations) and technologically (mainframes, queues, batch processing, consensus, etc.).
-Bright minds like Satoshi Nakamoto have been trying to tackle these problems which is basically how blockchain technology was born.
-It was the only idea that was built from the ground up instead of being a patch on top of the old system.
-
-Complexity of effects that one Visa payment triggers in the banking system is mind-blowing and thus :
-  - finality of settling such transaction (reaching consensus in all involved systems) might take up to 3 days in international transfers
-  - the payment Fee is usually ~ 2% on account of the merchant which is leading to more expensive goods
+Satoshi Nakamoto has been trying to tackle these problems, he implemented a good and useful idea from the ground up instead of making a patch on top of the old system.
 
 New blockchain-enabled payment processors and gateways won't issue transaction to the old systems anymore when you make a payment,
 it will be settled on blockchain, the same way as electric cars will eventually replace cars with combustion engines, as a consequence :
