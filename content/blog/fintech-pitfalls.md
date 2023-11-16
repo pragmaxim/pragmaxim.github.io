@@ -7,7 +7,7 @@ imageFrontHeight: "200"
 imageHeader: "images/blog/fintech-pitfalls/bank.png"
 ---
 
-[Notes to my presentation](https://prezi.com/view/nPM9GQAVOodaZSFxKY9g/)
+[Notes to my presentation @ Functional JVM Meetup](https://prezi.com/view/nPM9GQAVOodaZSFxKY9g/)
 
 Banks have always been major influential drivers of the economy, depending on the level of regulation :
   - after World War II : 3 decades of strong regulation, fixed exchange and interest rates worldwide
