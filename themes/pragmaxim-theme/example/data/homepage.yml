@@ -1,23 +1,19 @@
 head:
   title: Pragmaxim
   description: Software development company
-  keywords: "Jakub Liska, software development, fullstack developer, scala, blockchain, environmental, social, economic, welfare, fintech, distributed data processing, decentralized apps, decentralization, sustainability, synergy, harmony with nature, healthcare, e-government, hyperledger, daml, cardano, ergo, cassandra, explorer"
+  keywords: "Jakub Liska, software development, fullstack developer, scala, blockchain, environmental, social, economic, welfare, fintech, distributed data processing, decentralized apps, decentralization, sustainability, synergy, harmony with nature, healthcare, e-government, hyperledger, daml, cardano, ergo, solana, polkadot, substrate, cassandra, explorer"
 
 # showcase
 showcase:
   enable: true
   quote: "A pragmatist is concerned with results, not reality."
   author: "J. Robert Oppenheimer"
-  intro: "Provides software development and consultation services with specialization on distributed data processing using mainly 
-         <a target='_blank' href='https://www.scala-lang.org/'>Scala</a> 
-         ecosystem and decentralized apps on 
-         <a target='_blank' href='https://www.hyperledger.org'>Hyperledger</a>, 
-         <a target='_blank' href='https://www.digitalasset.com/developers'>Daml</a>, 
-         <a target='_blank' href='https://cardano.org/'>Cardano</a> and 
-         <a target='_blank' href='https://ergoplatform.org/'>Ergo</a>."
+  intro: "Provides software development and consultation services with specialization on distributed data processing and blockchains using mainly 
+         <a target='_blank' href='https://www.scala-lang.org/'>Scala</a> ecosystem, <a target='_blank' href='https://zio.dev/'>ZIO</a> and 
+         <a target='_blank' href='https://akka.io/'>Akka</a> based implementations of CQRS for mission critical systems."
   ending: "Pragmaxim is concerned with both results and reality. We love participating on projects with positive environmental, 
-          social and economic impact towards better sustainability, synergy and harmony, including fintech on blockchains,
-          healthcare, welfare or anything eco-friendly that reduces toxic environmental effects."
+          social and economic impact towards better sustainability, synergy and harmony, including healthcare, welfare, fintech or 
+          anything eco-friendly that reduces toxic environmental effects."
   image:
     alt: "px-logo"
     x: "images/showcase/px-logo-flapless-narrow-blur-shadow-640.png"
@@ -55,9 +51,9 @@ about:
   quote: "Smoke me a kipper. I'll be back for breakfast."
   author: "Arnold \"Ace\" Rimmer"
   intro: "I've been working in SW engineering since 2009 on various projects meeting great people I could learn from. 
-          Applying technology that I like in a meaningful way gives me joy, purpose and I do it with pleasure."
-  ending: "I could be considered a fullstack developer with leading potential and main specialization 
-          on Scala backend, distributed, high-throughput data stream processing and persistence, blockchains, healthcare, etc."
+          Applying technology that I like in a meaningful and ethical way gives me joy, purpose and I do it with pleasure."
+  ending: "I could be considered a fullstack developer with leading potential that you work with to
+          get stuff done using the right tools and solutions to the root problems through \"High Value Delivery\" driven software development."
   button:
     icon: "icon-smile-fill"
     btnText: "About Me"
@@ -87,7 +83,8 @@ experience:
     alt: "px-logo"
     x: "images/experience/px-logo-tear-narrow-blur-shadow-640.png"
     _2x: "images/experience/px-logo-tear-narrow-blur-shadow-1280.png"
-  description: "Currently researching and implementing e-government level decentralized Health Care system using Daml and Hyperledger :
+  description: "Currently researching and implementing <a target='_blank' href='https://github.com/pragmaxim/ergo-uexplorer'>Blockchain explorer</a> and 
+                e-government level decentralized Health Care system using Daml and Hyperledger 
                 <a target='_blank' href='https://github.com/pragmaxim/daml-healthcare'>Daml Healthcare</a>."
   button:
     icon: "icon-linkedin-fill"
@@ -114,15 +111,15 @@ values:
   items:
     - content: "Mindfulness is merely just deep awareness of causality."
       image: "images/values/titan-logo2.png"
-      height: 270
+      height: 250
 
     - content: "Narrative written with virtue and merit shall be lived fearlessly."
       image: "images/values/knight.png"
-      height: 210
+      height: 190
 
     - content: "Bend the knee with love and smile before time does."
       image: "images/values/guatemala-flag-heart-shadow.png"
-      height: 200
+      height: 180
 
 cooperation:
   enable: true

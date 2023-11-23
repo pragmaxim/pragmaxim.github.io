@@ -8,9 +8,9 @@ showcase:
   enable: true
   quote: "A pragmatist is concerned with results, not reality."
   author: "J. Robert Oppenheimer"
-  intro: "Provides software development and consultation services with specialization on distributed data processing using mainly 
-         <a target='_blank' href='https://www.scala-lang.org/'>Scala</a> 
-         ecosystem and decentralized apps on various eco-friendly blockchains."
+  intro: "Provides software development and consultation services with specialization on distributed data processing and blockchains using mainly 
+         <a target='_blank' href='https://www.scala-lang.org/'>Scala</a> ecosystem, <a target='_blank' href='https://zio.dev/'>ZIO</a> and 
+         <a target='_blank' href='https://akka.io/'>Akka</a> based implementations of CQRS for mission critical systems."
   ending: "Pragmaxim is concerned with both results and reality. We love participating on projects with positive environmental, 
           social and economic impact towards better sustainability, synergy and harmony, including healthcare, welfare, fintech or 
           anything eco-friendly that reduces toxic environmental effects."
@@ -83,7 +83,8 @@ experience:
     alt: "px-logo"
     x: "images/experience/px-logo-tear-narrow-blur-shadow-640.png"
     _2x: "images/experience/px-logo-tear-narrow-blur-shadow-1280.png"
-  description: "Currently researching and implementing e-government level decentralized Health Care system using Daml and Hyperledger :
+  description: "Currently researching and implementing <a target='_blank' href='https://github.com/pragmaxim/ergo-uexplorer'>Blockchain explorer</a> and 
+                e-government level decentralized Health Care system using Daml and Hyperledger 
                 <a target='_blank' href='https://github.com/pragmaxim/daml-healthcare'>Daml Healthcare</a>."
   button:
     icon: "icon-linkedin-fill"
