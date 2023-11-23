@@ -4,7 +4,7 @@ title: "The Hitchhiker's Guide to Fintech"
 description: "Reverse-engineering the money wheel"
 imageFront: "images/blog/fintech-pitfalls/money-wheel-shadow.png"
 imageFrontHeight: "200"
-presentation: "KahOPHYllfj"
+presentation: "2TI-vbl_eA7"
 ---
 
 ####  Slides for my presentation @ Functional JVM Meetup
