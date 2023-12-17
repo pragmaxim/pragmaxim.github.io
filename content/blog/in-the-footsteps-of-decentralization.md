@@ -8,21 +8,20 @@ imageHeader: "images/blog/in-the-footsteps-of-decentralization/blockchain-header
 ---
 
 Blockchain and peer-to-peer network are built on top of strong philosophical and moral principles, solving especially
-problems related to centralization of power. If a very powerful entity acts or decides to act immorally, inflicting
-harm to others for any kind of selfish or greedy purpose, it might eventually become unstoppable like in case of huge 
-financial institutions. As it happens, powerful entities emerge through enriching themselves at someone's expense,
-exploiting greed, weakness or fear. Selling something harmful to people is a classic example, any kind of game play
-with human lives at stake is questionable. Eventual bankruptcy of such institution is averted by governments printing
-money and causing inflation that makes common folks pay for it while property of responsible bankers gets valorized even more. 
+problems related to centralization of power. If a very powerful entity or its part acts or decides to act immorally, inflicting
+harm to others for any kind of selfish or greedy purpose, it might eventually become unstoppable. Personal/Individual failures in big
+financial institutions is a good example. Some powerful entities emerge through enriching themselves at someone's expense,
+exploiting greed, weakness or fear while producing no value to anyone. Intentionally or not, any kind of game play with human lives at stake is questionable.
+Eventual bankruptcy of such institution is averted by governments printing money and causing inflation that makes the poor pay for it. 
 
 The original reason behind decentralization is fair incentivization, transparency, morality, humanity and sustainability.
-It is all part of the design in order to prevent corrupted and immoral entities to play the system or others and to limit cancel
-culture as those warning about evil should not be ostracised by the powerful and greedy. This is very common effect of mass
+It is all part of the design in order to prevent corrupted and immoral individuals to play the system or others and to limit cancel
+culture as in order to maintain democracy, those warning about evil should not be ostracised by the powerful. This is very common effect of mass
 psychology often driven simply by absence of love, lust for making money, having influence over people but perhaps combination
-of everything. Powerful entities tend to be unstoppable because naive individuals incline to join it and become part of it by
-slowly selling their souls. When small businesses and individuals cannot thrive as corporations eliminate competition, we
-go back to times of East India Company which had ruled the world for 2 centuries by violence and slavery, starting massive
-industrialization by pumping people with tea, coffee, tobacco and alcohol.
+of everything. Powerful individuals tend to be unstoppable because similarly minded individuals incline to join them until small businesses
+and individuals cannot thrive as corporations eliminate competition, we go back to times of East India Company which had ruled the world
+for 2 centuries by violence and slavery, starting massive industrialization by pumping people with tea, coffee, tobacco and alcohol.
+Just the ingredients would be a bit different this time. 
 
 > In a time of deceit telling the truth is a revolutionary act. - George Orwell
 
@@ -40,3 +39,8 @@ be raised and accessed transparently for everyone. Utopian vision that will be p
 repetitive labor and people will have more time to wonder about life, times of minimal corruption in games of thrones.
 Utopia is not really imaginary, it is just an era of society when being good and mindful wins over being evil and ignorant,
 times of great prosperity. No one ever knows where the balance really is :)
+
+---
+
+P.S. I do not see in black and white, I enjoy balance and I believe in slow transition towards utopian visions. 
+This article is not aligned with my personal philosophy, it is my interpretation of the decentralization movement.
