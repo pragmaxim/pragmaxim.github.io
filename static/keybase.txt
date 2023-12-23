@@ -1,0 +1,57 @@
+==================================================================
+https://keybase.io/l15k4
+--------------------------------------------------------------------
+
+I hereby claim:
+
+  * I am an admin of https://pragmaxim.com
+  * I am l15k4 (https://keybase.io/l15k4) on keybase.
+  * I have a public key ASAulD3vKbactpTokvaP-BKR_RTCl0olJ_FLcoQO_00pGwo
+
+To do so, I am signing this object:
+
+{
+  "body": {
+    "key": {
+      "eldest_kid": "01209979515ccee71f53cf31bee3d299c2f30f3c8b5cbc6ef5af0b86e705dc74949c0a",
+      "host": "keybase.io",
+      "kid": "01202e943def29b69cb694e892f68ff81291fd14c2974a2527f14b72840eff4d291b0a",
+      "uid": "75ff3e043b241993b6298b26c4002c19",
+      "username": "l15k4"
+    },
+    "merkle_root": {
+      "ctime": 1703344091,
+      "hash": "af3959d30222732b5fe326c20b8b452b6b822ed04e0661de0d1b088bde8f531c6baf3a6022f9ebb8458a985540b73164b0bd459b0bf35636296356a484bdde1d",
+      "hash_meta": "d5ae1f1c2f37c75fb3946cb000f11fe40515b65ed538c4d8d4b5adeed16bc77b",
+      "seqno": 25268417
+    },
+    "service": {
+      "entropy": "N1Eqg8b0nnv9DXT43v8ZSNuU",
+      "hostname": "pragmaxim.com",
+      "protocol": "https:"
+    },
+    "type": "web_service_binding",
+    "version": 2
+  },
+  "client": {
+    "name": "keybase.io go client",
+    "version": "6.2.3"
+  },
+  "ctime": 1703344114,
+  "expire_in": 504576000,
+  "prev": "52e2d159ebf59301d64ee8359c9aa35cbce9ecc55d5994526fa63a0ced8ed4fb",
+  "seqno": 26,
+  "tag": "signature"
+}
+
+which yields the signature:
+
+hKRib2R5hqhkZXRhY2hlZMOpaGFzaF90eXBlCqNrZXnEIwEgLpQ97ym2nLaU6JL2j/gSkf0UwpdKJSfxS3KEDv9NKRsKp3BheWxvYWTESpcCGsQgUuLRWev1kwHWTug1nJqjXLzp7MVdWZRSb6Y6DO2O1PvEIBiXwsxmHBRefMGzkxYcQqan0DtS2jOXZMq3TZhFpsnuAgHCo3NpZ8RAcSkkY3ACqN3lgrQBLFn/saWJ6ouZW5jE6Ec2Rz0s2QoqX96BdAGYf8QmQpsDMBK50pkZn6oPdn+gUvUU1D6eCqhzaWdfdHlwZSCkaGFzaIKkdHlwZQildmFsdWXEIKtKgJU38NKcTPhZWGbepaFeTVZ5LPz8raUkxKy2b0/9o3RhZ80CAqd2ZXJzaW9uAQ==
+
+And finally, I am proving ownership of this host by posting or
+appending to this document.
+
+View my publicly-auditable identity here: https://keybase.io/l15k4
+
+==================================================================
+
