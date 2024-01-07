@@ -16,9 +16,9 @@ Eventual bankruptcy of such institution is averted by governments printing money
 
 The original reason behind decentralization is fair incentivization, transparency, morality, humanity and sustainability.
 It is all part of the design in order to prevent corrupted and immoral individuals to play the system or others and to limit cancel
-culture as in order to maintain democracy, those warning about evil should not be ostracised by the powerful. This is very common effect of mass
+culture as in order to maintain democracy, those warning about evil should not be ostracised by the hateful. This is very common effect of mass
 psychology often driven simply by absence of love, lust for making money, having influence over people but perhaps combination
-of everything. Powerful individuals tend to be unstoppable because similarly minded individuals incline to join them until small businesses
+of everything. Greed tend to be unstoppable because similarly minded individuals incline to join forces until small businesses
 and individuals cannot thrive as corporations eliminate competition, we go back to times of East India Company which had ruled the world
 for 2 centuries by violence and slavery, starting massive industrialization by pumping people with tea, coffee, tobacco and alcohol.
 Just the ingredients would be a bit different this time. 
