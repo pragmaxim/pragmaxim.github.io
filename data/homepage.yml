@@ -29,7 +29,7 @@ showcase:
 
   socialLinks:
     - icon: "github"
-      URL: "https://github.com/pragmaxim"
+      URL: "https://github.com/pragmaxim-com"
 
     - icon: "linkedin"
       URL: "https://www.linkedin.com/in/jakubliska/"
@@ -42,9 +42,6 @@ showcase:
 
     - icon: "dribbble"
       URL: "https://stackoverflow.com/users/306488/lisak"
-
-    - icon: "github"
-      URL: "https://github.com/l15k4"
 
 
 # about
@@ -86,9 +83,9 @@ experience:
     alt: "px-logo"
     x: "images/experience/px-logo-tear-narrow-blur-shadow-640.png"
     _2x: "images/experience/px-logo-tear-narrow-blur-shadow-1280.png"
-  description: "Currently researching and implementing <a target='_blank' href='https://github.com/pragmaxim/ergo-uexplorer'>Blockchain explorer</a> and 
+  description: "Currently researching and implementing <a target='_blank' href='https://github.com/pragmaxim-com'>Blockchain explorer</a> and 
                 e-government level decentralized Health Care system using Daml and Hyperledger 
-                <a target='_blank' href='https://github.com/pragmaxim/daml-healthcare'>Daml Healthcare</a>."
+                <a target='_blank' href='https://github.com/pragmaxim-com/daml-healthcare'>Daml Healthcare</a>."
   button:
     icon: "icon-linkedin-fill"
     btnText: "Linkedin"
@@ -171,7 +168,7 @@ client_and_work:
       button:
         icon: "icon-arrow-right"
         btnText: "Case Study"
-        URL: "https://github.com/pragmaxim/daml-healthcare"
+        URL: "https://github.com/pragmaxim-com/daml-healthcare"
       image:
         x: "images/works/daml7-shadow.png"
       is_even: true
@@ -180,7 +177,7 @@ client_and_work:
       button:
         icon: "icon-arrow-right"
         btnText: "Case Study"
-        URL: "https://github.com/pragmaxim/ergo-uexplorer"
+        URL: "https://github.com/pragmaxim-com/ergo-uexplorer"
       image:
         x: "images/works/blockchain-shadow.png"
       is_even: true

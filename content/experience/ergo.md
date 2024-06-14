@@ -14,7 +14,7 @@ url: "www.ergoplatform.org/"
 
 Responsible for blockchain Consensus and Settlement layer (peer-to-peer networking, off-chain/on-chain synchronization, mempool, handling miners - block candidate generation and validation) while playing with Computational layer built on top of Sigma protocols and ErgoScript.
 
-[Ergo μExplorer](https://github.com/pragmaxim/ergo-uexplorer) - Supplementary ergo chain explorer/analyzer with Cassandra backend, rapid indexing speed, UTXO state, hot address statistics, JanusGraph, plugin framework, GraphQL api, etc.
+[Ergo μExplorer](https://github.com/pragmaxim-com/ergo-uexplorer) - Supplementary ergo chain explorer/analyzer with Cassandra backend, rapid indexing speed, UTXO state, hot address statistics, JanusGraph, plugin framework, GraphQL api, etc.
 
 [Ergo](https://github.com/ergoplatform/ergo/) - Ergo blockchain node
 
