@@ -9,8 +9,7 @@ showcase:
   quote: "A pragmatist is concerned with results, not reality."
   author: "J. Robert Oppenheimer"
   intro: "Provides software development and consultation services with specialization on distributed data processing and blockchains using mainly 
-         <a target='_blank' href='https://www.scala-lang.org/'>Scala</a> ecosystem, <a target='_blank' href='https://zio.dev/'>ZIO</a> and 
-         <a target='_blank' href='https://akka.io/'>Akka</a> based implementations of CQRS for mission critical systems."
+         <a target='_blank' href='https://www.rust-lang.org/'>Rust</a> and <a target='_blank' href='https://www.scala-lang.org/'>Scala</a> ecosystems."
   ending: "Pragmaxim is concerned with both results and reality. We love participating on projects with positive environmental, 
           social and economic impact towards better sustainability, synergy and harmony, including healthcare, welfare, fintech or 
           anything eco-friendly that reduces toxic environmental effects."
