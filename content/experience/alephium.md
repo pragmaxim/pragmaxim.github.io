@@ -15,5 +15,3 @@ url: "www.alephium.org/"
 The main features I designed and implemented :
   - bulk transaction submission for convenience of exchanges and miners
   - ethereum level grade websocket layer
-
-*Scala · Akka*
