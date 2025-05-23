@@ -8,11 +8,11 @@ showcase:
   enable: true
   quote: "A pragmatist is concerned with results, not reality."
   author: "J. Robert Oppenheimer"
-  intro: "Provides software development and consultation services with specialization on distributed data processing and blockchains using mainly 
+  intro: "Involved in development of blockchains, decentralized apps, distributed data processing and LLM based agentic pipelines within mainly 
          <a target='_blank' href='https://www.rust-lang.org/'>Rust</a> and <a target='_blank' href='https://www.scala-lang.org/'>Scala</a> ecosystems."
   ending: "Pragmaxim is concerned with both results and reality. We love participating on projects with positive environmental, 
           social and economic impact towards better sustainability, synergy and harmony, including healthcare, welfare, fintech or 
-          anything eco-friendly that reduces toxic environmental effects."
+          anything eco-friendly."
   image:
     alt: "px-logo"
     x: "images/showcase/px-logo-flapless-narrow-blur-shadow-640.png"
