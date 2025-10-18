@@ -82,9 +82,7 @@ experience:
     alt: "px-logo"
     x: "images/experience/px-logo-tear-narrow-blur-shadow-640.png"
     _2x: "images/experience/px-logo-tear-narrow-blur-shadow-1280.png"
-  description: "Currently researching and implementing <a target='_blank' href='https://github.com/pragmaxim-com'>Blockchain explorer</a> and 
-                e-government level decentralized Health Care system using Daml and Hyperledger 
-                <a target='_blank' href='https://github.com/pragmaxim-com/daml-healthcare'>Daml Healthcare</a>."
+  description: "Currently researching and implementing <a target='_blank' href='https://github.com/pragmaxim-com'>Blockchain explorer</a>"
   button:
     icon: "icon-linkedin-fill"
     btnText: "Linkedin"
