@@ -53,4 +53,4 @@ social bubble we live in, not by us.
 
 ---
 
-P.S. For the eyes of people in their twenties to save tons of dirty laundry washing :) I sincerely hope this will encourage you to dream and work hard for it. 
+P.S. For the eyes of teenagers to save tons of dirty laundry washing :) I sincerely hope this will encourage you to dream and work hard for it. 
