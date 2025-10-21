@@ -26,4 +26,4 @@ after coming from wonderful world of functional type system of Scala where the d
 it either becomes an ugly hack or you need to put in extra work to design it differently, that is simply the price for high performance with low memory footprint.
 
 That is to say, I love both worlds and I would ideally combine them, using Scala for cold spots and Rust for hot spots of the application. 
-However that is not possible, unfortunately.
+Even though it is not possible in blockchain development, it is doable in microservice architecture.
