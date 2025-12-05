@@ -25,5 +25,18 @@ example passing a generic instance to a function without knowing its concrete ty
 after coming from wonderful world of functional type system of Scala where the design for your actual problem can be very elegant and readable. In Rust, 
 it either becomes an ugly hack or you need to put in extra work to design it differently, that is simply the price for high performance with low memory footprint.
 
+A nice example of a tragedy in Rust is simply the fact that even presence of an associated type (not generic type) like Settings :  
+```rust 
+pub trait Store {
+    type Settings; // associated type
+    type WriteTxn<'a>: WriteTransaction + 'a // generic associated type (GAT)
+    where
+        Self: 'a;
+}
+```
+
+prevents you from doing `Box<dyn UStore>` and you cannot build Service with any Store anymore. It must be known at compile time.
+The rule of thumb in rust is using associated types or GATs only when you really need to.
+
 That is to say, I love both worlds and I would ideally combine them, using Scala for cold spots and Rust for hot spots of the application. 
 Even though it is not possible in blockchain development, it is doable in microservice architecture.
