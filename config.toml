@@ -83,5 +83,10 @@ theme = "pragmaxim-theme"
     char8 = "i"
     char9 = "m"
 
-  [params.footer]
+[params.footer]
       copyright = "© Pragmaxim 2023"
+
+[markup]
+  [markup.highlight]
+    style = "github"
+    noClasses = true
