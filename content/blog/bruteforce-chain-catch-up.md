@@ -15,7 +15,7 @@ They would buy a solid board like [ASUS Pro WS WRX90E-SAGE SE](https://smicro.cz
 where you can attach up to ~ 34 NVMe gen 5 drives mostly through Asus Hyper M.2 x16 Gen 5 and passive bifurcation 
 (not RAID0, because it only helps with sequential writes).
 
-They would mount all drives under `/mnt` from `0 - x` like **/mnt/{0,1,2,3,4,...}/{eth,avax,btc,ada}/db_files**.
+They would mount all drives under `/mnt` from `0 - x` like `/mnt/{0,1,2,3,4,...}/{eth,avax,btc,ada}/db_files`.
 
 And they would write an indexer in Rust with sharding by address. Non-address data (block or tx hashes, etc.) go to `0` 
 partition/dir and address data go to `1 - x` partitions/dirs. This linearly increases both indexing throughput and 
@@ -25,3 +25,4 @@ the data from the mount point as it would get hidden.
 
 This is what's coming in the rewrite of [redbit](https://github.com/pragmaxim-com/redbit), where I currently indexed whole
 Ethereum including all tokens on my old PCI gen 3 server under 24 hours with 4 shards/ssds. Otherwise it would take 4 days.
+Querying times for the hottest addresses under 1ms because balances are pre-aggregated and transaction history paginated.
