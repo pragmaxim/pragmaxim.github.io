@@ -1,10 +1,11 @@
-{{ if .Site.Data.homepage.client_and_work.enable }}
+{{ $homepage := partial "homepage-data.html" . }}
+{{ if $homepage.client_and_work.enable }}
 <section id="portfolio" class="section section--border-bottom">
   <div class="container">
     <h3 class=" rad-animation-group rad-fade-down">
-      Done lately
+      {{ $homepage.client_and_work.title | default "Done lately" }}
     </h3>
-    {{ range $index, $element := .Site.Data.homepage.client_and_work.works }}
+    {{ range $index, $element := $homepage.client_and_work.works }}
     <div
       class="row row--padded rad-animation-group rad-fade-down {{ if .is_even }}flex-column-reverse flex-md-row{{ end }}"
     >
@@ -27,7 +28,7 @@
                 data-src="{{ $img.RelPermalink }}"
                 data-srcset="{{ $img.RelPermalink }}"
                 height="200"
-                alt="{{ .Site.Data.homepage.showcase.image.alt }}"
+                alt="{{ $homepage.showcase.image.alt }}"
               />
             </picture>
           </a>
@@ -46,7 +47,7 @@
                 data-src="{{ $img.RelPermalink }}"
                 data-srcset="{{ $img.RelPermalink }}"
                 height="200"
-                alt="{{ .Site.Data.homepage.showcase.image.alt }}"
+                alt="{{ $homepage.showcase.image.alt }}"
               />
             </picture>
           </a>
@@ -62,12 +63,12 @@
     </div>
     {{ end }}
     <h3 class=" rad-animation-group rad-fade-down">
-      For
+      {{ $homepage.client_and_work.clients_title | default "For" }}
     </h3>
     <div class="row row--padded rad-animation-group rad-fade-down">
       <div class="col-12">
         <div class="clients">
-          {{ range .Site.Data.homepage.client_and_work.clients }}
+          {{ range $homepage.client_and_work.clients }}
           {{ $img := resources.Get .logo.x }}
           <div class="clients__item">
             <a href="{{ .url | absURL }}">
@@ -80,7 +81,7 @@
                   data-src="{{ $img.RelPermalink }}"
                   data-srcset="{{ $img.RelPermalink }}"
                   height="50"
-                  alt="{{ .Site.Data.homepage.showcase.image.alt }}"
+                  alt="{{ $homepage.showcase.image.alt }}"
                 />
               </picture>
             </a>
@@ -90,13 +91,13 @@
       </div>
     </div>
     <h3 class=" rad-animation-group rad-fade-down">
-      With
+      {{ $homepage.client_and_work.skills_title | default "With" }}
     </h3>
     <div class="row row--padded rad-animation-group rad-fade-down">
       <div class="col-12 text-center">
         <div class="skills">
           <a href="https://skillicons.dev" rel="nofollow">
-            <img style="opacity: 0.5;" alt="My Skills" src="https://skillicons.dev/icons?i=scala,haskell,rust,py,ts,nodejs,react,css,git,github,linux,cassandra,postgres,kubernetes,gcp,aws,docker,ai,graphql,vscode,idea,ipfs&theme=light&perline=11">
+            <img style="opacity: 0.5;" alt="{{ $homepage.client_and_work.skills_alt | default "My Skills" }}" src="https://skillicons.dev/icons?i=scala,haskell,rust,py,ts,nodejs,react,css,git,github,linux,cassandra,postgres,kubernetes,gcp,aws,docker,ai,graphql,vscode,idea,ipfs&theme=light&perline=11">
           </a>
         </div>
       </div>

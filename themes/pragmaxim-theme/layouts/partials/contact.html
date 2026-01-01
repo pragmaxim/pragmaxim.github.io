@@ -1,29 +1,30 @@
-{{ if .Site.Data.homepage.contact.enable }}
+{{ $homepage := partial "homepage-data.html" . }}
+{{ if $homepage.contact.enable }}
 <section id="contact" class="section section--contact pt-0">
     <div class="container">
         <div class="contact">
-            <h3>{{ .Site.Data.homepage.contact.title }}</h3>
+            <h3>{{ $homepage.contact.title }}</h3>
             <div class="row pt-2">
                 <div class="col-12 col-md-7">
-                    <form action="{{ .Site.Data.homepage.contact.form.action }}" method="{{ .Site.Data.homepage.contact.form.method }}">
+                    <form action="{{ $homepage.contact.form.action }}" method="{{ $homepage.contact.form.method }}">
                         <div class="row">
                             <div class="col-12 col-sm-6">
-                                <input type="text" name="name" id="name" placeholder="{{ .Site.Data.homepage.contact.form.name }}" minlength="3" maxlength="30" required />
+                                <input type="text" name="name" id="name" placeholder="{{ $homepage.contact.form.name }}" minlength="3" maxlength="30" required />
                             </div>
                             <div class="col-12 col-sm-6">
-                                <input type="email" name="email" id="email" placeholder="{{ .Site.Data.homepage.contact.form.email }}" minlength="5" maxlength="40" required />
+                                <input type="email" name="email" id="email" placeholder="{{ $homepage.contact.form.email }}" minlength="5" maxlength="40" required />
                             </div>
                         </div>
                         <div class="row pt-4">
                             <div class="col-12">
-                                <textarea name="message" id="message" cols="30" rows="3" placeholder="{{ .Site.Data.homepage.contact.form.message }}" minlength="10" required ></textarea>
+                                <textarea name="message" id="message" cols="30" rows="3" placeholder="{{ $homepage.contact.form.message }}" minlength="10" required ></textarea>
                             </div>
                         </div>
                         <div class="row pt-4">
                             <div class="col-12 text-center">
                                 <button type="submit" class="btn btn-primary">
-                                    <i class="{{ .Site.Data.homepage.contact.button.icon }}"></i>
-                                    {{ .Site.Data.homepage.contact.button.btnText }}
+                                    <i class="{{ $homepage.contact.button.icon }}"></i>
+                                    {{ $homepage.contact.button.btnText }}
                                 </button>
                             </div>
                         </div>
@@ -31,16 +32,16 @@
                 </div>
                 <div class="col-12 col-md-5 contact__info text-center">
                     <div class="platform-links">
-                       {{ range .Site.Data.homepage.showcase.socialLinks }}
+                       {{ range $homepage.showcase.socialLinks }}
                        <a href="{{ .URL | absURL }}" target="_blank" rel="noopener noreferrer" aria-label="{{ .icon }}">
                           <i class="icon-{{ .icon }}-line"></i>
                        </a>
                        {{ end }}
                     </div>
-                    <h3>{{ .Site.Data.homepage.contact.address.title }}</h3>
-                    <span>{{ .Site.Data.homepage.contact.address.address | safeHTML }}</span>
-                    <h3>{{ .Site.Data.homepage.contact.office.title }}</h3>
-                    <span>{{ .Site.Data.homepage.contact.office.address }}</span>
+                    <h3>{{ $homepage.contact.address.title }}</h3>
+                    <span>{{ $homepage.contact.address.address | safeHTML }}</span>
+                    <h3>{{ $homepage.contact.office.title }}</h3>
+                    <span>{{ $homepage.contact.office.address }}</span>
                 </div>
             </div>
         </div>

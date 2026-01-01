@@ -1,9 +1,10 @@
-{{ if .Site.Data.homepage.values.enable }}
+{{ $homepage := partial "homepage-data.html" . }}
+{{ if $homepage.values.enable }}
 <section class="section rad-animation-group section--border-bottom">
     <div class="container">
-        <h3 class="rad-fade-down">{{ .Site.Data.homepage.values.title }}</h3>
+        <h3 class="rad-fade-down">{{ $homepage.values.title }}</h3>
         <div class="row row--padded mb-0 rad-fade-down">
-            {{ range $index, $element := .Site.Data.homepage.values.items }}
+            {{ range $index, $element := $homepage.values.items }}
             <div class="col-12 col-md-6 mt-4 mt-md-0 my-md-auto">
                 <p class="lead values__description">
                     {{ .content }}
@@ -21,7 +22,7 @@
                                 data-src="{{ $img.RelPermalink }}"
                                 data-srcset="{{ $img.RelPermalink }}"
                                 height="{{ .height }}"
-                                alt="{{ .Site.Data.homepage.showcase.image.alt }}"
+                                alt="{{ $homepage.showcase.image.alt }}"
                         />
                     </picture>
                 </div>

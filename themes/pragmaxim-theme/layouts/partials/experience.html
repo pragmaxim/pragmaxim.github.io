@@ -1,9 +1,15 @@
-{{ if .Site.Data.homepage.experience.enable }}
+{{ $homepage := partial "homepage-data.html" . }}
+{{ if $homepage.experience.enable }}
 <section id="experience" class="section section--border-bottom rad-animation-group">
     <div class="container">
         <div class="row flex-column-reverse flex-md-row rad-fade-down">
             <div class="col-12 cold-md-6 col-sm-6 mt-5 mt-sm-0">
-                {{ $xp := (where .Site.RegularPages.ByDate.Reverse "Type" "experience") }}
+                {{ $xpSite := .Site }}
+                {{ $xp := (where $xpSite.RegularPages.ByDate.Reverse "Type" "experience") }}
+                {{ if and .Site.IsMultiLingual (eq (len $xp) 0) }}
+                    {{ $xpSite = index (sort .Sites "Language.Weight") 0 }}
+                    {{ $xp = (where $xpSite.RegularPages.ByDate.Reverse "Type" "experience") }}
+                {{ end }}
                 {{ $xpCount := len $xp }}
                 {{ range first 10 $xp }}
                 <div class="experience">
@@ -25,7 +31,7 @@
                                             data-src="{{ $img.RelPermalink }}"
                                             data-srcset="{{ $img.RelPermalink }}"
                                             height="40"
-                                            alt="{{ .Site.Data.homepage.showcase.image.alt }}"
+                                            alt="{{ $homepage.showcase.image.alt }}"
                                     />
                                 </picture>
                                 {{ .Params.company }}
@@ -38,8 +44,8 @@
             <div class="col-12 col-md-6">
 	            {{ partial "experience-description.html" . }}
                 <div class="text-center profile-image">
-                    {{ $img := resources.Get .Site.Data.homepage.experience.image.x }}
-                    {{ $img2x := resources.Get .Site.Data.homepage.experience.image._2x }}
+                    {{ $img := resources.Get $homepage.experience.image.x }}
+                    {{ $img2x := resources.Get $homepage.experience.image._2x }}
 
                     <picture>
                         <source srcset="{{ $img.RelPermalink }} 1x, {{ $img2x.RelPermalink }} 2x" type="image/webp">
@@ -49,7 +55,7 @@
                             srcset="{{ $img.RelPermalink }} 1x, {{ $img2x.RelPermalink }} 2x"
                             data-src="{{ $img.RelPermalink }}"
                             data-srcset="{{ $img.RelPermalink }} 1x, {{ $img2x.RelPermalink }} 2x"
-                            alt="{{ .Site.Data.homepage.showcase.image.alt }}"
+                            alt="{{ $homepage.showcase.image.alt }}"
                         />
                     </picture>
                 </div>

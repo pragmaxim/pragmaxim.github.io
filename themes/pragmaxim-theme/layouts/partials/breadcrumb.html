@@ -1,7 +1,8 @@
 <section id="breadcrumb-bar" class="breadcrumb-bar">
     <div class="container">
         <ul class="breadcrumbs">
-            <li class="breadcrum-item"><span><a href="{{ relURL "" }}">Home</a></span></li>
+            {{ $homepage := partial "homepage-data.html" . }}
+            <li class="breadcrum-item"><span><a href="{{ relLangURL "" }}">{{ $homepage.nav.home | default "Home" }}</a></span></li>
             {{- $.Scratch.Set "url" "" -}}
             {{- range (split .RelPermalink "/") -}}
                 {{- if (gt (len .) 0) -}}    

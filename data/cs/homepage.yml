@@ -1,0 +1,208 @@
+head:
+  title: Pragmaxim
+  description: Softwarová vývojová společnost
+  keywords: "Jakub Liska, vývoj softwaru, fullstack vývojář, scala, blockchain, environmentální, sociální, ekonomický, blahobyt, fintech, distribuované zpracování dat, decentralizované aplikace, decentralizace, udržitelnost, synergie, harmonie s přírodou, zdravotnictví, e-government, hyperledger, daml, cardano, ergo, solana, polkadot, substrate, cassandra, explorer"
+
+nav:
+  home: "Domů"
+
+# showcase
+showcase:
+  enable: true
+  quote: "Pragmatik se zajímá o výsledky, ne o realitu."
+  author: "J. Robert Oppenheimer"
+  intro: "Podílím se na vývoji blockchainů, decentralizovaných aplikací, distribuovaného zpracování dat a agentických pipeline nad LLM, převážně v ekosystémech 
+         <a target='_blank' href='https://www.rust-lang.org/'>Rust</a> a <a target='_blank' href='https://www.scala-lang.org/'>Scala</a>."
+  ending: "Pragmaxim se zajímá o výsledky i realitu. Rádi se podílíme na projektech s pozitivním environmentálním, 
+          sociálním a ekonomickým dopadem směrem k větší udržitelnosti, synergii a harmonii, včetně zdravotnictví, sociálního zabezpečení, fintechu nebo 
+          čehokoli eco-friendly."
+  image:
+    alt: "px-logo"
+    x: "images/showcase/px-logo-flapless-narrow-blur-shadow-640.png"
+    _2x: "images/showcase/px-logo-flapless-narrow-blur-shadow-1280.png"
+  imageMobile:
+    alt: "Profilová fotka Jakuba Lišky"
+    x: "images/px-logo-blur-640.png"
+
+  button:
+    icon: "icon-mail-fill"
+    btnText: "Kontakt"
+    URL: "#contact"
+
+  socialLinks:
+    - icon: "github"
+      URL: "https://github.com/pragmaxim-com"
+
+    - icon: "linkedin"
+      URL: "https://www.linkedin.com/in/jakubliska/"
+
+    - icon: "twitter"
+      URL: "https://twitter.com/pragmaxim"
+
+    - icon: "youtube"
+      URL: "https://www.youtube.com/@pragmaxim5101"
+
+    - icon: "dribbble"
+      URL: "https://stackoverflow.com/users/306488/lisak"
+
+
+# about
+about:
+  enable: true
+  title: "Jakub Liška"
+  quote: "Nachystejte mi uzenáče. Na snídani jsem zpět."
+  author: "Arnold \"Ace\" Rimmer"
+  intro: "V softwarovém inženýrství pracuji od roku 2009 na různých projektech s lidmi, od kterých jsem se mohl učit. 
+          Aplikovat technologie, které mám rád, smysluplně a eticky mi přináší radost, smysl a dělám to s potěšením."
+  ending: "Lze mě považovat za fullstack vývojáře s potenciálem vést, se kterým věci dotáhnete pomocí správných nástrojů a řešení 
+          až ke kořenům problémů prostřednictvím softwarového vývoje řízeného \"High Value Delivery\" principem."
+  button:
+    icon: "icon-smile-fill"
+    btnText: "O mně"
+    URL: "https://www.linkedin.com/in/jakubliska/"
+  image:
+    x: "images/about/jakub.jpg"
+    _2x: "images/about/jakub@2x.jpg"
+
+# education
+education:
+  enable: true
+  title: "Vzdělání"
+  items:
+    - university: "Czech University of Life Sciences"
+      year: "2005-2010"
+      degree: "Ekonomie, magisterský titul"
+
+    - university: "Waterford Institute of Technology"
+      year: "2009-2010"
+      degree: "Vývoj softwaru a aplikované počítačové vědy, magisterské studium"
+
+# experience
+experience:
+  enable: true
+  title: "Zkušenosti"
+  image:
+    alt: "px-logo"
+    x: "images/experience/px-logo-tear-narrow-blur-shadow-640.png"
+    _2x: "images/experience/px-logo-tear-narrow-blur-shadow-1280.png"
+  description: "Aktuálně zkoumám a implementuji <a target='_blank' href='https://github.com/pragmaxim-com'>blockchainový explorer</a>"
+  button:
+    icon: "icon-linkedin-fill"
+    btnText: "LinkedIn"
+    URL: "https://www.linkedin.com/in/jakubliska/"
+  button2:
+    icon: "icon-profile-fill"
+    btnText: "Stáhnout životopis"
+    URL: "/files/cv_jakub_liska.pdf"
+  button3:
+    icon: "icon-arrow-right"
+    btnText: "Všechny zkušenosti"
+    URL: "/experience"
+
+# Values
+blog:
+  enable: true
+  title: "Kapitánův deník"
+  more_label: "A dalších %d"
+
+# Values
+values:
+  enable: true
+  title: "Hodnoty"
+  items:
+    - content: "Za svědomitostí stojí hluboké uvědomění kauzality."
+      image: "images/values/titan-logo2.png"
+      height: 250
+
+    - content: "Poklekni s láskou a úsměvem dřív, než to udělá čas."
+      image: "images/values/knight.png"
+      height: 190
+
+    - content: "Příběh psaný ctností a zásluhami se žije beze strachu."
+      image: "images/values/guatemala-flag-heart-shadow.png"
+      height: 180
+
+cooperation:
+  enable: true
+  title: "Spolupráce"
+  items:
+    - content: "Jakýkoli softwarový inženýr s podobnými hodnotami a zkušeností s technologiemi, které používáme, je vítán."
+      image: "images/cooperation/brother-handshake.png"
+      height: 200
+
+    - content: "Jakýkoli byznys, který potřebuje softwarové inženýry nebo skillset odpovídající našemu profilu, se může ozvat."
+      image: "images/cooperation/b2b-handshake.png"
+      height: 200
+
+# Client & Work
+client_and_work:
+  enable: true
+  title: "Nedávno dokončeno"
+  clients_title: "Pro"
+  skills_title: "Pomocí"
+  skills_alt: "Moje dovednosti"
+
+  clients:
+    - logo:
+        x: "images/clients/ergo.jpeg"
+      alt: "Ergo"
+      url: "https://ergoplatform.org/"
+
+    - logo:
+        x: "images/clients/gwi.png"
+      alt: "GWI"
+      url: "https://www.gwi.com/"
+
+    - logo:
+        x: "images/clients/fg.png"
+      alt: "FG"
+      url: "https://www.fg.cz/"
+
+    - logo:
+        x: "images/clients/lang-bay.png"
+      alt: "LangBay"
+      url: "https://www.langbay.io/"
+
+    - logo:
+        x: "images/clients/komix.jpeg"
+      alt: "Komix"
+      url: "https://komix.cz/"
+
+  works:
+    - description: "Decentralizovaná aplikace pro zdravotnictví na zpracování zdravotních nároků, od doporučení praktického lékaře ke specialistovi až po úhradu zákroku pojišťovnou."
+      button:
+        icon: "icon-arrow-right"
+        btnText: "Případová studie"
+        URL: "https://github.com/pragmaxim-com/daml-healthcare"
+      image:
+        x: "images/works/daml7-shadow.png"
+      is_even: true
+
+    - description: "Doplňkový, lehký (μ = micro) explorer a analyzátor blockchainu."
+      button:
+        icon: "icon-arrow-right"
+        btnText: "Případová studie"
+        URL: "https://github.com/pragmaxim-com/redbit"
+      image:
+        x: "images/works/blockchain-shadow.png"
+      is_even: true
+
+# contact
+contact:
+  enable: true
+  title: "Kontakt"
+  form:
+    action: "https://formspree.io/f/moqzrrve"
+    method: "POST"
+    name: "Celé jméno"
+    email: "E-mailová adresa"
+    message: "Napište svou zprávu"
+  office:
+    title: "Kancelář"
+    address: "Praha, Troja"
+  address:
+    title: "Sídlo"
+    address: "Sepapaja tn 6, Tallinn, 15551, Estonia"
+  button:
+    icon: "icon-mail-fill"
+    btnText: "Odeslat zprávu"

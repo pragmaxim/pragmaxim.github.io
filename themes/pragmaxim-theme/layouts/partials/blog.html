@@ -1,8 +1,9 @@
-{{ if .Site.Data.homepage.blog.enable }}
+{{ $homepage := partial "homepage-data.html" . }}
+{{ if $homepage.blog.enable }}
 <section id="blog" class="section rad-animation-group section--border-bottom">
     <div class="container">
         <h3 class=" rad-animation-group rad-fade-down">
-            {{ .Site.Data.homepage.blog.title }}
+            {{ $homepage.blog.title }}
         </h3>
         <div class="row row--padded mb-0 rad-fade-down">
             {{ $xp := (where .Site.RegularPages.ByDate.Reverse "Type" "blog") }}
@@ -36,7 +37,8 @@
             {{ if gt $xpCount 3 }}
             <div class="col-12 col-md-6 mt-4 mt-md-0 my-md-auto">
                 {{ $xpExtra := sub $xpCount 3 }}
-                <a href="{{ absURL "blog" }}"> And {{ $xpExtra }} more</a>
+                {{ $moreLabel := $homepage.blog.more_label | default "And %d more" }}
+                <a href="{{ relLangURL "blog" }}">{{ printf $moreLabel $xpExtra }}</a>
             </div>
             {{ end }}
         </div>

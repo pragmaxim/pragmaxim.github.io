@@ -1,11 +1,12 @@
-{{ if .Site.Data.homepage.education.enable }}
+{{ $homepage := partial "homepage-data.html" . }}
+{{ if $homepage.education.enable }}
 <section class="section section--border-bottom rad-animation-group">
     <div class="container">
         <div class="row rad-fade-down">
             <div class="col-12">
-                <h3>{{ .Site.Data.homepage.education.title }}</h3>
+                <h3>{{ $homepage.education.title }}</h3>
                 <div class="row pt-2 pt-md-4">
-                    {{ range .Site.Data.homepage.education.items }}
+                    {{ range $homepage.education.items }}
                     <div class="col-12 col-sm-6 mb-4 mb-sm-0">
                         <div class="education">
                             <div class="education__date">{{ .year }}</div>

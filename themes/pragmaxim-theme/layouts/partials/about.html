@@ -1,10 +1,11 @@
-{{ if .Site.Data.homepage.about.enable }}
+{{ $homepage := partial "homepage-data.html" . }}
+{{ if $homepage.about.enable }}
 <section class="section rad-animation-group pb-0" id="about">
   <div class="container rad-fade-down">
     <div class="row d-flex flex-column-reverse flex-md-row">
       <div class="col-12 col-md-6">
-        {{ $img := resources.Get .Site.Data.homepage.about.image.x }}
-        {{ $img2x := resources.Get .Site.Data.homepage.about.image._2x }}
+        {{ $img := resources.Get $homepage.about.image.x }}
+        {{ $img2x := resources.Get $homepage.about.image._2x }}
         <div class="profile-image">
           <picture>
             <source srcset="{{ $img.RelPermalink }} 1x, {{ $img2x.RelPermalink }} 2x" type="image/webp">
@@ -20,19 +21,19 @@
         </div>
       </div>
       <div class="col-12 col-md-6 pr-3 pl-3 my-auto text-left">
-        <h3>{{ .Site.Data.homepage.about.title }}</h3>
+        <h3>{{ $homepage.about.title }}</h3>
         <p class="lead">
-        {{ .Site.Data.homepage.about.intro | safeHTML }}
+        {{ $homepage.about.intro | safeHTML }}
         </p>
         <p class="lead">
-          {{ .Site.Data.homepage.about.ending | safeHTML }}
+          {{ $homepage.about.ending | safeHTML }}
         </p>
         <figure class="figure bg-white p-3 rounded">
           <blockquote class="blockquote">
-            {{ .Site.Data.homepage.about.quote | safeHTML }}
+            {{ $homepage.about.quote | safeHTML }}
           </blockquote>
           <figcaption class="blockquote-footer">
-            {{ .Site.Data.homepage.about.author }}
+            {{ $homepage.about.author }}
           </figcaption>
         </figure>
       </div>

@@ -1,6 +1,67 @@
 baseURL = "https://www.pragmaxim.com/"
+title = "Pragmaxim"
 languageCode = "en-us"
+defaultContentLanguage = "en"
+defaultContentLanguageInSubdir = false
+enableRobotsTXT = true
 theme = "pragmaxim-theme"
+
+# Languages
+[languages]
+  [languages.en]
+    languageName = "English"
+    languageCode = "en-us"
+    weight = 1
+
+  [languages.cs]
+    languageName = "Čeština"
+    languageCode = "cs-cz"
+    weight = 2
+    [[languages.cs.menu.header]]
+      name = "Zkušenosti"
+      URL = "#experience"
+      weight = 1
+
+    [[languages.cs.menu.header]]
+      name = "Blog"
+      URL = "#blog"
+      weight = 2
+
+    [[languages.cs.menu.header]]
+      name = "Portfolio"
+      URL = "#portfolio"
+      weight = 3
+
+    [[languages.cs.menu.header]]
+      name = "Kontakt"
+      URL = "#contact"
+      weight = 4
+
+    [[languages.cs.menu.footer]]
+      name = "Zkušenosti"
+      URL = "#experience"
+      weight = 1
+
+    [[languages.cs.menu.footer]]
+      name = "Blog"
+      URL = "#blog"
+      weight = 2
+
+    [[languages.cs.menu.footer]]
+      name = "Portfolio"
+      URL = "#portfolio"
+      weight = 3
+
+    [[languages.cs.menu.footer]]
+      name = "Kontakt"
+      URL = "#contact"
+      weight = 4
+
+# SEO defaults
+[sitemap]
+  changefreq = "weekly"
+  filename = "sitemap.xml"
+  priority = 0.5
 
 # Plugins
 [params.plugins]
@@ -71,6 +132,9 @@ theme = "pragmaxim-theme"
 [params]
 
   sections = ["showcase", "about", "education", "experience", "values", "blog", "client-and-work", "cooperation", "contact"]
+
+  [params.seo]
+    twitter = "@pragmaxim"
 
   [params.logo]
     char1 = "P"

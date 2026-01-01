@@ -3,6 +3,9 @@ head:
   description: Software development company
   keywords: "Jakub Liska, software development, fullstack developer, scala, blockchain, environmental, social, economic, welfare, fintech, distributed data processing, decentralized apps, decentralization, sustainability, synergy, harmony with nature, healthcare, e-government, hyperledger, daml, cardano, ergo, solana, polkadot, substrate, cassandra, explorer"
 
+nav:
+  home: "Home"
+
 # showcase
 showcase:
   enable: true
@@ -100,6 +103,7 @@ experience:
 blog:
   enable: true
   title: "Captain's log"
+  more_label: "And %d more"
 
 # Values
 values:
@@ -133,6 +137,10 @@ cooperation:
 # Client & Work
 client_and_work:
   enable: true
+  title: "Done lately"
+  clients_title: "For"
+  skills_title: "With"
+  skills_alt: "My Skills"
 
   clients:
     - logo:
@@ -170,11 +178,11 @@ client_and_work:
         x: "images/works/daml7-shadow.png"
       is_even: true
 
-    - description: "Supplementary, lightweight (μ = micro) Ergo chain explorer & analyzer with Cassandra backend, designed and implemented after researching current blockchains weak spots."
+    - description: "Lightweight (μ = micro) Blockchain explorer."
       button:
         icon: "icon-arrow-right"
         btnText: "Case Study"
-        URL: "https://github.com/pragmaxim-com/ergo-uexplorer"
+        URL: "https://github.com/pragmaxim-com/redbit"
       image:
         x: "images/works/blockchain-shadow.png"
       is_even: true

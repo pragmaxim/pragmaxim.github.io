@@ -1,4 +1,5 @@
-{{ if .Site.Data.homepage.showcase.enable }}
+{{ $homepage := partial "homepage-data.html" . }}
+{{ if $homepage.showcase.enable }}
 <section class="rad-showcase rad-showcase--index rad-animation-group rad-fade-down">
   <div class="container">
     <div class="row">
@@ -7,21 +8,21 @@
           <br />
         </h1>
         <p class="lead">
-          {{ .Site.Data.homepage.showcase.intro | safeHTML }}
+          {{ $homepage.showcase.intro | safeHTML }}
         </p>
         <figure class="figure bg-white p-3 rounded">
           <blockquote class="blockquote">
-            {{ .Site.Data.homepage.showcase.quote }}
+            {{ $homepage.showcase.quote }}
           </blockquote>
           <figcaption class="blockquote-footer">
-            {{ .Site.Data.homepage.showcase.author }}
+            {{ $homepage.showcase.author }}
           </figcaption>
         </figure>
         <p class="lead">
-          {{ .Site.Data.homepage.showcase.ending | safeHTML }}
+          {{ $homepage.showcase.ending | safeHTML }}
         </p>
         <div class="platform-links">
-          {{ range .Site.Data.homepage.showcase.socialLinks }}
+          {{ range $homepage.showcase.socialLinks }}
           <a href="{{ .URL | absURL }}" target="_blank" rel="noopener noreferrer" aria-label="{{ .icon }}"
           ><i class="icon-{{ .icon }}-line"></i
           ></a>
@@ -30,8 +31,8 @@
       </div>
       <div class="col-12 col-sm-12 col-md-6 col-lg-6 col-xl-6">
 
-        {{ $img := resources.Get .Site.Data.homepage.showcase.image.x }}
-        {{ $img2x := resources.Get .Site.Data.homepage.showcase.image._2x }}
+        {{ $img := resources.Get $homepage.showcase.image.x }}
+        {{ $img2x := resources.Get $homepage.showcase.image._2x }}
 
         <div class="text-center profile-image">
           <picture>
@@ -42,7 +43,7 @@
               srcset="{{ $img.RelPermalink }} 1x, {{ $img2x.RelPermalink }} 2x"
               data-src="{{ $img.RelPermalink }}"
               data-srcset="{{ $img.RelPermalink }} 1x, {{ $img2x.RelPermalink }} 2x"
-              alt="{{ .Site.Data.homepage.showcase.image.alt }}"
+              alt="{{ $homepage.showcase.image.alt }}"
             />
           </picture>
         </div>

@@ -1,0 +1,10 @@
+{{- $homepage := .Site.Data.homepage -}}
+{{- if .Site.IsMultiLingual -}}
+  {{- $lang := .Site.Language.Lang -}}
+  {{- with index .Site.Data $lang -}}
+    {{- if .homepage -}}
+      {{- $homepage = .homepage -}}
+    {{- end -}}
+  {{- end -}}
+{{- end -}}
+{{- return $homepage -}}

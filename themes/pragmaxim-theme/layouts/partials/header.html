@@ -1,8 +1,9 @@
+{{ $homepage := partial "homepage-data.html" . }}
 <header class="header fixed-top rad-animation-group" id="header">
   <div class="container rad-fade-in">
     <nav class="navbar navbar-expand-lg navbar-light p-0">
       <div class="container-fluid">
-        <a class="navbar-brand mx-auto" href="{{ .Site.BaseURL | absURL }}">
+        <a class="navbar-brand mx-auto" href="{{ .Site.Home.RelPermalink }}">
           <span>{{ .Site.Params.logo.char1 }}</span>
           <span>{{ .Site.Params.logo.char2 }}</span>
           <span>{{ .Site.Params.logo.char3 }}</span>
@@ -27,11 +28,11 @@
         <div class="collapse navbar-collapse" id="navbarSupportedContent">
           <ul class="navbar-nav ml-lg-auto">
             <li class="nav-item">
-              <a class="nav-link active" href="{{ .Site.BaseURL | absURL }}">HOME</a>
+              <a class="nav-link active" href="{{ .Site.Home.RelPermalink }}">{{ $homepage.nav.home | default "Home" | upper }}</a>
             </li>
             {{ range .Site.Menus.header }}
             <li class="nav-item">
-              <a data-scroll class="nav-link" href="{{ .URL | relURL }}"
+              <a data-scroll class="nav-link" href="{{ .URL | relLangURL }}"
                 >{{ .Name | upper }}</a
               >
             </li>

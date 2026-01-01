@@ -3,10 +3,112 @@
 <meta http-equiv="X-UA-Compatible" content="ie=edge"/>
 <meta name="theme-color" content="#00688f" >
 
+{{- $homepage := partial "homepage-data.html" . -}}
+{{- $siteTitle := .Site.Title | default $homepage.head.title -}}
+{{- $pageTitle := $siteTitle -}}
+{{- if and (not .IsHome) .Title -}}
+  {{- $pageTitle = printf "%s | %s" .Title $siteTitle -}}
+{{- end -}}
+{{- $description := "" -}}
+{{- if .Description -}}
+  {{- $description = .Description -}}
+{{- else if .Params.description -}}
+  {{- $description = .Params.description -}}
+{{- else if and .IsPage .Summary -}}
+  {{- $description = .Summary -}}
+{{- else -}}
+  {{- $description = $homepage.head.description -}}
+{{- end -}}
+{{- $description = $description | plainify | htmlEscape -}}
+{{- $keywords := $homepage.head.keywords -}}
+{{- if .Params.tags -}}
+  {{- $keywords = delimit .Params.tags ", " -}}
+{{- else if .Params.categories -}}
+  {{- $keywords = delimit .Params.categories ", " -}}
+{{- end -}}
+{{- $canonical := .Permalink -}}
+{{- $ogTitle := $siteTitle -}}
+{{- if not .IsHome -}}
+  {{- $ogTitle = .Title | default $siteTitle -}}
+{{- end -}}
+{{- $ogType := "website" -}}
+{{- if .IsPage -}}
+  {{- $ogType = "article" -}}
+{{- end -}}
+{{- $ogImage := "" -}}
+{{- with .Params.imageHeader -}}
+  {{- with resources.Get . -}}
+    {{- $ogImage = .RelPermalink | absURL -}}
+  {{- end -}}
+{{- end -}}
+{{- if not $ogImage -}}
+  {{- with .Params.imageFront -}}
+    {{- with resources.Get . -}}
+      {{- $ogImage = .RelPermalink | absURL -}}
+    {{- end -}}
+  {{- end -}}
+{{- end -}}
+{{- if not $ogImage -}}
+  {{- with .Site.Params.seo.default_image -}}
+    {{- $ogImage = . | absURL -}}
+  {{- end -}}
+{{- end -}}
+{{- $twitterCard := "summary" -}}
+{{- if $ogImage -}}
+  {{- $twitterCard = "summary_large_image" -}}
+{{- end -}}
+{{- $locale := .Site.Language.LanguageCode | default .Site.LanguageCode -}}
+
 <!-- endinject -->
-<title>{{ .Site.Data.homepage.head.title }}</title>
-<meta name="description" content="{{ .Site.Data.homepage.head.description }}">
-<meta name="keywords" content="{{ .Site.Data.homepage.head.keywords }}"/>
+<title>{{ $pageTitle }}</title>
+<meta name="description" content="{{ $description }}">
+<meta name="keywords" content="{{ $keywords }}"/>
+<link rel="canonical" href="{{ $canonical }}">
+<meta name="robots" content="index, follow">
+
+<meta property="og:site_name" content="{{ $siteTitle }}">
+<meta property="og:title" content="{{ $ogTitle }}">
+<meta property="og:description" content="{{ $description }}">
+<meta property="og:type" content="{{ $ogType }}">
+<meta property="og:url" content="{{ $canonical }}">
+{{- if $ogImage }}
+<meta property="og:image" content="{{ $ogImage }}">
+{{- end }}
+{{- if $locale }}
+<meta property="og:locale" content="{{ replace $locale "-" "_" }}">
+{{- end }}
+
+<meta name="twitter:card" content="{{ $twitterCard }}">
+<meta name="twitter:title" content="{{ $ogTitle }}">
+<meta name="twitter:description" content="{{ $description }}">
+{{- with .Site.Params.seo.twitter }}
+<meta name="twitter:site" content="{{ . }}">
+{{- end }}
+{{- if $ogImage }}
+<meta name="twitter:image" content="{{ $ogImage }}">
+{{- end }}
+
+{{- if .IsPage }}
+  {{- with .PublishDate }}
+<meta property="article:published_time" content="{{ .Format "2006-01-02T15:04:05Z07:00" }}">
+  {{- end }}
+  {{- with .Lastmod }}
+<meta property="article:modified_time" content="{{ .Format "2006-01-02T15:04:05Z07:00" }}">
+  {{- end }}
+{{- end }}
+
+{{- with .OutputFormats.Get "rss" }}
+<link rel="alternate" type="application/rss+xml" title="{{ $siteTitle }}" href="{{ .Permalink }}">
+{{- end }}
+
+{{- if .IsTranslated }}
+  {{- range .AllTranslations }}
+<link rel="alternate" hreflang="{{ .Lang }}" href="{{ .Permalink }}">
+  {{- end }}
+  {{- with .Site.Home }}
+<link rel="alternate" hreflang="x-default" href="{{ .Permalink }}">
+  {{- end }}
+{{- end }}
 
 {{ $critical := resources.Get "css/critical.css" | resources.ToCSS | resources.Minify }}
 <style data-generator="critical-css">
@@ -50,4 +152,3 @@
     {{- end }}
   />
 </noscript>
-
