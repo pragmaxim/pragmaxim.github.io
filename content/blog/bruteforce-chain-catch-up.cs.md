@@ -43,6 +43,10 @@ UTXO chainy je tedy lepší indexovat s Rocksdb, protože sharding stále pomáh
 přestože zápis probíha sekvenčně a ne paralelně. EVM chainy fungují skvěle jak s BTree enginy, tak s LSM Tree enginy,
 tam uvidíte doslova lineární škálování se shardováním, pokud máte dost CPU jader a RAM.
 
+A co replikace v případě, že SSD disk odejde? Stačí ručně `rsync` danou partition z funkčního serveru indexovaného na stejné výšce, 
+např. volání rest-api `/maintenance/pause/at/{height}` => rsync partition => `/maintenance/resume/at/{height}`.
+Takže minimálně mít 2 servery, jinak se po selhání disku nelze zotavit.
+
 Tohle přijde v přepisu [redbit](https://github.com/pragmaxim-com/redbit), kde
 jsem aktuálně na starém PCI gen 3 serveru za méně než 24 hodin zindexoval celý
 Ethereum včetně všech tokenů se 4 shardy/SSD. Jinak by to trvalo 4 dny.

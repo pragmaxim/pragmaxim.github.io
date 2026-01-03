@@ -34,6 +34,10 @@ So UTXO chains are better off with Rocksdb because it is doing sorting and compa
 sharding still helps, eventhough executed serially. EVM chains work great both with BTree engines and LSM Tree engines
 and that's where you see literally linear scaling with sharding if you have enough CPU cores and RAM.
 
+What about replication in case an ssd dies. We simply need to manually rsync that partition from a healthy server indexed at the same
+height, eg. rest-api call to endpoint `/maintenance/pause/at/{height}` => rsync partition => `/maintenance/resume/at/{height}`.
+So 2 servers are minimum, otherwise you cannot recover from a disk failure.
+
 This is what's coming in the rewrite of [redbit](https://github.com/pragmaxim-com/redbit), where I currently indexed whole
 Ethereum including all tokens on my old PCI gen 3 server under 24 hours with 4 shards/ssds. Otherwise it would take 4 days.
 Querying times for the hottest addresses under 1ms because balances are pre-aggregated and transaction history paginated.
