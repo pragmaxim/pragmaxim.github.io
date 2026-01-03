@@ -39,8 +39,9 @@ jako Rocksdb umožňují sharding, protože těžkou práci (třídění, kompak
 
 Berte v potaz, že to lze provést paralelně pouze s EVM blockchainy, jedno vlákno na adresní shard.
 V UTXO chainech není paralelizace snadná kvůli "prevouts resolution", jedno vlákno nemůže jednoduše číst, co jiné vlákno zapíše.
-UTXO chainy je tedy lepší indexovat s Rocksdb, protože sharding stále pomáhá s tříděním a kompakcí s vlákny na pozadí. 
-EVM chainy fungují skvěle jak s BTree enginy, tak s LSM Tree enginy.
+UTXO chainy je tedy lepší indexovat s Rocksdb, protože sharding stále pomáhá s tříděním a kompakcí s vlákny na pozadí,
+přestože zápis probíha sekvenčně a ne paralelně. EVM chainy fungují skvěle jak s BTree enginy, tak s LSM Tree enginy,
+tam uvidíte doslova lineární škálování se shardováním, pokud máte dost CPU jader a RAM.
 
 Tohle přijde v přepisu [redbit](https://github.com/pragmaxim-com/redbit), kde
 jsem aktuálně na starém PCI gen 3 serveru za méně než 24 hodin zindexoval celý

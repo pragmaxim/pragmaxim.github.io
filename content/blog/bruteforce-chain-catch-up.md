@@ -31,7 +31,8 @@ is probably a reasonable limit of 16 Rocksdb instances. Unless you have a really
 Note that this can be done with EVM block chains in parallel, one writer thread per address shard.
 In UTXO chains, parallelization is not easy due to prevouts resolution, crossing async boundary is not feasible.
 So UTXO chains are better off with Rocksdb because it is doing sorting and compaction work with background threads and
-sharding still helps. EVM chains work great both with BTree engines and LSM Tree engines.
+sharding still helps, eventhough executed serially. EVM chains work great both with BTree engines and LSM Tree engines
+and that's where you see literally linear scaling with sharding if you have enough CPU cores and RAM.
 
 This is what's coming in the rewrite of [redbit](https://github.com/pragmaxim-com/redbit), where I currently indexed whole
 Ethereum including all tokens on my old PCI gen 3 server under 24 hours with 4 shards/ssds. Otherwise it would take 4 days.
