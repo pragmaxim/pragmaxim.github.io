@@ -13,7 +13,7 @@ wallets or explorers? It is definitely disk IO bottleneck, so how would Chinese 
 
 They would buy a solid board like [ASUS Pro WS WRX90E-SAGE SE](https://smicro.cz/asus-pro-ws-wrx90e-sage-se-amd-wrx90-90mb1fw0-m0eay0)
 where you can attach up to ~ 32 NVMe gen 5 drives mostly through Asus Hyper M.2 x16 Gen 5 and passive bifurcation 
-(not RAID0, because it only helps with sequential writes). WRX90 + Threadripper Pro:
+(not RAID0, because it only helps with sequential writes). WRX90 + Threadripper Pro :
 - CPU provides 128 PCIe 5.0 lanes 
 - An NVMe drive needs x4
 - 32 drives × 4 = 128 lanes
@@ -34,9 +34,15 @@ So UTXO chains are better off with Rocksdb because it is doing sorting and compa
 sharding still helps, eventhough executed serially. EVM chains work great both with BTree engines and LSM Tree engines
 and that's where you see literally linear scaling with sharding if you have enough CPU cores and RAM.
 
-What about replication in case an ssd dies. We simply need to manually rsync that partition from a healthy server indexed at the same
-height, eg. rest-api call to endpoint `/maintenance/pause/at/{height}` => rsync partition => `/maintenance/resume/at/{height}`.
-So 2 servers are minimum, otherwise you cannot recover from a disk failure.
+What about replication in case an ssd dies? 2 servers are minimum, otherwise you cannot recover from a disk failure.
+We simply need to manually rsync that partition from a healthy server indexed at the same height, eg. rest-api calls pause/resume endpoints :  
+- `/maintenance/pause/at/{height}`
+- rsync partition 
+- `/maintenance/resume/at/{height}`
+
+What about atomicity? 
+- Definitely SIGTERM friendly, it is quote trivial to make atomicity guarantees besides hardware crashes or power outages
+- crash/outage is solved by checking last blocks on startup and validating that address balances matches the history, if not, reindex last N blocks
 
 This is what's coming in the rewrite of [redbit](https://github.com/pragmaxim-com/redbit), where I currently indexed whole
 Ethereum including all tokens on my old PCI gen 3 server under 24 hours with 4 shards/ssds. Otherwise it would take 4 days.

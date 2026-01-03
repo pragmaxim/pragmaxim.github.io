@@ -47,6 +47,10 @@ A co replikace v případě, že SSD disk odejde? Stačí ručně `rsync` danou 
 např. volání rest-api `/maintenance/pause/at/{height}` => rsync partition => `/maintenance/resume/at/{height}`.
 Takže minimálně mít 2 servery, jinak se po selhání disku nelze zotavit.
 
+A co atomicita?
+- Definitivně SIGTERM přtelská
+- výpadky jsou řešeny ověřením posledních blocků při startu a validací, že zůstatky adres odpovídají historii, pokud ne, reindexací posledních N blocků
+
 Tohle přijde v přepisu [redbit](https://github.com/pragmaxim-com/redbit), kde
 jsem aktuálně na starém PCI gen 3 serveru za méně než 24 hodin zindexoval celý
 Ethereum včetně všech tokenů se 4 shardy/SSD. Jinak by to trvalo 4 dny.
