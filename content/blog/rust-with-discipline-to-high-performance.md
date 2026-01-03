@@ -38,5 +38,9 @@ pub trait Store {
 prevents you from doing `Box<dyn UStore>` and you cannot build Service with any Store anymore. It must be known at compile time.
 The rule of thumb in rust is using associated types or GATs only when you really need to.
 
+On the bright side, the community behind Rust is unbelievably strong. Especially in the blockhain development where for instance
+this [alloy-rs](https://github.com/alloy-rs) ecosystem of EVM chain tooling gives you powers you would not believe, definitely not 
+comparable to other languages.
+
 That is to say, I love both worlds and I would ideally combine them, using Scala for cold spots and Rust for hot spots of the application. 
 Even though it is not possible in blockchain development, it is doable in microservice architecture.

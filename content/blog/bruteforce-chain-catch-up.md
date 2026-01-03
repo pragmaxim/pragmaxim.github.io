@@ -12,16 +12,26 @@ They usually identify a weak spot and use brute-force to tame it. So, what is th
 wallets or explorers? It is definitely disk IO bottleneck, so how would Chinese solve it? 
 
 They would buy a solid board like [ASUS Pro WS WRX90E-SAGE SE](https://smicro.cz/asus-pro-ws-wrx90e-sage-se-amd-wrx90-90mb1fw0-m0eay0)
-where you can attach up to ~ 34 NVMe gen 5 drives mostly through Asus Hyper M.2 x16 Gen 5 and passive bifurcation 
-(not RAID0, because it only helps with sequential writes).
+where you can attach up to ~ 32 NVMe gen 5 drives mostly through Asus Hyper M.2 x16 Gen 5 and passive bifurcation 
+(not RAID0, because it only helps with sequential writes). WRX90 + Threadripper Pro:
+- CPU provides 128 PCIe 5.0 lanes 
+- An NVMe drive needs x4
+- 32 drives × 4 = 128 lanes
 
 They would mount all drives under `/mnt` from `0 - x` like `/mnt/{0,1,2,3,4,...}/{eth,avax,btc,ada}/db_files`.
-
 And they would write an indexer in Rust with sharding by address. Non-address data (block or tx hashes, etc.) go to `0` 
 partition/dir and address data go to `1 - x` partitions/dirs. This linearly increases both indexing throughput and 
 also querying throughput if you have many users. You can also scale-up as you go, you simply start with sharding over all 
-potential ssd slots `0 - 30` with only `4` drives and mount new drives to `4 - 30` places later, you just need to `rsync`
+potential ssd slots `0 - 16` with only `4` drives and mount new drives to `4 - 16` places later, you just need to `rsync`
 the data from the mount point as it would get hidden.
+
+My testing results show that real indexing throughput is almost doubling with each additional shard but there
+is probably a reasonable limit of 16 Rocksdb instances. Unless you have a really powerful Threadripper and 128GB+ of the fastest ddr5 RAM.
+
+Note that this can be done with EVM block chains in parallel, one writer thread per address shard.
+In UTXO chains, parallelization is not easy due to prevouts resolution, crossing async boundary is not feasible.
+So UTXO chains are better off with Rocksdb because it is doing sorting and compaction work with background threads and
+sharding still helps. EVM chains work great both with BTree engines and LSM Tree engines.
 
 This is what's coming in the rewrite of [redbit](https://github.com/pragmaxim-com/redbit), where I currently indexed whole
 Ethereum including all tokens on my old PCI gen 3 server under 24 hours with 4 shards/ssds. Otherwise it would take 4 days.
