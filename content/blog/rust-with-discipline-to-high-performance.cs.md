@@ -55,6 +55,10 @@ vám zabrání udělat `Box<dyn UStore>` a už nemůžete postavit Service s
 libovolným Store. Musí to být známo v době překladu. Pravidlo palce v Rustu
 je používat asociované typy nebo GATy jen tehdy, když je opravdu potřebujete.
 
+Na druhou stranu je komunita stojící za Rustem neuvěřitelně silná. Obzvláště ve vývoji blockchainu, kde například
+tento ekosystém nástrojů pro EVM řetězce [alloy-rs](https://github.com/alloy-rs) vám dává neuvěřitelné schopnosti, rozhodně ne
+srovnatelné s jinými jazyky.
+
 Tím chci říct, že miluju oba světy a ideálně bych je kombinoval: Scalu pro
 cold spoty a Rust pro hot spoty aplikace. I když to v blockchain vývoji
 nejde, v mikroservisní architektuře to možné je.
