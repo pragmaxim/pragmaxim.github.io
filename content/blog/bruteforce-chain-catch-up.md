@@ -14,9 +14,6 @@ And what is the brute-force and resources necessary to solve it? Effiecient stor
 In my opition, the solution is sharding by `(address,asset_id)`, such that each chain is indexed in hours, not days. 
 This way the explorers and wallets can evolve without suffering from binary lock-in and inability to reindex chains quickly. 
 Chains evolve, explorers and wallets need to evolve too, it is a marathon :
-- BCH : 1 shard
-- BTC : 4 shards
-- ETH : 12 shards
 
 They would buy a solid board like [ASUS Pro WS WRX90E-SAGE SE](https://smicro.cz/asus-pro-ws-wrx90e-sage-se-amd-wrx90-90mb1fw0-m0eay0)
 where you can attach up to ~ 32 NVMe gen 5 drives mostly through Asus Hyper M.2 x16 Gen 5 and passive bifurcation 
@@ -27,7 +24,7 @@ where you can attach up to ~ 32 NVMe gen 5 drives mostly through Asus Hyper M.2 
 
 They would mount all drives under `/mnt` from `0 - x` like `/mnt/{g,0,1,2,3,4,...}/{eth,avax,btc,ada}/db_files`.
 And they would write an indexer in Rust with sharding by address. Non-address data (block or tx hashes, etc.) go to `g` as global
-partition/dir and address data go to `0 - x` partitions/dirs. This at least sub-linearly ~ `y = 0.6x` increases both indexing throughput and 
+partition/dir and address data go to `0 - x` partitions/dirs. This at least sub-linearly ~ `y = 0.9x` increases both indexing throughput and 
 also querying throughput if you have many users. You can also scale-up as you go, you simply start with sharding over all 
 potential ssd slots `0 - 16` with only `4` drives and mount new drives to `4 - 16` places later, you just need to `rsync`
 the data from the mount point as it would get hidden.
@@ -35,11 +32,13 @@ the data from the mount point as it would get hidden.
 My testing results show that real indexing throughput is almost doubling with each additional shard but there
 is probably a reasonable limit of 16 Rocksdb instances. Unless you have a really powerful Threadripper and 128GB+ of the fastest ddr5 RAM.
 
-Note that this can be done with EVM block chains in parallel, one writer thread per `(address, asset_id)` shard.
-In UTXO chains, parallelization is not easy due to prevouts resolution, crossing async boundary is not feasible.
-So UTXO chains are better off with Rocksdb because it is doing sorting and compaction work with background threads and
-sharding still helps, eventhough executed serially. EVM chains work great both with BTree engines and LSM Tree engines
-and that's where you see sub-linear ~ `y = 0.6x` scaling with sharding if you have enough CPU cores and RAM.
+Note that this can be done with EVM block chains in parallel, one writer thread per `(address, asset_id)` shard. 
+EVM chains work great both with BTree engines and LSM Tree engines and that's where you see sub-linear ~ `y = 0.9x` 
+scaling with sharding if you have enough CPU cores and RAM.
+
+I would personally not use sharding for UTXO chains because parallelization is not easy due to prevouts resolution and crossing 
+async boundary is not feasible. Also there is huge skew in address distribution in UTXO chains and it cannot be easily fixed 
+by `(address, asset_id)` if there are no assets.
 
 What about replication in case an ssd dies? 2 servers are minimum, otherwise you cannot recover from a disk failure.
 We simply need to manually rsync that partition from a healthy server indexed at the same height, eg. rest-api calls pause/resume endpoints :  
@@ -56,10 +55,10 @@ What about atomicity?
 What about address distribution, locality, hotspots, parallel write skew?
 - skew is mitigated by not sharding by `address` only, but by `(address, asset_id)` with fan‑out merge at query time
 - the more shards the better because it reduces the chances of multiple hot addresses or assets colliding in the same shard
-  that's why we see sub-linear scaling with more shards `y = 0.6x`
+  that's why we see sub-linear scaling with more shards `y = 0.9x`
 - occasionally there are batches with insane amount of token transfers of the same `(address, asset_id)` and that shard is overloaded, 
   that imho cannot be solved and that makes it only sub-linear instead of linear scaling, because that overloaded shard worker  
-  is running on average 40% longer than others, however we don't have to be worried too much about cooling down the hardware
+  is running on average 10% longer than others, however we don't have to be worried too much about cooling down the hardware
 - source of the skew : stable coins (issuer/treasury addresses), airdrops, CEX hot wallets, AMM pools, bridge/gateway contracts, mining pools
 
 Bottom line, eventhough some people reject sharding for blockchains due to specific address distribution problems, I believe that
