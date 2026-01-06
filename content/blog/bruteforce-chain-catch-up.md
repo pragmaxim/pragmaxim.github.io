@@ -18,7 +18,7 @@ Chains evolve, explorers and wallets need to evolve too, it is a marathon :
 They would buy a solid board like [ASUS Pro WS WRX90E-SAGE SE](https://smicro.cz/asus-pro-ws-wrx90e-sage-se-amd-wrx90-90mb1fw0-m0eay0)
 where you can attach up to ~ 32 NVMe gen 5 drives mostly through Asus Hyper M.2 x16 Gen 5 and passive bifurcation 
 (not RAID0, because it only helps with sequential writes). WRX90 + Threadripper Pro :
-- CPU provides 128 PCIe 5.0 lanes 
+- CPU provides `128 PCIe 5.0` lanes 
 - An NVMe drive needs x4
 - 32 drives × 4 = 128 lanes
 
@@ -30,7 +30,12 @@ potential ssd slots `0 - 16` with only `4` drives and mount new drives to `4 - 1
 the data from the mount point as it would get hidden.
 
 My testing results show that real indexing throughput is almost doubling with each additional shard but there
-is probably a reasonable limit of 16 Rocksdb instances. Unless you have a really powerful Threadripper and 128GB+ of the fastest ddr5 RAM.
+is probably a reasonable limit of 16 Rocksdb instances. Unless you have a really powerful Threadripper and 128GB+ of the fastest ddr5 RAM,
+because for indexing with only 6 shards, ie. 7 instances of Rocksdb (1 global + 6 shards) you need at least 32GB of RAM :
+- Block cache : `2 GB * 7 DBs = ~14 GB`
+- Memtables : `~10 GB`
+- 4GB for indexing process
+- 4GB free for linux page cache
 
 Note that this can be done with EVM block chains in parallel, one writer thread per `(address, asset_id)` shard. 
 EVM chains work great both with BTree engines and LSM Tree engines and that's where you see sub-linear ~ `y = 0.9x` 
@@ -46,11 +51,12 @@ We simply need to manually rsync that partition from a healthy server indexed at
 - rsync partition 
 - `/maintenance/resume/at/{height}`
 
-What about atomicity? 
-- Definitely SIGTERM friendly, it is quote trivial to make atomicity guarantees besides hardware crashes or power outages
-- crash/outage is solved by checking last blocks on startup and validating that address balances matches the history, if not, reindex last N blocks
-- comparing address tx history with balances in last hundreds of blocks on startup reveals any corruption or inconsistency,
-  if balances of almost 1M of arbitrary addresses are correct, we may assume the rest is correct too.
+What about atomicity?
+- crash (outage/OOM) is solved by : 
+  - relying on WAL
+  - in case of one or more shards being a commit ahead, we roll them back to last shared height
+- always checking last blocks on startup and validating that address balances match the history
+  - if balances of addresses from last blocks are correct, we may assume the rest is correct too
 
 What about address distribution, locality, hotspots, parallel write skew?
 - skew is mitigated by not sharding by `address` only, but by `(address, asset_id)` with fan‑out merge at query time
