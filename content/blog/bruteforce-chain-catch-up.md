@@ -55,11 +55,9 @@ What about atomicity?
 - crash (outage/OOM) is solved by : 
   - relying on WAL
   - in case of one or more shards being a commit ahead, we roll them back to last shared height
-- always checking last blocks on startup and validating that address balances match the history
-  - if balances of addresses from last blocks are correct, we may assume the rest is correct too
 
 What about address distribution, locality, hotspots, parallel write skew?
-- skew is mitigated by not sharding by `address` only, but by `(address, asset_id)` with fan‑out merge at query time
+- skew is mitigated by not sharding by `address` only, but by `(address, asset_id)` with fan‑out merge for tx history at query time
 - the more shards the better because it reduces the chances of multiple hot addresses or assets colliding in the same shard
   that's why we see sub-linear scaling with more shards `y = 0.9x`
 - occasionally there are batches with insane amount of token transfers of the same `(address, asset_id)` and that shard is overloaded, 
@@ -78,5 +76,4 @@ query even arbitrary mining pool, dex or exchange addresses with millions of val
 
 This is what's coming in the rewrite of [redbit](https://github.com/pragmaxim-com/redbit), where I currently indexed whole
 Ethereum including all tokens on my old PCI gen 3 server under 24 hours with 8 shards/ssds. Otherwise it would take 4 days.
-Querying times for the hottest addresses under 1ms because balances are pre-aggregated and transaction history paginated.
 I could basically reuse 7 years old sloppy server and compete with new one for $10k. 
