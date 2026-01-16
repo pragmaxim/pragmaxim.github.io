@@ -4,7 +4,7 @@ title: "Blockchain API"
 description: "Explorers, wallets, you name it"
 imageFront: "images/blog/blockchain-api/blockchain-logo.png"
 imageFrontHeight: "180"
-imageHeader: "images/blog/blockchain-api/blockchain-header.jpg"
+imageHeader: "images/blog/blockchain-api/blockchain-header.png"
 ---
 
 When you design a new blockchain explorer, commercial API or wallet backend, you should start with asking 2 questions : 
