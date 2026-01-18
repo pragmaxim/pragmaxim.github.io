@@ -155,3 +155,19 @@ pre code,
 .chroma {
     background: transparent !important;
 }
+
+.blog__content h3 {
+    font-size: 1.2em;
+    font-weight: 700;
+}
+
+.blog__content p + ul,
+.blog__content p + ol {
+    margin-top: -16px;
+}
+
+@media (min-width: 992px) {
+    .blog__content h3 {
+        font-size: 1.3em;
+    }
+}
