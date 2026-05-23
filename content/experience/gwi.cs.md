@@ -1,8 +1,8 @@
 ---
 date: 2015-01-01T00:00:00+01:00
 draft: false
-title: "Softwarový inženýr"
-jobTitle: "Softwarový inženýr"
+title: "R & D"
+jobTitle: "R & D"
 company: "Globalwebindex"
 location: "Londýn"
 duration: "2015-2021"

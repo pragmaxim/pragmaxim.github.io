@@ -11,10 +11,10 @@ showcase:
   enable: true
   quote: "Pragmatik se zajímá o výsledky, ne o realitu."
   author: "J. Robert Oppenheimer"
-  intro: "Podílím se na vývoji blockchainů, decentralizovaných aplikací, distribuovaného zpracování dat a agentických pipeline nad LLM, převážně v ekosystémech 
+  intro: "Podílím se na vývoji blockchainů, decentralizovaných aplikací, distribuovaného zpracování dat a agentických pipeline nad LLM, převážně v ekosystémech
          <a target='_blank' href='https://www.rust-lang.org/'>Rust</a> a <a target='_blank' href='https://www.scala-lang.org/'>Scala</a>."
-  ending: "Pragmaxim se zajímá o výsledky i realitu. Rádi se podílíme na projektech s pozitivním environmentálním, 
-          sociálním a ekonomickým dopadem směrem k větší udržitelnosti, synergii a harmonii, včetně zdravotnictví, sociálního zabezpečení, fintechu nebo 
+  ending: "Pragmaxim se zajímá o výsledky i realitu. Rádi se podílíme na projektech s pozitivním environmentálním,
+          sociálním a ekonomickým dopadem směrem k větší udržitelnosti, synergii a harmonii, včetně zdravotnictví, sociálního zabezpečení, fintechu nebo
           čehokoli eco-friendly."
   image:
     alt: "px-logo"
@@ -49,12 +49,12 @@ showcase:
 # about
 about:
   enable: true
-  title: "Jakub Liška"
+  title: "Zakladatel"
   quote: "Nachystejte mi uzenáče. Na snídani jsem zpět."
   author: "Arnold \"Ace\" Rimmer"
-  intro: "V softwarovém inženýrství pracuji od roku 2009 na různých projektech s lidmi, od kterých jsem se mohl učit. 
+  intro: "Jmenuji se Jakub Liška a v softwarovém inženýrství pracuji od roku 2009 na různých projektech s lidmi, od kterých jsem se mohl učit.
           Aplikovat technologie, které mám rád, smysluplně a eticky mi přináší radost, smysl a dělám to s potěšením."
-  ending: "Lze mě považovat za fullstack vývojáře s potenciálem vést, se kterým věci dotáhnete pomocí správných nástrojů a řešení 
+  ending: "Lze mě považovat za fullstack vývojáře s potenciálem vést, se kterým věci dotáhnete pomocí správných nástrojů a řešení
           až ke kořenům problémů prostřednictvím softwarového vývoje řízeného \"High Value Delivery\" principem."
   button:
     icon: "icon-smile-fill"
@@ -80,7 +80,7 @@ education:
 # experience
 experience:
   enable: true
-  title: "Zkušenosti"
+  title: "Klienti"
   image:
     alt: "px-logo"
     x: "images/experience/px-logo-tear-narrow-blur-shadow-640.png"
@@ -96,7 +96,7 @@ experience:
     URL: "/files/cv_jakub_liska.pdf"
   button3:
     icon: "icon-arrow-right"
-    btnText: "Všechny zkušenosti"
+    btnText: "Všichni klienti"
     URL: "/experience"
 
 # Values

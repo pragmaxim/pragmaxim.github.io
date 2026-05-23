@@ -1,8 +1,8 @@
 ---
 date: 2012-01-01T00:00:00+01:00
 draft: false
-title: "Software engineer"
-jobTitle: "Software engineer"
+title: "R & D"
+jobTitle: "R & D"
 company: "FG Forrest"
 location: "Prague"
 duration: "2012-2014"

@@ -126,6 +126,52 @@ ul.book-category-content {
     color: #000;
 }
 
+.experience__headline{
+    display: flex;
+    align-items: center;
+    flex-wrap: wrap;
+    column-gap: 10px;
+    row-gap: 4px;
+}
+
+.experience__headline .experience__company,
+.experience__headline .experience__role,
+.experience__separator{
+    display: inline-flex;
+    align-items: center;
+    min-height: 40px;
+    line-height: 1.2;
+}
+
+.experience__headline .experience__company{
+    gap: 8px;
+}
+
+.experience__headline .experience__title,
+.experience__company-label{
+    display: inline-flex;
+    align-items: center;
+    line-height: 1.2;
+}
+
+.experience__headline picture{
+    display: inline-flex;
+    align-items: center;
+}
+
+.experience__separator{
+    color: #000;
+    font-size: 20px;
+    font-weight: 700;
+    line-height: 1.2;
+}
+
+@media (min-width: 992px) {
+    .experience__separator{
+        font-size: 24px;
+    }
+}
+
 div.experience{
     padding-top: 50px;
 }

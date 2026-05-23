@@ -1,8 +1,8 @@
 ---
 date: 2024-09-01T00:00:00+01:00
 draft: false
-title: "Software Engineer & Researcher"
-jobTitle: "Software Engineer & Researcher"
+title: "R & D"
+jobTitle: "R & D"
 company: "Alephium"
 location: "Switzerland"
 duration: "2024-2025"

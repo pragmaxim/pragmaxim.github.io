@@ -27,7 +27,7 @@ theme = "pragmaxim-theme"
 
 
   [[menu.header]]
-  name = "Experience"
+  name = "Clients"
   URL = "#experience"
   weight = 1
 
@@ -48,7 +48,7 @@ theme = "pragmaxim-theme"
 
 
   [[menu.footer]]
-  name = "Experience"
+  name = "Clients"
   URL = "#experience"
   weight = 1
 

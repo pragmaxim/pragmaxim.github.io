@@ -18,23 +18,21 @@
             {{ range where .Site.RegularPages.ByDate.Reverse "Type" "experience" }}
 
             <div class="experience">
-              <div class="experience__date">{{ .Params.duration }}</div>
-              <a href="{{.Permalink}}">
-                <div class="experience__title">{{ .Params.jobTitle }}</div>
-              </a>
-              <div class="experience__location">{{ .Params.location }}</div>
-              <div class="experience__company">
-                <span class="experience__item">
-                  <a href="https://{{ .Params.url }}">
+              <div class="experience__date">{{ .Params.duration }} @ {{ .Params.location }}</div>
+              <div class="experience__headline">
+                <a class="experience__company" href="https://{{ .Params.url }}">
                     <img
                       class="lozad img-responsive"
                       src="data:image/gif;base64,R0lGODlhBwACAIAAAP///wAAACH5BAEAAAEALAAAAAAHAAIAAAIDjI9YADs="
                       data-src="{{ .Params.logo | absURL }}"
                       height="40"
                     />
-                    {{ .Params.company }}
-                  </a>
-                </span>
+                    <span class="experience__company-label">{{ strings.TrimSuffix "/" .Params.url }}</span>
+                </a>
+                <span class="experience__separator" aria-hidden="true">|</span>
+                <a class="experience__role" href="{{.Permalink}}">
+                  <span class="experience__title">{{ .Params.jobTitle }}</span>
+                </a>
               </div>
             </div>
             {{ end }}

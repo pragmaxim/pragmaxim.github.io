@@ -1,8 +1,8 @@
 ---
 date: 2015-01-01T00:00:00+01:00
 draft: false
-title: "Software engineer"
-jobTitle: "Software engineer"
+title: "R & D"
+jobTitle: "R & D"
 company: "Globalwebindex"
 location: "London"
 duration: "2015-2021"

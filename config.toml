@@ -18,7 +18,7 @@ theme = "pragmaxim-theme"
     languageCode = "cs-cz"
     weight = 2
     [[languages.cs.menu.header]]
-      name = "Zkušenosti"
+      name = "Klienti"
       URL = "#experience"
       weight = 1
 
@@ -38,7 +38,7 @@ theme = "pragmaxim-theme"
       weight = 4
 
     [[languages.cs.menu.footer]]
-      name = "Zkušenosti"
+      name = "Klienti"
       URL = "#experience"
       weight = 1
 
@@ -88,7 +88,7 @@ theme = "pragmaxim-theme"
 
 
   [[menu.header]]
-  name = "Experience"
+  name = "Clients"
   URL = "#experience"
   weight = 1
 
@@ -109,7 +109,7 @@ theme = "pragmaxim-theme"
 
 
   [[menu.footer]]
-  name = "Experience"
+  name = "Clients"
   URL = "#experience"
   weight = 1
 

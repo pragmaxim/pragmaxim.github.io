@@ -1,8 +1,8 @@
 ---
 date: 2021-03-01T00:00:00+01:00
 draft: false
-title: "Softwarový inženýr & výzkumn"
-jobTitle: "Softwarový inženýr & výzkum"
+title: "R & D"
+jobTitle: "R & D"
 company: "Ergo Foundation"
 location: "Singapur"
 duration: "2021-2023"
