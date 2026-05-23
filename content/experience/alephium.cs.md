@@ -7,7 +7,7 @@ company: "Alephium"
 location: "Švýcarsko"
 duration: "2024-2025"
 logo: "images/clients/alph.png"
-url: "www.alephium.org/"
+url: "alephium.org/"
 ---
 ### Vývoj jádra uzlu
 

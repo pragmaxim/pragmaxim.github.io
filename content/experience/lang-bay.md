@@ -7,7 +7,7 @@ company: "LangBay"
 location: "Prague"
 duration: "2011-2012"
 logo: "images/clients/lang-bay.png"
-url: "www.langbay.io/"
+url: "langbay.io/"
 ---
 
 ### Startup founder

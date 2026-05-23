@@ -7,7 +7,7 @@ company: "Globalwebindex"
 location: "Londýn"
 duration: "2015-2021"
 logo: "images/clients/gwi.png"
-url: "www.gwi.com/"
+url: "gwi.com/"
 ---
 ### Vývoj jádra uzlu a výzkum
 

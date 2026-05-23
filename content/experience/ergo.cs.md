@@ -7,7 +7,7 @@ company: "Ergo Foundation"
 location: "Singapur"
 duration: "2021-2023"
 logo: "images/clients/ergo.jpeg"
-url: "www.ergoplatform.org/"
+url: "ergoplatform.org/"
 ---
 ### Vývoj jádra uzlu a exploreru
 

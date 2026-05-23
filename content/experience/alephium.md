@@ -7,7 +7,7 @@ company: "Alephium"
 location: "Switzerland"
 duration: "2024-2025"
 logo: "images/clients/alph.png"
-url: "www.alephium.org/"
+url: "alephium.org/"
 ---
 ### Node core development
 

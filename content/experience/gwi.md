@@ -7,7 +7,7 @@ company: "Globalwebindex"
 location: "London"
 duration: "2015-2021"
 logo: "images/clients/gwi.png"
-url: "www.gwi.com/"
+url: "gwi.com/"
 ---
 ### Node core development and research
 

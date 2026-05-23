@@ -7,7 +7,7 @@ company: "Trezor"
 location: "Prague"
 duration: "2026-present"
 logo: "images/clients/trezor.svg"
-url: "www.trezor.io/"
+url: "trezor.io/"
 ---
 ### Blockbook development
 

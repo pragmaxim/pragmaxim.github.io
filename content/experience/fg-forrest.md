@@ -7,7 +7,7 @@ company: "FG Forrest"
 location: "Prague"
 duration: "2012-2014"
 logo: "images/clients/fg.png"
-url: "www.fg.cz/"
+url: "fg.cz/"
 ---
 ### Mass Mailing service development
 
