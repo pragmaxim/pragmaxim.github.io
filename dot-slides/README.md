@@ -11,16 +11,17 @@ straight from `file://` or via any static host.
 ## Quick start
 
 ```sh
-# Render every presentations/*.dot to .svg + .html
+# Render every presentations/*/*.dot to .svg + .html
 python3 build_presentation.py
 
 # Or just one
-python3 build_presentation.py presentations/foo.dot
+python3 build_presentation.py presentations/foo/foo.dot
 ```
 
 Requirements: **Python 3.10+** and **Graphviz** (`dot` on `$PATH`). The
 generated HTML has zero runtime dependencies beyond `runtime.js` /
-`runtime.css` (loaded via relative paths from `..`).
+`runtime.css` (loaded via a relative path back to the dot-slides root —
+`../../` for a presentation in its own subdirectory).
 
 ## Authoring
 
@@ -43,7 +44,8 @@ dot-slides/
 ├── runtime.js               # viewBox animation + navigation
 ├── runtime.css              # dark-theme chrome
 ├── tests/                   # unittest suite (no deps)
-└── presentations/           # .dot sources + generated .svg/.html
+└── presentations/           # one subdir per deck
+    └── <name>/              # <name>.dot source + generated .svg/.html (+ optional img/)
 ```
 
 ## Keyboard & mouse

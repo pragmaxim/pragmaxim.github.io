@@ -194,12 +194,18 @@ def render_html(
     svg_text: str,
     slides: list,
     page_title: str,
+    runtime_prefix: str = "../",
 ) -> str:
     """Fill the HTML template. Placeholders are {{TOKEN}} strings.
 
     `slides` may be `list[Slide]` (linear deck) or `list[BranchedSlide]`
     (branched deck). The serialiser is picked by type; an empty list is
     treated as linear (matches the legacy behaviour).
+
+    `runtime_prefix` is the relative path from the generated HTML back to the
+    directory holding `runtime.{js,css}`. Each presentation lives in its own
+    subdirectory (`presentations/<name>/<name>.html`), so the default is the
+    two-level `../../` computed by the build for that depth.
     """
     if slides and isinstance(slides[0], BranchedSlide):
         slides_json = branched_slides_to_json(slides)
@@ -211,6 +217,7 @@ def render_html(
         .replace("{{TITLE_JSON}}", json.dumps(page_title, ensure_ascii=False))
         .replace("{{SLIDES_JSON}}", slides_json)
         .replace("{{SVG}}", strip_svg_wrapper(svg_text))
+        .replace("{{RUNTIME_PREFIX}}", runtime_prefix)
     )
 
 

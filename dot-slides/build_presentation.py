@@ -10,8 +10,8 @@ All parsing/templating lives in slides.py; this file only does I/O and
 diagnostics.
 
 Usage:
-    python3 build_presentation.py                            # all presentations/*.dot
-    python3 build_presentation.py presentations/foo.dot ...  # specific files
+    python3 build_presentation.py                                # all presentations/*/*.dot
+    python3 build_presentation.py presentations/foo/foo.dot ...  # specific files
 """
 from __future__ import annotations
 
@@ -32,9 +32,11 @@ def _discover_dots(args: list[str]) -> list[Path]:
         return [Path(a).resolve() for a in args]
     if not PRESENTATIONS.is_dir():
         sys.exit(f"no presentations/ directory at {PRESENTATIONS}")
-    dots = sorted(PRESENTATIONS.glob("*.dot"))
+    # Each presentation lives in its own subdirectory:
+    # presentations/<name>/<name>.dot (+ generated .svg/.html, optional img/).
+    dots = sorted(PRESENTATIONS.glob("*/*.dot"))
     if not dots:
-        sys.exit(f"no *.dot files in {PRESENTATIONS}")
+        sys.exit(f"no */*.dot files in {PRESENTATIONS}")
     return dots
 
 
@@ -42,9 +44,9 @@ def _render_svg(dot_path: Path) -> Path:
     svg_path = dot_path.with_suffix(".svg")
     # Run `dot` with CWD = the .dot file's directory so that relative IMG
     # references like `img/foo.png` resolve to siblings of the .dot file
-    # (e.g. `presentations/img/foo.png`). That same relative path is then
+    # (e.g. `presentations/foo/img/foo.png`). That same relative path is then
     # carried verbatim into the SVG, where the runtime resolves it relative
-    # to the HTML at `presentations/foo.html` — same location, same path.
+    # to the HTML at `presentations/foo/foo.html` — same location, same path.
     try:
         result = subprocess.run(
             ["dot", "-Tsvg", dot_path.name, "-o", svg_path.name],
@@ -124,8 +126,19 @@ def _build_one(dot_path: Path, template: str) -> int:
         for s in slides:
             print(f"    ✓ {s.n:>2}. {s.target:<22} {s.label}")
 
+    # Relative path from the generated HTML back to runtime.{js,css}, which
+    # live at the dot-slides root. For presentations/<name>/<name>.html that
+    # is two levels up; computed from depth so nesting stays correct.
+    if dot_path.parent.is_relative_to(HERE):
+        depth = len(dot_path.parent.relative_to(HERE).parts)
+        runtime_prefix = "../" * depth if depth else "./"
+    else:
+        runtime_prefix = "../"
+
     html_path = dot_path.with_suffix(".html")
-    html_path.write_text(S.render_html(template, svg_text, slides, page_title))
+    html_path.write_text(
+        S.render_html(template, svg_text, slides, page_title, runtime_prefix)
+    )
     print(
         f"  → {svg_path.name} ({svg_path.stat().st_size} bytes), "
         f"{html_path.name} ({html_path.stat().st_size} bytes)"
