@@ -1,0 +1,185 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<title>Dgx Spark Tuner — Presentation</title>
+<link rel="stylesheet" href="../runtime.css">
+</head>
+<body>
+<div id="svg-host"><svg width="647pt" height="1148pt"
+ viewBox="0.00 0.00 647.28 1148.45" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+<g id="graph0" class="graph" transform="scale(1 1) rotate(0) translate(4 1144.45)">
+<title>DgxSparkTuner</title>
+<polygon fill="white" stroke="transparent" points="-4,4 -4,-1144.45 643.28,-1144.45 643.28,4 -4,4"/>
+<g id="clust1" class="cluster">
+<title>cluster_admin</title>
+<path fill="#f3f8ff" stroke="#5b8fd1" d="M94.28,-740C94.28,-740 330.28,-740 330.28,-740 336.28,-740 342.28,-746 342.28,-752 342.28,-752 342.28,-913 342.28,-913 342.28,-919 336.28,-925 330.28,-925 330.28,-925 94.28,-925 94.28,-925 88.28,-925 82.28,-919 82.28,-913 82.28,-913 82.28,-752 82.28,-752 82.28,-746 88.28,-740 94.28,-740"/>
+<text text-anchor="middle" x="212.28" y="-911.4" font-family="Times,serif" font-size="12.00">② Admin &amp; Control Plane</text>
+</g>
+<g id="clust2" class="cluster">
+<title>cluster_gateway</title>
+<path fill="#fff5e6" stroke="#d1a05b" d="M112.28,-496C112.28,-496 360.28,-496 360.28,-496 366.28,-496 372.28,-502 372.28,-508 372.28,-508 372.28,-655 372.28,-655 372.28,-661 366.28,-667 360.28,-667 360.28,-667 112.28,-667 112.28,-667 106.28,-667 100.28,-661 100.28,-655 100.28,-655 100.28,-508 100.28,-508 100.28,-502 106.28,-496 112.28,-496"/>
+<text text-anchor="middle" x="236.28" y="-653.4" font-family="Times,serif" font-size="12.00">③ Inference Gateway</text>
+</g>
+<g id="clust3" class="cluster">
+<title>cluster_router</title>
+<path fill="#f0fff0" stroke="#5bb15b" d="M25.28,-8C25.28,-8 447.28,-8 447.28,-8 453.28,-8 459.28,-14 459.28,-20 459.28,-20 459.28,-411 459.28,-411 459.28,-417 453.28,-423 447.28,-423 447.28,-423 25.28,-423 25.28,-423 19.28,-423 13.28,-417 13.28,-411 13.28,-411 13.28,-20 13.28,-20 13.28,-14 19.28,-8 25.28,-8"/>
+<text text-anchor="middle" x="236.28" y="-409.4" font-family="Times,serif" font-size="12.00">④ Process Manager (Parent)</text>
+</g>
+<g id="clust4" class="cluster">
+<title>cluster_child</title>
+<path fill="#e6ffe6" stroke="#3d8f3d" d="M33.28,-16C33.28,-16 439.28,-16 439.28,-16 445.28,-16 451.28,-22 451.28,-28 451.28,-28 451.28,-157 451.28,-157 451.28,-163 445.28,-169 439.28,-169 439.28,-169 33.28,-169 33.28,-169 27.28,-169 21.28,-163 21.28,-157 21.28,-157 21.28,-28 21.28,-28 21.28,-22 27.28,-16 33.28,-16"/>
+<text text-anchor="middle" x="236.28" y="-155.4" font-family="Times,serif" font-size="12.00">Inference Engine (Child Process)</text>
+</g>
+
+<g id="node1" class="node">
+<title>User</title>
+<ellipse fill="#e8e8e8" stroke="black" cx="316.28" cy="-1078.23" rx="154.71" ry="62.45"/>
+<text text-anchor="start" x="293.78" y="-1108.43" font-family="Helvetica,sans-Serif" font-weight="bold" font-size="11.00">① USER</text>
+<text text-anchor="start" x="217.28" y="-1091.43" font-family="Helvetica,sans-Serif" font-size="11.00">Operator / SRE / Developer</text>
+<text text-anchor="start" x="217.28" y="-1075.43" font-family="Helvetica,sans-Serif" font-size="11.00">&#45; Issues CRUD on tuned models</text>
+<text text-anchor="start" x="217.28" y="-1059.43" font-family="Helvetica,sans-Serif" font-size="11.00">&#45; Sends direct inference requests</text>
+<text text-anchor="start" x="217.28" y="-1043.43" font-family="Helvetica,sans-Serif" font-size="11.00">&#45; Reads benchmark &amp; recipe reports</text>
+</g>
+
+<g id="node2" class="node">
+<title>Tuner</title>
+<path fill="#dbe7ff" stroke="black" d="M321.78,-896C321.78,-896 102.78,-896 102.78,-896 96.78,-896 90.78,-890 90.78,-884 90.78,-884 90.78,-760 90.78,-760 90.78,-754 96.78,-748 102.78,-748 102.78,-748 321.78,-748 321.78,-748 327.78,-748 333.78,-754 333.78,-760 333.78,-760 333.78,-884 333.78,-884 333.78,-890 327.78,-896 321.78,-896"/>
+<text text-anchor="start" x="163.28" y="-882.2" font-family="Helvetica,sans-Serif" font-weight="bold" font-size="11.00">dgx&#45;spark&#45;tuner</text>
+<text text-anchor="start" x="135.28" y="-866.8" font-family="Helvetica,sans-Serif" font-size="9.00">Rust · CLI + REST API · Port :8080</text>
+<text text-anchor="start" x="101.28" y="-851.2" font-family="Helvetica,sans-Serif" font-size="11.00">Responsibilities:</text>
+<text text-anchor="start" x="101.28" y="-835.2" font-family="Helvetica,sans-Serif" font-size="11.00">&#45; Resolve models via hf&#45;hub crate</text>
+<text text-anchor="start" x="101.28" y="-819.2" font-family="Helvetica,sans-Serif" font-size="11.00">&#45; Ask Oracle LLM for 3 recipe candidates</text>
+<text text-anchor="start" x="101.28" y="-803.2" font-family="Helvetica,sans-Serif" font-size="11.00">&#45; Drive llama&#45;benchy tuning runs</text>
+<text text-anchor="start" x="101.28" y="-787.2" font-family="Helvetica,sans-Serif" font-size="11.00">&#45; Persist winning recipe + hash</text>
+<text text-anchor="start" x="101.28" y="-771.2" font-family="Helvetica,sans-Serif" font-size="11.00">&#45; Expose idempotent CRUD endpoints</text>
+<text text-anchor="start" x="101.28" y="-756.8" font-family="Helvetica,sans-Serif" font-size="9.00">ID = model + runtime + recipe&#45;hash</text>
+</g>
+
+<g id="edge1" class="edge">
+<title>User&#45;&gt;Tuner</title>
+<path fill="none" stroke="#5b8fd1" d="M243.37,-1023.24C232.01,-1011.32 221.87,-997.78 215.28,-983 204.74,-959.37 201.48,-931.75 201.58,-906.18"/>
+<polygon fill="#5b8fd1" stroke="#5b8fd1" points="205.08,-906.19 201.8,-896.12 198.09,-906.04 205.08,-906.19"/>
+<text text-anchor="start" x="215.28" y="-976" font-family="Helvetica,sans-Serif" font-weight="bold" font-size="10.00" fill="#1f3d6b">A: CRUD Models</text>
+<text text-anchor="start" x="215.28" y="-966" font-family="Helvetica,sans-Serif" font-size="10.00" fill="#1f3d6b">POST /models — tune new recipe</text>
+<text text-anchor="start" x="215.28" y="-956" font-family="Helvetica,sans-Serif" font-size="10.00" fill="#1f3d6b">GET &#160;/models — list / filter</text>
+<text text-anchor="start" x="215.28" y="-946" font-family="Helvetica,sans-Serif" font-size="10.00" fill="#1f3d6b">PUT &#160;/models/:id — re&#45;tune if better</text>
+<text text-anchor="start" x="215.28" y="-936" font-family="Helvetica,sans-Serif" font-size="10.00" fill="#1f3d6b">DEL &#160;/models/:id — unload + purge</text>
+</g>
+
+<g id="node3" class="node">
+<title>LiteLLM</title>
+<path fill="#ffe8c2" stroke="black" d="M351.78,-638C351.78,-638 120.78,-638 120.78,-638 114.78,-638 108.78,-632 108.78,-626 108.78,-626 108.78,-516 108.78,-516 108.78,-510 114.78,-504 120.78,-504 120.78,-504 351.78,-504 351.78,-504 357.78,-504 363.78,-510 363.78,-516 363.78,-516 363.78,-626 363.78,-626 363.78,-632 357.78,-638 351.78,-638"/>
+<text text-anchor="start" x="213.78" y="-624.2" font-family="Helvetica,sans-Serif" font-weight="bold" font-size="11.00">liteLLM</text>
+<text text-anchor="start" x="147.78" y="-608.8" font-family="Helvetica,sans-Serif" font-size="9.00">OpenAI&#45;compatible proxy · Port :14000</text>
+<text text-anchor="start" x="119.28" y="-593.2" font-family="Helvetica,sans-Serif" font-size="11.00">Responsibilities:</text>
+<text text-anchor="start" x="119.28" y="-577.2" font-family="Helvetica,sans-Serif" font-size="11.00">&#45; Unified /v1/chat/completions surface</text>
+<text text-anchor="start" x="119.28" y="-561.2" font-family="Helvetica,sans-Serif" font-size="11.00">&#45; Auth, rate limits, request logging</text>
+<text text-anchor="start" x="119.28" y="-545.2" font-family="Helvetica,sans-Serif" font-size="11.00">&#45; Routes Oracle calls for recipe synthesis</text>
+<text text-anchor="start" x="119.28" y="-529.2" font-family="Helvetica,sans-Serif" font-size="11.00">&#45; Forwards benchmark traffic during tuning</text>
+<text text-anchor="start" x="119.28" y="-513.2" font-family="Helvetica,sans-Serif" font-size="11.00">&#45; Hides per&#45;engine quirks from clients</text>
+</g>
+
+<g id="edge2" class="edge">
+<title>User&#45;&gt;LiteLLM</title>
+<path fill="none" stroke="#d1a05b" d="M373.55,-1020.35C382.05,-1008.84 389.53,-996.19 394.28,-983 418.4,-916.04 513.91,-898.96 392.28,-675 386.35,-664.09 378.71,-654.13 370,-645.1"/>
+<polygon fill="#d1a05b" stroke="#d1a05b" points="372.39,-642.54 362.8,-638.05 367.5,-647.54 372.39,-642.54"/>
+<text text-anchor="start" x="452.28" y="-835" font-family="Helvetica,sans-Serif" font-weight="bold" font-size="10.00" fill="#7a4a10">B: Direct Inference</text>
+<text text-anchor="start" x="452.28" y="-825" font-family="Helvetica,sans-Serif" font-size="10.00" fill="#7a4a10">OpenAI&#45;compatible chat / completions</text>
+<text text-anchor="start" x="452.28" y="-815" font-family="Helvetica,sans-Serif" font-size="10.00" fill="#7a4a10">Streaming SSE supported</text>
+<text text-anchor="start" x="452.28" y="-805" font-family="Helvetica,sans-Serif" font-size="10.00" fill="#7a4a10">API&#45;key auth, per&#45;user quotas</text>
+</g>
+
+<g id="edge3" class="edge">
+<title>Tuner&#45;&gt;LiteLLM</title>
+<path fill="none" stroke="#d1a05b" d="M90.6,-784.04C31.34,-759.21 -21.23,-722.35 9.28,-675 30.15,-642.61 63.97,-620.29 99.2,-604.95"/>
+<polygon fill="#d1a05b" stroke="#d1a05b" points="100.78,-608.08 108.67,-601.01 98.09,-601.62 100.78,-608.08"/>
+<text text-anchor="start" x="9.28" y="-708" font-family="Helvetica,sans-Serif" font-weight="bold" font-size="10.00" fill="#7a4a10">1: Ask Oracle for recipes</text>
+<text text-anchor="start" x="9.28" y="-698" font-family="Helvetica,sans-Serif" font-size="10.00" fill="#7a4a10">Prompt: model card + HW profile</text>
+<text text-anchor="start" x="9.28" y="-688" font-family="Helvetica,sans-Serif" font-size="10.00" fill="#7a4a10">Returns: 3 candidate recipes (JSON)</text>
+<text text-anchor="start" x="9.28" y="-678" font-family="Helvetica,sans-Serif" font-size="10.00" fill="#7a4a10">Includes engine choice + flags</text>
+</g>
+
+<g id="edge4" class="edge">
+<title>Tuner&#45;&gt;LiteLLM</title>
+<path fill="none" stroke="#d1a05b" stroke-dasharray="5,2" d="M219.32,-747.97C222.34,-716.64 225.87,-680.02 228.92,-648.33"/>
+<polygon fill="#d1a05b" stroke="#d1a05b" points="232.42,-648.52 229.9,-638.23 225.45,-647.84 232.42,-648.52"/>
+<text text-anchor="start" x="225.28" y="-708" font-family="Helvetica,sans-Serif" font-weight="bold" font-size="10.00" fill="#7a4a10">2: Benchmarking traffic</text>
+<text text-anchor="start" x="225.28" y="-698" font-family="Helvetica,sans-Serif" font-size="10.00" fill="#7a4a10">Drives llama&#45;benchy workloads</text>
+<text text-anchor="start" x="225.28" y="-688" font-family="Helvetica,sans-Serif" font-size="10.00" fill="#7a4a10">Measures TTFT, TPS, VRAM, p95</text>
+<text text-anchor="start" x="225.28" y="-678" font-family="Helvetica,sans-Serif" font-size="10.00" fill="#7a4a10">Iterates over the 3 candidates</text>
+</g>
+
+<g id="node4" class="node">
+<title>Swap</title>
+<path fill="#d4f0d4" stroke="black" d="M341.28,-394C341.28,-394 131.28,-394 131.28,-394 125.28,-394 119.28,-388 119.28,-382 119.28,-382 119.28,-272 119.28,-272 119.28,-266 125.28,-260 131.28,-260 131.28,-260 341.28,-260 341.28,-260 347.28,-260 353.28,-266 353.28,-272 353.28,-272 353.28,-382 353.28,-382 353.28,-388 347.28,-394 341.28,-394"/>
+<text text-anchor="start" x="179.78" y="-380.2" font-family="Helvetica,sans-Serif" font-weight="bold" font-size="11.00">llama&#45;swap router</text>
+<text text-anchor="start" x="162.78" y="-364.8" font-family="Helvetica,sans-Serif" font-size="9.00">Process supervisor · Port :28080</text>
+<text text-anchor="start" x="129.28" y="-349.2" font-family="Helvetica,sans-Serif" font-size="11.00">Responsibilities:</text>
+<text text-anchor="start" x="129.28" y="-333.2" font-family="Helvetica,sans-Serif" font-size="11.00">&#45; Cold&#45;start engines on demand</text>
+<text text-anchor="start" x="129.28" y="-317.2" font-family="Helvetica,sans-Serif" font-size="11.00">&#45; Enforce single&#45;tenant GPU occupancy</text>
+<text text-anchor="start" x="129.28" y="-301.2" font-family="Helvetica,sans-Serif" font-size="11.00">&#45; Idle&#45;evict engines to free VRAM</text>
+<text text-anchor="start" x="129.28" y="-285.2" font-family="Helvetica,sans-Serif" font-size="11.00">&#45; Stream stdout/stderr for tuner logs</text>
+<text text-anchor="start" x="129.28" y="-269.2" font-family="Helvetica,sans-Serif" font-size="11.00">&#45; Health&#45;check &amp; restart on crash</text>
+</g>
+
+<g id="edge5" class="edge">
+<title>LiteLLM&#45;&gt;Swap</title>
+<path fill="none" stroke="#5bb15b" d="M236.28,-503.87C236.28,-473.06 236.28,-436.23 236.28,-404.25"/>
+<polygon fill="#5bb15b" stroke="#5bb15b" points="239.78,-404.05 236.28,-394.05 232.78,-404.05 239.78,-404.05"/>
+<text text-anchor="start" x="236.28" y="-464" font-family="Helvetica,sans-Serif" font-weight="bold" font-size="10.00" fill="#1f5b1f">3: Forward traffic</text>
+<text text-anchor="start" x="236.28" y="-454" font-family="Helvetica,sans-Serif" font-size="10.00" fill="#1f5b1f">Routes by tuned&#45;model ID</text>
+<text text-anchor="start" x="236.28" y="-444" font-family="Helvetica,sans-Serif" font-size="10.00" fill="#1f5b1f">Triggers cold&#45;start if engine idle</text>
+<text text-anchor="start" x="236.28" y="-434" font-family="Helvetica,sans-Serif" font-size="10.00" fill="#1f5b1f">Backpressure on VRAM contention</text>
+</g>
+
+<g id="node5" class="node">
+<title>Engine</title>
+<path fill="#c2e8c2" stroke="black" d="M431.78,-140C431.78,-140 40.78,-140 40.78,-140 34.78,-140 28.78,-134 28.78,-128 28.78,-128 28.78,-36 28.78,-36 28.78,-30 34.78,-24 40.78,-24 40.78,-24 431.78,-24 431.78,-24 437.78,-24 443.78,-30 443.78,-36 443.78,-36 443.78,-128 443.78,-128 443.78,-134 437.78,-140 431.78,-140"/>
+<text text-anchor="start" x="184.78" y="-126.2" font-family="Helvetica,sans-Serif" font-weight="bold" font-size="11.00">Engine Backends</text>
+<text text-anchor="start" x="173.28" y="-110.8" font-family="Helvetica,sans-Serif" font-size="9.00">Exactly one active at a time</text>
+<text text-anchor="start" x="39.28" y="-96.2" font-family="Helvetica,sans-Serif" font-size="11.00">&#45; </text>
+<text text-anchor="start" x="47.28" y="-96.2" font-family="Helvetica,sans-Serif" font-weight="bold" font-size="11.00">vLLM</text>
+<text text-anchor="start" x="80.28" y="-96.2" font-family="Helvetica,sans-Serif" font-size="11.00"> :18000 — PagedAttention, FP8/AWQ, high throughput</text>
+<text text-anchor="start" x="39.28" y="-80.2" font-family="Helvetica,sans-Serif" font-size="11.00">&#45; </text>
+<text text-anchor="start" x="47.28" y="-80.2" font-family="Helvetica,sans-Serif" font-weight="bold" font-size="11.00">llama.cpp</text>
+<text text-anchor="start" x="108.28" y="-80.2" font-family="Helvetica,sans-Serif" font-size="11.00"> :19000 — GGUF, CPU+GPU offload, broad model coverage</text>
+<text text-anchor="start" x="39.28" y="-64.2" font-family="Helvetica,sans-Serif" font-size="11.00">&#45; </text>
+<text text-anchor="start" x="47.28" y="-64.2" font-family="Helvetica,sans-Serif" font-weight="bold" font-size="11.00">Atlas</text>
+<text text-anchor="start" x="79.28" y="-64.2" font-family="Helvetica,sans-Serif" font-size="11.00"> :18888 — NVIDIA&#45;optimised, Spark&#45;native kernels</text>
+<text text-anchor="start" x="39.28" y="-48.2" font-family="Helvetica,sans-Serif" font-size="11.00">&#45; </text>
+<text text-anchor="start" x="47.28" y="-48.2" font-family="Helvetica,sans-Serif" font-weight="bold" font-size="11.00">Ollama</text>
+<text text-anchor="start" x="90.28" y="-48.2" font-family="Helvetica,sans-Serif" font-size="11.00"> :11434 — friendly UX, model library, dev workflows</text>
+<text text-anchor="start" x="39.28" y="-32.8" font-family="Helvetica,sans-Serif" font-size="9.00">Recipe selects engine + flags + quant + ctx&#45;len</text>
+</g>
+
+<g id="edge6" class="edge">
+<title>Swap&#45;&gt;Engine</title>
+<path fill="none" stroke="#3d8f3d" d="M236.28,-259.92C236.28,-235.08 236.28,-206.3 236.28,-179.26"/>
+<polygon fill="#3d8f3d" stroke="#3d8f3d" points="239.78,-179 236.28,-169 232.78,-179 239.78,-179"/>
+<text text-anchor="start" x="236.28" y="-220" font-family="Helvetica,sans-Serif" font-weight="bold" font-size="10.00" fill="#1f3d1f">4: Spawns / Kills</text>
+<text text-anchor="start" x="236.28" y="-210" font-family="Helvetica,sans-Serif" font-size="10.00" fill="#1f3d1f">fork+exec with recipe&#45;derived argv</text>
+<text text-anchor="start" x="236.28" y="-200" font-family="Helvetica,sans-Serif" font-size="10.00" fill="#1f3d1f">SIGTERM → SIGKILL on idle timeout</text>
+<text text-anchor="start" x="236.28" y="-190" font-family="Helvetica,sans-Serif" font-size="10.00" fill="#1f3d1f">Captures stdout/stderr for tuner</text>
+<text text-anchor="start" x="236.28" y="-180" font-family="Helvetica,sans-Serif" font-size="10.00" fill="#1f3d1f">Reports ready&#45;state via /health</text>
+</g>
+</g>
+</svg></div>
+<div id="overlay">
+  <div id="title">Overview</div>
+  <div id="counter">0 / 0</div>
+</div>
+<div id="warn"></div>
+<div id="hint">
+  <kbd>→</kbd><kbd>Space</kbd> next · <kbd>←</kbd> prev ·
+  <kbd>Home</kbd> overview · <kbd>End</kbd> last ·
+  <kbd>1</kbd>–<kbd>9</kbd> jump ·
+  <kbd>H</kbd> hide chrome · <kbd>F</kbd> fullscreen
+</div>
+<script>
+window.__SLIDES__ = {"mode": "linear", "slides": [{"kind": "overview", "label": "Overview"}, {"kind": "linear", "target": "User", "label": "① USER"}, {"kind": "linear", "target": "cluster_admin", "label": "② Admin & Control Plane"}, {"kind": "linear", "target": "cluster_gateway", "label": "③ Inference Gateway"}, {"kind": "linear", "target": "cluster_router", "label": "④ Process Manager (Parent)"}, {"kind": "overview", "label": "Overview"}]};
+window.__TITLE__ = "Dgx Spark Tuner";
+</script>
+<script src="../runtime.js"></script>
+</body>
+</html>

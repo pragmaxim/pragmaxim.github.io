@@ -105,6 +105,11 @@ blog:
   title: "Captain's log"
   more_label: "And %d more"
 
+presentations:
+  enable: true
+  title: "Presentations"
+  more_label: "And %d more"
+
 # Values
 values:
   enable: true

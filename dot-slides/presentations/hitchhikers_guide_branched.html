@@ -1,0 +1,597 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<title>The Hitchhiker&#x27;s Guide to Fintech — Presentation</title>
+<link rel="stylesheet" href="../runtime.css">
+</head>
+<body>
+<div id="svg-host"><svg width="3025pt" height="1744pt"
+ viewBox="0.00 0.00 3025.00 1744.00" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+<g id="graph0" class="graph" transform="scale(1 1) rotate(0) translate(4 1740)">
+<title>HitchhikersFintech</title>
+<text text-anchor="middle" x="1508.5" y="-7.8" font-family="Times,serif" font-size="14.00">The Hitchhiker&#39;s Guide to Fintech</text>
+
+<g id="node1" class="node slide">
+<title>Jakub</title>
+<path fill="#ffffff" stroke="transparent" d="M12,-717C12,-717 284,-717 284,-717 290,-717 296,-723 296,-729 296,-729 296,-1052 296,-1052 296,-1058 290,-1064 284,-1064 284,-1064 12,-1064 12,-1064 6,-1064 0,-1058 0,-1052 0,-1052 0,-729 0,-729 0,-723 6,-717 12,-717"/>
+<polygon fill="#5b8fd1" stroke="transparent" points="1,-1039.5 1,-1062.5 295,-1062.5 295,-1039.5 1,-1039.5"/>
+<text text-anchor="start" x="74" y="-1049.5" font-family="Helvetica,sans-Serif" font-weight="bold" font-size="10.00" fill="white">Jakub Liška @ Pragmaxim</text>
+<text text-anchor="start" x="7" y="-1026.5" font-family="Helvetica,sans-Serif" font-size="10.00"> &#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;</text>
+<text text-anchor="start" x="56" y="-1026.5" font-family="Helvetica,sans-Serif" font-weight="bold" font-size="10.00" fill="#000000">Specialisation</text>
+<text text-anchor="start" x="7" y="-1016.5" font-family="Helvetica,sans-Serif" font-size="10.00"> &#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;• distributed data processing</text>
+<text text-anchor="start" x="7" y="-1006.5" font-family="Helvetica,sans-Serif" font-size="10.00"> &#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;• blockchains</text>
+<text text-anchor="start" x="7" y="-996.5" font-family="Helvetica,sans-Serif" font-size="10.00"> &#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;</text>
+<text text-anchor="start" x="7" y="-986.5" font-family="Helvetica,sans-Serif" font-size="10.00"> &#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;</text>
+<text text-anchor="start" x="56" y="-986.5" font-family="Helvetica,sans-Serif" font-weight="bold" font-size="10.00" fill="#000000">Stack</text>
+<text text-anchor="start" x="7" y="-976.5" font-family="Helvetica,sans-Serif" font-size="10.00"> &#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;• Scala ecosystem</text>
+<text text-anchor="start" x="7" y="-966.5" font-family="Helvetica,sans-Serif" font-size="10.00"> &#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;• ZIO</text>
+<text text-anchor="start" x="7" y="-956.5" font-family="Helvetica,sans-Serif" font-size="10.00"> &#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;• Akka&#45;based implementations of CQRS</text>
+<text text-anchor="start" x="7" y="-946.5" font-family="Helvetica,sans-Serif" font-size="10.00"> &#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;</text>
+<text text-anchor="start" x="7" y="-936.5" font-family="Helvetica,sans-Serif" font-size="10.00"> &#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;</text>
+<text text-anchor="start" x="56" y="-936.5" font-family="Helvetica,sans-Serif" font-style="italic" font-size="10.00">Ideally sustainable, green, meaningful software</text>
+<text text-anchor="start" x="7" y="-926.5" font-family="Helvetica,sans-Serif" font-style="italic" font-size="10.00"> &#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;that makes the world a better place.</text>
+<text text-anchor="start" x="233" y="-926.5" font-family="Helvetica,sans-Serif" font-size="10.00"> &#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;</text>
+<image xlink:href="img/3f22c91a-2b3a-457f-82e3-506fa6c59bc4.png" width="109.843px" height="188px" preserveAspectRatio="xMinYMin meet" x="93.0787" y="-911.5"/>
+<path fill="none" stroke="#5b8fd1" d="M12,-717C12,-717 284,-717 284,-717 290,-717 296,-723 296,-729 296,-729 296,-1052 296,-1052 296,-1058 290,-1064 284,-1064 284,-1064 12,-1064 12,-1064 6,-1064 0,-1058 0,-1052 0,-1052 0,-729 0,-729 0,-723 6,-717 12,-717"/>
+</g>
+
+<g id="node2" class="node slide">
+<title>Shared</title>
+<path fill="#ffffff" stroke="transparent" d="M373,-812C373,-812 679,-812 679,-812 685,-812 691,-818 691,-824 691,-824 691,-957 691,-957 691,-963 685,-969 679,-969 679,-969 373,-969 373,-969 367,-969 361,-963 361,-957 361,-957 361,-824 361,-824 361,-818 367,-812 373,-812"/>
+<polygon fill="#5b8fd1" stroke="transparent" points="362,-944.5 362,-967.5 690,-967.5 690,-944.5 362,-944.5"/>
+<text text-anchor="start" x="377.5" y="-954.5" font-family="Helvetica,sans-Serif" font-weight="bold" font-size="10.00" fill="white">Shared traits of Centralized &amp; Decentralized worlds</text>
+<text text-anchor="start" x="368" y="-931.5" font-family="Helvetica,sans-Serif" font-size="10.00"> &#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;• </text>
+<text text-anchor="start" x="426" y="-931.5" font-family="Helvetica,sans-Serif" font-weight="bold" font-size="10.00">Settlement</text>
+<text text-anchor="start" x="489" y="-931.5" font-family="Helvetica,sans-Serif" font-size="10.00"> between all involved parties</text>
+<text text-anchor="start" x="368" y="-921.5" font-family="Helvetica,sans-Serif" font-size="10.00"> &#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;  ◦ all parties reach </text>
+<text text-anchor="start" x="513" y="-921.5" font-family="Helvetica,sans-Serif" font-weight="bold" font-size="10.00">consensus</text>
+<text text-anchor="start" x="571" y="-921.5" font-family="Helvetica,sans-Serif" font-size="10.00"> about </text>
+<text text-anchor="start" x="605" y="-921.5" font-family="Helvetica,sans-Serif" font-weight="bold" font-size="10.00">State</text>
+<text text-anchor="start" x="368" y="-911.5" font-family="Helvetica,sans-Serif" font-size="10.00"> &#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;  ◦ </text>
+<text text-anchor="start" x="432" y="-911.5" font-family="Helvetica,sans-Serif" font-weight="bold" font-size="10.00">finality</text>
+<text text-anchor="start" x="472" y="-911.5" font-family="Helvetica,sans-Serif" font-size="10.00"> = time required to reach consensus</text>
+<text text-anchor="start" x="368" y="-901.5" font-family="Helvetica,sans-Serif" font-size="10.00"> &#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;  ◦ </text>
+<text text-anchor="start" x="432" y="-901.5" font-family="Helvetica,sans-Serif" font-weight="bold" font-size="10.00">throughput</text>
+<text text-anchor="start" x="496" y="-901.5" font-family="Helvetica,sans-Serif" font-size="10.00"> = how many txs/s</text>
+<text text-anchor="start" x="368" y="-891.5" font-family="Helvetica,sans-Serif" font-size="10.00"> &#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;• </text>
+<text text-anchor="start" x="426" y="-891.5" font-family="Helvetica,sans-Serif" font-weight="bold" font-size="10.00">Event Sourcing</text>
+<text text-anchor="start" x="512" y="-891.5" font-family="Helvetica,sans-Serif" font-size="10.00"> — causality&#45;based, replayable</text>
+<text text-anchor="start" x="368" y="-881.5" font-family="Helvetica,sans-Serif" font-size="10.00"> &#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;  sequence of </text>
+<text text-anchor="start" x="485" y="-881.5" font-family="Helvetica,sans-Serif" font-weight="bold" font-size="10.00">action &amp; reaction</text>
+<text text-anchor="start" x="368" y="-871.5" font-family="Helvetica,sans-Serif" font-size="10.00"> &#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;• </text>
+<text text-anchor="start" x="426" y="-871.5" font-family="Helvetica,sans-Serif" font-weight="bold" font-size="10.00">Transaction Log</text>
+<text text-anchor="start" x="516" y="-871.5" font-family="Helvetica,sans-Serif" font-size="10.00"> → </text>
+<text text-anchor="start" x="531" y="-871.5" font-family="Helvetica,sans-Serif" font-weight="bold" font-size="10.00">Account Balances</text>
+<text text-anchor="start" x="368" y="-861.5" font-family="Helvetica,sans-Serif" font-size="10.00"> &#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;  ◦ Tx = container of asset transfers between accounts</text>
+<text text-anchor="start" x="368" y="-851.5" font-family="Helvetica,sans-Serif" font-size="10.00"> &#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;  ◦ </text>
+<text text-anchor="start" x="432" y="-851.5" font-family="Helvetica,sans-Serif" font-weight="bold" font-size="10.00">Asset</text>
+<text text-anchor="start" x="463" y="-851.5" font-family="Helvetica,sans-Serif" font-size="10.00"> = anything of value, ownership</text>
+<text text-anchor="start" x="368" y="-841.5" font-family="Helvetica,sans-Serif" font-size="10.00"> &#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;  ◦ </text>
+<text text-anchor="start" x="432" y="-841.5" font-family="Helvetica,sans-Serif" font-weight="bold" font-size="10.00">Account</text>
+<text text-anchor="start" x="477" y="-841.5" font-family="Helvetica,sans-Serif" font-size="10.00"> = balance, container of assets</text>
+<text text-anchor="start" x="368" y="-831.5" font-family="Helvetica,sans-Serif" font-size="10.00"> &#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;• </text>
+<text text-anchor="start" x="426" y="-831.5" font-family="Helvetica,sans-Serif" font-weight="bold" font-size="10.00">Projections</text>
+<text text-anchor="start" x="490" y="-831.5" font-family="Helvetica,sans-Serif" font-size="10.00"> of the Tx Log for better insights</text>
+<text text-anchor="start" x="368" y="-821.5" font-family="Helvetica,sans-Serif" font-size="10.00"> &#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;</text>
+<path fill="none" stroke="#5b8fd1" d="M373,-812C373,-812 679,-812 679,-812 685,-812 691,-818 691,-824 691,-824 691,-957 691,-957 691,-963 685,-969 679,-969 679,-969 373,-969 373,-969 367,-969 361,-963 361,-957 361,-957 361,-824 361,-824 361,-818 367,-812 373,-812"/>
+</g>
+
+<g id="edge1" class="edge spine">
+<title>Jakub&#45;&gt;Shared</title>
+<path fill="none" stroke="#5b8fd1" stroke-width="2" d="M296.26,-890.5C314.15,-890.5 332.55,-890.5 350.79,-890.5"/>
+<polygon fill="#5b8fd1" stroke="#5b8fd1" stroke-width="2" points="350.89,-894 360.89,-890.5 350.89,-887 350.89,-894"/>
+</g>
+
+<g id="node3" class="node slide">
+<title>Paradigm</title>
+<path fill="#ffffff" stroke="transparent" d="M790,-1338C790,-1338 1065,-1338 1065,-1338 1071,-1338 1077,-1344 1077,-1350 1077,-1350 1077,-1443 1077,-1443 1077,-1449 1071,-1455 1065,-1455 1065,-1455 790,-1455 790,-1455 784,-1455 778,-1449 778,-1443 778,-1443 778,-1350 778,-1350 778,-1344 784,-1338 790,-1338"/>
+<polygon fill="#5b8fd1" stroke="transparent" points="779.5,-1430.5 779.5,-1453.5 1076.5,-1453.5 1076.5,-1430.5 779.5,-1430.5"/>
+<text text-anchor="start" x="837.5" y="-1440.5" font-family="Helvetica,sans-Serif" font-weight="bold" font-size="10.00" fill="white">Paradigm shift through analogy</text>
+<text text-anchor="start" x="785.5" y="-1417.5" font-family="Helvetica,sans-Serif" font-size="10.00"> &#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;</text>
+<text text-anchor="start" x="834.5" y="-1417.5" font-family="Helvetica,sans-Serif" font-style="italic" font-size="10.00">What software reminds me of:</text>
+<text text-anchor="start" x="785.5" y="-1407.5" font-family="Helvetica,sans-Serif" font-size="10.00"> &#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;</text>
+<text text-anchor="start" x="785.5" y="-1397.5" font-family="Helvetica,sans-Serif" font-size="10.00"> &#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;• </text>
+<text text-anchor="start" x="843.5" y="-1397.5" font-family="Helvetica,sans-Serif" font-weight="bold" font-size="10.00">Centralized</text>
+<text text-anchor="start" x="909.5" y="-1397.5" font-family="Helvetica,sans-Serif" font-size="10.00"> — totalitarian state and</text>
+<text text-anchor="start" x="785.5" y="-1387.5" font-family="Helvetica,sans-Serif" font-size="10.00"> &#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;  centrally&#45;controlled economy</text>
+<text text-anchor="start" x="785.5" y="-1377.5" font-family="Helvetica,sans-Serif" font-size="10.00"> &#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;• </text>
+<text text-anchor="start" x="843.5" y="-1377.5" font-family="Helvetica,sans-Serif" font-weight="bold" font-size="10.00">Decentralized</text>
+<text text-anchor="start" x="922.5" y="-1377.5" font-family="Helvetica,sans-Serif" font-size="10.00"> — democratic state and</text>
+<text text-anchor="start" x="785.5" y="-1367.5" font-family="Helvetica,sans-Serif" font-size="10.00"> &#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;  free economy (slightly utopian)</text>
+<text text-anchor="start" x="785.5" y="-1357.5" font-family="Helvetica,sans-Serif" font-size="10.00"> &#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;• </text>
+<text text-anchor="start" x="843.5" y="-1357.5" font-family="Helvetica,sans-Serif" font-weight="bold" font-size="10.00">Hybrid</text>
+<text text-anchor="start" x="883.5" y="-1357.5" font-family="Helvetica,sans-Serif" font-size="10.00"> — realistic balance and sustainability</text>
+<text text-anchor="start" x="785.5" y="-1347.5" font-family="Helvetica,sans-Serif" font-size="10.00"> &#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;</text>
+<path fill="none" stroke="#5b8fd1" d="M790,-1338C790,-1338 1065,-1338 1065,-1338 1071,-1338 1077,-1344 1077,-1350 1077,-1350 1077,-1443 1077,-1443 1077,-1449 1071,-1455 1065,-1455 1065,-1455 790,-1455 790,-1455 784,-1455 778,-1449 778,-1443 778,-1443 778,-1350 778,-1350 778,-1344 784,-1338 790,-1338"/>
+</g>
+
+<g id="edge2" class="edge spine">
+<title>Shared&#45;&gt;Paradigm</title>
+<path fill="none" stroke="#5b8fd1" stroke-width="2" d="M588.98,-969.01C667.25,-1068.13 800.52,-1236.93 874,-1330"/>
+<polygon fill="#5b8fd1" stroke="#5b8fd1" stroke-width="2" points="871.33,-1332.27 880.27,-1337.95 876.82,-1327.93 871.33,-1332.27"/>
+</g>
+
+<g id="node5" class="node slide">
+<title>CentralBanking</title>
+<path fill="#fffaf0" stroke="transparent" d="M768,-919C768,-919 1087,-919 1087,-919 1093,-919 1099,-925 1099,-931 1099,-931 1099,-1064 1099,-1064 1099,-1070 1093,-1076 1087,-1076 1087,-1076 768,-1076 768,-1076 762,-1076 756,-1070 756,-1064 756,-1064 756,-931 756,-931 756,-925 762,-919 768,-919"/>
+<polygon fill="#c19a3a" stroke="transparent" points="757.5,-1051.5 757.5,-1074.5 1098.5,-1074.5 1098.5,-1051.5 757.5,-1051.5"/>
+<text text-anchor="start" x="870.5" y="-1061.5" font-family="Helvetica,sans-Serif" font-weight="bold" font-size="10.00" fill="white">Centralized Banking</text>
+<text text-anchor="start" x="763.5" y="-1038.5" font-family="Helvetica,sans-Serif" font-size="10.00"> &#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;</text>
+<text text-anchor="start" x="812.5" y="-1038.5" font-family="Helvetica,sans-Serif" font-weight="bold" font-size="10.00">WW II</text>
+<text text-anchor="start" x="846.5" y="-1038.5" font-family="Helvetica,sans-Serif" font-size="10.00"> (Bretton Woods system)</text>
+<text text-anchor="start" x="763.5" y="-1028.5" font-family="Helvetica,sans-Serif" font-size="10.00"> &#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;• 3 decades of regulation, fixed rates worldwide</text>
+<text text-anchor="start" x="763.5" y="-1018.5" font-family="Helvetica,sans-Serif" font-size="10.00"> &#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;• Provided some financial stability</text>
+<text text-anchor="start" x="763.5" y="-1008.5" font-family="Helvetica,sans-Serif" font-size="10.00"> &#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;</text>
+<text text-anchor="start" x="763.5" y="-998.5" font-family="Helvetica,sans-Serif" font-size="10.00"> &#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;</text>
+<text text-anchor="start" x="812.5" y="-998.5" font-family="Helvetica,sans-Serif" font-weight="bold" font-size="10.00">1970s – 2008</text>
+<text text-anchor="start" x="885.5" y="-998.5" font-family="Helvetica,sans-Serif" font-size="10.00"> — deregulation</text>
+<text text-anchor="start" x="763.5" y="-988.5" font-family="Helvetica,sans-Serif" font-size="10.00"> &#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;• 1970s: Nixon shock, floating rates, end of gold standard</text>
+<text text-anchor="start" x="763.5" y="-978.5" font-family="Helvetica,sans-Serif" font-size="10.00"> &#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;• 1980s: derivatives, junk bonds</text>
+<text text-anchor="start" x="763.5" y="-968.5" font-family="Helvetica,sans-Serif" font-size="10.00"> &#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;• 1990s: securitization, subprime mortgages</text>
+<text text-anchor="start" x="763.5" y="-958.5" font-family="Helvetica,sans-Serif" font-size="10.00"> &#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;</text>
+<text text-anchor="start" x="763.5" y="-948.5" font-family="Helvetica,sans-Serif" font-size="10.00"> &#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;</text>
+<text text-anchor="start" x="812.5" y="-948.5" font-family="Helvetica,sans-Serif" font-weight="bold" font-size="10.00">2008+</text>
+<text text-anchor="start" x="848.5" y="-948.5" font-family="Helvetica,sans-Serif" font-size="10.00"> — printing money</text>
+<text text-anchor="start" x="763.5" y="-938.5" font-family="Helvetica,sans-Serif" font-size="10.00"> &#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;• tx volume growing exponentially since Web 2.0</text>
+<text text-anchor="start" x="763.5" y="-928.5" font-family="Helvetica,sans-Serif" font-size="10.00"> &#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;</text>
+<path fill="none" stroke="#c19a3a" d="M768,-919C768,-919 1087,-919 1087,-919 1093,-919 1099,-925 1099,-931 1099,-931 1099,-1064 1099,-1064 1099,-1070 1093,-1076 1087,-1076 1087,-1076 768,-1076 768,-1076 762,-1076 756,-1070 756,-1064 756,-1064 756,-931 756,-931 756,-925 762,-919 768,-919"/>
+</g>
+
+<g id="edge4" class="edge branch">
+<title>Shared&#45;&gt;CentralBanking</title>
+<path fill="none" stroke="#c19a3a" stroke-dasharray="5,2" d="M691.22,-934.48C709.28,-939.32 727.74,-944.27 745.99,-949.15"/>
+<polygon fill="#c19a3a" stroke="#c19a3a" points="745.23,-952.57 755.8,-951.78 747.04,-945.81 745.23,-952.57"/>
+</g>
+
+<g id="node13" class="node slide">
+<title>DecentralBanking</title>
+<path fill="#fffaf0" stroke="transparent" d="M785,-620C785,-620 1070,-620 1070,-620 1076,-620 1082,-626 1082,-632 1082,-632 1082,-805 1082,-805 1082,-811 1076,-817 1070,-817 1070,-817 785,-817 785,-817 779,-817 773,-811 773,-805 773,-805 773,-632 773,-632 773,-626 779,-620 785,-620"/>
+<polygon fill="#c19a3a" stroke="transparent" points="774.5,-792.5 774.5,-815.5 1081.5,-815.5 1081.5,-792.5 774.5,-792.5"/>
+<text text-anchor="start" x="863.5" y="-802.5" font-family="Helvetica,sans-Serif" font-weight="bold" font-size="10.00" fill="white">Decentralized Banking</text>
+<text text-anchor="start" x="780.5" y="-779.5" font-family="Helvetica,sans-Serif" font-size="10.00"> &#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;</text>
+<text text-anchor="start" x="829.5" y="-779.5" font-family="Helvetica,sans-Serif" font-weight="bold" font-size="10.00">Satoshi Nakamoto</text>
+<text text-anchor="start" x="780.5" y="-769.5" font-family="Helvetica,sans-Serif" font-size="10.00"> &#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;• academia + years of Fintech work</text>
+<text text-anchor="start" x="780.5" y="-759.5" font-family="Helvetica,sans-Serif" font-size="10.00"> &#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;• democratised, open&#45;sourced banking</text>
+<text text-anchor="start" x="780.5" y="-749.5" font-family="Helvetica,sans-Serif" font-size="10.00"> &#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;• inspired by decentralised file sharing</text>
+<text text-anchor="start" x="780.5" y="-739.5" font-family="Helvetica,sans-Serif" font-size="10.00"> &#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;</text>
+<text text-anchor="start" x="780.5" y="-729.5" font-family="Helvetica,sans-Serif" font-size="10.00"> &#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;</text>
+<text text-anchor="start" x="829.5" y="-729.5" font-family="Helvetica,sans-Serif" font-weight="bold" font-size="10.00">2nd&#45;gen blockchains</text>
+<text text-anchor="start" x="780.5" y="-719.5" font-family="Helvetica,sans-Serif" font-size="10.00"> &#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;• self&#45;governance — DAO</text>
+<text text-anchor="start" x="780.5" y="-709.5" font-family="Helvetica,sans-Serif" font-size="10.00"> &#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;• general&#45;purpose, rich smart contracts</text>
+<text text-anchor="start" x="780.5" y="-699.5" font-family="Helvetica,sans-Serif" font-size="10.00"> &#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;• sustainability issues &amp; bottlenecks</text>
+<text text-anchor="start" x="780.5" y="-689.5" font-family="Helvetica,sans-Serif" font-size="10.00"> &#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;</text>
+<text text-anchor="start" x="780.5" y="-679.5" font-family="Helvetica,sans-Serif" font-size="10.00"> &#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;</text>
+<text text-anchor="start" x="829.5" y="-679.5" font-family="Helvetica,sans-Serif" font-weight="bold" font-size="10.00">3rd&#45;gen blockchains</text>
+<text text-anchor="start" x="780.5" y="-669.5" font-family="Helvetica,sans-Serif" font-size="10.00"> &#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;• high throughput, low finality (Solana, Avalanche)</text>
+<text text-anchor="start" x="780.5" y="-659.5" font-family="Helvetica,sans-Serif" font-size="10.00"> &#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;  ◦ merkle&#45;tree DB replacing RocksDB</text>
+<text text-anchor="start" x="780.5" y="-649.5" font-family="Helvetica,sans-Serif" font-size="10.00"> &#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;• Relay&#45;chain &amp; Para&#45;chain combination</text>
+<text text-anchor="start" x="780.5" y="-639.5" font-family="Helvetica,sans-Serif" font-size="10.00"> &#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;  ◦ sustainability</text>
+<text text-anchor="start" x="780.5" y="-629.5" font-family="Helvetica,sans-Serif" font-size="10.00"> &#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;</text>
+<path fill="none" stroke="#c19a3a" d="M785,-620C785,-620 1070,-620 1070,-620 1076,-620 1082,-626 1082,-632 1082,-632 1082,-805 1082,-805 1082,-811 1076,-817 1070,-817 1070,-817 785,-817 785,-817 779,-817 773,-811 773,-805 773,-805 773,-632 773,-632 773,-626 779,-620 785,-620"/>
+</g>
+
+<g id="edge5" class="edge branch">
+<title>Shared&#45;&gt;DecentralBanking</title>
+<path fill="none" stroke="#c19a3a" stroke-dasharray="5,2" d="M691.22,-819.8C715.07,-809.53 739.61,-798.96 763.43,-788.71"/>
+<polygon fill="#c19a3a" stroke="#c19a3a" points="765.07,-791.81 772.87,-784.64 762.3,-785.38 765.07,-791.81"/>
+</g>
+
+<g id="node21" class="node slide">
+<title>AssetCustody</title>
+<path fill="#fffaf0" stroke="transparent" d="M798.5,-491.5C798.5,-491.5 1056.5,-491.5 1056.5,-491.5 1062.5,-491.5 1068.5,-497.5 1068.5,-503.5 1068.5,-503.5 1068.5,-571.5 1068.5,-571.5 1068.5,-577.5 1062.5,-583.5 1056.5,-583.5 1056.5,-583.5 798.5,-583.5 798.5,-583.5 792.5,-583.5 786.5,-577.5 786.5,-571.5 786.5,-571.5 786.5,-503.5 786.5,-503.5 786.5,-497.5 792.5,-491.5 798.5,-491.5"/>
+<polygon fill="#c19a3a" stroke="transparent" points="787.5,-559.5 787.5,-582.5 1067.5,-582.5 1067.5,-559.5 787.5,-559.5"/>
+<text text-anchor="start" x="812.5" y="-569.5" font-family="Helvetica,sans-Serif" font-weight="bold" font-size="10.00" fill="white">Asset Custody — bridge between worlds</text>
+<text text-anchor="start" x="793.5" y="-545.5" font-family="Helvetica,sans-Serif" font-size="10.00"> &#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;• Robust multi&#45;client wallet backed by DB</text>
+<text text-anchor="start" x="793.5" y="-534.5" font-family="Helvetica,sans-Serif" font-size="10.00"> &#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;• Classic cryptography — PGP, BouncyCastle</text>
+<text text-anchor="start" x="793.5" y="-523.5" font-family="Helvetica,sans-Serif" font-size="10.00"> &#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;• github.com/pragmaxim/zio&#45;pass</text>
+<text text-anchor="start" x="793.5" y="-512.5" font-family="Helvetica,sans-Serif" font-size="10.00"> &#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;• github.com/pragmaxim/scalapass&#45;cli</text>
+<text text-anchor="start" x="793.5" y="-501.5" font-family="Helvetica,sans-Serif" font-size="10.00"> &#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;</text>
+<path fill="none" stroke="#c19a3a" d="M798.5,-491.5C798.5,-491.5 1056.5,-491.5 1056.5,-491.5 1062.5,-491.5 1068.5,-497.5 1068.5,-503.5 1068.5,-503.5 1068.5,-571.5 1068.5,-571.5 1068.5,-577.5 1062.5,-583.5 1056.5,-583.5 1056.5,-583.5 798.5,-583.5 798.5,-583.5 792.5,-583.5 786.5,-577.5 786.5,-571.5 786.5,-571.5 786.5,-503.5 786.5,-503.5 786.5,-497.5 792.5,-491.5 798.5,-491.5"/>
+</g>
+
+<g id="edge6" class="edge branch">
+<title>Shared&#45;&gt;AssetCustody</title>
+<path fill="none" stroke="#c19a3a" stroke-dasharray="5,2" d="M572.9,-811.72C613.77,-747.64 678.92,-658.89 756,-602.5 762.8,-597.53 770.03,-592.88 777.52,-588.56"/>
+<polygon fill="#c19a3a" stroke="#c19a3a" points="779.37,-591.53 786.42,-583.62 775.98,-585.41 779.37,-591.53"/>
+</g>
+
+<g id="node4" class="node slide">
+<title>Compare</title>
+<path fill="#ffffff" stroke="transparent" d="M1176,-1511C1176,-1511 1604,-1511 1604,-1511 1610,-1511 1616,-1517 1616,-1523 1616,-1523 1616,-1724 1616,-1724 1616,-1730 1610,-1736 1604,-1736 1604,-1736 1176,-1736 1176,-1736 1170,-1736 1164,-1730 1164,-1724 1164,-1724 1164,-1523 1164,-1523 1164,-1517 1170,-1511 1176,-1511"/>
+<polygon fill="#5b8fd1" stroke="transparent" points="1165,-1711.5 1165,-1734.5 1615,-1734.5 1615,-1711.5 1165,-1711.5"/>
+<text text-anchor="start" x="1307.5" y="-1721.5" font-family="Helvetica,sans-Serif" font-weight="bold" font-size="10.00" fill="white">Centralized vs Decentralized</text>
+<image xlink:href="img/c465faf5-c152-4e6a-a986-e8ca0d485cd3.png" width="419.423px" height="188px" preserveAspectRatio="xMinYMin meet" x="1180.29" y="-1705.5"/>
+<path fill="none" stroke="#5b8fd1" d="M1176,-1511C1176,-1511 1604,-1511 1604,-1511 1610,-1511 1616,-1517 1616,-1523 1616,-1523 1616,-1724 1616,-1724 1616,-1730 1610,-1736 1604,-1736 1604,-1736 1176,-1736 1176,-1736 1170,-1736 1164,-1730 1164,-1724 1164,-1724 1164,-1523 1164,-1523 1164,-1517 1170,-1511 1176,-1511"/>
+</g>
+
+<g id="edge3" class="edge spine">
+<title>Paradigm&#45;&gt;Compare</title>
+<path fill="none" stroke="#5b8fd1" stroke-width="2" d="M1047.39,-1455.11C1080.31,-1471.33 1117.23,-1489.53 1154.3,-1507.81"/>
+<polygon fill="#5b8fd1" stroke="#5b8fd1" stroke-width="2" points="1153.21,-1511.17 1163.73,-1512.46 1156.31,-1504.89 1153.21,-1511.17"/>
+</g>
+
+<g id="node6" class="node slide">
+<title>CEFI</title>
+<path fill="#fffaf0" stroke="transparent" d="M1211,-1130.5C1211,-1130.5 1569,-1130.5 1569,-1130.5 1575,-1130.5 1581,-1136.5 1581,-1142.5 1581,-1142.5 1581,-1462.5 1581,-1462.5 1581,-1468.5 1575,-1474.5 1569,-1474.5 1569,-1474.5 1211,-1474.5 1211,-1474.5 1205,-1474.5 1199,-1468.5 1199,-1462.5 1199,-1462.5 1199,-1142.5 1199,-1142.5 1199,-1136.5 1205,-1130.5 1211,-1130.5"/>
+<polygon fill="#c19a3a" stroke="transparent" points="1200,-1450.5 1200,-1473.5 1580,-1473.5 1580,-1450.5 1200,-1450.5"/>
+<text text-anchor="start" x="1312.5" y="-1460.5" font-family="Helvetica,sans-Serif" font-weight="bold" font-size="10.00" fill="white">CEFI — Centralized Finance</text>
+<image xlink:href="img/f4b5394a-d024-4148-8c95-cd00283fd919.jpg" width="364px" height="273px" preserveAspectRatio="xMinYMin meet" x="1208" y="-1444.5"/>
+<text text-anchor="start" x="1206" y="-1151.5" font-family="Helvetica,sans-Serif" font-size="10.00"> &#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;SWIFT — connecting the global financial community</text>
+<text text-anchor="start" x="1206" y="-1140.5" font-family="Helvetica,sans-Serif" font-size="10.00"> &#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;</text>
+<path fill="none" stroke="#c19a3a" d="M1211,-1130.5C1211,-1130.5 1569,-1130.5 1569,-1130.5 1575,-1130.5 1581,-1136.5 1581,-1142.5 1581,-1142.5 1581,-1462.5 1581,-1462.5 1581,-1468.5 1575,-1474.5 1569,-1474.5 1569,-1474.5 1211,-1474.5 1211,-1474.5 1205,-1474.5 1199,-1468.5 1199,-1462.5 1199,-1462.5 1199,-1142.5 1199,-1142.5 1199,-1136.5 1205,-1130.5 1211,-1130.5"/>
+</g>
+
+<g id="edge7" class="edge branch">
+<title>CentralBanking&#45;&gt;CEFI</title>
+<path fill="none" stroke="#c19a3a" stroke-dasharray="5,2" d="M1047.09,-1076.05C1090.8,-1104.99 1141.59,-1138.63 1190.44,-1170.99"/>
+<polygon fill="#c19a3a" stroke="#c19a3a" points="1188.63,-1173.99 1198.9,-1176.59 1192.49,-1168.15 1188.63,-1173.99"/>
+</g>
+
+<g id="node8" class="node slide">
+<title>ModernCore</title>
+<path fill="#fffaf0" stroke="transparent" d="M1181,-901C1181,-901 1599,-901 1599,-901 1605,-901 1611,-907 1611,-913 1611,-913 1611,-1082 1611,-1082 1611,-1088 1605,-1094 1599,-1094 1599,-1094 1181,-1094 1181,-1094 1175,-1094 1169,-1088 1169,-1082 1169,-1082 1169,-913 1169,-913 1169,-907 1175,-901 1181,-901"/>
+<polygon fill="#c19a3a" stroke="transparent" points="1170,-1069.5 1170,-1092.5 1610,-1092.5 1610,-1069.5 1170,-1069.5"/>
+<text text-anchor="start" x="1257.5" y="-1079.5" font-family="Helvetica,sans-Serif" font-weight="bold" font-size="10.00" fill="white">Modern Centralized Core Architecture in Scala</text>
+<text text-anchor="start" x="1176" y="-1056.5" font-family="Helvetica,sans-Serif" font-size="10.00"> &#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;• </text>
+<text text-anchor="start" x="1234" y="-1056.5" font-family="Helvetica,sans-Serif" font-weight="bold" font-size="10.00">CQRS</text>
+<text text-anchor="start" x="1265" y="-1056.5" font-family="Helvetica,sans-Serif" font-size="10.00"> — Scala/Akka has the framework built&#45;in</text>
+<text text-anchor="start" x="1176" y="-1046.5" font-family="Helvetica,sans-Serif" font-size="10.00"> &#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;  ◦ causality (action/reaction), FSM in&#45;memory State</text>
+<text text-anchor="start" x="1176" y="-1036.5" font-family="Helvetica,sans-Serif" font-size="10.00"> &#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;  ◦ real&#45;time State, accessible directly</text>
+<text text-anchor="start" x="1176" y="-1026.5" font-family="Helvetica,sans-Serif" font-size="10.00"> &#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;• </text>
+<text text-anchor="start" x="1234" y="-1026.5" font-family="Helvetica,sans-Serif" font-weight="bold" font-size="10.00">Actors</text>
+<text text-anchor="start" x="1271" y="-1026.5" font-family="Helvetica,sans-Serif" font-size="10.00"> (entities) sharded across cluster nodes</text>
+<text text-anchor="start" x="1176" y="-1016.5" font-family="Helvetica,sans-Serif" font-size="10.00"> &#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;• Each actor sources its own transactions</text>
+<text text-anchor="start" x="1176" y="-1006.5" font-family="Helvetica,sans-Serif" font-size="10.00"> &#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;  ◦ builds </text>
+<text text-anchor="start" x="1272" y="-1006.5" font-family="Helvetica,sans-Serif" font-weight="bold" font-size="10.00">account</text>
+<text text-anchor="start" x="1316" y="-1006.5" font-family="Helvetica,sans-Serif" font-size="10.00"> balance in&#45;memory (fast)</text>
+<text text-anchor="start" x="1176" y="-996.5" font-family="Helvetica,sans-Serif" font-size="10.00"> &#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;• Each Tx feeds general </text>
+<text text-anchor="start" x="1345" y="-996.5" font-family="Helvetica,sans-Serif" font-weight="bold" font-size="10.00">Projections</text>
+<text text-anchor="start" x="1176" y="-986.5" font-family="Helvetica,sans-Serif" font-size="10.00"> &#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;  ◦ Projections are part of the design</text>
+<text text-anchor="start" x="1176" y="-976.5" font-family="Helvetica,sans-Serif" font-size="10.00"> &#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;</text>
+<image xlink:href="img/512b6035-073d-4213-91b0-f854c4145e6b.png" width="360px" height="54px" preserveAspectRatio="xMinYMin meet" x="1210" y="-961.5"/>
+<path fill="none" stroke="#c19a3a" d="M1181,-901C1181,-901 1599,-901 1599,-901 1605,-901 1611,-907 1611,-913 1611,-913 1611,-1082 1611,-1082 1611,-1088 1605,-1094 1599,-1094 1599,-1094 1181,-1094 1181,-1094 1175,-1094 1169,-1088 1169,-1082 1169,-1082 1169,-913 1169,-913 1169,-907 1175,-901 1181,-901"/>
+</g>
+
+<g id="edge9" class="edge branch">
+<title>CentralBanking&#45;&gt;ModernCore</title>
+<path fill="none" stroke="#c19a3a" stroke-dasharray="5,2" d="M1099.32,-997.5C1118.7,-997.5 1138.68,-997.5 1158.66,-997.5"/>
+<polygon fill="#c19a3a" stroke="#c19a3a" points="1158.79,-1001 1168.79,-997.5 1158.79,-994 1158.79,-1001"/>
+</g>
+
+<g id="node7" class="node slide">
+<title>CentralStandards</title>
+<path fill="#fffaf0" stroke="transparent" d="M1770.5,-1275C1770.5,-1275 2033.5,-1275 2033.5,-1275 2039.5,-1275 2045.5,-1281 2045.5,-1287 2045.5,-1287 2045.5,-1400 2045.5,-1400 2045.5,-1406 2039.5,-1412 2033.5,-1412 2033.5,-1412 1770.5,-1412 1770.5,-1412 1764.5,-1412 1758.5,-1406 1758.5,-1400 1758.5,-1400 1758.5,-1287 1758.5,-1287 1758.5,-1281 1764.5,-1275 1770.5,-1275"/>
+<polygon fill="#c19a3a" stroke="transparent" points="1760,-1387.5 1760,-1410.5 2045,-1410.5 2045,-1387.5 1760,-1387.5"/>
+<text text-anchor="start" x="1838.5" y="-1397.5" font-family="Helvetica,sans-Serif" font-weight="bold" font-size="10.00" fill="white">Centralized Standards</text>
+<text text-anchor="start" x="1766" y="-1374.5" font-family="Helvetica,sans-Serif" font-size="10.00"> &#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;Many specifications emerged over time:</text>
+<text text-anchor="start" x="1766" y="-1364.5" font-family="Helvetica,sans-Serif" font-size="10.00"> &#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;</text>
+<text text-anchor="start" x="1766" y="-1354.5" font-family="Helvetica,sans-Serif" font-size="10.00"> &#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;• </text>
+<text text-anchor="start" x="1824" y="-1354.5" font-family="Helvetica,sans-Serif" font-weight="bold" font-size="10.00">ISO 20022</text>
+<text text-anchor="start" x="1882" y="-1354.5" font-family="Helvetica,sans-Serif" font-size="10.00"> — unified messaging format</text>
+<text text-anchor="start" x="1766" y="-1344.5" font-family="Helvetica,sans-Serif" font-size="10.00"> &#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;• </text>
+<text text-anchor="start" x="1824" y="-1344.5" font-family="Helvetica,sans-Serif" font-weight="bold" font-size="10.00">FIX</text>
+<text text-anchor="start" x="1843" y="-1344.5" font-family="Helvetica,sans-Serif" font-size="10.00"> — real&#45;time messaging format</text>
+<text text-anchor="start" x="1766" y="-1334.5" font-family="Helvetica,sans-Serif" font-size="10.00"> &#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;• </text>
+<text text-anchor="start" x="1824" y="-1334.5" font-family="Helvetica,sans-Serif" font-weight="bold" font-size="10.00">FpML</text>
+<text text-anchor="start" x="1855" y="-1334.5" font-family="Helvetica,sans-Serif" font-size="10.00"> — describes financial products</text>
+<text text-anchor="start" x="1766" y="-1324.5" font-family="Helvetica,sans-Serif" font-size="10.00"> &#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;• </text>
+<text text-anchor="start" x="1824" y="-1324.5" font-family="Helvetica,sans-Serif" font-weight="bold" font-size="10.00">CBPR+</text>
+<text text-anchor="start" x="1863" y="-1324.5" font-family="Helvetica,sans-Serif" font-size="10.00"> — cross&#45;border payments</text>
+<text text-anchor="start" x="1766" y="-1314.5" font-family="Helvetica,sans-Serif" font-size="10.00"> &#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;  framework by CPMI &amp; IOSCO</text>
+<text text-anchor="start" x="1766" y="-1304.5" font-family="Helvetica,sans-Serif" font-size="10.00"> &#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;• </text>
+<text text-anchor="start" x="1824" y="-1304.5" font-family="Helvetica,sans-Serif" font-weight="bold" font-size="10.00">ISDA</text>
+<text text-anchor="start" x="1852" y="-1304.5" font-family="Helvetica,sans-Serif" font-size="10.00"> — Swaps and Derivatives Association</text>
+<text text-anchor="start" x="1766" y="-1294.5" font-family="Helvetica,sans-Serif" font-size="10.00"> &#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;• </text>
+<text text-anchor="start" x="1824" y="-1294.5" font-family="Helvetica,sans-Serif" font-weight="bold" font-size="10.00">PCI DSS</text>
+<text text-anchor="start" x="1870" y="-1294.5" font-family="Helvetica,sans-Serif" font-size="10.00"> — payment&#45;card data security</text>
+<text text-anchor="start" x="1766" y="-1284.5" font-family="Helvetica,sans-Serif" font-size="10.00"> &#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;</text>
+<path fill="none" stroke="#c19a3a" d="M1770.5,-1275C1770.5,-1275 2033.5,-1275 2033.5,-1275 2039.5,-1275 2045.5,-1281 2045.5,-1287 2045.5,-1287 2045.5,-1400 2045.5,-1400 2045.5,-1406 2039.5,-1412 2033.5,-1412 2033.5,-1412 1770.5,-1412 1770.5,-1412 1764.5,-1412 1758.5,-1406 1758.5,-1400 1758.5,-1400 1758.5,-1287 1758.5,-1287 1758.5,-1281 1764.5,-1275 1770.5,-1275"/>
+</g>
+
+<g id="edge8" class="edge branch">
+<title>CEFI&#45;&gt;CentralStandards</title>
+<path fill="none" stroke="#c19a3a" stroke-dasharray="5,2" d="M1581.27,-1317.8C1636.31,-1322.22 1695.67,-1326.99 1748.12,-1331.21"/>
+<polygon fill="#c19a3a" stroke="#c19a3a" points="1747.93,-1334.71 1758.17,-1332.02 1748.49,-1327.73 1747.93,-1334.71"/>
+</g>
+
+<g id="node9" class="node slide">
+<title>CQRS</title>
+<path fill="#fffaf0" stroke="transparent" d="M1693,-826C1693,-826 2111,-826 2111,-826 2117,-826 2123,-832 2123,-838 2123,-838 2123,-1227 2123,-1227 2123,-1233 2117,-1239 2111,-1239 2111,-1239 1693,-1239 1693,-1239 1687,-1239 1681,-1233 1681,-1227 1681,-1227 1681,-838 1681,-838 1681,-832 1687,-826 1693,-826"/>
+<polygon fill="#c19a3a" stroke="transparent" points="1682,-1214.5 1682,-1237.5 2122,-1237.5 2122,-1214.5 1682,-1214.5"/>
+<text text-anchor="start" x="1750.5" y="-1224.5" font-family="Helvetica,sans-Serif" font-weight="bold" font-size="10.00" fill="white">CQRS — Command&#45;Query&#45;Responsibility&#45;Segregation</text>
+<image xlink:href="img/1f9dc5cd-0744-4977-9c43-a128471a4304.png" width="422.043px" height="284px" preserveAspectRatio="xMinYMin meet" x="1690.98" y="-1208.5"/>
+<text text-anchor="start" x="1688" y="-905.5" font-family="Helvetica,sans-Serif" font-size="10.00"> &#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;• Ideal use&#45;case for a distributed Actor System</text>
+<text text-anchor="start" x="1688" y="-895.5" font-family="Helvetica,sans-Serif" font-size="10.00"> &#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;  ◦ centralized on a single cluster</text>
+<text text-anchor="start" x="1688" y="-885.5" font-family="Helvetica,sans-Serif" font-size="10.00"> &#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;  ◦ akka&#45;persistence + query</text>
+<text text-anchor="start" x="1688" y="-875.5" font-family="Helvetica,sans-Serif" font-size="10.00"> &#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;  ◦ actor per Account / Entity (in&#45;memory State)</text>
+<text text-anchor="start" x="1688" y="-865.5" font-family="Helvetica,sans-Serif" font-size="10.00"> &#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;  ◦ </text>
+<text text-anchor="start" x="1752" y="-865.5" font-family="Helvetica,sans-Serif" font-weight="bold" font-size="10.00">not</text>
+<text text-anchor="start" x="1771" y="-865.5" font-family="Helvetica,sans-Serif" font-size="10.00"> forced into message&#45;driven architecture</text>
+<text text-anchor="start" x="1688" y="-855.5" font-family="Helvetica,sans-Serif" font-size="10.00"> &#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;• Inspired by Lagom &amp; Aecor (both discontinued)</text>
+<text text-anchor="start" x="1688" y="-845.5" font-family="Helvetica,sans-Serif" font-size="10.00"> &#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;• ZIO Entity, EventSourced, EventStore — discontinued</text>
+<text text-anchor="start" x="1688" y="-835.5" font-family="Helvetica,sans-Serif" font-size="10.00"> &#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;</text>
+<path fill="none" stroke="#c19a3a" d="M1693,-826C1693,-826 2111,-826 2111,-826 2117,-826 2123,-832 2123,-838 2123,-838 2123,-1227 2123,-1227 2123,-1233 2117,-1239 2111,-1239 2111,-1239 1693,-1239 1693,-1239 1687,-1239 1681,-1233 1681,-1227 1681,-1227 1681,-838 1681,-838 1681,-832 1687,-826 1693,-826"/>
+</g>
+
+<g id="edge10" class="edge branch">
+<title>ModernCore&#45;&gt;CQRS</title>
+<path fill="none" stroke="#c19a3a" stroke-dasharray="5,2" d="M1611.36,-1012.62C1631.06,-1013.97 1651.05,-1015.35 1670.83,-1016.7"/>
+<polygon fill="#c19a3a" stroke="#c19a3a" points="1670.62,-1020.2 1680.84,-1017.39 1671.1,-1013.21 1670.62,-1020.2"/>
+</g>
+
+<g id="node10" class="node slide">
+<title>CentralProblems</title>
+<path fill="#fffaf0" stroke="transparent" d="M2251,-1270C2251,-1270 2507,-1270 2507,-1270 2513,-1270 2519,-1276 2519,-1282 2519,-1282 2519,-1385 2519,-1385 2519,-1391 2513,-1397 2507,-1397 2507,-1397 2251,-1397 2251,-1397 2245,-1397 2239,-1391 2239,-1385 2239,-1385 2239,-1282 2239,-1282 2239,-1276 2245,-1270 2251,-1270"/>
+<polygon fill="#c19a3a" stroke="transparent" points="2240,-1372.5 2240,-1395.5 2518,-1395.5 2518,-1372.5 2240,-1372.5"/>
+<text text-anchor="start" x="2317" y="-1382.5" font-family="Helvetica,sans-Serif" font-weight="bold" font-size="10.00" fill="white">Centralized problems</text>
+<text text-anchor="start" x="2246" y="-1359.5" font-family="Helvetica,sans-Serif" font-size="10.00"> &#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;• </text>
+<text text-anchor="start" x="2304" y="-1359.5" font-family="Helvetica,sans-Serif" font-weight="bold" font-size="10.00">Settlement layer</text>
+<text text-anchor="start" x="2400" y="-1359.5" font-family="Helvetica,sans-Serif" font-size="10.00"> — complex nightmare</text>
+<text text-anchor="start" x="2246" y="-1349.5" font-family="Helvetica,sans-Serif" font-size="10.00"> &#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;  ◦ Visa Tx finality up to 3 days · ~2% fee</text>
+<text text-anchor="start" x="2246" y="-1339.5" font-family="Helvetica,sans-Serif" font-size="10.00"> &#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;  ◦ new parties / banks cannot easily join</text>
+<text text-anchor="start" x="2246" y="-1329.5" font-family="Helvetica,sans-Serif" font-size="10.00"> &#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;• </text>
+<text text-anchor="start" x="2304" y="-1329.5" font-family="Helvetica,sans-Serif" font-weight="bold" font-size="10.00">Inconsistency</text>
+<text text-anchor="start" x="2246" y="-1319.5" font-family="Helvetica,sans-Serif" font-size="10.00"> &#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;  ◦ rely on database ACID + thorough tests</text>
+<text text-anchor="start" x="2246" y="-1309.5" font-family="Helvetica,sans-Serif" font-size="10.00"> &#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;  ◦ no cryptographic proofs</text>
+<text text-anchor="start" x="2246" y="-1299.5" font-family="Helvetica,sans-Serif" font-size="10.00"> &#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;• A lot of State — </text>
+<text text-anchor="start" x="2383" y="-1299.5" font-family="Helvetica,sans-Serif" font-weight="bold" font-size="10.00">bad for FP</text>
+<text text-anchor="start" x="2246" y="-1289.5" font-family="Helvetica,sans-Serif" font-size="10.00"> &#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;• </text>
+<text text-anchor="start" x="2304" y="-1289.5" font-family="Helvetica,sans-Serif" font-weight="bold" font-size="10.00">Privacy</text>
+<text text-anchor="start" x="2347" y="-1289.5" font-family="Helvetica,sans-Serif" font-size="10.00"> concerns</text>
+<text text-anchor="start" x="2246" y="-1279.5" font-family="Helvetica,sans-Serif" font-size="10.00"> &#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;</text>
+<path fill="none" stroke="#c19a3a" d="M2251,-1270C2251,-1270 2507,-1270 2507,-1270 2513,-1270 2519,-1276 2519,-1282 2519,-1282 2519,-1385 2519,-1385 2519,-1391 2513,-1397 2507,-1397 2507,-1397 2251,-1397 2251,-1397 2245,-1397 2239,-1391 2239,-1385 2239,-1385 2239,-1282 2239,-1282 2239,-1276 2245,-1270 2251,-1270"/>
+</g>
+
+<g id="edge11" class="edge branch">
+<title>CQRS&#45;&gt;CentralProblems</title>
+<path fill="none" stroke="#c19a3a" stroke-dasharray="5,2" d="M2123.34,-1210.12C2144.73,-1224.81 2166.48,-1238.85 2188,-1251.5 2201.15,-1259.23 2215.16,-1266.65 2229.39,-1273.65"/>
+<polygon fill="#c19a3a" stroke="#c19a3a" points="2228.24,-1276.98 2238.76,-1278.19 2231.29,-1270.68 2228.24,-1276.98"/>
+</g>
+
+<g id="node12" class="node slide">
+<title>UnbalancedCluster</title>
+<path fill="#fffaf0" stroke="transparent" d="M2200,-831.5C2200,-831.5 2558,-831.5 2558,-831.5 2564,-831.5 2570,-837.5 2570,-843.5 2570,-843.5 2570,-1221.5 2570,-1221.5 2570,-1227.5 2564,-1233.5 2558,-1233.5 2558,-1233.5 2200,-1233.5 2200,-1233.5 2194,-1233.5 2188,-1227.5 2188,-1221.5 2188,-1221.5 2188,-843.5 2188,-843.5 2188,-837.5 2194,-831.5 2200,-831.5"/>
+<polygon fill="#c19a3a" stroke="transparent" points="2189,-1209.5 2189,-1232.5 2569,-1232.5 2569,-1209.5 2189,-1209.5"/>
+<text text-anchor="start" x="2287.5" y="-1219.5" font-family="Helvetica,sans-Serif" font-weight="bold" font-size="10.00" fill="white">Unbalanced Cluster Distribution</text>
+<image xlink:href="img/61b3e323-8e06-4e11-a990-094de77a8663.png" width="364.014px" height="263px" preserveAspectRatio="xMinYMin meet" x="2196.99" y="-1203.5"/>
+<text text-anchor="start" x="2195" y="-921.5" font-family="Helvetica,sans-Serif" font-size="10.00"> &#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;</text>
+<text text-anchor="start" x="2244" y="-921.5" font-family="Helvetica,sans-Serif" font-weight="bold" font-size="10.00">Problem</text>
+<text text-anchor="start" x="2195" y="-911.5" font-family="Helvetica,sans-Serif" font-size="10.00"> &#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;• Nodes carry different concentrations of whales &amp; sharks</text>
+<text text-anchor="start" x="2195" y="-901.5" font-family="Helvetica,sans-Serif" font-size="10.00"> &#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;  ◦ pay&#45;for&#45;service transactions</text>
+<text text-anchor="start" x="2195" y="-891.5" font-family="Helvetica,sans-Serif" font-size="10.00"> &#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;  ◦ day trading</text>
+<text text-anchor="start" x="2195" y="-881.5" font-family="Helvetica,sans-Serif" font-size="10.00"> &#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;⇒ performance issues, bottlenecks, replay&#45;time variance</text>
+<text text-anchor="start" x="2195" y="-871.5" font-family="Helvetica,sans-Serif" font-size="10.00"> &#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;</text>
+<text text-anchor="start" x="2195" y="-861.5" font-family="Helvetica,sans-Serif" font-size="10.00"> &#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;</text>
+<text text-anchor="start" x="2244" y="-861.5" font-family="Helvetica,sans-Serif" font-weight="bold" font-size="10.00">Solution</text>
+<text text-anchor="start" x="2195" y="-851.5" font-family="Helvetica,sans-Serif" font-size="10.00"> &#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;• rank&#45;based cluster rebalancing</text>
+<text text-anchor="start" x="2195" y="-841.5" font-family="Helvetica,sans-Serif" font-size="10.00"> &#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;</text>
+<path fill="none" stroke="#c19a3a" d="M2200,-831.5C2200,-831.5 2558,-831.5 2558,-831.5 2564,-831.5 2570,-837.5 2570,-843.5 2570,-843.5 2570,-1221.5 2570,-1221.5 2570,-1227.5 2564,-1233.5 2558,-1233.5 2558,-1233.5 2200,-1233.5 2200,-1233.5 2194,-1233.5 2188,-1227.5 2188,-1221.5 2188,-1221.5 2188,-843.5 2188,-843.5 2188,-837.5 2194,-831.5 2200,-831.5"/>
+</g>
+
+<g id="edge13" class="edge branch">
+<title>CQRS&#45;&gt;UnbalancedCluster</title>
+<path fill="none" stroke="#c19a3a" stroke-dasharray="5,2" d="M2123.12,-1032.5C2141.34,-1032.5 2159.7,-1032.5 2177.77,-1032.5"/>
+<polygon fill="#c19a3a" stroke="#c19a3a" points="2177.77,-1036 2187.77,-1032.5 2177.77,-1029 2177.77,-1036"/>
+</g>
+
+<g id="node11" class="node slide">
+<title>UnbalancedData</title>
+<path fill="#fffaf0" stroke="transparent" d="M2647,-1157C2647,-1157 3005,-1157 3005,-1157 3011,-1157 3017,-1163 3017,-1169 3017,-1169 3017,-1498 3017,-1498 3017,-1504 3011,-1510 3005,-1510 3005,-1510 2647,-1510 2647,-1510 2641,-1510 2635,-1504 2635,-1498 2635,-1498 2635,-1169 2635,-1169 2635,-1163 2641,-1157 2647,-1157"/>
+<polygon fill="#c19a3a" stroke="transparent" points="2636,-1485.5 2636,-1508.5 3016,-1508.5 3016,-1485.5 2636,-1485.5"/>
+<text text-anchor="start" x="2741.5" y="-1495.5" font-family="Helvetica,sans-Serif" font-weight="bold" font-size="10.00" fill="white">Unbalanced Data Distribution</text>
+<text text-anchor="start" x="2642" y="-1472.5" font-family="Helvetica,sans-Serif" font-size="10.00"> &#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;• </text>
+<text text-anchor="start" x="2700" y="-1472.5" font-family="Helvetica,sans-Serif" font-weight="bold" font-size="10.00">PostgreSQL</text>
+<text text-anchor="start" x="2767" y="-1472.5" font-family="Helvetica,sans-Serif" font-size="10.00"> — custom optimisations / pagination</text>
+<text text-anchor="start" x="2642" y="-1462.5" font-family="Helvetica,sans-Serif" font-size="10.00"> &#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;• </text>
+<text text-anchor="start" x="2700" y="-1462.5" font-family="Helvetica,sans-Serif" font-weight="bold" font-size="10.00">Cassandra</text>
+<text text-anchor="start" x="2760" y="-1462.5" font-family="Helvetica,sans-Serif" font-size="10.00"> — hash / time / range partitioning</text>
+<text text-anchor="start" x="2642" y="-1452.5" font-family="Helvetica,sans-Serif" font-size="10.00"> &#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;  + denormalisation</text>
+<text text-anchor="start" x="2642" y="-1442.5" font-family="Helvetica,sans-Serif" font-size="10.00"> &#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;• Cloud storage at $: BigTable, BigQuery</text>
+<text text-anchor="start" x="2642" y="-1432.5" font-family="Helvetica,sans-Serif" font-size="10.00"> &#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;</text>
+<image xlink:href="img/87dd6cbe-813c-4e84-bb36-b549f79c3466.png" width="363.016px" height="254px" preserveAspectRatio="xMinYMin meet" x="2644.49" y="-1417.5"/>
+<path fill="none" stroke="#c19a3a" d="M2647,-1157C2647,-1157 3005,-1157 3005,-1157 3011,-1157 3017,-1163 3017,-1169 3017,-1169 3017,-1498 3017,-1498 3017,-1504 3011,-1510 3005,-1510 3005,-1510 2647,-1510 2647,-1510 2641,-1510 2635,-1504 2635,-1498 2635,-1498 2635,-1169 2635,-1169 2635,-1163 2641,-1157 2647,-1157"/>
+</g>
+
+<g id="edge12" class="edge branch">
+<title>CentralProblems&#45;&gt;UnbalancedData</title>
+<path fill="none" stroke="#c19a3a" stroke-dasharray="5,2" d="M2519.27,-1333.5C2552.72,-1333.5 2589.09,-1333.5 2624.7,-1333.5"/>
+<polygon fill="#c19a3a" stroke="#c19a3a" points="2624.72,-1337 2634.72,-1333.5 2624.72,-1330 2624.72,-1337"/>
+</g>
+
+<g id="node14" class="node slide">
+<title>DecentralCore</title>
+<path fill="#fffaf0" stroke="transparent" d="M1181,-512C1181,-512 1599,-512 1599,-512 1605,-512 1611,-518 1611,-524 1611,-524 1611,-783 1611,-783 1611,-789 1605,-795 1599,-795 1599,-795 1181,-795 1181,-795 1175,-795 1169,-789 1169,-783 1169,-783 1169,-524 1169,-524 1169,-518 1175,-512 1181,-512"/>
+<polygon fill="#c19a3a" stroke="transparent" points="1170,-770.5 1170,-793.5 1610,-793.5 1610,-770.5 1170,-770.5"/>
+<text text-anchor="start" x="1274" y="-780.5" font-family="Helvetica,sans-Serif" font-weight="bold" font-size="10.00" fill="white">Decentralized Core Architecture in Scala</text>
+<text text-anchor="start" x="1176" y="-757.5" font-family="Helvetica,sans-Serif" font-size="10.00"> &#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;• </text>
+<text text-anchor="start" x="1234" y="-757.5" font-family="Helvetica,sans-Serif" font-weight="bold" font-size="10.00">Peer&#45;to&#45;peer</text>
+<text text-anchor="start" x="1307" y="-757.5" font-family="Helvetica,sans-Serif" font-size="10.00"> network &amp; stateless nodes — ideal for ZIO</text>
+<text text-anchor="start" x="1176" y="-747.5" font-family="Helvetica,sans-Serif" font-size="10.00"> &#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;• Blockchain and Projections are </text>
+<text text-anchor="start" x="1387" y="-747.5" font-family="Helvetica,sans-Serif" font-weight="bold" font-size="10.00">separated</text>
+<text text-anchor="start" x="1176" y="-737.5" font-family="Helvetica,sans-Serif" font-size="10.00"> &#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;  ◦ Blockchain = TxLedger + AccountState (zio&#45;chain)</text>
+<text text-anchor="start" x="1176" y="-727.5" font-family="Helvetica,sans-Serif" font-size="10.00"> &#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;  ◦ Projections = Blockchain Explorer (uexplorer)</text>
+<text text-anchor="start" x="1176" y="-717.5" font-family="Helvetica,sans-Serif" font-size="10.00"> &#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;• TxLedger + AccountState are </text>
+<text text-anchor="start" x="1379" y="-717.5" font-family="Helvetica,sans-Serif" font-weight="bold" font-size="10.00">provably correct</text>
+<text text-anchor="start" x="1176" y="-707.5" font-family="Helvetica,sans-Serif" font-size="10.00"> &#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;  and consistent across the whole p2p network</text>
+<text text-anchor="start" x="1176" y="-697.5" font-family="Helvetica,sans-Serif" font-size="10.00"> &#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;</text>
+<image xlink:href="img/4b434739-1153-4023-bc4a-761b8fee4b46.png" width="409.413px" height="164px" preserveAspectRatio="xMinYMin meet" x="1185.29" y="-682.5"/>
+<path fill="none" stroke="#c19a3a" d="M1181,-512C1181,-512 1599,-512 1599,-512 1605,-512 1611,-518 1611,-524 1611,-524 1611,-783 1611,-783 1611,-789 1605,-795 1599,-795 1599,-795 1181,-795 1181,-795 1175,-795 1169,-789 1169,-783 1169,-783 1169,-524 1169,-524 1169,-518 1175,-512 1181,-512"/>
+</g>
+
+<g id="edge14" class="edge branch">
+<title>DecentralBanking&#45;&gt;DecentralCore</title>
+<path fill="none" stroke="#c19a3a" stroke-dasharray="5,2" d="M1082.16,-696.81C1106.86,-693.32 1132.89,-689.65 1158.91,-685.98"/>
+<polygon fill="#c19a3a" stroke="#c19a3a" points="1159.47,-689.43 1168.88,-684.57 1158.49,-682.5 1159.47,-689.43"/>
+</g>
+
+<g id="node19" class="node slide">
+<title>DApps</title>
+<path fill="#fffaf0" stroke="transparent" d="M1181,-66C1181,-66 1599,-66 1599,-66 1605,-66 1611,-72 1611,-78 1611,-78 1611,-455 1611,-455 1611,-461 1605,-467 1599,-467 1599,-467 1181,-467 1181,-467 1175,-467 1169,-461 1169,-455 1169,-455 1169,-78 1169,-78 1169,-72 1175,-66 1181,-66"/>
+<polygon fill="#c19a3a" stroke="transparent" points="1170,-442.5 1170,-465.5 1610,-465.5 1610,-442.5 1170,-442.5"/>
+<text text-anchor="start" x="1334" y="-452.5" font-family="Helvetica,sans-Serif" font-weight="bold" font-size="10.00" fill="white">Decentralized Apps</text>
+<image xlink:href="img/3ae977de-99d3-407e-8452-5a6e92a453c1.png" width="423.59px" height="319px" preserveAspectRatio="xMinYMin meet" x="1178.2" y="-436.5"/>
+<text text-anchor="start" x="1176" y="-97.5" font-family="Helvetica,sans-Serif" font-size="10.00"> &#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;Smart&#45;contracts as building blocks of finance</text>
+<text text-anchor="start" x="1176" y="-86.5" font-family="Helvetica,sans-Serif" font-size="10.00"> &#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;— composable, permissionless, auditable on&#45;chain.</text>
+<text text-anchor="start" x="1176" y="-75.5" font-family="Helvetica,sans-Serif" font-size="10.00"> &#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;</text>
+<path fill="none" stroke="#c19a3a" d="M1181,-66C1181,-66 1599,-66 1599,-66 1605,-66 1611,-72 1611,-78 1611,-78 1611,-455 1611,-455 1611,-461 1605,-467 1599,-467 1599,-467 1181,-467 1181,-467 1175,-467 1169,-461 1169,-455 1169,-455 1169,-78 1169,-78 1169,-72 1175,-66 1181,-66"/>
+</g>
+
+<g id="edge19" class="edge branch">
+<title>DecentralBanking&#45;&gt;DApps</title>
+<path fill="none" stroke="#c19a3a" stroke-dasharray="5,2" d="M1080.2,-619.81C1086.77,-613.87 1093.08,-607.76 1099,-601.5 1137.24,-561.08 1129.78,-538.38 1164,-494.5 1168.99,-488.1 1174.14,-481.69 1179.42,-475.29"/>
+<polygon fill="#c19a3a" stroke="#c19a3a" points="1182.46,-477.12 1186.17,-467.2 1177.08,-472.63 1182.46,-477.12"/>
+</g>
+
+<g id="node15" class="node slide">
+<title>Relay</title>
+<path fill="#fffaf0" stroke="transparent" d="M1693,-447.5C1693,-447.5 2111,-447.5 2111,-447.5 2117,-447.5 2123,-453.5 2123,-459.5 2123,-459.5 2123,-777.5 2123,-777.5 2123,-783.5 2117,-789.5 2111,-789.5 2111,-789.5 1693,-789.5 1693,-789.5 1687,-789.5 1681,-783.5 1681,-777.5 1681,-777.5 1681,-459.5 1681,-459.5 1681,-453.5 1687,-447.5 1693,-447.5"/>
+<polygon fill="#c19a3a" stroke="transparent" points="1682,-765.5 1682,-788.5 2122,-788.5 2122,-765.5 1682,-765.5"/>
+<text text-anchor="start" x="1844.5" y="-775.5" font-family="Helvetica,sans-Serif" font-weight="bold" font-size="10.00" fill="white">Relay &amp; Para Chains</text>
+<text text-anchor="start" x="1688" y="-752.5" font-family="Helvetica,sans-Serif" font-size="10.00"> &#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;</text>
+<text text-anchor="start" x="1737" y="-752.5" font-family="Helvetica,sans-Serif" font-style="italic" font-size="10.00">How sustainability is achieved — through further decentralisation.</text>
+<text text-anchor="start" x="1688" y="-742.5" font-family="Helvetica,sans-Serif" font-size="10.00"> &#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;</text>
+<image xlink:href="img/6e75804d-37e4-49f7-9c36-13d59e60da8f.jpg" width="421.08px" height="273px" preserveAspectRatio="xMinYMin meet" x="1691.46" y="-727.5"/>
+<path fill="none" stroke="#c19a3a" d="M1693,-447.5C1693,-447.5 2111,-447.5 2111,-447.5 2117,-447.5 2123,-453.5 2123,-459.5 2123,-459.5 2123,-777.5 2123,-777.5 2123,-783.5 2117,-789.5 2111,-789.5 2111,-789.5 1693,-789.5 1693,-789.5 1687,-789.5 1681,-783.5 1681,-777.5 1681,-777.5 1681,-459.5 1681,-459.5 1681,-453.5 1687,-447.5 1693,-447.5"/>
+</g>
+
+<g id="edge15" class="edge branch">
+<title>DecentralCore&#45;&gt;Relay</title>
+<path fill="none" stroke="#c19a3a" stroke-dasharray="5,2" d="M1611.36,-638.38C1631.06,-637.03 1651.05,-635.65 1670.83,-634.3"/>
+<polygon fill="#c19a3a" stroke="#c19a3a" points="1671.1,-637.79 1680.84,-633.61 1670.62,-630.8 1671.1,-637.79"/>
+</g>
+
+<g id="node16" class="node slide">
+<title>CryptoProofs</title>
+<path fill="#fffaf0" stroke="transparent" d="M2200,-449.5C2200,-449.5 2558,-449.5 2558,-449.5 2564,-449.5 2570,-455.5 2570,-461.5 2570,-461.5 2570,-783.5 2570,-783.5 2570,-789.5 2564,-795.5 2558,-795.5 2558,-795.5 2200,-795.5 2200,-795.5 2194,-795.5 2188,-789.5 2188,-783.5 2188,-783.5 2188,-461.5 2188,-461.5 2188,-455.5 2194,-449.5 2200,-449.5"/>
+<polygon fill="#c19a3a" stroke="transparent" points="2189,-771.5 2189,-794.5 2569,-794.5 2569,-771.5 2189,-771.5"/>
+<text text-anchor="start" x="2285.5" y="-781.5" font-family="Helvetica,sans-Serif" font-weight="bold" font-size="10.00" fill="white">Crypto proofs for fast consensus</text>
+<text text-anchor="start" x="2195" y="-758.5" font-family="Helvetica,sans-Serif" font-size="10.00"> &#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;• </text>
+<text text-anchor="start" x="2253" y="-758.5" font-family="Helvetica,sans-Serif" font-weight="bold" font-size="10.00">Merkelized Trie Database</text>
+<text text-anchor="start" x="2399" y="-758.5" font-family="Helvetica,sans-Serif" font-size="10.00"> (Firewood)</text>
+<text text-anchor="start" x="2195" y="-748.5" font-family="Helvetica,sans-Serif" font-size="10.00"> &#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;• </text>
+<text text-anchor="start" x="2253" y="-748.5" font-family="Helvetica,sans-Serif" font-weight="bold" font-size="10.00">Patricia Merkle Trie</text>
+<text text-anchor="start" x="2365" y="-748.5" font-family="Helvetica,sans-Serif" font-size="10.00"> on RocksDB (Trie&#45;db)</text>
+<text text-anchor="start" x="2195" y="-738.5" font-family="Helvetica,sans-Serif" font-size="10.00"> &#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;• </text>
+<text text-anchor="start" x="2253" y="-738.5" font-family="Helvetica,sans-Serif" font-weight="bold" font-size="10.00">Authenticated Dynamic Dictionaries</text>
+<text text-anchor="start" x="2457" y="-738.5" font-family="Helvetica,sans-Serif" font-size="10.00"> (AVL+ tree)</text>
+<text text-anchor="start" x="2195" y="-728.5" font-family="Helvetica,sans-Serif" font-size="10.00"> &#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;</text>
+<image xlink:href="img/c222f15c-6074-45d4-8f01-8ca67da03d4c.png" width="363.827px" height="257px" preserveAspectRatio="xMinYMin meet" x="2197.09" y="-713.5"/>
+<path fill="none" stroke="#c19a3a" d="M2200,-449.5C2200,-449.5 2558,-449.5 2558,-449.5 2564,-449.5 2570,-455.5 2570,-461.5 2570,-461.5 2570,-783.5 2570,-783.5 2570,-789.5 2564,-795.5 2558,-795.5 2558,-795.5 2200,-795.5 2200,-795.5 2194,-795.5 2188,-789.5 2188,-783.5 2188,-783.5 2188,-461.5 2188,-461.5 2188,-455.5 2194,-449.5 2200,-449.5"/>
+</g>
+
+<g id="edge16" class="edge branch">
+<title>Relay&#45;&gt;CryptoProofs</title>
+<path fill="none" stroke="#c19a3a" stroke-dasharray="5,2" d="M2123.12,-620.35C2141.34,-620.51 2159.7,-620.66 2177.77,-620.81"/>
+<polygon fill="#c19a3a" stroke="#c19a3a" points="2177.74,-624.31 2187.77,-620.9 2177.8,-617.31 2177.74,-624.31"/>
+</g>
+
+<g id="node17" class="node slide">
+<title>Explorer</title>
+<path fill="#fffaf0" stroke="transparent" d="M2237,-206C2237,-206 2521,-206 2521,-206 2527,-206 2533,-212 2533,-218 2533,-218 2533,-401 2533,-401 2533,-407 2527,-413 2521,-413 2521,-413 2237,-413 2237,-413 2231,-413 2225,-407 2225,-401 2225,-401 2225,-218 2225,-218 2225,-212 2231,-206 2237,-206"/>
+<polygon fill="#c19a3a" stroke="transparent" points="2226,-388.5 2226,-411.5 2532,-411.5 2532,-388.5 2226,-388.5"/>
+<text text-anchor="start" x="2274" y="-398.5" font-family="Helvetica,sans-Serif" font-weight="bold" font-size="10.00" fill="white">Blockchain Explorer decentralization</text>
+<text text-anchor="start" x="2232" y="-375.5" font-family="Helvetica,sans-Serif" font-size="10.00"> &#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;• Indexes chain data, exposes HTTP API / GraphQL</text>
+<text text-anchor="start" x="2232" y="-365.5" font-family="Helvetica,sans-Serif" font-size="10.00"> &#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;• Often provides analytical insights</text>
+<text text-anchor="start" x="2232" y="-355.5" font-family="Helvetica,sans-Serif" font-size="10.00"> &#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;</text>
+<text text-anchor="start" x="2232" y="-345.5" font-family="Helvetica,sans-Serif" font-size="10.00"> &#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;</text>
+<text text-anchor="start" x="2281" y="-345.5" font-family="Helvetica,sans-Serif" font-weight="bold" font-size="10.00">Centralized</text>
+<text text-anchor="start" x="2232" y="-335.5" font-family="Helvetica,sans-Serif" font-size="10.00"> &#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;• Powerful projection DB</text>
+<text text-anchor="start" x="2232" y="-325.5" font-family="Helvetica,sans-Serif" font-size="10.00"> &#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;• Hard to incentivise people to run it</text>
+<text text-anchor="start" x="2232" y="-315.5" font-family="Helvetica,sans-Serif" font-size="10.00"> &#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;</text>
+<text text-anchor="start" x="2232" y="-305.5" font-family="Helvetica,sans-Serif" font-size="10.00"> &#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;</text>
+<text text-anchor="start" x="2281" y="-305.5" font-family="Helvetica,sans-Serif" font-weight="bold" font-size="10.00">Decentralized</text>
+<text text-anchor="start" x="2360" y="-305.5" font-family="Helvetica,sans-Serif" font-size="10.00"> — The Graph</text>
+<text text-anchor="start" x="2232" y="-295.5" font-family="Helvetica,sans-Serif" font-size="10.00"> &#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;• Incentivisation model</text>
+<text text-anchor="start" x="2232" y="-285.5" font-family="Helvetica,sans-Serif" font-size="10.00"> &#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;• Inversion of control — index what you need</text>
+<text text-anchor="start" x="2232" y="-275.5" font-family="Helvetica,sans-Serif" font-size="10.00"> &#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;• </text>
+<text text-anchor="start" x="2290" y="-275.5" font-family="Helvetica,sans-Serif" font-weight="bold" font-size="10.00">Subgraphs</text>
+<text text-anchor="start" x="2352" y="-275.5" font-family="Helvetica,sans-Serif" font-size="10.00"> over only relevant chain parts</text>
+<text text-anchor="start" x="2232" y="-265.5" font-family="Helvetica,sans-Serif" font-size="10.00"> &#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;</text>
+<text text-anchor="start" x="2232" y="-255.5" font-family="Helvetica,sans-Serif" font-size="10.00"> &#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;</text>
+<text text-anchor="start" x="2281" y="-255.5" font-family="Helvetica,sans-Serif" font-weight="bold" font-size="10.00">Indexing challenges</text>
+<text text-anchor="start" x="2232" y="-245.5" font-family="Helvetica,sans-Serif" font-size="10.00"> &#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;• Forks, rollbacks, reverting data</text>
+<text text-anchor="start" x="2232" y="-235.5" font-family="Helvetica,sans-Serif" font-size="10.00"> &#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;• Various tx formats &amp; assets</text>
+<text text-anchor="start" x="2232" y="-225.5" font-family="Helvetica,sans-Serif" font-size="10.00"> &#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;• Partition size (Cassandra), JOINs (RDBMS)</text>
+<text text-anchor="start" x="2232" y="-215.5" font-family="Helvetica,sans-Serif" font-size="10.00"> &#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;</text>
+<path fill="none" stroke="#c19a3a" d="M2237,-206C2237,-206 2521,-206 2521,-206 2527,-206 2533,-212 2533,-218 2533,-218 2533,-401 2533,-401 2533,-407 2527,-413 2521,-413 2521,-413 2237,-413 2237,-413 2231,-413 2225,-407 2225,-401 2225,-401 2225,-218 2225,-218 2225,-212 2231,-206 2237,-206"/>
+</g>
+
+<g id="edge17" class="edge branch">
+<title>Relay&#45;&gt;Explorer</title>
+<path fill="none" stroke="#c19a3a" stroke-dasharray="5,2" d="M2123.02,-473.82C2144.96,-459.49 2166.9,-445.19 2188,-431.5 2197.28,-425.47 2206.83,-419.29 2216.47,-413.07"/>
+<polygon fill="#c19a3a" stroke="#c19a3a" points="2218.45,-415.95 2224.96,-407.59 2214.66,-410.07 2218.45,-415.95"/>
+</g>
+
+<g id="node18" class="node slide">
+<title>Advantages</title>
+<path fill="#fffaf0" stroke="transparent" d="M2225,-23C2225,-23 2533,-23 2533,-23 2539,-23 2545,-29 2545,-35 2545,-35 2545,-158 2545,-158 2545,-164 2539,-170 2533,-170 2533,-170 2225,-170 2225,-170 2219,-170 2213,-164 2213,-158 2213,-158 2213,-35 2213,-35 2213,-29 2219,-23 2225,-23"/>
+<polygon fill="#c19a3a" stroke="transparent" points="2214,-145.5 2214,-168.5 2544,-168.5 2544,-145.5 2214,-145.5"/>
+<text text-anchor="start" x="2290" y="-155.5" font-family="Helvetica,sans-Serif" font-weight="bold" font-size="10.00" fill="white">Advantages of decentralization</text>
+<text text-anchor="start" x="2220" y="-132.5" font-family="Helvetica,sans-Serif" font-size="10.00"> &#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;• Clean standards of </text>
+<text text-anchor="start" x="2372" y="-132.5" font-family="Helvetica,sans-Serif" font-weight="bold" font-size="10.00">Settlement / Consensus layer</text>
+<text text-anchor="start" x="2220" y="-122.5" font-family="Helvetica,sans-Serif" font-size="10.00"> &#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;  ◦ in a </text>
+<text text-anchor="start" x="2305" y="-122.5" font-family="Helvetica,sans-Serif" font-weight="bold" font-size="10.00">peer&#45;to&#45;peer</text>
+<text text-anchor="start" x="2378" y="-122.5" font-family="Helvetica,sans-Serif" font-size="10.00"> network</text>
+<text text-anchor="start" x="2220" y="-112.5" font-family="Helvetica,sans-Serif" font-size="10.00"> &#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;  ◦ any party can join</text>
+<text text-anchor="start" x="2220" y="-102.5" font-family="Helvetica,sans-Serif" font-size="10.00"> &#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;  ◦ </text>
+<text text-anchor="start" x="2284" y="-102.5" font-family="Helvetica,sans-Serif" font-weight="bold" font-size="10.00">good for FP</text>
+<text text-anchor="start" x="2351" y="-102.5" font-family="Helvetica,sans-Serif" font-size="10.00"> — only Mempool + Peers as State</text>
+<text text-anchor="start" x="2220" y="-92.5" font-family="Helvetica,sans-Serif" font-size="10.00"> &#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;• </text>
+<text text-anchor="start" x="2278" y="-92.5" font-family="Helvetica,sans-Serif" font-weight="bold" font-size="10.00">Fast finality</text>
+<text text-anchor="start" x="2345" y="-92.5" font-family="Helvetica,sans-Serif" font-size="10.00"> — Solana, Avalanche</text>
+<text text-anchor="start" x="2220" y="-82.5" font-family="Helvetica,sans-Serif" font-size="10.00"> &#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;• </text>
+<text text-anchor="start" x="2278" y="-82.5" font-family="Helvetica,sans-Serif" font-weight="bold" font-size="10.00">Consistency</text>
+<text text-anchor="start" x="2346" y="-82.5" font-family="Helvetica,sans-Serif" font-size="10.00"> — provably correct data structures</text>
+<text text-anchor="start" x="2220" y="-72.5" font-family="Helvetica,sans-Serif" font-size="10.00"> &#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;  ◦ Merkle&#45;tree database (Firewood)</text>
+<text text-anchor="start" x="2220" y="-62.5" font-family="Helvetica,sans-Serif" font-size="10.00"> &#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;• </text>
+<text text-anchor="start" x="2278" y="-62.5" font-family="Helvetica,sans-Serif" font-weight="bold" font-size="10.00">Privacy</text>
+<text text-anchor="start" x="2220" y="-52.5" font-family="Helvetica,sans-Serif" font-size="10.00"> &#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;  ◦ users own the data</text>
+<text text-anchor="start" x="2220" y="-42.5" font-family="Helvetica,sans-Serif" font-size="10.00"> &#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;  ◦ ZK proofs, ring signatures</text>
+<text text-anchor="start" x="2220" y="-32.5" font-family="Helvetica,sans-Serif" font-size="10.00"> &#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;</text>
+<path fill="none" stroke="#c19a3a" d="M2225,-23C2225,-23 2533,-23 2533,-23 2539,-23 2545,-29 2545,-35 2545,-35 2545,-158 2545,-158 2545,-164 2539,-170 2533,-170 2533,-170 2225,-170 2225,-170 2219,-170 2213,-164 2213,-158 2213,-158 2213,-35 2213,-35 2213,-29 2219,-23 2225,-23"/>
+</g>
+
+<g id="edge18" class="edge branch">
+<title>Relay&#45;&gt;Advantages</title>
+<path fill="none" stroke="#c19a3a" stroke-dasharray="5,2" d="M2110.8,-447.43C2115.09,-441.55 2119.17,-435.57 2123,-429.5 2182.14,-335.64 2117.24,-273.94 2188,-188.5 2193.18,-182.25 2198.88,-176.39 2204.98,-170.9"/>
+<polygon fill="#c19a3a" stroke="#c19a3a" points="2207.57,-173.3 2212.91,-164.15 2203.03,-167.97 2207.57,-173.3"/>
+</g>
+
+<g id="node20" class="node slide">
+<title>ChainStandards</title>
+<path fill="#fffaf0" stroke="transparent" d="M1723,-34C1723,-34 2081,-34 2081,-34 2087,-34 2093,-40 2093,-46 2093,-46 2093,-399 2093,-399 2093,-405 2087,-411 2081,-411 2081,-411 1723,-411 1723,-411 1717,-411 1711,-405 1711,-399 1711,-399 1711,-46 1711,-46 1711,-40 1717,-34 1723,-34"/>
+<polygon fill="#c19a3a" stroke="transparent" points="1712,-386.5 1712,-409.5 2092,-409.5 2092,-386.5 1712,-386.5"/>
+<text text-anchor="start" x="1840" y="-396.5" font-family="Helvetica,sans-Serif" font-weight="bold" font-size="10.00" fill="white">Blockchain Standards</text>
+<text text-anchor="start" x="1718" y="-373.5" font-family="Helvetica,sans-Serif" font-size="10.00"> &#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;</text>
+<text text-anchor="start" x="1767" y="-373.5" font-family="Helvetica,sans-Serif" font-style="italic" font-size="10.00">Global, open set of standards — reminds of democracy.</text>
+<text text-anchor="start" x="1718" y="-363.5" font-family="Helvetica,sans-Serif" font-size="10.00"> &#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;</text>
+<image xlink:href="img/df2af25d-1ea1-44fa-800e-6700a0e303fe.png" width="366.159px" height="308px" preserveAspectRatio="xMinYMin meet" x="1718.92" y="-348.5"/>
+<path fill="none" stroke="#c19a3a" d="M1723,-34C1723,-34 2081,-34 2081,-34 2087,-34 2093,-40 2093,-46 2093,-46 2093,-399 2093,-399 2093,-405 2087,-411 2081,-411 2081,-411 1723,-411 1723,-411 1717,-411 1711,-405 1711,-399 1711,-399 1711,-46 1711,-46 1711,-40 1717,-34 1723,-34"/>
+</g>
+
+<g id="edge20" class="edge branch">
+<title>DApps&#45;&gt;ChainStandards</title>
+<path fill="none" stroke="#c19a3a" stroke-dasharray="5,2" d="M1611.36,-247.49C1641,-244.93 1671.28,-242.32 1700.55,-239.79"/>
+<polygon fill="#c19a3a" stroke="#c19a3a" points="1701.19,-243.25 1710.86,-238.9 1700.59,-236.28 1701.19,-243.25"/>
+</g>
+</g>
+</svg></div>
+<div id="overlay">
+  <div id="title">Overview</div>
+  <div id="counter">0 / 0</div>
+</div>
+<div id="warn"></div>
+<div id="hint">
+  <kbd>→</kbd><kbd>Space</kbd> next · <kbd>←</kbd> prev ·
+  <kbd>Home</kbd> overview · <kbd>End</kbd> last ·
+  <kbd>1</kbd>–<kbd>9</kbd> jump ·
+  <kbd>H</kbd> hide chrome · <kbd>F</kbd> fullscreen
+</div>
+<script>
+window.__SLIDES__ = {"mode": "branched", "slides": [{"kind": "overview", "label": "Overview", "spinePrev": null, "spineNext": 1, "branchPrev": null, "branchNext": null, "spineAnchor": null}, {"kind": "spine", "target": "Jakub", "label": "1. Jakub Liška @ Pragmaxim", "number": "1", "spineAnchor": 1, "spinePrev": 0, "spineNext": 2, "branchPrev": null, "branchNext": null}, {"kind": "spine", "target": "Shared", "label": "2. Shared traits of Centralized & Decentralized worlds", "number": "2", "spineAnchor": 2, "spinePrev": 1, "spineNext": 20, "branchPrev": null, "branchNext": 3}, {"kind": "branch", "target": "CentralBanking", "label": "2.1. Centralized Banking", "number": "2.1", "spineAnchor": 2, "spinePrev": null, "spineNext": null, "branchPrev": 2, "branchNext": 4}, {"kind": "branch", "target": "CEFI", "label": "2.1.1. CEFI — Centralized Finance", "number": "2.1.1", "spineAnchor": 2, "spinePrev": null, "spineNext": null, "branchPrev": 3, "branchNext": 5}, {"kind": "branch", "target": "CentralStandards", "label": "2.1.1.1. Centralized Standards", "number": "2.1.1.1", "spineAnchor": 2, "spinePrev": null, "spineNext": null, "branchPrev": 4, "branchNext": 6}, {"kind": "branch", "target": "ModernCore", "label": "2.1.2. Modern Centralized Core Architecture in Scala", "number": "2.1.2", "spineAnchor": 2, "spinePrev": null, "spineNext": null, "branchPrev": 5, "branchNext": 7}, {"kind": "branch", "target": "CQRS", "label": "2.1.2.1. CQRS — Command-Query-Responsibility-Segregation", "number": "2.1.2.1", "spineAnchor": 2, "spinePrev": null, "spineNext": null, "branchPrev": 6, "branchNext": 8}, {"kind": "branch", "target": "CentralProblems", "label": "2.1.2.1.1. Centralized problems", "number": "2.1.2.1.1", "spineAnchor": 2, "spinePrev": null, "spineNext": null, "branchPrev": 7, "branchNext": 9}, {"kind": "branch", "target": "UnbalancedData", "label": "2.1.2.1.1.1. Unbalanced Data Distribution", "number": "2.1.2.1.1.1", "spineAnchor": 2, "spinePrev": null, "spineNext": null, "branchPrev": 8, "branchNext": 10}, {"kind": "branch", "target": "UnbalancedCluster", "label": "2.1.2.1.2. Unbalanced Cluster Distribution", "number": "2.1.2.1.2", "spineAnchor": 2, "spinePrev": null, "spineNext": null, "branchPrev": 9, "branchNext": 11}, {"kind": "branch", "target": "DecentralBanking", "label": "2.2. Decentralized Banking", "number": "2.2", "spineAnchor": 2, "spinePrev": null, "spineNext": null, "branchPrev": 10, "branchNext": 12}, {"kind": "branch", "target": "DecentralCore", "label": "2.2.1. Decentralized Core Architecture in Scala", "number": "2.2.1", "spineAnchor": 2, "spinePrev": null, "spineNext": null, "branchPrev": 11, "branchNext": 13}, {"kind": "branch", "target": "Relay", "label": "2.2.1.1. Relay & Para Chains", "number": "2.2.1.1", "spineAnchor": 2, "spinePrev": null, "spineNext": null, "branchPrev": 12, "branchNext": 14}, {"kind": "branch", "target": "CryptoProofs", "label": "2.2.1.1.1. Crypto proofs for fast consensus", "number": "2.2.1.1.1", "spineAnchor": 2, "spinePrev": null, "spineNext": null, "branchPrev": 13, "branchNext": 15}, {"kind": "branch", "target": "Explorer", "label": "2.2.1.1.2. Blockchain Explorer decentralization", "number": "2.2.1.1.2", "spineAnchor": 2, "spinePrev": null, "spineNext": null, "branchPrev": 14, "branchNext": 16}, {"kind": "branch", "target": "Advantages", "label": "2.2.1.1.3. Advantages of decentralization", "number": "2.2.1.1.3", "spineAnchor": 2, "spinePrev": null, "spineNext": null, "branchPrev": 15, "branchNext": 17}, {"kind": "branch", "target": "DApps", "label": "2.2.2. Decentralized Apps", "number": "2.2.2", "spineAnchor": 2, "spinePrev": null, "spineNext": null, "branchPrev": 16, "branchNext": 18}, {"kind": "branch", "target": "ChainStandards", "label": "2.2.2.1. Blockchain Standards", "number": "2.2.2.1", "spineAnchor": 2, "spinePrev": null, "spineNext": null, "branchPrev": 17, "branchNext": 19}, {"kind": "branch", "target": "AssetCustody", "label": "2.3. Asset Custody — bridge between worlds", "number": "2.3", "spineAnchor": 2, "spinePrev": null, "spineNext": null, "branchPrev": 18, "branchNext": null}, {"kind": "spine", "target": "Paradigm", "label": "3. Paradigm shift through analogy", "number": "3", "spineAnchor": 20, "spinePrev": 2, "spineNext": 21, "branchPrev": null, "branchNext": null}, {"kind": "spine", "target": "Compare", "label": "4. Centralized vs Decentralized", "number": "4", "spineAnchor": 21, "spinePrev": 20, "spineNext": 22, "branchPrev": null, "branchNext": null}, {"kind": "overview", "label": "Overview", "spinePrev": 21, "spineNext": null, "branchPrev": null, "branchNext": null, "spineAnchor": null}]};
+window.__TITLE__ = "The Hitchhiker's Guide to Fintech";
+</script>
+<script src="../runtime.js"></script>
+</body>
+</html>

@@ -1,0 +1,281 @@
+digraph ProjectDevelopmentAIGuide {
+    rankdir=TB;
+    compound=true;
+    nodesep=0.55;
+    ranksep=0.85;
+    bgcolor="#fbfbfd";
+    labelloc="t";
+    fontname="Helvetica-Bold";
+    fontsize=20;
+    label="Project Development with Agents";
+
+    node [fontname="Helvetica", fontsize=11];
+    edge [fontname="Helvetica", fontsize=10];
+
+    /* ---------------- HUMAN: the irreplaceable layer ---------------- */
+    subgraph cluster_human {
+        label="① Vision";
+        style="rounded,filled";
+        fillcolor="#fff8e6";
+        color="#caa53d";
+        fontsize=13;
+
+        You [
+            label=<
+                <table border="0" cellborder="0" cellspacing="0">
+                    <tr><td align="center"><b>Human</b></td></tr>
+                    <tr><td align="center"><font point-size="9">does what only a human can</font></td></tr>
+                    <tr><td align="left">- Sets intent, taste &amp; priorities</td></tr>
+                    <tr><td align="left">- Makes the hard trade-off calls</td></tr>
+                    <tr><td align="left">- Reviews &amp; approves</td></tr>
+                    <tr><td align="left">- Judgment</td></tr>
+                    <tr><td align="left"><font point-size="9">Stays in the loop, not in the weeds</font></td></tr>
+                </table>
+            >,
+            shape=box, style="rounded,filled", fillcolor="#ffefbf"
+        ];
+    }
+
+    /* ---------------- FOUNDATION: single source of truth ---------------- */
+    subgraph cluster_foundation {
+        label="② Foundation - Single Source of Truth";
+        style="rounded,filled";
+        fillcolor="#eef4ff";
+        color="#5b8fd1";
+        fontsize=13;
+
+        Context [
+            label=<
+                <table border="0" cellborder="0" cellspacing="0">
+                    <tr><td align="center"><b>Context + Source code</b></td></tr>
+                    <tr><td align="left"><b>Specs</b> - the contract</td></tr>
+                    <tr><td align="left"><font point-size="9">high-level peer reviewed, low-level formally verified</font></td></tr>
+                    <tr><td align="left"><b>Roadmap</b> - done / wip / next</td></tr>
+                    <tr><td align="left"><font point-size="9">long-term context</font></td></tr>
+                    <tr><td align="left"><b>Diagrams</b> - kept live in DOT</td></tr>
+                    <tr><td align="left"><font point-size="9">architecture &amp; flows that evolve with the code</font></td></tr>
+                    <tr><td align="left"><b>ADR</b> - Architecture Decision Records</td></tr>
+                    <tr><td align="left"><font point-size="9">the <i>why</i> behind choices; settled stays settled</font></td></tr>
+                    <tr><td align="left"><b>Glossary</b> - domain dictionary &amp; recipes</td></tr>
+                    <tr><td align="left"><font point-size="9">one canonical name per concept; zero drift</font></td></tr>
+                    <tr><td port="pain" align="left"><b>Pain points</b> - recurring friction log</td></tr>
+                    <tr><td align="left"><font point-size="9">flaky areas, hot spots, repeat regressions</font></td></tr>
+                </table>
+            >,
+            shape=box, style="rounded,filled", fillcolor="#d9e6ff"
+        ];
+    }
+
+    /* ---------------- ENGINE A: /goal - design & evolve ---------------- */
+    subgraph cluster_goal {
+        label="③ /goal - Design &amp; Evolve Systems";
+        style="rounded,filled";
+        fillcolor="#edfaf0";
+        color="#43a047";
+        fontsize=13;
+
+        GoalFlow [
+            label=<
+                <table border="0" cellborder="0" cellspacing="2">
+                    <tr><td align="center"><b>Spec-driven build loop</b></td></tr>
+                    <tr><td align="center"><font point-size="9">thinking before vibe-coding</font></td></tr>
+                    <tr><td align="left">1. Draft a candidate spec from intent</td></tr>
+                    <tr><td align="left">2. Refine with the human</td></tr>
+                    <tr><td align="left">3. Formally verify</td></tr>
+                    <tr><td align="left">6. Update/Promote Context ②</td></tr>
+                    <tr><td align="left">7. Implement with the context</td></tr>
+                    <tr><td align="left">8. Test, deploy, e2e, ...</td></tr>
+                </table>
+            >,
+            shape=box, style="rounded,filled", fillcolor="#cdeed4"
+        ];
+    }
+
+    /* ---------------- ENGINE B: /loop - automate the grind ---------------- */
+    subgraph cluster_loop {
+        label="④ /loop - Automation";
+        style="rounded,filled";
+        fillcolor="#f4eefb";
+        color="#8e44ad";
+        fontsize=13;
+
+        LoopReg [
+            label=<
+                <table border="0" cellborder="0" cellspacing="2">
+                    <tr><td align="center"><b>Regression hunt</b></td></tr>
+                    <tr><td align="left">hunt regressions → report issues</td></tr>
+                    <tr><td align="left"><font point-size="9">proactive: find before users do</font></td></tr>
+                </table>
+            >,
+            shape=box, style="rounded,filled", fillcolor="#e5d4f2"
+        ];
+    }
+
+    /* ---------------- OUTCOME ---------------- */
+    Outcome [
+        label=<
+            <table border="0" cellborder="0" cellspacing="0">
+                <tr><td align="center"><b>⑦ VALUE · SUCCESS · JOY</b></td></tr>
+                <tr><td align="center"><font point-size="9">the right approach compounds</font></td></tr>
+                <tr><td align="left"><b>ship only high quality and useful sofware</b></td></tr>
+            </table>
+        >,
+        shape=box, style="rounded,filled", fillcolor="#ffe082", color="#caa53d"
+    ];
+
+    /* ---------------- SECURITY: guardrails wrap the agent ---------------- */
+    subgraph cluster_guard {
+        label="⑥ Security";
+        style="rounded,filled";
+        fillcolor="#fdecea";
+        color="#c0392b";
+        fontsize=13;
+
+        Guard [
+            label=<
+                <table border="0" cellborder="0" cellspacing="0">
+                    <tr><td align="center"><b>Sandbox</b></td></tr>
+                    <tr><td align="center"><font point-size="9">the agent is powerful - fence it in</font></td></tr>
+                    <tr><td align="left">- No full host access (sudo)</td></tr>
+                    <tr><td align="left">- No web access ?</td></tr>
+                    <tr><td align="left">- GH access scoped: one repo, no admin</td></tr>
+                    <tr><td align="left">- No ssh / gpg keys</td></tr>
+                    <tr><td align="left">- No secrets / tokens in env</td></tr>
+                    <tr><td align="left">- Human approves every merge</td></tr>
+                </table>
+            >,
+            shape=box, style="rounded,filled", fillcolor="#fff0b3", color="#caa53d"
+        ];
+
+        Threat [
+            label=<
+                <table border="0" cellborder="0" cellspacing="0">
+                    <tr><td align="center"><b>⚠ Prompt injection</b></td></tr>
+                    <tr><td align="left">- Untrusted issues</td></tr>
+                    <tr><td align="left">- Malicious repo content</td></tr>
+                    <tr><td align="left">- Web pages &amp; honey pots</td></tr>
+                    <tr><td align="left">- Tool output with hostile instructions</td></tr>
+                </table>
+            >,
+            shape=box, style="rounded,filled", fillcolor="#f9d7d2", color="#c0392b"
+        ];
+    }
+
+    /* ---------------- CHANNELS: where reactive work arrives ---------------- */
+    subgraph cluster_channels {
+        label="⑤ /channels - Listen & React";
+        style="rounded,filled";
+        fillcolor="#e8f6f8";
+        color="#1f7a8c";
+        fontsize=13;
+
+        LoopIssue [
+            label=<
+                <table border="0" cellborder="0" cellspacing="2">
+                    <tr><td align="center"><b>Issue intake</b></td></tr>
+                    <tr><td align="center"><font point-size="9">GitHub issues channel</font></td></tr>
+                    <tr><td align="left">await new issue → fix</td></tr>
+                    <tr><td align="left">human review + merge</td></tr>
+                    <tr><td align="left"><font point-size="9">reactive: triage on arrival</font></td></tr>
+                </table>
+            >,
+            shape=box, style="rounded,filled", fillcolor="#cfe9f1"
+        ];
+
+        LoopAlert [
+            label=<
+                <table border="0" cellborder="0" cellspacing="2">
+                    <tr><td align="center"><b>Alert watch</b></td></tr>
+                    <tr><td align="center"><font point-size="9">Prometheus + centralized logs channel</font></td></tr>
+                    <tr><td align="left">Listen to alerts →</td></tr>
+                    <tr><td align="left">Investigate in →</td></tr>
+                    <tr><td align="left">&#160;&#160;- source code</td></tr>
+                    <tr><td align="left">&#160;&#160;- MCP: API &amp; logs</td></tr>
+                    <tr><td align="left">Create issue</td></tr>
+                    <tr><td align="left"><font point-size="9">reactive: prod signal → triage</font></td></tr>
+                </table>
+            >,
+            shape=box, style="rounded,filled", fillcolor="#cfe9f1"
+        ];
+    }
+
+    /* ---------------- WIRING ---------------- */
+    You -> Context [
+        label=<<b>curate</b><br align="left"/>intent → facts<br align="left"/>>,
+        lhead=cluster_foundation, color="#caa53d", fontcolor="#7a5b10", penwidth=1.5
+    ];
+
+    Context -> GoalFlow [
+        label=<<b>spec is contract evolving with each iteration. ADR, glossary, DOT too</b>>,
+        dir=both, ltail=cluster_foundation, lhead=cluster_goal, color="#43a047", fontcolor="#1f5b1f", penwidth=1.5
+    ];
+
+    Context -> LoopReg [
+        label=<<b>guides automation</b>>,
+        ltail=cluster_foundation, lhead=cluster_loop, color="#8e44ad", fontcolor="#5e2d75", penwidth=1.5
+    ];
+
+    Context -> LoopIssue [
+        label=<<b>guides automation</b>>,
+        ltail=cluster_foundation, lhead=cluster_channels, color="#1f7a8c", fontcolor="#155e6b", penwidth=1.5
+    ];
+
+    You -> GoalFlow [
+        label=<<b>refine cycle</b><br align="left"/>AI drafts, dev steers;<br align="left"/>iterate to agreement<br align="left"/>>,
+        lhead=cluster_goal, dir=both, color="#caa53d", fontcolor="#7a5b10", penwidth=1.5, style=dashed
+    ];
+
+    /* automation feeds observed friction back into the pain-points log */
+    LoopReg -> Context:pain [
+        label=<<b>updates pain points</b>>,
+        ltail=cluster_loop, color="#8e44ad", fontcolor="#5e2d75", style=dashed, penwidth=1.5, constraint=false
+    ];
+
+    /* channels surface recurring issues & alerts as tracked pain points */
+    LoopAlert -> Context:pain [
+        label=<<b>updates pain points</b><br align="left"/>recurring issues &amp; alerts<br align="left"/>>,
+        ltail=cluster_channels, color="#1f7a8c", fontcolor="#155e6b", style=dashed, penwidth=1.5, constraint=false
+    ];
+
+    /* alert channel feeds the issue channel */
+    LoopAlert -> LoopIssue [
+        label=<<font point-size="9">creates issue</font>>,
+        color="#1f7a8c", fontcolor="#155e6b"
+    ];
+
+    /* regression hunt files its findings into the issue channel */
+    LoopReg -> LoopIssue [
+        label=<<font point-size="9">reports issue</font>>,
+        ltail=cluster_loop, lhead=cluster_channels, color="#8e44ad", fontcolor="#5e2d75"
+    ];
+
+    GoalFlow -> Outcome [color="#43a047", penwidth=1.8, arrowhead=vee];
+    LoopReg  -> Outcome [color="#8e44ad", penwidth=1.8, arrowhead=vee, ltail=cluster_loop];
+    LoopIssue -> Outcome [color="#1f7a8c", penwidth=1.8, arrowhead=vee, ltail=cluster_channels];
+
+    You -> Outcome [
+        label=<<font point-size="9">stays accountable<br/>for the result</font>>,
+        style=dotted, color="#caa53d", fontcolor="#7a5b10", constraint=false
+    ];
+
+    /* ---------------- SECURITY WIRING ---------------- */
+    /* threat enters through the most-exposed surface: autonomous issue intake */
+    Threat -> LoopIssue [
+        label=<<b>attack surface</b><br align="left"/>untrusted input enters here<br align="left"/>>,
+        color="#c0392b", fontcolor="#c0392b", penwidth=1.5, arrowhead=vee
+    ];
+
+    /* guardrails fence in every agent action across both engines */
+    Guard -> LoopReg [
+        label=<<b>runs sandboxed</b>>,
+        ltail=cluster_guard, lhead=cluster_loop, color="#c0392b", fontcolor="#c0392b", penwidth=1.5, style=dashed
+    ];
+    Guard -> GoalFlow [
+        label=<<b>runs sandboxed</b>>,
+        ltail=cluster_guard, lhead=cluster_goal, color="#c0392b", fontcolor="#c0392b", penwidth=1.5, style=dashed
+    ];
+    Guard -> LoopIssue [
+        label=<<b>runs sandboxed</b>>,
+        ltail=cluster_guard, lhead=cluster_channels, color="#c0392b", fontcolor="#c0392b", penwidth=1.5, style=dashed
+    ];
+}

@@ -1,0 +1,47 @@
+{{ $homepage := partial "homepage-data.html" . }}
+{{ if $homepage.presentations.enable }}
+<section id="presentations" class="section rad-animation-group section--border-bottom">
+    <div class="container">
+        <h3 class=" rad-animation-group rad-fade-down">
+            {{ $homepage.presentations.title }}
+        </h3>
+        <div class="row row--padded mb-0 rad-fade-down">
+            {{ $items := (where .Site.RegularPages.ByDate.Reverse "Type" "presentations") }}
+            {{ $count := len $items }}
+            {{ range first 3 $items }}
+            {{ $href := or .Params.presentationUrl .Permalink }}
+            <div class="col-12 col-md-6 mt-4 mt-md-0 my-md-auto">
+                <a href="{{ $href | relURL }}" target="_blank" rel="noopener">
+                    <div class="blog__title">{{ .Params.title }}</div>
+                </a>
+                <p class="blog__description">
+                    {{ .Params.description }}
+                </p>
+                {{ if .Params.slideCount }}
+                <p class="blog__description"><small>{{ .Params.slideCount }} slides</small></p>
+                {{ end }}
+            </div>
+            <div class="col-12 col-md-6 pl-md-0 text-center">
+                {{ if .Params.thumbUrl }}
+                <div class="values__item">
+                    <a href="{{ $href | relURL }}" target="_blank" rel="noopener">
+                        <img src="{{ .Params.thumbUrl | relURL }}"
+                             alt="{{ .Params.title }}"
+                             class="img-responsive"
+                             style="max-height:150px; width:auto; margin:0 auto; background:#fff; padding:6px; border-radius:6px;" />
+                    </a>
+                </div>
+                {{ end }}
+            </div>
+            {{ end }}
+            {{ if gt $count 3 }}
+            <div class="col-12 col-md-6 mt-4 mt-md-0 my-md-auto">
+                {{ $extra := sub $count 3 }}
+                {{ $moreLabel := $homepage.presentations.more_label | default "And %d more" }}
+                <a href="{{ relLangURL "presentations" }}">{{ printf $moreLabel $extra }}</a>
+            </div>
+            {{ end }}
+        </div>
+    </div>
+</section>
+{{ end }}

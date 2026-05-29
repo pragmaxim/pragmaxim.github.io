@@ -105,6 +105,11 @@ blog:
   title: "Kapitánův deník"
   more_label: "A dalších %d"
 
+presentations:
+  enable: true
+  title: "Prezentace"
+  more_label: "A dalších %d"
+
 # Values
 values:
   enable: true

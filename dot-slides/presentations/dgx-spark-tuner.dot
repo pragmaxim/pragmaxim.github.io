@@ -1,0 +1,148 @@
+digraph DgxSparkTuner {
+    rankdir=TD;
+    compound=true;
+    nodesep=0.6;
+    ranksep=0.9;
+    node [fontname="Helvetica", fontsize=11];
+    edge [fontname="Helvetica", fontsize=10];
+
+    User [
+        label=<
+            <table border="0" cellborder="0" cellspacing="0">
+                <tr><td align="center"><b>① USER</b></td></tr>
+                <tr><td align="left">Operator / SRE / Developer</td></tr>
+                <tr><td align="left">- Issues CRUD on tuned models</td></tr>
+                <tr><td align="left">- Sends direct inference requests</td></tr>
+                <tr><td align="left">- Reads benchmark &amp; recipe reports</td></tr>
+            </table>
+        >,
+        shape=ellipse, style=filled, fillcolor="#e8e8e8"
+    ];
+
+    subgraph cluster_admin {
+        label="② Admin &amp; Control Plane";
+        style="rounded,filled";
+        fillcolor="#f3f8ff";
+        color="#5b8fd1";
+        fontsize=12;
+
+        Tuner [
+            label=<
+                <table border="0" cellborder="0" cellspacing="0">
+                    <tr><td align="center"><b>dgx-spark-tuner</b></td></tr>
+                    <tr><td align="center"><font point-size="9">Rust · CLI + REST API · Port :8080</font></td></tr>
+                    <tr><td align="left">Responsibilities:</td></tr>
+                    <tr><td align="left">- Resolve models via hf-hub crate</td></tr>
+                    <tr><td align="left">- Ask Oracle LLM for 3 recipe candidates</td></tr>
+                    <tr><td align="left">- Drive llama-benchy tuning runs</td></tr>
+                    <tr><td align="left">- Persist winning recipe + hash</td></tr>
+                    <tr><td align="left">- Expose idempotent CRUD endpoints</td></tr>
+                    <tr><td align="left"><font point-size="9">ID = model + runtime + recipe-hash</font></td></tr>
+                </table>
+            >,
+            shape=box, style="rounded,filled", fillcolor="#dbe7ff"
+        ];
+    }
+
+    subgraph cluster_gateway {
+        label="③ Inference Gateway";
+        style="rounded,filled";
+        fillcolor="#fff5e6";
+        color="#d1a05b";
+        fontsize=12;
+
+        LiteLLM [
+            label=<
+                <table border="0" cellborder="0" cellspacing="0">
+                    <tr><td align="center"><b>liteLLM</b></td></tr>
+                    <tr><td align="center"><font point-size="9">OpenAI-compatible proxy · Port :14000</font></td></tr>
+                    <tr><td align="left">Responsibilities:</td></tr>
+                    <tr><td align="left">- Unified /v1/chat/completions surface</td></tr>
+                    <tr><td align="left">- Auth, rate limits, request logging</td></tr>
+                    <tr><td align="left">- Routes Oracle calls for recipe synthesis</td></tr>
+                    <tr><td align="left">- Forwards benchmark traffic during tuning</td></tr>
+                    <tr><td align="left">- Hides per-engine quirks from clients</td></tr>
+                </table>
+            >,
+            shape=box, style="rounded,filled", fillcolor="#ffe8c2"
+        ];
+    }
+
+    subgraph cluster_router {
+        label="④ Process Manager (Parent)";
+        style="rounded,filled";
+        fillcolor="#f0fff0";
+        color="#5bb15b";
+        fontsize=12;
+
+        Swap [
+            label=<
+                <table border="0" cellborder="0" cellspacing="0">
+                    <tr><td align="center"><b>llama-swap router</b></td></tr>
+                    <tr><td align="center"><font point-size="9">Process supervisor · Port :28080</font></td></tr>
+                    <tr><td align="left">Responsibilities:</td></tr>
+                    <tr><td align="left">- Cold-start engines on demand</td></tr>
+                    <tr><td align="left">- Enforce single-tenant GPU occupancy</td></tr>
+                    <tr><td align="left">- Idle-evict engines to free VRAM</td></tr>
+                    <tr><td align="left">- Stream stdout/stderr for tuner logs</td></tr>
+                    <tr><td align="left">- Health-check &amp; restart on crash</td></tr>
+                </table>
+            >,
+            shape=box, style="rounded,filled", fillcolor="#d4f0d4"
+        ];
+
+        subgraph cluster_child {
+            label="Inference Engine (Child Process)";
+            style="rounded,filled";
+            fillcolor="#e6ffe6";
+            color="#3d8f3d";
+            fontsize=12;
+
+            Engine [
+                label=<
+                    <table border="0" cellborder="0" cellspacing="0">
+                        <tr><td align="center"><b>Engine Backends</b></td></tr>
+                        <tr><td align="center"><font point-size="9">Exactly one active at a time</font></td></tr>
+                        <tr><td align="left">- <b>vLLM</b> :18000 — PagedAttention, FP8/AWQ, high throughput</td></tr>
+                        <tr><td align="left">- <b>llama.cpp</b> :19000 — GGUF, CPU+GPU offload, broad model coverage</td></tr>
+                        <tr><td align="left">- <b>Atlas</b> :18888 — NVIDIA-optimised, Spark-native kernels</td></tr>
+                        <tr><td align="left">- <b>Ollama</b> :11434 — friendly UX, model library, dev workflows</td></tr>
+                        <tr><td align="left"><font point-size="9">Recipe selects engine + flags + quant + ctx-len</font></td></tr>
+                    </table>
+                >,
+                shape=box, style="rounded,filled", fillcolor="#c2e8c2"
+            ];
+        }
+    }
+
+    User -> Tuner [
+        label=<<b>A: CRUD Models</b><br align="left"/>POST /models — tune new recipe<br align="left"/>GET  /models — list / filter<br align="left"/>PUT  /models/:id — re-tune if better<br align="left"/>DEL  /models/:id — unload + purge<br align="left"/>>,
+        color="#5b8fd1", fontcolor="#1f3d6b"
+    ];
+
+    User -> LiteLLM [
+        label=<<b>B: Direct Inference</b><br align="left"/>OpenAI-compatible chat / completions<br align="left"/>Streaming SSE supported<br align="left"/>API-key auth, per-user quotas<br align="left"/>>,
+        color="#d1a05b", fontcolor="#7a4a10"
+    ];
+
+    Tuner -> LiteLLM [
+        label=<<b>1: Ask Oracle for recipes</b><br align="left"/>Prompt: model card + HW profile<br align="left"/>Returns: 3 candidate recipes (JSON)<br align="left"/>Includes engine choice + flags<br align="left"/>>,
+        color="#d1a05b", fontcolor="#7a4a10"
+    ];
+
+    Tuner -> LiteLLM [
+        label=<<b>2: Benchmarking traffic</b><br align="left"/>Drives llama-benchy workloads<br align="left"/>Measures TTFT, TPS, VRAM, p95<br align="left"/>Iterates over the 3 candidates<br align="left"/>>,
+        color="#d1a05b", fontcolor="#7a4a10", style=dashed
+    ];
+
+    LiteLLM -> Swap [
+        label=<<b>3: Forward traffic</b><br align="left"/>Routes by tuned-model ID<br align="left"/>Triggers cold-start if engine idle<br align="left"/>Backpressure on VRAM contention<br align="left"/>>,
+        color="#5bb15b", fontcolor="#1f5b1f"
+    ];
+
+    Swap -> Engine [
+        label=<<b>4: Spawns / Kills</b><br align="left"/>fork+exec with recipe-derived argv<br align="left"/>SIGTERM → SIGKILL on idle timeout<br align="left"/>Captures stdout/stderr for tuner<br align="left"/>Reports ready-state via /health<br align="left"/>>,
+        color="#3d8f3d", fontcolor="#1f3d1f",
+        lhead=cluster_child
+    ];
+}

@@ -1,0 +1,301 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<title>Project Development with Agents — Presentation</title>
+<link rel="stylesheet" href="../runtime.css">
+</head>
+<body>
+<div id="svg-host"><svg width="1968pt" height="1011pt"
+ viewBox="0.00 0.00 1968.38 1011.00" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+<g id="graph0" class="graph" transform="scale(1 1) rotate(0) translate(4 1007)">
+<title>ProjectDevelopmentAIGuide</title>
+<polygon fill="#fbfbfd" stroke="transparent" points="-4,4 -4,-1007 1964.38,-1007 1964.38,4 -4,4"/>
+<text text-anchor="middle" x="980.19" y="-983" font-family="Helvetica,sans-Serif" font-weight="bold" font-size="20.00">Project Development with Agents</text>
+<g id="clust1" class="cluster">
+<title>cluster_human</title>
+<path fill="#fff8e6" stroke="#caa53d" d="M195.38,-811C195.38,-811 381.38,-811 381.38,-811 387.38,-811 393.38,-817 393.38,-823 393.38,-823 393.38,-953 393.38,-953 393.38,-959 387.38,-965 381.38,-965 381.38,-965 195.38,-965 195.38,-965 189.38,-965 183.38,-959 183.38,-953 183.38,-953 183.38,-823 183.38,-823 183.38,-817 189.38,-811 195.38,-811"/>
+<text text-anchor="middle" x="288.38" y="-950.6" font-family="Helvetica,sans-Serif" font-weight="bold" font-size="13.00">① Vision</text>
+</g>
+<g id="clust2" class="cluster">
+<title>cluster_foundation</title>
+<path fill="#eef4ff" stroke="#5b8fd1" d="M201.38,-518C201.38,-518 467.38,-518 467.38,-518 473.38,-518 479.38,-524 479.38,-530 479.38,-530 479.38,-748 479.38,-748 479.38,-754 473.38,-760 467.38,-760 467.38,-760 201.38,-760 201.38,-760 195.38,-760 189.38,-754 189.38,-748 189.38,-748 189.38,-530 189.38,-530 189.38,-524 195.38,-518 201.38,-518"/>
+<text text-anchor="middle" x="334.38" y="-745.6" font-family="Helvetica,sans-Serif" font-weight="bold" font-size="13.00">② Foundation &#45; Single Source of Truth</text>
+</g>
+<g id="clust3" class="cluster">
+<title>cluster_goal</title>
+<path fill="#edfaf0" stroke="#43a047" d="M304.38,-277C304.38,-277 546.38,-277 546.38,-277 552.38,-277 558.38,-283 558.38,-289 558.38,-289 558.38,-455 558.38,-455 558.38,-461 552.38,-467 546.38,-467 546.38,-467 304.38,-467 304.38,-467 298.38,-467 292.38,-461 292.38,-455 292.38,-455 292.38,-289 292.38,-289 292.38,-283 298.38,-277 304.38,-277"/>
+<text text-anchor="middle" x="425.38" y="-452.6" font-family="Helvetica,sans-Serif" font-weight="bold" font-size="13.00">③ /goal &#45; Design &amp; Evolve Systems</text>
+</g>
+<g id="clust4" class="cluster">
+<title>cluster_loop</title>
+<path fill="#f4eefb" stroke="#8e44ad" d="M854.38,-322C854.38,-322 1050.38,-322 1050.38,-322 1056.38,-322 1062.38,-328 1062.38,-334 1062.38,-334 1062.38,-410 1062.38,-410 1062.38,-416 1056.38,-422 1050.38,-422 1050.38,-422 854.38,-422 854.38,-422 848.38,-422 842.38,-416 842.38,-410 842.38,-410 842.38,-334 842.38,-334 842.38,-328 848.38,-322 854.38,-322"/>
+<text text-anchor="middle" x="952.38" y="-407.6" font-family="Helvetica,sans-Serif" font-weight="bold" font-size="13.00">④ /loop &#45; Automation</text>
+</g>
+<g id="clust5" class="cluster">
+<title>cluster_guard</title>
+<path fill="#fdecea" stroke="#c0392b" d="M1395.38,-553C1395.38,-553 1896.38,-553 1896.38,-553 1902.38,-553 1908.38,-559 1908.38,-565 1908.38,-565 1908.38,-713 1908.38,-713 1908.38,-719 1902.38,-725 1896.38,-725 1896.38,-725 1395.38,-725 1395.38,-725 1389.38,-725 1383.38,-719 1383.38,-713 1383.38,-713 1383.38,-565 1383.38,-565 1383.38,-559 1389.38,-553 1395.38,-553"/>
+<text text-anchor="middle" x="1645.88" y="-710.6" font-family="Helvetica,sans-Serif" font-weight="bold" font-size="13.00">⑥ Security</text>
+</g>
+<g id="clust6" class="cluster">
+<title>cluster_channels</title>
+<path fill="#e8f6f8" stroke="#1f7a8c" d="M1284.38,-109C1284.38,-109 1481.38,-109 1481.38,-109 1487.38,-109 1493.38,-115 1493.38,-121 1493.38,-121 1493.38,-454 1493.38,-454 1493.38,-460 1487.38,-466 1481.38,-466 1481.38,-466 1284.38,-466 1284.38,-466 1278.38,-466 1272.38,-460 1272.38,-454 1272.38,-454 1272.38,-121 1272.38,-121 1272.38,-115 1278.38,-109 1284.38,-109"/>
+<text text-anchor="middle" x="1382.88" y="-451.6" font-family="Helvetica,sans-Serif" font-weight="bold" font-size="13.00">⑤ /channels &#45; Listen &amp; React</text>
+</g>
+
+<g id="node1" class="node">
+<title>You</title>
+<path fill="#ffefbf" stroke="black" d="M373.38,-935C373.38,-935 203.38,-935 203.38,-935 197.38,-935 191.38,-929 191.38,-923 191.38,-923 191.38,-831 191.38,-831 191.38,-825 197.38,-819 203.38,-819 203.38,-819 373.38,-819 373.38,-819 379.38,-819 385.38,-825 385.38,-831 385.38,-831 385.38,-923 385.38,-923 385.38,-929 379.38,-935 373.38,-935"/>
+<text text-anchor="start" x="266.88" y="-921.2" font-family="Helvetica,sans-Serif" font-weight="bold" font-size="11.00">Human</text>
+<text text-anchor="start" x="222.38" y="-905.8" font-family="Helvetica,sans-Serif" font-size="9.00">does what only a human can</text>
+<text text-anchor="start" x="201.38" y="-890.2" font-family="Helvetica,sans-Serif" font-size="11.00">&#45; Sets intent, taste &amp; priorities</text>
+<text text-anchor="start" x="201.38" y="-874.2" font-family="Helvetica,sans-Serif" font-size="11.00">&#45; Makes the hard trade&#45;off calls</text>
+<text text-anchor="start" x="201.38" y="-858.2" font-family="Helvetica,sans-Serif" font-size="11.00">&#45; Reviews &amp; approves</text>
+<text text-anchor="start" x="201.38" y="-842.2" font-family="Helvetica,sans-Serif" font-size="11.00">&#45; Judgment</text>
+<text text-anchor="start" x="201.38" y="-827.8" font-family="Helvetica,sans-Serif" font-size="9.00">Stays in the loop, not in the weeds</text>
+</g>
+
+<g id="node2" class="node">
+<title>Context</title>
+<path fill="#d9e6ff" stroke="black" d="M447.88,-730C447.88,-730 220.88,-730 220.88,-730 214.88,-730 208.88,-724 208.88,-718 208.88,-718 208.88,-538 208.88,-538 208.88,-532 214.88,-526 220.88,-526 220.88,-526 447.88,-526 447.88,-526 453.88,-526 459.88,-532 459.88,-538 459.88,-538 459.88,-718 459.88,-718 459.88,-724 453.88,-730 447.88,-730"/>
+<text text-anchor="start" x="264.38" y="-716.2" font-family="Helvetica,sans-Serif" font-weight="bold" font-size="11.00">Context + Source code</text>
+<text text-anchor="start" x="219.38" y="-700.2" font-family="Helvetica,sans-Serif" font-weight="bold" font-size="11.00">Specs</text>
+<text text-anchor="start" x="256.38" y="-700.2" font-family="Helvetica,sans-Serif" font-size="11.00"> &#45; the contract</text>
+<text text-anchor="start" x="219.38" y="-684.8" font-family="Helvetica,sans-Serif" font-size="9.00">high&#45;level peer reviewed, low&#45;level formally verified</text>
+<text text-anchor="start" x="219.38" y="-670.2" font-family="Helvetica,sans-Serif" font-weight="bold" font-size="11.00">Roadmap</text>
+<text text-anchor="start" x="277.38" y="-670.2" font-family="Helvetica,sans-Serif" font-size="11.00"> &#45; done / wip / next</text>
+<text text-anchor="start" x="219.38" y="-654.8" font-family="Helvetica,sans-Serif" font-size="9.00">long&#45;term context</text>
+<text text-anchor="start" x="219.38" y="-640.2" font-family="Helvetica,sans-Serif" font-weight="bold" font-size="11.00">Diagrams</text>
+<text text-anchor="start" x="278.38" y="-640.2" font-family="Helvetica,sans-Serif" font-size="11.00"> &#45; kept live in DOT</text>
+<text text-anchor="start" x="219.38" y="-624.8" font-family="Helvetica,sans-Serif" font-size="9.00">architecture &amp; flows that evolve with the code</text>
+<text text-anchor="start" x="219.38" y="-610.2" font-family="Helvetica,sans-Serif" font-weight="bold" font-size="11.00">ADR</text>
+<text text-anchor="start" x="245.38" y="-610.2" font-family="Helvetica,sans-Serif" font-size="11.00"> &#45; Architecture Decision Records</text>
+<text text-anchor="start" x="219.38" y="-595.8" font-family="Helvetica,sans-Serif" font-size="9.00">the </text>
+<text text-anchor="start" x="238.38" y="-595.8" font-family="Helvetica,sans-Serif" font-style="italic" font-size="9.00">why</text>
+<text text-anchor="start" x="257.38" y="-595.8" font-family="Helvetica,sans-Serif" font-size="9.00"> behind choices; settled stays settled</text>
+<text text-anchor="start" x="219.38" y="-580.2" font-family="Helvetica,sans-Serif" font-weight="bold" font-size="11.00">Glossary</text>
+<text text-anchor="start" x="274.38" y="-580.2" font-family="Helvetica,sans-Serif" font-size="11.00"> &#45; domain dictionary &amp; recipes</text>
+<text text-anchor="start" x="219.38" y="-564.8" font-family="Helvetica,sans-Serif" font-size="9.00">one canonical name per concept; zero drift</text>
+<text text-anchor="start" x="219.38" y="-550.2" font-family="Helvetica,sans-Serif" font-weight="bold" font-size="11.00">Pain points</text>
+<text text-anchor="start" x="288.38" y="-550.2" font-family="Helvetica,sans-Serif" font-size="11.00"> &#45; recurring friction log</text>
+<text text-anchor="start" x="219.38" y="-534.8" font-family="Helvetica,sans-Serif" font-size="9.00">flaky areas, hot spots, repeat regressions</text>
+</g>
+
+<g id="edge1" class="edge">
+<title>You&#45;&gt;Context</title>
+<path fill="none" stroke="#caa53d" stroke-width="1.5" d="M299.05,-818.71C301.81,-803.87 304.91,-787.22 308.1,-770.11"/>
+<polygon fill="#caa53d" stroke="#caa53d" stroke-width="1.5" points="311.59,-770.47 309.98,-760 304.71,-769.19 311.59,-770.47"/>
+<text text-anchor="start" x="307.38" y="-781" font-family="Helvetica,sans-Serif" font-weight="bold" font-size="10.00" fill="#7a5b10">curate</text>
+<text text-anchor="start" x="307.38" y="-771" font-family="Helvetica,sans-Serif" font-size="10.00" fill="#7a5b10">intent → facts</text>
+</g>
+
+<g id="node3" class="node">
+<title>GoalFlow</title>
+<path fill="#cdeed4" stroke="black" d="M527.88,-437C527.88,-437 322.88,-437 322.88,-437 316.88,-437 310.88,-431 310.88,-425 310.88,-425 310.88,-297 310.88,-297 310.88,-291 316.88,-285 322.88,-285 322.88,-285 527.88,-285 527.88,-285 533.88,-285 539.88,-291 539.88,-297 539.88,-297 539.88,-425 539.88,-425 539.88,-431 533.88,-437 527.88,-437"/>
+<text text-anchor="start" x="356.88" y="-421.2" font-family="Helvetica,sans-Serif" font-weight="bold" font-size="11.00">Spec&#45;driven build loop</text>
+<text text-anchor="start" x="363.38" y="-403.8" font-family="Helvetica,sans-Serif" font-size="9.00">thinking before vibe&#45;coding</text>
+<text text-anchor="start" x="323.38" y="-386.2" font-family="Helvetica,sans-Serif" font-size="11.00">1. Draft a candidate spec from intent</text>
+<text text-anchor="start" x="323.38" y="-368.2" font-family="Helvetica,sans-Serif" font-size="11.00">2. Refine with the human</text>
+<text text-anchor="start" x="323.38" y="-350.2" font-family="Helvetica,sans-Serif" font-size="11.00">3. Formally verify</text>
+<text text-anchor="start" x="323.38" y="-332.2" font-family="Helvetica,sans-Serif" font-size="11.00">6. Update/Promote Context ②</text>
+<text text-anchor="start" x="323.38" y="-314.2" font-family="Helvetica,sans-Serif" font-size="11.00">7. Implement with the context</text>
+<text text-anchor="start" x="323.38" y="-296.2" font-family="Helvetica,sans-Serif" font-size="11.00">8. Test, deploy, e2e, ...</text>
+</g>
+
+<g id="edge5" class="edge">
+<title>You&#45;&gt;GoalFlow</title>
+<path fill="none" stroke="#caa53d" stroke-width="1.5" stroke-dasharray="5,2" d="M182.03,-840.94C143.12,-822.81 102.51,-796.61 77.38,-760 5.12,-654.74 -35.1,-577.23 41.38,-475 70.95,-435.47 185.98,-405.01 282.5,-385.73"/>
+<polygon fill="#caa53d" stroke="#caa53d" stroke-width="1.5" points="180.8,-844.22 191.35,-845.15 183.68,-837.84 180.8,-844.22"/>
+<polygon fill="#caa53d" stroke="#caa53d" stroke-width="1.5" points="283.25,-389.15 292.38,-383.78 281.89,-382.28 283.25,-389.15"/>
+<text text-anchor="start" x="77.38" y="-636" font-family="Helvetica,sans-Serif" font-weight="bold" font-size="10.00" fill="#7a5b10">refine cycle</text>
+<text text-anchor="start" x="77.38" y="-626" font-family="Helvetica,sans-Serif" font-size="10.00" fill="#7a5b10">AI drafts, dev steers;</text>
+<text text-anchor="start" x="77.38" y="-616" font-family="Helvetica,sans-Serif" font-size="10.00" fill="#7a5b10">iterate to agreement</text>
+</g>
+
+<g id="node5" class="node">
+<title>Outcome</title>
+<path fill="#ffe082" stroke="#caa53d" d="M1076.88,-54C1076.88,-54 827.88,-54 827.88,-54 821.88,-54 815.88,-48 815.88,-42 815.88,-42 815.88,-12 815.88,-12 815.88,-6 821.88,0 827.88,0 827.88,0 1076.88,0 1076.88,0 1082.88,0 1088.88,-6 1088.88,-12 1088.88,-12 1088.88,-42 1088.88,-42 1088.88,-48 1082.88,-54 1076.88,-54"/>
+<text text-anchor="start" x="875.88" y="-40.2" font-family="Helvetica,sans-Serif" font-weight="bold" font-size="11.00">⑦ VALUE · SUCCESS · JOY</text>
+<text text-anchor="start" x="881.88" y="-24.8" font-family="Helvetica,sans-Serif" font-size="9.00">the right approach compounds</text>
+<text text-anchor="start" x="826.38" y="-10.2" font-family="Helvetica,sans-Serif" font-weight="bold" font-size="11.00">ship only high quality and useful sofware</text>
+</g>
+
+<g id="edge13" class="edge">
+<title>You&#45;&gt;Outcome</title>
+<path fill="none" stroke="#caa53d" stroke-dasharray="1,5" d="M385.46,-822.23C569.41,-721.45 963.69,-511.07 1113.38,-475 1123.91,-472.46 1495.8,-474.74 1503.38,-467 1559.05,-410.17 1555.38,-169.21 1503.38,-109 1452.11,-49.65 1244.54,-32.99 1099.36,-28.75"/>
+<polygon fill="#caa53d" stroke="#caa53d" points="1099.11,-25.24 1089.02,-28.47 1098.92,-32.24 1099.11,-25.24"/>
+<text text-anchor="start" x="1543.38" y="-363.8" font-family="Helvetica,sans-Serif" font-size="9.00" fill="#7a5b10">stays accountable</text>
+<text text-anchor="start" x="1554.88" y="-353.8" font-family="Helvetica,sans-Serif" font-size="9.00" fill="#7a5b10">for the result</text>
+</g>
+
+<g id="edge2" class="edge">
+<title>Context&#45;&gt;GoalFlow</title>
+<path fill="none" stroke="#43a047" stroke-width="1.5" d="M180.21,-553.09C155.24,-541.27 129.62,-529.23 105.38,-518 82.82,-507.55 67.87,-515.89 54.38,-495 49.56,-487.53 49.09,-482.14 54.38,-475 82.35,-437.24 190.13,-407.06 282.37,-387.42"/>
+<polygon fill="#43a047" stroke="#43a047" stroke-width="1.5" points="178.85,-556.31 189.38,-557.43 181.84,-549.99 178.85,-556.31"/>
+<polygon fill="#43a047" stroke="#43a047" stroke-width="1.5" points="283.32,-390.8 292.38,-385.32 281.88,-383.95 283.32,-390.8"/>
+<text text-anchor="start" x="54.38" y="-483.5" font-family="Helvetica,sans-Serif" font-weight="bold" font-size="10.00" fill="#1f5b1f">spec is contract evolving with each iteration. ADR, glossary, DOT too</text>
+</g>
+
+<g id="node4" class="node">
+<title>LoopReg</title>
+<path fill="#e5d4f2" stroke="black" d="M1042.88,-392C1042.88,-392 861.88,-392 861.88,-392 855.88,-392 849.88,-386 849.88,-380 849.88,-380 849.88,-342 849.88,-342 849.88,-336 855.88,-330 861.88,-330 861.88,-330 1042.88,-330 1042.88,-330 1048.88,-330 1054.88,-336 1054.88,-342 1054.88,-342 1054.88,-380 1054.88,-380 1054.88,-386 1048.88,-392 1042.88,-392"/>
+<text text-anchor="start" x="902.88" y="-376.2" font-family="Helvetica,sans-Serif" font-weight="bold" font-size="11.00">Regression hunt</text>
+<text text-anchor="start" x="862.38" y="-357.2" font-family="Helvetica,sans-Serif" font-size="11.00">hunt regressions → report issues</text>
+<text text-anchor="start" x="862.38" y="-340.8" font-family="Helvetica,sans-Serif" font-size="9.00">proactive: find before users do</text>
+</g>
+
+<g id="edge3" class="edge">
+<title>Context&#45;&gt;LoopReg</title>
+<path fill="none" stroke="#8e44ad" stroke-width="1.5" d="M479.38,-561.45C522.35,-544.59 570.05,-528.31 615.38,-518 679.93,-503.32 860.82,-536.52 912.38,-495 931.46,-479.63 941.7,-455.51 947.1,-432.01"/>
+<polygon fill="#8e44ad" stroke="#8e44ad" stroke-width="1.5" points="950.57,-432.49 949.14,-422 943.71,-431.1 950.57,-432.49"/>
+<text text-anchor="start" x="929.38" y="-483.5" font-family="Helvetica,sans-Serif" font-weight="bold" font-size="10.00" fill="#5e2d75">guides automation</text>
+</g>
+
+<g id="node8" class="node">
+<title>LoopIssue</title>
+<path fill="#cfe9f1" stroke="black" d="M1434.38,-213C1434.38,-213 1304.38,-213 1304.38,-213 1298.38,-213 1292.38,-207 1292.38,-201 1292.38,-201 1292.38,-129 1292.38,-129 1292.38,-123 1298.38,-117 1304.38,-117 1304.38,-117 1434.38,-117 1434.38,-117 1440.38,-117 1446.38,-123 1446.38,-129 1446.38,-129 1446.38,-201 1446.38,-201 1446.38,-207 1440.38,-213 1434.38,-213"/>
+<text text-anchor="start" x="1331.88" y="-197.2" font-family="Helvetica,sans-Serif" font-weight="bold" font-size="11.00">Issue intake</text>
+<text text-anchor="start" x="1318.88" y="-179.8" font-family="Helvetica,sans-Serif" font-size="9.00">GitHub issues channel</text>
+<text text-anchor="start" x="1304.38" y="-162.2" font-family="Helvetica,sans-Serif" font-size="11.00">await new issue → fix</text>
+<text text-anchor="start" x="1304.38" y="-144.2" font-family="Helvetica,sans-Serif" font-size="11.00">human review + merge</text>
+<text text-anchor="start" x="1304.38" y="-127.8" font-family="Helvetica,sans-Serif" font-size="9.00">reactive: triage on arrival</text>
+</g>
+
+<g id="edge4" class="edge">
+<title>Context&#45;&gt;LoopIssue</title>
+<path fill="none" stroke="#1f7a8c" stroke-width="1.5" d="M479.38,-625.64C629.39,-618.59 866.37,-591.3 1045.38,-495 1060.6,-486.81 1062.77,-481.37 1072.38,-467 1123.61,-390.41 1092.43,-344.29 1155.38,-277 1184.79,-245.56 1225.13,-221.46 1262.85,-203.88"/>
+<polygon fill="#1f7a8c" stroke="#1f7a8c" stroke-width="1.5" points="1264.72,-206.88 1272.38,-199.55 1261.83,-200.5 1264.72,-206.88"/>
+<text text-anchor="start" x="1155.38" y="-359.5" font-family="Helvetica,sans-Serif" font-weight="bold" font-size="10.00" fill="#155e6b">guides automation</text>
+</g>
+
+<g id="edge10" class="edge">
+<title>GoalFlow&#45;&gt;Outcome</title>
+<path fill="none" stroke="#43a047" stroke-width="1.8" d="M540.05,-287.76C652.82,-216.71 819.7,-111.58 902.3,-59.55"/>
+<polygon fill="#43a047" stroke="#43a047" stroke-width="1.8" points="910.99,-54.07 904.93,-63.21 906.97,-57.08 902.74,-59.74 902.53,-59.4 902.32,-59.07 906.55,-56.4 900.13,-55.6 910.99,-54.07 910.99,-54.07"/>
+</g>
+
+<g id="edge6" class="edge">
+<title>LoopReg&#45;&gt;Context:pain</title>
+<path fill="none" stroke="#8e44ad" stroke-width="1.5" stroke-dasharray="5,2" d="M842.38,-396.17C778.99,-416.89 698.26,-445.06 628.38,-475 610.47,-482.67 607.04,-486.78 589.38,-495 533.2,-521.13 520.27,-548.79 463.66,-551.74"/>
+<polygon fill="#8e44ad" stroke="#8e44ad" stroke-width="1.5" points="463.29,-548.25 453.38,-552 463.46,-555.25 463.29,-548.25"/>
+<text text-anchor="start" x="628.38" y="-483.5" font-family="Helvetica,sans-Serif" font-weight="bold" font-size="10.00" fill="#5e2d75">updates pain points</text>
+</g>
+
+<g id="edge11" class="edge">
+<title>LoopReg&#45;&gt;Outcome</title>
+<path fill="none" stroke="#8e44ad" stroke-width="1.8" d="M952.38,-322C952.38,-257.56 952.38,-127.68 952.38,-64.36"/>
+<polygon fill="#8e44ad" stroke="#8e44ad" stroke-width="1.8" points="952.38,-54.03 956.88,-64.03 952.78,-59.03 952.78,-64.03 952.38,-64.03 951.98,-64.03 951.98,-59.03 947.88,-64.03 952.38,-54.03 952.38,-54.03"/>
+</g>
+
+<g id="edge9" class="edge">
+<title>LoopReg&#45;&gt;LoopIssue</title>
+<path fill="none" stroke="#8e44ad" d="M973.93,-322C990.51,-296.2 1015.72,-263.36 1046.38,-244 1111.26,-203.02 1195.93,-183.56 1262.31,-174.33"/>
+<polygon fill="#8e44ad" stroke="#8e44ad" points="1262.93,-177.78 1272.38,-172.99 1262,-170.84 1262.93,-177.78"/>
+<text text-anchor="start" x="1046.38" y="-246.8" font-family="Helvetica,sans-Serif" font-size="9.00" fill="#5e2d75">reports issue</text>
+</g>
+
+<g id="node6" class="node">
+<title>Guard</title>
+<path fill="#fff0b3" stroke="#caa53d" d="M1622.88,-695C1622.88,-695 1403.88,-695 1403.88,-695 1397.88,-695 1391.88,-689 1391.88,-683 1391.88,-683 1391.88,-573 1391.88,-573 1391.88,-567 1397.88,-561 1403.88,-561 1403.88,-561 1622.88,-561 1622.88,-561 1628.88,-561 1634.88,-567 1634.88,-573 1634.88,-573 1634.88,-683 1634.88,-683 1634.88,-689 1628.88,-695 1622.88,-695"/>
+<text text-anchor="start" x="1487.38" y="-681.2" font-family="Helvetica,sans-Serif" font-weight="bold" font-size="11.00">Sandbox</text>
+<text text-anchor="start" x="1438.38" y="-665.8" font-family="Helvetica,sans-Serif" font-size="9.00">the agent is powerful &#45; fence it in</text>
+<text text-anchor="start" x="1402.38" y="-650.2" font-family="Helvetica,sans-Serif" font-size="11.00">&#45; No full host access (sudo)</text>
+<text text-anchor="start" x="1402.38" y="-634.2" font-family="Helvetica,sans-Serif" font-size="11.00">&#45; No web access ?</text>
+<text text-anchor="start" x="1402.38" y="-618.2" font-family="Helvetica,sans-Serif" font-size="11.00">&#45; GH access scoped: one repo, no admin</text>
+<text text-anchor="start" x="1402.38" y="-602.2" font-family="Helvetica,sans-Serif" font-size="11.00">&#45; No ssh / gpg keys</text>
+<text text-anchor="start" x="1402.38" y="-586.2" font-family="Helvetica,sans-Serif" font-size="11.00">&#45; No secrets / tokens in env</text>
+<text text-anchor="start" x="1402.38" y="-570.2" font-family="Helvetica,sans-Serif" font-size="11.00">&#45; Human approves every merge</text>
+</g>
+
+<g id="edge16" class="edge">
+<title>Guard&#45;&gt;GoalFlow</title>
+<path fill="none" stroke="#c0392b" stroke-width="1.5" stroke-dasharray="5,2" d="M1383.38,-625.45C1140.23,-620.13 628.5,-596.79 488.38,-495 480.75,-489.46 474,-482.74 468.06,-475.32"/>
+<polygon fill="#c0392b" stroke="#c0392b" stroke-width="1.5" points="470.67,-472.96 461.91,-467 465.04,-477.12 470.67,-472.96"/>
+<text text-anchor="start" x="488.38" y="-483.5" font-family="Helvetica,sans-Serif" font-weight="bold" font-size="10.00" fill="#c0392b">runs sandboxed</text>
+</g>
+
+<g id="edge15" class="edge">
+<title>Guard&#45;&gt;LoopReg</title>
+<path fill="none" stroke="#c0392b" stroke-width="1.5" stroke-dasharray="5,2" d="M1383.38,-590.03C1296.06,-562.44 1180.1,-520.36 1085.38,-467 1065.86,-456.01 1046.19,-442.26 1028.18,-428.38"/>
+<polygon fill="#c0392b" stroke="#c0392b" stroke-width="1.5" points="1030.06,-425.41 1020.03,-422 1025.75,-430.92 1030.06,-425.41"/>
+<text text-anchor="start" x="1128.38" y="-483.5" font-family="Helvetica,sans-Serif" font-weight="bold" font-size="10.00" fill="#c0392b">runs sandboxed</text>
+</g>
+
+<g id="edge17" class="edge">
+<title>Guard&#45;&gt;LoopIssue</title>
+<path fill="none" stroke="#c0392b" stroke-width="1.5" stroke-dasharray="5,2" d="M1599.03,-553C1621.77,-528.22 1643.32,-498.74 1655.38,-467 1685.36,-388.06 1703.08,-346.68 1655.38,-277 1620.9,-226.63 1559.97,-199.11 1503.18,-184.08"/>
+<polygon fill="#c0392b" stroke="#c0392b" stroke-width="1.5" points="1503.93,-180.66 1493.38,-181.6 1502.21,-187.45 1503.93,-180.66"/>
+<text text-anchor="start" x="1684.38" y="-359.5" font-family="Helvetica,sans-Serif" font-weight="bold" font-size="10.00" fill="#c0392b">runs sandboxed</text>
+</g>
+
+<g id="node7" class="node">
+<title>Threat</title>
+<path fill="#f9d7d2" stroke="#c0392b" d="M1887.88,-672C1887.88,-672 1686.88,-672 1686.88,-672 1680.88,-672 1674.88,-666 1674.88,-660 1674.88,-660 1674.88,-596 1674.88,-596 1674.88,-590 1680.88,-584 1686.88,-584 1686.88,-584 1887.88,-584 1887.88,-584 1893.88,-584 1899.88,-590 1899.88,-596 1899.88,-596 1899.88,-660 1899.88,-660 1899.88,-666 1893.88,-672 1887.88,-672"/>
+<text text-anchor="start" x="1729.88" y="-658.2" font-family="Helvetica,sans-Serif" font-weight="bold" font-size="11.00">⚠ Prompt injection</text>
+<text text-anchor="start" x="1685.38" y="-641.2" font-family="Helvetica,sans-Serif" font-size="11.00">&#45; Untrusted issues</text>
+<text text-anchor="start" x="1685.38" y="-625.2" font-family="Helvetica,sans-Serif" font-size="11.00">&#45; Malicious repo content</text>
+<text text-anchor="start" x="1685.38" y="-609.2" font-family="Helvetica,sans-Serif" font-size="11.00">&#45; Web pages &amp; honey pots</text>
+<text text-anchor="start" x="1685.38" y="-593.2" font-family="Helvetica,sans-Serif" font-size="11.00">&#45; Tool output with hostile instructions</text>
+</g>
+
+<g id="edge14" class="edge">
+<title>Threat&#45;&gt;LoopIssue</title>
+<path fill="none" stroke="#c0392b" stroke-width="1.5" d="M1802.24,-583.75C1823.95,-511.86 1854.7,-366.84 1785.38,-277 1745.53,-225.35 1566.62,-192.53 1456.81,-176.87"/>
+<polygon fill="#c0392b" stroke="#c0392b" stroke-width="1.5" points="1446.74,-175.46 1457.26,-172.39 1451.72,-175.91 1456.67,-176.6 1456.64,-176.85 1456.6,-177.1 1451.65,-176.4 1456.01,-181.31 1446.74,-175.46 1446.74,-175.46"/>
+<text text-anchor="start" x="1827.38" y="-364" font-family="Helvetica,sans-Serif" font-weight="bold" font-size="10.00" fill="#c0392b">attack surface</text>
+<text text-anchor="start" x="1827.38" y="-354" font-family="Helvetica,sans-Serif" font-size="10.00" fill="#c0392b">untrusted input enters here</text>
+</g>
+
+<g id="edge12" class="edge">
+<title>LoopIssue&#45;&gt;Outcome</title>
+<path fill="none" stroke="#1f7a8c" stroke-width="1.8" d="M1272.38,-132.37C1202.86,-109.69 1109.9,-79.37 1042.09,-57.26"/>
+<polygon fill="#1f7a8c" stroke="#1f7a8c" stroke-width="1.8" points="1032.26,-54.05 1043.16,-52.87 1037.14,-55.22 1041.89,-56.77 1041.77,-57.15 1041.64,-57.53 1036.89,-55.98 1040.37,-61.43 1032.26,-54.05 1032.26,-54.05"/>
+</g>
+
+<g id="node9" class="node">
+<title>LoopAlert</title>
+<path fill="#cfe9f1" stroke="black" d="M1471.38,-436C1471.38,-436 1293.38,-436 1293.38,-436 1287.38,-436 1281.38,-430 1281.38,-424 1281.38,-424 1281.38,-298 1281.38,-298 1281.38,-292 1287.38,-286 1293.38,-286 1293.38,-286 1471.38,-286 1471.38,-286 1477.38,-286 1483.38,-292 1483.38,-298 1483.38,-298 1483.38,-424 1483.38,-424 1483.38,-430 1477.38,-436 1471.38,-436"/>
+<text text-anchor="start" x="1346.38" y="-420.2" font-family="Helvetica,sans-Serif" font-weight="bold" font-size="11.00">Alert watch</text>
+<text text-anchor="start" x="1293.38" y="-402.8" font-family="Helvetica,sans-Serif" font-size="9.00">Prometheus + centralized logs channel</text>
+<text text-anchor="start" x="1293.38" y="-385.2" font-family="Helvetica,sans-Serif" font-size="11.00">Listen to alerts →</text>
+<text text-anchor="start" x="1293.38" y="-367.2" font-family="Helvetica,sans-Serif" font-size="11.00">Investigate in →</text>
+<text text-anchor="start" x="1293.38" y="-349.2" font-family="Helvetica,sans-Serif" font-size="11.00">  &#45; source code</text>
+<text text-anchor="start" x="1293.38" y="-331.2" font-family="Helvetica,sans-Serif" font-size="11.00">  &#45; MCP: API &amp; logs</text>
+<text text-anchor="start" x="1293.38" y="-313.2" font-family="Helvetica,sans-Serif" font-size="11.00">Create issue</text>
+<text text-anchor="start" x="1293.38" y="-296.8" font-family="Helvetica,sans-Serif" font-size="9.00">reactive: prod signal → triage</text>
+</g>
+
+<g id="edge7" class="edge">
+<title>LoopAlert&#45;&gt;Context:pain</title>
+<path fill="none" stroke="#1f7a8c" stroke-width="1.5" stroke-dasharray="5,2" d="M1272.38,-457.76C1265.51,-461.31 1258.49,-464.43 1251.38,-467 1202.46,-484.66 833.53,-461.22 783.38,-475 766.1,-479.75 765.24,-488.94 748.38,-495 691.93,-515.3 674.3,-506.73 615.38,-518 546.65,-531.15 528.66,-550.05 463.76,-551.86"/>
+<polygon fill="#1f7a8c" stroke="#1f7a8c" stroke-width="1.5" points="463.33,-548.36 453.38,-552 463.43,-555.36 463.33,-548.36"/>
+<text text-anchor="start" x="783.38" y="-488" font-family="Helvetica,sans-Serif" font-weight="bold" font-size="10.00" fill="#155e6b">updates pain points</text>
+<text text-anchor="start" x="783.38" y="-478" font-family="Helvetica,sans-Serif" font-size="10.00" fill="#155e6b">recurring issues &amp; alerts</text>
+</g>
+
+<g id="edge8" class="edge">
+<title>LoopAlert&#45;&gt;LoopIssue</title>
+<path fill="none" stroke="#1f7a8c" d="M1377.41,-285.83C1376.02,-265.06 1374.53,-242.81 1373.21,-223.19"/>
+<polygon fill="#1f7a8c" stroke="#1f7a8c" points="1376.7,-222.94 1372.54,-213.19 1369.72,-223.4 1376.7,-222.94"/>
+<text text-anchor="start" x="1374.38" y="-246.8" font-family="Helvetica,sans-Serif" font-size="9.00" fill="#155e6b">creates issue</text>
+</g>
+</g>
+</svg></div>
+<div id="overlay">
+  <div id="title">Overview</div>
+  <div id="counter">0 / 0</div>
+</div>
+<div id="warn"></div>
+<div id="hint">
+  <kbd>→</kbd><kbd>Space</kbd> next · <kbd>←</kbd> prev ·
+  <kbd>Home</kbd> overview · <kbd>End</kbd> last ·
+  <kbd>1</kbd>–<kbd>9</kbd> jump ·
+  <kbd>H</kbd> hide chrome · <kbd>F</kbd> fullscreen
+</div>
+<script>
+window.__SLIDES__ = {"mode": "linear", "slides": [{"kind": "overview", "label": "Overview"}, {"kind": "linear", "target": "cluster_human", "label": "① Vision"}, {"kind": "linear", "target": "cluster_foundation", "label": "② Foundation - Single Source of Truth"}, {"kind": "linear", "target": "cluster_goal", "label": "③ /goal - Design & Evolve Systems"}, {"kind": "linear", "target": "cluster_loop", "label": "④ /loop - Automation"}, {"kind": "linear", "target": "cluster_channels", "label": "⑤ /channels - Listen & React"}, {"kind": "linear", "target": "cluster_guard", "label": "⑥ Security"}, {"kind": "linear", "target": "Outcome", "label": "⑦ VALUE · SUCCESS · JOY"}, {"kind": "overview", "label": "Overview"}]};
+window.__TITLE__ = "Project Development with Agents";
+</script>
+<script src="../runtime.js"></script>
+</body>
+</html>

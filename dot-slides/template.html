@@ -1,0 +1,27 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<title>{{TITLE_HTML}} — Presentation</title>
+<link rel="stylesheet" href="../runtime.css">
+</head>
+<body>
+<div id="svg-host">{{SVG}}</div>
+<div id="overlay">
+  <div id="title">Overview</div>
+  <div id="counter">0 / 0</div>
+</div>
+<div id="warn"></div>
+<div id="hint">
+  <kbd>→</kbd><kbd>Space</kbd> next · <kbd>←</kbd> prev ·
+  <kbd>Home</kbd> overview · <kbd>End</kbd> last ·
+  <kbd>1</kbd>–<kbd>9</kbd> jump ·
+  <kbd>H</kbd> hide chrome · <kbd>F</kbd> fullscreen
+</div>
+<script>
+window.__SLIDES__ = {{SLIDES_JSON}};
+window.__TITLE__ = {{TITLE_JSON}};
+</script>
+<script src="../runtime.js"></script>
+</body>
+</html>

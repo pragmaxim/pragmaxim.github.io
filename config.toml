@@ -6,6 +6,22 @@ defaultContentLanguageInSubdir = false
 enableRobotsTXT = true
 theme = "pragmaxim-theme"
 
+# Module mounts — expose the dot-slides built artifacts at /dot-slides/presentations/.
+# Touching any static mount replaces Hugo's default; re-declare it here.
+[module]
+  [[module.mounts]]
+    source = "static"
+    target = "static"
+  [[module.mounts]]
+    source = "dot-slides/presentations"
+    target = "static/dot-slides/presentations"
+  [[module.mounts]]
+    source = "dot-slides/runtime.js"
+    target = "static/dot-slides/runtime.js"
+  [[module.mounts]]
+    source = "dot-slides/runtime.css"
+    target = "static/dot-slides/runtime.css"
+
 # Languages
 [languages]
   [languages.en]
@@ -28,14 +44,19 @@ theme = "pragmaxim-theme"
       weight = 2
 
     [[languages.cs.menu.header]]
+      name = "Prezentace"
+      URL = "#presentations"
+      weight = 3
+
+    [[languages.cs.menu.header]]
       name = "Portfolio"
       URL = "#portfolio"
-      weight = 3
+      weight = 4
 
     [[languages.cs.menu.header]]
       name = "Kontakt"
       URL = "#contact"
-      weight = 4
+      weight = 5
 
     [[languages.cs.menu.footer]]
       name = "Klienti"
@@ -48,14 +69,19 @@ theme = "pragmaxim-theme"
       weight = 2
 
     [[languages.cs.menu.footer]]
+      name = "Prezentace"
+      URL = "#presentations"
+      weight = 3
+
+    [[languages.cs.menu.footer]]
       name = "Portfolio"
       URL = "#portfolio"
-      weight = 3
+      weight = 4
 
     [[languages.cs.menu.footer]]
       name = "Kontakt"
       URL = "#contact"
-      weight = 4
+      weight = 5
 
 # SEO defaults
 [sitemap]
@@ -98,14 +124,19 @@ theme = "pragmaxim-theme"
   weight = 2
 
   [[menu.header]]
+  name = "Presentations"
+  URL = "#presentations"
+  weight = 3
+
+  [[menu.header]]
   name = "Portfolio"
   URL = "#portfolio"
-  weight = 3
+  weight = 4
 
   [[menu.header]]
   name = "Contact"
   URL = "#contact"
-  weight = 4
+  weight = 5
 
 
   [[menu.footer]]
@@ -119,19 +150,24 @@ theme = "pragmaxim-theme"
   weight = 2
 
   [[menu.footer]]
+  name = "Presentations"
+  URL = "#presentations"
+  weight = 3
+
+  [[menu.footer]]
   name = "Portfolio"
   URL = "#portfolio"
-  weight = 3
+  weight = 4
 
   [[menu.footer]]
   name = "Contact"
   URL = "#contact"
-  weight = 4
+  weight = 5
 
 
 [params]
 
-  sections = ["showcase", "about", "education", "experience", "values", "blog", "client-and-work", "cooperation", "contact"]
+  sections = ["showcase", "about", "education", "experience", "values", "blog", "presentations", "client-and-work", "cooperation", "contact"]
 
   [params.seo]
     twitter = "@pragmaxim"

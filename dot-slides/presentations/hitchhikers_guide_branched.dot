@@ -1,0 +1,418 @@
+// Branched deck — port of the OrgPad "The Hitchhiker's Guide to Fintech"
+// into the new DAG-style presentation format.
+//
+//   • Slide nodes carry  class="slide".   Numbers are derived from the graph.
+//   • Spine edges        class="spine".   Top-level walk.
+//   • Branch edges       class="branch".  Descend into a sub-tree.
+//
+// Spine (the narrative arc):
+//   1. Jakub Liška @ Pragmaxim          (intro)
+//   2. Shared traits of Centralized & Decentralized worlds  (thesis)
+//   3. Paradigm shift through analogy   (synthesis)
+//   4. Centralized vs Decentralized     (conclusion)
+//
+// Off slide 2 (Shared traits) three peer branches descend:
+//   2.1 Centralized Banking      (and its sub-tree)
+//   2.2 Decentralized Banking    (and its sub-tree)
+//   2.3 Asset Custody            (bridge between the two)
+//
+// Images sit next to the .dot file under `presentations/img/`, copied
+// from the OrgPad HTML export. `dot` is invoked with cwd=presentations
+// so relative `img/…` paths resolve identically at build time and in
+// the generated HTML.
+
+digraph HitchhikersFintech {
+    label="The Hitchhiker's Guide to Fintech";
+    rankdir=LR;
+    bgcolor="transparent";
+    splines=true;
+    nodesep=0.5;
+    ranksep=0.9;
+    node [fontname="Helvetica", fontsize=10, shape=plaintext, margin=0];
+    edge [fontname="Helvetica", fontsize=9, color="#888"];
+
+    // ═══════════════════════════════════════════════════════════════════
+    // Spine slides (blue palette)
+    // ═══════════════════════════════════════════════════════════════════
+
+    Jakub [class="slide", label=<
+        <TABLE BORDER="1" CELLBORDER="0" CELLSPACING="0" CELLPADDING="6"
+               COLOR="#5b8fd1" BGCOLOR="#ffffff" STYLE="rounded">
+            <TR><TD BGCOLOR="#5b8fd1"><FONT COLOR="white"><B>Jakub Liška @ Pragmaxim</B></FONT></TD></TR>
+            <TR><TD ALIGN="LEFT" BALIGN="LEFT">
+                <FONT COLOR="#333"><B>Specialisation</B></FONT><BR ALIGN="LEFT"/>
+                • distributed data processing<BR ALIGN="LEFT"/>
+                • blockchains<BR ALIGN="LEFT"/>
+                <BR ALIGN="LEFT"/>
+                <FONT COLOR="#333"><B>Stack</B></FONT><BR ALIGN="LEFT"/>
+                • Scala ecosystem<BR ALIGN="LEFT"/>
+                • ZIO<BR ALIGN="LEFT"/>
+                • Akka-based implementations of CQRS<BR ALIGN="LEFT"/>
+                <BR ALIGN="LEFT"/>
+                <I>Ideally sustainable, green, meaningful software<BR ALIGN="LEFT"/>
+                that makes the world a better place.</I>
+            </TD></TR>
+            <TR><TD FIXEDSIZE="TRUE" WIDTH="240" HEIGHT="200"><IMG SRC="img/3f22c91a-2b3a-457f-82e3-506fa6c59bc4.png" SCALE="TRUE"/></TD></TR>
+        </TABLE>
+    >];
+
+    Shared [class="slide", label=<
+        <TABLE BORDER="1" CELLBORDER="0" CELLSPACING="0" CELLPADDING="6"
+               COLOR="#5b8fd1" BGCOLOR="#ffffff" STYLE="rounded">
+            <TR><TD BGCOLOR="#5b8fd1"><FONT COLOR="white"><B>Shared traits of Centralized &amp; Decentralized worlds</B></FONT></TD></TR>
+            <TR><TD ALIGN="LEFT" BALIGN="LEFT">
+                • <B>Settlement</B> between all involved parties<BR ALIGN="LEFT"/>
+                &#160;&#160;◦ all parties reach <B>consensus</B> about <B>State</B><BR ALIGN="LEFT"/>
+                &#160;&#160;◦ <B>finality</B> = time required to reach consensus<BR ALIGN="LEFT"/>
+                &#160;&#160;◦ <B>throughput</B> = how many txs/s<BR ALIGN="LEFT"/>
+                • <B>Event Sourcing</B> — causality-based, replayable<BR ALIGN="LEFT"/>
+                &#160;&#160;sequence of <B>action &amp; reaction</B><BR ALIGN="LEFT"/>
+                • <B>Transaction Log</B> → <B>Account Balances</B><BR ALIGN="LEFT"/>
+                &#160;&#160;◦ Tx = container of asset transfers between accounts<BR ALIGN="LEFT"/>
+                &#160;&#160;◦ <B>Asset</B> = anything of value, ownership<BR ALIGN="LEFT"/>
+                &#160;&#160;◦ <B>Account</B> = balance, container of assets<BR ALIGN="LEFT"/>
+                • <B>Projections</B> of the Tx Log for better insights<BR ALIGN="LEFT"/>
+            </TD></TR>
+        </TABLE>
+    >];
+
+    Paradigm [class="slide", label=<
+        <TABLE BORDER="1" CELLBORDER="0" CELLSPACING="0" CELLPADDING="6"
+               COLOR="#5b8fd1" BGCOLOR="#ffffff" STYLE="rounded">
+            <TR><TD BGCOLOR="#5b8fd1"><FONT COLOR="white"><B>Paradigm shift through analogy</B></FONT></TD></TR>
+            <TR><TD ALIGN="LEFT" BALIGN="LEFT">
+                <I>What software reminds me of:</I><BR ALIGN="LEFT"/>
+                <BR ALIGN="LEFT"/>
+                • <B>Centralized</B> — totalitarian state and<BR ALIGN="LEFT"/>
+                &#160;&#160;centrally-controlled economy<BR ALIGN="LEFT"/>
+                • <B>Decentralized</B> — democratic state and<BR ALIGN="LEFT"/>
+                &#160;&#160;free economy (slightly utopian)<BR ALIGN="LEFT"/>
+                • <B>Hybrid</B> — realistic balance and sustainability<BR ALIGN="LEFT"/>
+            </TD></TR>
+        </TABLE>
+    >];
+
+    Compare [class="slide", label=<
+        <TABLE BORDER="1" CELLBORDER="0" CELLSPACING="0" CELLPADDING="6"
+               COLOR="#5b8fd1" BGCOLOR="#ffffff" STYLE="rounded">
+            <TR><TD BGCOLOR="#5b8fd1"><FONT COLOR="white"><B>Centralized vs Decentralized</B></FONT></TD></TR>
+            <TR><TD FIXEDSIZE="TRUE" WIDTH="450" HEIGHT="200"><IMG SRC="img/c465faf5-c152-4e6a-a986-e8ca0d485cd3.png" SCALE="TRUE"/></TD></TR>
+        </TABLE>
+    >];
+
+    // ═══════════════════════════════════════════════════════════════════
+    // Branches off Shared traits (orange palette)
+    // ═══════════════════════════════════════════════════════════════════
+
+    // ── 2.1 Centralized Banking ────────────────────────────────────────
+    CentralBanking [class="slide", label=<
+        <TABLE BORDER="1" CELLBORDER="0" CELLSPACING="0" CELLPADDING="6"
+               COLOR="#c19a3a" BGCOLOR="#fffaf0" STYLE="rounded">
+            <TR><TD BGCOLOR="#c19a3a"><FONT COLOR="white"><B>Centralized Banking</B></FONT></TD></TR>
+            <TR><TD ALIGN="LEFT" BALIGN="LEFT">
+                <B>WW II</B> (Bretton Woods system)<BR ALIGN="LEFT"/>
+                • 3 decades of regulation, fixed rates worldwide<BR ALIGN="LEFT"/>
+                • Provided some financial stability<BR ALIGN="LEFT"/>
+                <BR ALIGN="LEFT"/>
+                <B>1970s – 2008</B> — deregulation<BR ALIGN="LEFT"/>
+                • 1970s: Nixon shock, floating rates, end of gold standard<BR ALIGN="LEFT"/>
+                • 1980s: derivatives, junk bonds<BR ALIGN="LEFT"/>
+                • 1990s: securitization, subprime mortgages<BR ALIGN="LEFT"/>
+                <BR ALIGN="LEFT"/>
+                <B>2008+</B> — printing money<BR ALIGN="LEFT"/>
+                • tx volume growing exponentially since Web 2.0<BR ALIGN="LEFT"/>
+            </TD></TR>
+        </TABLE>
+    >];
+
+    CEFI [class="slide", label=<
+        <TABLE BORDER="1" CELLBORDER="0" CELLSPACING="0" CELLPADDING="6"
+               COLOR="#c19a3a" BGCOLOR="#fffaf0" STYLE="rounded">
+            <TR><TD BGCOLOR="#c19a3a"><FONT COLOR="white"><B>CEFI — Centralized Finance</B></FONT></TD></TR>
+            <TR><TD FIXEDSIZE="TRUE" WIDTH="380" HEIGHT="285"><IMG SRC="img/f4b5394a-d024-4148-8c95-cd00283fd919.jpg" SCALE="TRUE"/></TD></TR>
+            <TR><TD ALIGN="LEFT" BALIGN="LEFT">
+                SWIFT — connecting the global financial community<BR ALIGN="LEFT"/>
+            </TD></TR>
+        </TABLE>
+    >];
+
+    CentralStandards [class="slide", label=<
+        <TABLE BORDER="1" CELLBORDER="0" CELLSPACING="0" CELLPADDING="6"
+               COLOR="#c19a3a" BGCOLOR="#fffaf0" STYLE="rounded">
+            <TR><TD BGCOLOR="#c19a3a"><FONT COLOR="white"><B>Centralized Standards</B></FONT></TD></TR>
+            <TR><TD ALIGN="LEFT" BALIGN="LEFT">
+                Many specifications emerged over time:<BR ALIGN="LEFT"/>
+                <BR ALIGN="LEFT"/>
+                • <B>ISO 20022</B> — unified messaging format<BR ALIGN="LEFT"/>
+                • <B>FIX</B> — real-time messaging format<BR ALIGN="LEFT"/>
+                • <B>FpML</B> — describes financial products<BR ALIGN="LEFT"/>
+                • <B>CBPR+</B> — cross-border payments<BR ALIGN="LEFT"/>
+                &#160;&#160;framework by CPMI &amp; IOSCO<BR ALIGN="LEFT"/>
+                • <B>ISDA</B> — Swaps and Derivatives Association<BR ALIGN="LEFT"/>
+                • <B>PCI DSS</B> — payment-card data security<BR ALIGN="LEFT"/>
+            </TD></TR>
+        </TABLE>
+    >];
+
+    ModernCore [class="slide", label=<
+        <TABLE BORDER="1" CELLBORDER="0" CELLSPACING="0" CELLPADDING="6"
+               COLOR="#c19a3a" BGCOLOR="#fffaf0" STYLE="rounded">
+            <TR><TD BGCOLOR="#c19a3a"><FONT COLOR="white"><B>Modern Centralized Core Architecture in Scala</B></FONT></TD></TR>
+            <TR><TD ALIGN="LEFT" BALIGN="LEFT">
+                • <B>CQRS</B> — Scala/Akka has the framework built-in<BR ALIGN="LEFT"/>
+                &#160;&#160;◦ causality (action/reaction), FSM in-memory State<BR ALIGN="LEFT"/>
+                &#160;&#160;◦ real-time State, accessible directly<BR ALIGN="LEFT"/>
+                • <B>Actors</B> (entities) sharded across cluster nodes<BR ALIGN="LEFT"/>
+                • Each actor sources its own transactions<BR ALIGN="LEFT"/>
+                &#160;&#160;◦ builds <B>account</B> balance in-memory (fast)<BR ALIGN="LEFT"/>
+                • Each Tx feeds general <B>Projections</B><BR ALIGN="LEFT"/>
+                &#160;&#160;◦ Projections are part of the design<BR ALIGN="LEFT"/>
+            </TD></TR>
+            <TR><TD FIXEDSIZE="TRUE" WIDTH="440" HEIGHT="66"><IMG SRC="img/512b6035-073d-4213-91b0-f854c4145e6b.png" SCALE="TRUE"/></TD></TR>
+        </TABLE>
+    >];
+
+    CQRS [class="slide", label=<
+        <TABLE BORDER="1" CELLBORDER="0" CELLSPACING="0" CELLPADDING="6"
+               COLOR="#c19a3a" BGCOLOR="#fffaf0" STYLE="rounded">
+            <TR><TD BGCOLOR="#c19a3a"><FONT COLOR="white"><B>CQRS — Command-Query-Responsibility-Segregation</B></FONT></TD></TR>
+            <TR><TD FIXEDSIZE="TRUE" WIDTH="440" HEIGHT="296"><IMG SRC="img/1f9dc5cd-0744-4977-9c43-a128471a4304.png" SCALE="TRUE"/></TD></TR>
+            <TR><TD ALIGN="LEFT" BALIGN="LEFT">
+                • Ideal use-case for a distributed Actor System<BR ALIGN="LEFT"/>
+                &#160;&#160;◦ centralized on a single cluster<BR ALIGN="LEFT"/>
+                &#160;&#160;◦ akka-persistence + query<BR ALIGN="LEFT"/>
+                &#160;&#160;◦ actor per Account / Entity (in-memory State)<BR ALIGN="LEFT"/>
+                &#160;&#160;◦ <B>not</B> forced into message-driven architecture<BR ALIGN="LEFT"/>
+                • Inspired by Lagom &amp; Aecor (both discontinued)<BR ALIGN="LEFT"/>
+                • ZIO Entity, EventSourced, EventStore — discontinued<BR ALIGN="LEFT"/>
+            </TD></TR>
+        </TABLE>
+    >];
+
+    CentralProblems [class="slide", label=<
+        <TABLE BORDER="1" CELLBORDER="0" CELLSPACING="0" CELLPADDING="6"
+               COLOR="#c19a3a" BGCOLOR="#fffaf0" STYLE="rounded">
+            <TR><TD BGCOLOR="#c19a3a"><FONT COLOR="white"><B>Centralized problems</B></FONT></TD></TR>
+            <TR><TD ALIGN="LEFT" BALIGN="LEFT">
+                • <B>Settlement layer</B> — complex nightmare<BR ALIGN="LEFT"/>
+                &#160;&#160;◦ Visa Tx finality up to 3 days · ~2% fee<BR ALIGN="LEFT"/>
+                &#160;&#160;◦ new parties / banks cannot easily join<BR ALIGN="LEFT"/>
+                • <B>Inconsistency</B><BR ALIGN="LEFT"/>
+                &#160;&#160;◦ rely on database ACID + thorough tests<BR ALIGN="LEFT"/>
+                &#160;&#160;◦ no cryptographic proofs<BR ALIGN="LEFT"/>
+                • A lot of State — <B>bad for FP</B><BR ALIGN="LEFT"/>
+                • <B>Privacy</B> concerns<BR ALIGN="LEFT"/>
+            </TD></TR>
+        </TABLE>
+    >];
+
+    UnbalancedData [class="slide", label=<
+        <TABLE BORDER="1" CELLBORDER="0" CELLSPACING="0" CELLPADDING="6"
+               COLOR="#c19a3a" BGCOLOR="#fffaf0" STYLE="rounded">
+            <TR><TD BGCOLOR="#c19a3a"><FONT COLOR="white"><B>Unbalanced Data Distribution</B></FONT></TD></TR>
+            <TR><TD ALIGN="LEFT" BALIGN="LEFT">
+                • <B>PostgreSQL</B> — custom optimisations / pagination<BR ALIGN="LEFT"/>
+                • <B>Cassandra</B> — hash / time / range partitioning<BR ALIGN="LEFT"/>
+                &#160;&#160;+ denormalisation<BR ALIGN="LEFT"/>
+                • Cloud storage at $: BigTable, BigQuery<BR ALIGN="LEFT"/>
+            </TD></TR>
+            <TR><TD FIXEDSIZE="TRUE" WIDTH="380" HEIGHT="266"><IMG SRC="img/87dd6cbe-813c-4e84-bb36-b549f79c3466.png" SCALE="TRUE"/></TD></TR>
+        </TABLE>
+    >];
+
+    UnbalancedCluster [class="slide", label=<
+        <TABLE BORDER="1" CELLBORDER="0" CELLSPACING="0" CELLPADDING="6"
+               COLOR="#c19a3a" BGCOLOR="#fffaf0" STYLE="rounded">
+            <TR><TD BGCOLOR="#c19a3a"><FONT COLOR="white"><B>Unbalanced Cluster Distribution</B></FONT></TD></TR>
+            <TR><TD FIXEDSIZE="TRUE" WIDTH="380" HEIGHT="275"><IMG SRC="img/61b3e323-8e06-4e11-a990-094de77a8663.png" SCALE="TRUE"/></TD></TR>
+            <TR><TD ALIGN="LEFT" BALIGN="LEFT">
+                <B>Problem</B><BR ALIGN="LEFT"/>
+                • Nodes carry different concentrations of whales &amp; sharks<BR ALIGN="LEFT"/>
+                &#160;&#160;◦ pay-for-service transactions<BR ALIGN="LEFT"/>
+                &#160;&#160;◦ day trading<BR ALIGN="LEFT"/>
+                ⇒ performance issues, bottlenecks, replay-time variance<BR ALIGN="LEFT"/>
+                <BR ALIGN="LEFT"/>
+                <B>Solution</B><BR ALIGN="LEFT"/>
+                • rank-based cluster rebalancing<BR ALIGN="LEFT"/>
+            </TD></TR>
+        </TABLE>
+    >];
+
+    // ── 2.2 Decentralized Banking ──────────────────────────────────────
+    DecentralBanking [class="slide", label=<
+        <TABLE BORDER="1" CELLBORDER="0" CELLSPACING="0" CELLPADDING="6"
+               COLOR="#c19a3a" BGCOLOR="#fffaf0" STYLE="rounded">
+            <TR><TD BGCOLOR="#c19a3a"><FONT COLOR="white"><B>Decentralized Banking</B></FONT></TD></TR>
+            <TR><TD ALIGN="LEFT" BALIGN="LEFT">
+                <B>Satoshi Nakamoto</B><BR ALIGN="LEFT"/>
+                • academia + years of Fintech work<BR ALIGN="LEFT"/>
+                • democratised, open-sourced banking<BR ALIGN="LEFT"/>
+                • inspired by decentralised file sharing<BR ALIGN="LEFT"/>
+                <BR ALIGN="LEFT"/>
+                <B>2nd-gen blockchains</B><BR ALIGN="LEFT"/>
+                • self-governance — DAO<BR ALIGN="LEFT"/>
+                • general-purpose, rich smart contracts<BR ALIGN="LEFT"/>
+                • sustainability issues &amp; bottlenecks<BR ALIGN="LEFT"/>
+                <BR ALIGN="LEFT"/>
+                <B>3rd-gen blockchains</B><BR ALIGN="LEFT"/>
+                • high throughput, low finality (Solana, Avalanche)<BR ALIGN="LEFT"/>
+                &#160;&#160;◦ merkle-tree DB replacing RocksDB<BR ALIGN="LEFT"/>
+                • Relay-chain &amp; Para-chain combination<BR ALIGN="LEFT"/>
+                &#160;&#160;◦ sustainability<BR ALIGN="LEFT"/>
+            </TD></TR>
+        </TABLE>
+    >];
+
+    DecentralCore [class="slide", label=<
+        <TABLE BORDER="1" CELLBORDER="0" CELLSPACING="0" CELLPADDING="6"
+               COLOR="#c19a3a" BGCOLOR="#fffaf0" STYLE="rounded">
+            <TR><TD BGCOLOR="#c19a3a"><FONT COLOR="white"><B>Decentralized Core Architecture in Scala</B></FONT></TD></TR>
+            <TR><TD ALIGN="LEFT" BALIGN="LEFT">
+                • <B>Peer-to-peer</B> network &amp; stateless nodes — ideal for ZIO<BR ALIGN="LEFT"/>
+                • Blockchain and Projections are <B>separated</B><BR ALIGN="LEFT"/>
+                &#160;&#160;◦ Blockchain = TxLedger + AccountState (zio-chain)<BR ALIGN="LEFT"/>
+                &#160;&#160;◦ Projections = Blockchain Explorer (uexplorer)<BR ALIGN="LEFT"/>
+                • TxLedger + AccountState are <B>provably correct</B><BR ALIGN="LEFT"/>
+                &#160;&#160;and consistent across the whole p2p network<BR ALIGN="LEFT"/>
+            </TD></TR>
+            <TR><TD FIXEDSIZE="TRUE" WIDTH="440" HEIGHT="176"><IMG SRC="img/4b434739-1153-4023-bc4a-761b8fee4b46.png" SCALE="TRUE"/></TD></TR>
+        </TABLE>
+    >];
+
+    Relay [class="slide", label=<
+        <TABLE BORDER="1" CELLBORDER="0" CELLSPACING="0" CELLPADDING="6"
+               COLOR="#c19a3a" BGCOLOR="#fffaf0" STYLE="rounded">
+            <TR><TD BGCOLOR="#c19a3a"><FONT COLOR="white"><B>Relay &amp; Para Chains</B></FONT></TD></TR>
+            <TR><TD ALIGN="LEFT" BALIGN="LEFT">
+                <I>How sustainability is achieved — through further decentralisation.</I><BR ALIGN="LEFT"/>
+            </TD></TR>
+            <TR><TD FIXEDSIZE="TRUE" WIDTH="440" HEIGHT="285"><IMG SRC="img/6e75804d-37e4-49f7-9c36-13d59e60da8f.jpg" SCALE="TRUE"/></TD></TR>
+        </TABLE>
+    >];
+
+    CryptoProofs [class="slide", label=<
+        <TABLE BORDER="1" CELLBORDER="0" CELLSPACING="0" CELLPADDING="6"
+               COLOR="#c19a3a" BGCOLOR="#fffaf0" STYLE="rounded">
+            <TR><TD BGCOLOR="#c19a3a"><FONT COLOR="white"><B>Crypto proofs for fast consensus</B></FONT></TD></TR>
+            <TR><TD ALIGN="LEFT" BALIGN="LEFT">
+                • <B>Merkelized Trie Database</B> (Firewood)<BR ALIGN="LEFT"/>
+                • <B>Patricia Merkle Trie</B> on RocksDB (Trie-db)<BR ALIGN="LEFT"/>
+                • <B>Authenticated Dynamic Dictionaries</B> (AVL+ tree)<BR ALIGN="LEFT"/>
+            </TD></TR>
+            <TR><TD FIXEDSIZE="TRUE" WIDTH="380" HEIGHT="269"><IMG SRC="img/c222f15c-6074-45d4-8f01-8ca67da03d4c.png" SCALE="TRUE"/></TD></TR>
+        </TABLE>
+    >];
+
+    Explorer [class="slide", label=<
+        <TABLE BORDER="1" CELLBORDER="0" CELLSPACING="0" CELLPADDING="6"
+               COLOR="#c19a3a" BGCOLOR="#fffaf0" STYLE="rounded">
+            <TR><TD BGCOLOR="#c19a3a"><FONT COLOR="white"><B>Blockchain Explorer decentralization</B></FONT></TD></TR>
+            <TR><TD ALIGN="LEFT" BALIGN="LEFT">
+                • Indexes chain data, exposes HTTP API / GraphQL<BR ALIGN="LEFT"/>
+                • Often provides analytical insights<BR ALIGN="LEFT"/>
+                <BR ALIGN="LEFT"/>
+                <B>Centralized</B><BR ALIGN="LEFT"/>
+                • Powerful projection DB<BR ALIGN="LEFT"/>
+                • Hard to incentivise people to run it<BR ALIGN="LEFT"/>
+                <BR ALIGN="LEFT"/>
+                <B>Decentralized</B> — The Graph<BR ALIGN="LEFT"/>
+                • Incentivisation model<BR ALIGN="LEFT"/>
+                • Inversion of control — index what you need<BR ALIGN="LEFT"/>
+                • <B>Subgraphs</B> over only relevant chain parts<BR ALIGN="LEFT"/>
+                <BR ALIGN="LEFT"/>
+                <B>Indexing challenges</B><BR ALIGN="LEFT"/>
+                • Forks, rollbacks, reverting data<BR ALIGN="LEFT"/>
+                • Various tx formats &amp; assets<BR ALIGN="LEFT"/>
+                • Partition size (Cassandra), JOINs (RDBMS)<BR ALIGN="LEFT"/>
+            </TD></TR>
+        </TABLE>
+    >];
+
+    Advantages [class="slide", label=<
+        <TABLE BORDER="1" CELLBORDER="0" CELLSPACING="0" CELLPADDING="6"
+               COLOR="#c19a3a" BGCOLOR="#fffaf0" STYLE="rounded">
+            <TR><TD BGCOLOR="#c19a3a"><FONT COLOR="white"><B>Advantages of decentralization</B></FONT></TD></TR>
+            <TR><TD ALIGN="LEFT" BALIGN="LEFT">
+                • Clean standards of <B>Settlement / Consensus layer</B><BR ALIGN="LEFT"/>
+                &#160;&#160;◦ in a <B>peer-to-peer</B> network<BR ALIGN="LEFT"/>
+                &#160;&#160;◦ any party can join<BR ALIGN="LEFT"/>
+                &#160;&#160;◦ <B>good for FP</B> — only Mempool + Peers as State<BR ALIGN="LEFT"/>
+                • <B>Fast finality</B> — Solana, Avalanche<BR ALIGN="LEFT"/>
+                • <B>Consistency</B> — provably correct data structures<BR ALIGN="LEFT"/>
+                &#160;&#160;◦ Merkle-tree database (Firewood)<BR ALIGN="LEFT"/>
+                • <B>Privacy</B><BR ALIGN="LEFT"/>
+                &#160;&#160;◦ users own the data<BR ALIGN="LEFT"/>
+                &#160;&#160;◦ ZK proofs, ring signatures<BR ALIGN="LEFT"/>
+            </TD></TR>
+        </TABLE>
+    >];
+
+    DApps [class="slide", label=<
+        <TABLE BORDER="1" CELLBORDER="0" CELLSPACING="0" CELLPADDING="6"
+               COLOR="#c19a3a" BGCOLOR="#fffaf0" STYLE="rounded">
+            <TR><TD BGCOLOR="#c19a3a"><FONT COLOR="white"><B>Decentralized Apps</B></FONT></TD></TR>
+            <TR><TD FIXEDSIZE="TRUE" WIDTH="440" HEIGHT="331"><IMG SRC="img/3ae977de-99d3-407e-8452-5a6e92a453c1.png" SCALE="TRUE"/></TD></TR>
+            <TR><TD ALIGN="LEFT" BALIGN="LEFT">
+                Smart-contracts as building blocks of finance<BR ALIGN="LEFT"/>
+                — composable, permissionless, auditable on-chain.<BR ALIGN="LEFT"/>
+            </TD></TR>
+        </TABLE>
+    >];
+
+    ChainStandards [class="slide", label=<
+        <TABLE BORDER="1" CELLBORDER="0" CELLSPACING="0" CELLPADDING="6"
+               COLOR="#c19a3a" BGCOLOR="#fffaf0" STYLE="rounded">
+            <TR><TD BGCOLOR="#c19a3a"><FONT COLOR="white"><B>Blockchain Standards</B></FONT></TD></TR>
+            <TR><TD ALIGN="LEFT" BALIGN="LEFT">
+                <I>Global, open set of standards — reminds of democracy.</I><BR ALIGN="LEFT"/>
+            </TD></TR>
+            <TR><TD FIXEDSIZE="TRUE" WIDTH="380" HEIGHT="320"><IMG SRC="img/df2af25d-1ea1-44fa-800e-6700a0e303fe.png" SCALE="TRUE"/></TD></TR>
+        </TABLE>
+    >];
+
+    // ── 2.3 Asset Custody (bridge) ─────────────────────────────────────
+    AssetCustody [class="slide", label=<
+        <TABLE BORDER="1" CELLBORDER="0" CELLSPACING="0" CELLPADDING="6"
+               COLOR="#c19a3a" BGCOLOR="#fffaf0" STYLE="rounded">
+            <TR><TD BGCOLOR="#c19a3a"><FONT COLOR="white"><B>Asset Custody — bridge between worlds</B></FONT></TD></TR>
+            <TR><TD ALIGN="LEFT" BALIGN="LEFT">
+                • Robust multi-client wallet backed by DB<BR ALIGN="LEFT"/>
+                • Classic cryptography — PGP, BouncyCastle<BR ALIGN="LEFT"/>
+                • github.com/pragmaxim/zio-pass<BR ALIGN="LEFT"/>
+                • github.com/pragmaxim/scalapass-cli<BR ALIGN="LEFT"/>
+            </TD></TR>
+        </TABLE>
+    >];
+
+    // ═══════════════════════════════════════════════════════════════════
+    // Edges
+    // ═══════════════════════════════════════════════════════════════════
+
+    // Spine
+    Jakub    -> Shared   [class="spine", color="#5b8fd1", penwidth=2.0];
+    Shared   -> Paradigm [class="spine", color="#5b8fd1", penwidth=2.0];
+    Paradigm -> Compare  [class="spine", color="#5b8fd1", penwidth=2.0];
+
+    // Three peer branches off Shared traits
+    Shared -> CentralBanking   [class="branch", color="#c19a3a", style=dashed];
+    Shared -> DecentralBanking [class="branch", color="#c19a3a", style=dashed];
+    Shared -> AssetCustody     [class="branch", color="#c19a3a", style=dashed];
+
+    // Centralized Banking sub-tree
+    CentralBanking -> CEFI       [class="branch", color="#c19a3a", style=dashed];
+    CEFI           -> CentralStandards [class="branch", color="#c19a3a", style=dashed];
+    CentralBanking -> ModernCore [class="branch", color="#c19a3a", style=dashed];
+    ModernCore     -> CQRS       [class="branch", color="#c19a3a", style=dashed];
+    CQRS           -> CentralProblems   [class="branch", color="#c19a3a", style=dashed];
+    CentralProblems -> UnbalancedData   [class="branch", color="#c19a3a", style=dashed];
+    CQRS           -> UnbalancedCluster [class="branch", color="#c19a3a", style=dashed];
+
+    // Decentralized Banking sub-tree
+    DecentralBanking -> DecentralCore [class="branch", color="#c19a3a", style=dashed];
+    DecentralCore    -> Relay         [class="branch", color="#c19a3a", style=dashed];
+    Relay            -> CryptoProofs  [class="branch", color="#c19a3a", style=dashed];
+    Relay            -> Explorer      [class="branch", color="#c19a3a", style=dashed];
+    Relay            -> Advantages    [class="branch", color="#c19a3a", style=dashed];
+    DecentralBanking -> DApps         [class="branch", color="#c19a3a", style=dashed];
+    DApps            -> ChainStandards [class="branch", color="#c19a3a", style=dashed];
+}

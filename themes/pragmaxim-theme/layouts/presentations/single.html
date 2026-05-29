@@ -1,0 +1,53 @@
+<!-- inject:../components/baseHead/baseHeadStart.html -->
+<!DOCTYPE html>
+<html lang="{{ .Site.Language.LanguageCode | default .Site.LanguageCode }}">
+  <head>
+    {{ partial "head.html" . }} {{ partial "head_custom.html" . }}
+  </head>
+
+  <body>
+    {{ partial "header.html" . }} {{ partial "breadcrumb.html" . }}
+
+    <section
+      id="presentations"
+      class="section section--border-bottom rad-animation-group"
+    >
+      <div class="container">
+        <div class="row rad-fade-down">
+          <div class="col-12">
+            <h2>{{ .Params.title }}</h2>
+            {{ with .Params.description }}<p>{{ . }}</p>{{ end }}
+
+            {{ if .Params.presentationUrl }}
+            <div style="position:relative; width:100%; background:#0f1115; border-radius:6px; overflow:hidden;">
+              <iframe
+                src="{{ .Params.presentationUrl | relURL }}"
+                style="width:100%; height:80vh; border:0; display:block;"
+                allow="fullscreen"
+                allowfullscreen
+                title="{{ .Params.title }}"></iframe>
+            </div>
+            <p class="mt-2">
+              <a href="{{ .Params.presentationUrl | relURL }}" target="_blank" rel="noopener">
+                Open in new tab ↗
+              </a>
+              {{ if .Params.sourceUrl }}
+              · <a href="{{ .Params.sourceUrl }}" target="_blank" rel="noopener">
+                .dot source ↗
+              </a>
+              {{ end }}
+            </p>
+            {{ end }}
+
+            {{ with .Content }}
+            <div class="blog__content">{{ . | safeHTML }}</div>
+            {{ end }}
+          </div>
+        </div>
+      </div>
+    </section>
+
+    {{ partial "base-foot.html" . }}
+  </body>
+</html>
+<!-- endinject -->

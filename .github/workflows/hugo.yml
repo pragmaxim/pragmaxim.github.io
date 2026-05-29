@@ -48,6 +48,10 @@ jobs:
         uses: actions/configure-pages@v5
       - name: Install Node.js dependencies
         run: "[[ -f package-lock.json || -f npm-shrinkwrap.json ]] && npm ci || true"
+      - name: Install Graphviz (for dot-slides)
+        run: sudo apt-get update && sudo apt-get install -y graphviz
+      - name: Build dot-slides presentations
+        run: python3 dot-slides/build_presentation.py
       - name: Build with Hugo
         env:
           HUGO_CACHEDIR: ${{ runner.temp }}/hugo_cache
