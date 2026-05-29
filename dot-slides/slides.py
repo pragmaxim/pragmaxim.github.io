@@ -232,8 +232,6 @@ class BranchedSlide:
     label: str                # raw label text (no derived number)
     number: str               # derived, e.g. "1.1.2"
     is_spine: bool
-    spine_anchor: str         # target of the spine slide this slide belongs to
-                              # (== own target for spine slides)
     spine_prev: str | None    # target of previous spine slide, or None
     spine_next: str | None    # target of next spine slide, or None
     branch_prev: str | None   # previous in DFS chain (head=spine slide → None)
@@ -325,27 +323,6 @@ def _walk_spine(
     return spine
 
 
-def _dfs_branch(
-    node: str,
-    branch_out: dict[str, list[str]],
-    visited: set[str],
-) -> list[str]:
-    """Pre-order DFS through `node`'s branch sub-tree (excluding `node` itself).
-
-    Detects revisits (cycle or diamond) — branched decks must be trees.
-    """
-    out: list[str] = []
-    for child in branch_out.get(node, []):
-        if child in visited:
-            raise SlideError(
-                f"branch cycle or diamond: {child!r} reached more than once"
-            )
-        visited.add(child)
-        out.append(child)
-        out.extend(_dfs_branch(child, branch_out, visited))
-    return out
-
-
 def collect_branched_slides(svg_text: str) -> list[BranchedSlide]:
     """Parse a branched-mode SVG into a flat slide list in render order.
 
@@ -417,7 +394,6 @@ def collect_branched_slides(svg_text: str) -> list[BranchedSlide]:
             label=slides_by_target[spine_target],
             number=str(i),
             is_spine=True,
-            spine_anchor=spine_target,
             spine_prev=spine_prev,
             spine_next=spine_next,
             branch_prev=None,    # filled below as chain head
@@ -437,7 +413,6 @@ def collect_branched_slides(svg_text: str) -> list[BranchedSlide]:
                     label=slides_by_target[child],
                     number=child_number,
                     is_spine=False,
-                    spine_anchor=spine_target,
                     spine_prev=None,
                     spine_next=None,
                     branch_prev=None,
@@ -501,7 +476,6 @@ def branched_slides_to_json(slides: list[BranchedSlide]) -> str:
         "spineNext": first_spine_idx,
         "branchPrev": None,
         "branchNext": None,
-        "spineAnchor": None,
     }]
 
     overview_first_idx = 0
@@ -513,7 +487,6 @@ def branched_slides_to_json(slides: list[BranchedSlide]) -> str:
             "target": s.target,
             "label": f"{s.number}. {s.label}" if s.label else s.number,
             "number": s.number,
-            "spineAnchor": idx_by_target[s.spine_anchor],
             "spinePrev": (
                 idx(s.spine_prev)
                 if s.is_spine and s.spine_prev is not None
@@ -535,7 +508,6 @@ def branched_slides_to_json(slides: list[BranchedSlide]) -> str:
         "spineNext": None,
         "branchPrev": None,
         "branchNext": None,
-        "spineAnchor": None,
     })
 
     return json.dumps(

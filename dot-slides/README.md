@@ -55,37 +55,28 @@ Linear decks:
 | `→` · `Space` · `↓` · `PgDn`     | next slide      |
 | `←` · `↑` · `PgUp`               | previous slide  |
 | `1`–`9`                          | jump to slide N |
+| `Z`                              | zoom out to whole deck (toggle) |
 | `Home` · `0` · `Esc`             | overview        |
 | `End`                            | last slide      |
 | `H`                              | hide overlay    |
 | `F`                              | fullscreen      |
 | click left / right half          | back / forward  |
 
-Branched decks split spine and branch motion across the arrows:
-
-| Key                              | Action                              |
-|----------------------------------|-------------------------------------|
-| `→` · `Space` · `PgDn`           | next spine slide                    |
-| `←` · `PgUp`                     | previous spine slide                |
-| `↓`                              | branch forward (DFS into sub-tree)  |
-| `↑`                              | branch back (DFS reverse)           |
-| `1`–`9`                          | jump to spine slide N               |
-| `Home` · `0` · `Esc`             | overview                            |
-| `End`                            | last slide                          |
-
-See [AGENTS.md](./AGENTS.md#branched-dag-decks) for the branched
-authoring conventions.
+Branched (DAG) decks split spine and branch motion across the arrows —
+`→`/`←` walk the spine, `↓`/`↑` walk into and back out of a branch. The
+full key table and authoring conventions live in
+[AGENTS.md](./AGENTS.md#branched-dag-decks).
 
 ## How it validates itself — fail-fast
 
-- `dot` exits non-zero → build aborts for that file (no stale HTML).
-- `dot` runs with a 30-second timeout.
-- Duplicate slide numbers → **build failure**.
-- Non-contiguous slide numbers (`①, ②, ④`) → **build failure**.
-- Missing top-level `label=` → note (title falls back to filename).
-- Browser logs `presentation: N slides, M resolved, K missing` at load
-  and shows an orange warning bar if any slide target's `<title>` is
-  unresolved in the SVG.
+The build aborts a file rather than emit stale HTML — `dot` errors,
+duplicate or non-contiguous slide numbers, and the like are all build
+failures. See [AGENTS.md](./AGENTS.md#build-invariants--fail-fast) for the
+full contract.
+
+At runtime the browser logs `presentation: N slides, M resolved, K missing`
+at load and shows an orange warning bar if any slide target's `<title>` is
+unresolved in the SVG.
 
 ## Tests
 

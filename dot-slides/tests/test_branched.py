@@ -144,14 +144,6 @@ class TestCollectBranchedSlides(unittest.TestCase):
             self.assertIsNone(by[t].branch_prev)
             self.assertIsNone(by[t].branch_next)
 
-    def test_spine_anchor_for_branches(self):
-        slides = collect_branched_slides(_example_branched_svg())
-        by = {s.target: s for s in slides}
-        for t in ("N11", "N111", "N112", "N12"):
-            self.assertEqual(by[t].spine_anchor, "N1")
-        for t in ("N1", "N2", "N3", "N4"):
-            self.assertEqual(by[t].spine_anchor, t)
-
     def test_is_spine_flag(self):
         slides = collect_branched_slides(_example_branched_svg())
         spine = [s.target for s in slides if s.is_spine]

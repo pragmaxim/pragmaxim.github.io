@@ -187,11 +187,17 @@
 
   // ─── Mode-specific navigation ───────────────────────────────────────
 
+  // Array indices of the slides that the digit keys (1–9) jump to: the
+  // "linear" slides in a linear deck, the "spine" slides in a branched one.
+  function spineIndicesOf(slides, spineKind) {
+    return slides
+      .map((s, i) => (s.kind === spineKind ? i : -1))
+      .filter(i => i >= 0);
+  }
+
   function linearNav(slides) {
     const lastIdx = slides.length - 1;
-    const spineIndices = slides
-      .map((s, i) => (s.kind === "linear" ? i : -1))
-      .filter(i => i >= 0);
+    const spineIndices = spineIndicesOf(slides, "linear");
     return {
       lastIdx,
       spineIndices,
@@ -206,7 +212,7 @@
         if (key === "End") return lastIdx;
         if (/^[1-9]$/.test(key)) {
           const n = parseInt(key, 10);
-          return n < spineIndices.length ? spineIndices[n - 1] : idx;
+          return n <= spineIndices.length ? spineIndices[n - 1] : idx;
         }
         return idx;
       },
@@ -215,9 +221,7 @@
 
   function branchedNav(slides) {
     const lastIdx = slides.length - 1;
-    const spineIndices = slides
-      .map((s, i) => (s.kind === "spine" ? i : -1))
-      .filter(i => i >= 0);
+    const spineIndices = spineIndicesOf(slides, "spine");
     return {
       lastIdx,
       spineIndices,
@@ -254,13 +258,13 @@
         '<kbd>→</kbd> spine next · <kbd>←</kbd> spine prev · ' +
         '<kbd>↓</kbd> branch in/forward · <kbd>↑</kbd> branch back · ' +
         '<kbd>Home</kbd> overview · <kbd>End</kbd> last · ' +
-        '<kbd>1</kbd>–<kbd>9</kbd> spine jump · ' +
+        '<kbd>1</kbd>–<kbd>9</kbd> spine jump · <kbd>Z</kbd> zoom out · ' +
         '<kbd>H</kbd> hide chrome · <kbd>F</kbd> fullscreen';
     }
     // Linear mode keeps the markup from the template untouched.
   }
 
-  function bindNavigation(show) {
+  function bindNavigation(show, toggleZoom) {
     document.addEventListener("keydown", e => {
       const k = e.key;
       if (k === "h" || k === "H") {
@@ -270,6 +274,13 @@
       if (k === "f" || k === "F") {
         if (!document.fullscreenElement) document.documentElement.requestFullscreen();
         else document.exitFullscreen();
+        return;
+      }
+      // Z peeks at the whole presentation without losing your place; press
+      // again — or any navigation key — to return to the current slide.
+      if (k === "z" || k === "Z") {
+        e.preventDefault();
+        toggleZoom();
         return;
       }
       // All navigation keys go through show(); preventDefault for
@@ -322,6 +333,7 @@
 
   let idx = 0;
   let edges = [];
+  let zoomedOut = false;
 
   function counterFor(i) {
     const s = slides[i];
@@ -344,6 +356,7 @@
   }
 
   function show(key) {
+    zoomedOut = false;  // any navigation returns from a zoom-out peek
     if (typeof key === "number") {
       idx = Math.max(0, Math.min(nav.lastIdx, key));
     } else {
@@ -355,6 +368,14 @@
     counterEl.textContent = counterFor(idx);
     animate(targetVB(svg, resolved[idx], origVB), 650);
     updateEdgeVisibility(edges, idx, nav.lastIdx);
+  }
+
+  // Toggle a temporary zoom-out to the whole presentation. The current
+  // slide index is untouched, so toggling back returns to exactly where
+  // you were. Narrative framing (title/counter/edge fading) stays put.
+  function toggleZoom() {
+    zoomedOut = !zoomedOut;
+    animate(zoomedOut ? origVB.slice() : targetVB(svg, resolved[idx], origVB), 650);
   }
 
   console.log(
@@ -370,5 +391,5 @@
     edges = classifyEdges(svg, buildSlideOwnership(svg, resolved));
     show(0);
   });
-  bindNavigation(show);
+  bindNavigation(show, toggleZoom);
 })();

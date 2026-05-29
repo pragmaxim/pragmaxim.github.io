@@ -153,6 +153,7 @@ Branched navigation keys:
 | `↓`                    | branch forward (DFS into sub-tree)|
 | `↑`                    | branch back (DFS reverse)         |
 | `1`–`9`                | jump to spine slide N             |
+| `Z`                    | zoom out to whole deck (toggle)   |
 | `Home` · `Esc` · `0`   | overview                          |
 | `End`                  | last slide                        |
 

@@ -36,9 +36,9 @@ digraph HitchhikersFintech {
     // ═══════════════════════════════════════════════════════════════════
 
     Jakub [class="slide", label=<
-        <TABLE BORDER="1" CELLBORDER="0" CELLSPACING="0" CELLPADDING="6"
+        <TABLE BORDER="1" CELLBORDER="0" CELLSPACING="3" CELLPADDING="6"
                COLOR="#5b8fd1" BGCOLOR="#ffffff" STYLE="rounded">
-            <TR><TD BGCOLOR="#5b8fd1"><FONT COLOR="white"><B>Jakub Liška @ Pragmaxim</B></FONT></TD></TR>
+            <TR><TD STYLE="rounded" BGCOLOR="#5b8fd1"><FONT COLOR="white"><B>Jakub Liška @ Pragmaxim</B></FONT></TD></TR>
             <TR><TD ALIGN="LEFT" BALIGN="LEFT">
                 <FONT COLOR="#333"><B>Specialisation</B></FONT><BR ALIGN="LEFT"/>
                 • distributed data processing<BR ALIGN="LEFT"/>
@@ -57,9 +57,9 @@ digraph HitchhikersFintech {
     >];
 
     Shared [class="slide", label=<
-        <TABLE BORDER="1" CELLBORDER="0" CELLSPACING="0" CELLPADDING="6"
+        <TABLE BORDER="1" CELLBORDER="0" CELLSPACING="3" CELLPADDING="6"
                COLOR="#5b8fd1" BGCOLOR="#ffffff" STYLE="rounded">
-            <TR><TD BGCOLOR="#5b8fd1"><FONT COLOR="white"><B>Shared traits of Centralized &amp; Decentralized worlds</B></FONT></TD></TR>
+            <TR><TD STYLE="rounded" BGCOLOR="#5b8fd1"><FONT COLOR="white"><B>Shared traits of Centralized &amp; Decentralized worlds</B></FONT></TD></TR>
             <TR><TD ALIGN="LEFT" BALIGN="LEFT">
                 • <B>Settlement</B> between all involved parties<BR ALIGN="LEFT"/>
                 &#160;&#160;◦ all parties reach <B>consensus</B> about <B>State</B><BR ALIGN="LEFT"/>
@@ -77,9 +77,9 @@ digraph HitchhikersFintech {
     >];
 
     Paradigm [class="slide", label=<
-        <TABLE BORDER="1" CELLBORDER="0" CELLSPACING="0" CELLPADDING="6"
+        <TABLE BORDER="1" CELLBORDER="0" CELLSPACING="3" CELLPADDING="6"
                COLOR="#5b8fd1" BGCOLOR="#ffffff" STYLE="rounded">
-            <TR><TD BGCOLOR="#5b8fd1"><FONT COLOR="white"><B>Paradigm shift through analogy</B></FONT></TD></TR>
+            <TR><TD STYLE="rounded" BGCOLOR="#5b8fd1"><FONT COLOR="white"><B>Paradigm shift through analogy</B></FONT></TD></TR>
             <TR><TD ALIGN="LEFT" BALIGN="LEFT">
                 <I>What software reminds me of:</I><BR ALIGN="LEFT"/>
                 <BR ALIGN="LEFT"/>
@@ -93,9 +93,9 @@ digraph HitchhikersFintech {
     >];
 
     Compare [class="slide", label=<
-        <TABLE BORDER="1" CELLBORDER="0" CELLSPACING="0" CELLPADDING="6"
+        <TABLE BORDER="1" CELLBORDER="0" CELLSPACING="3" CELLPADDING="6"
                COLOR="#5b8fd1" BGCOLOR="#ffffff" STYLE="rounded">
-            <TR><TD BGCOLOR="#5b8fd1"><FONT COLOR="white"><B>Centralized vs Decentralized</B></FONT></TD></TR>
+            <TR><TD STYLE="rounded" BGCOLOR="#5b8fd1"><FONT COLOR="white"><B>Centralized vs Decentralized</B></FONT></TD></TR>
             <TR><TD FIXEDSIZE="TRUE" WIDTH="450" HEIGHT="200"><IMG SRC="img/c465faf5-c152-4e6a-a986-e8ca0d485cd3.png" SCALE="TRUE"/></TD></TR>
         </TABLE>
     >];
@@ -106,9 +106,9 @@ digraph HitchhikersFintech {
 
     // ── 2.1 Centralized Banking ────────────────────────────────────────
     CentralBanking [class="slide", label=<
-        <TABLE BORDER="1" CELLBORDER="0" CELLSPACING="0" CELLPADDING="6"
+        <TABLE BORDER="1" CELLBORDER="0" CELLSPACING="3" CELLPADDING="6"
                COLOR="#c19a3a" BGCOLOR="#fffaf0" STYLE="rounded">
-            <TR><TD BGCOLOR="#c19a3a"><FONT COLOR="white"><B>Centralized Banking</B></FONT></TD></TR>
+            <TR><TD STYLE="rounded" BGCOLOR="#c19a3a"><FONT COLOR="white"><B>Centralized Banking</B></FONT></TD></TR>
             <TR><TD ALIGN="LEFT" BALIGN="LEFT">
                 <B>WW II</B> (Bretton Woods system)<BR ALIGN="LEFT"/>
                 • 3 decades of regulation, fixed rates worldwide<BR ALIGN="LEFT"/>
@@ -126,9 +126,9 @@ digraph HitchhikersFintech {
     >];
 
     CEFI [class="slide", label=<
-        <TABLE BORDER="1" CELLBORDER="0" CELLSPACING="0" CELLPADDING="6"
+        <TABLE BORDER="1" CELLBORDER="0" CELLSPACING="3" CELLPADDING="6"
                COLOR="#c19a3a" BGCOLOR="#fffaf0" STYLE="rounded">
-            <TR><TD BGCOLOR="#c19a3a"><FONT COLOR="white"><B>CEFI — Centralized Finance</B></FONT></TD></TR>
+            <TR><TD STYLE="rounded" BGCOLOR="#c19a3a"><FONT COLOR="white"><B>CEFI — Centralized Finance</B></FONT></TD></TR>
             <TR><TD FIXEDSIZE="TRUE" WIDTH="380" HEIGHT="285"><IMG SRC="img/f4b5394a-d024-4148-8c95-cd00283fd919.jpg" SCALE="TRUE"/></TD></TR>
             <TR><TD ALIGN="LEFT" BALIGN="LEFT">
                 SWIFT — connecting the global financial community<BR ALIGN="LEFT"/>
@@ -137,9 +137,9 @@ digraph HitchhikersFintech {
     >];
 
     CentralStandards [class="slide", label=<
-        <TABLE BORDER="1" CELLBORDER="0" CELLSPACING="0" CELLPADDING="6"
+        <TABLE BORDER="1" CELLBORDER="0" CELLSPACING="3" CELLPADDING="6"
                COLOR="#c19a3a" BGCOLOR="#fffaf0" STYLE="rounded">
-            <TR><TD BGCOLOR="#c19a3a"><FONT COLOR="white"><B>Centralized Standards</B></FONT></TD></TR>
+            <TR><TD STYLE="rounded" BGCOLOR="#c19a3a"><FONT COLOR="white"><B>Centralized Standards</B></FONT></TD></TR>
             <TR><TD ALIGN="LEFT" BALIGN="LEFT">
                 Many specifications emerged over time:<BR ALIGN="LEFT"/>
                 <BR ALIGN="LEFT"/>
@@ -155,9 +155,9 @@ digraph HitchhikersFintech {
     >];
 
     ModernCore [class="slide", label=<
-        <TABLE BORDER="1" CELLBORDER="0" CELLSPACING="0" CELLPADDING="6"
+        <TABLE BORDER="1" CELLBORDER="0" CELLSPACING="3" CELLPADDING="6"
                COLOR="#c19a3a" BGCOLOR="#fffaf0" STYLE="rounded">
-            <TR><TD BGCOLOR="#c19a3a"><FONT COLOR="white"><B>Modern Centralized Core Architecture in Scala</B></FONT></TD></TR>
+            <TR><TD STYLE="rounded" BGCOLOR="#c19a3a"><FONT COLOR="white"><B>Modern Centralized Core Architecture in Scala</B></FONT></TD></TR>
             <TR><TD ALIGN="LEFT" BALIGN="LEFT">
                 • <B>CQRS</B> — Scala/Akka has the framework built-in<BR ALIGN="LEFT"/>
                 &#160;&#160;◦ causality (action/reaction), FSM in-memory State<BR ALIGN="LEFT"/>
@@ -173,9 +173,9 @@ digraph HitchhikersFintech {
     >];
 
     CQRS [class="slide", label=<
-        <TABLE BORDER="1" CELLBORDER="0" CELLSPACING="0" CELLPADDING="6"
+        <TABLE BORDER="1" CELLBORDER="0" CELLSPACING="3" CELLPADDING="6"
                COLOR="#c19a3a" BGCOLOR="#fffaf0" STYLE="rounded">
-            <TR><TD BGCOLOR="#c19a3a"><FONT COLOR="white"><B>CQRS — Command-Query-Responsibility-Segregation</B></FONT></TD></TR>
+            <TR><TD STYLE="rounded" BGCOLOR="#c19a3a"><FONT COLOR="white"><B>CQRS — Command-Query-Responsibility-Segregation</B></FONT></TD></TR>
             <TR><TD FIXEDSIZE="TRUE" WIDTH="440" HEIGHT="296"><IMG SRC="img/1f9dc5cd-0744-4977-9c43-a128471a4304.png" SCALE="TRUE"/></TD></TR>
             <TR><TD ALIGN="LEFT" BALIGN="LEFT">
                 • Ideal use-case for a distributed Actor System<BR ALIGN="LEFT"/>
@@ -190,9 +190,9 @@ digraph HitchhikersFintech {
     >];
 
     CentralProblems [class="slide", label=<
-        <TABLE BORDER="1" CELLBORDER="0" CELLSPACING="0" CELLPADDING="6"
+        <TABLE BORDER="1" CELLBORDER="0" CELLSPACING="3" CELLPADDING="6"
                COLOR="#c19a3a" BGCOLOR="#fffaf0" STYLE="rounded">
-            <TR><TD BGCOLOR="#c19a3a"><FONT COLOR="white"><B>Centralized problems</B></FONT></TD></TR>
+            <TR><TD STYLE="rounded" BGCOLOR="#c19a3a"><FONT COLOR="white"><B>Centralized problems</B></FONT></TD></TR>
             <TR><TD ALIGN="LEFT" BALIGN="LEFT">
                 • <B>Settlement layer</B> — complex nightmare<BR ALIGN="LEFT"/>
                 &#160;&#160;◦ Visa Tx finality up to 3 days · ~2% fee<BR ALIGN="LEFT"/>
@@ -207,9 +207,9 @@ digraph HitchhikersFintech {
     >];
 
     UnbalancedData [class="slide", label=<
-        <TABLE BORDER="1" CELLBORDER="0" CELLSPACING="0" CELLPADDING="6"
+        <TABLE BORDER="1" CELLBORDER="0" CELLSPACING="3" CELLPADDING="6"
                COLOR="#c19a3a" BGCOLOR="#fffaf0" STYLE="rounded">
-            <TR><TD BGCOLOR="#c19a3a"><FONT COLOR="white"><B>Unbalanced Data Distribution</B></FONT></TD></TR>
+            <TR><TD STYLE="rounded" BGCOLOR="#c19a3a"><FONT COLOR="white"><B>Unbalanced Data Distribution</B></FONT></TD></TR>
             <TR><TD ALIGN="LEFT" BALIGN="LEFT">
                 • <B>PostgreSQL</B> — custom optimisations / pagination<BR ALIGN="LEFT"/>
                 • <B>Cassandra</B> — hash / time / range partitioning<BR ALIGN="LEFT"/>
@@ -221,9 +221,9 @@ digraph HitchhikersFintech {
     >];
 
     UnbalancedCluster [class="slide", label=<
-        <TABLE BORDER="1" CELLBORDER="0" CELLSPACING="0" CELLPADDING="6"
+        <TABLE BORDER="1" CELLBORDER="0" CELLSPACING="3" CELLPADDING="6"
                COLOR="#c19a3a" BGCOLOR="#fffaf0" STYLE="rounded">
-            <TR><TD BGCOLOR="#c19a3a"><FONT COLOR="white"><B>Unbalanced Cluster Distribution</B></FONT></TD></TR>
+            <TR><TD STYLE="rounded" BGCOLOR="#c19a3a"><FONT COLOR="white"><B>Unbalanced Cluster Distribution</B></FONT></TD></TR>
             <TR><TD FIXEDSIZE="TRUE" WIDTH="380" HEIGHT="275"><IMG SRC="img/61b3e323-8e06-4e11-a990-094de77a8663.png" SCALE="TRUE"/></TD></TR>
             <TR><TD ALIGN="LEFT" BALIGN="LEFT">
                 <B>Problem</B><BR ALIGN="LEFT"/>
@@ -240,9 +240,9 @@ digraph HitchhikersFintech {
 
     // ── 2.2 Decentralized Banking ──────────────────────────────────────
     DecentralBanking [class="slide", label=<
-        <TABLE BORDER="1" CELLBORDER="0" CELLSPACING="0" CELLPADDING="6"
+        <TABLE BORDER="1" CELLBORDER="0" CELLSPACING="3" CELLPADDING="6"
                COLOR="#c19a3a" BGCOLOR="#fffaf0" STYLE="rounded">
-            <TR><TD BGCOLOR="#c19a3a"><FONT COLOR="white"><B>Decentralized Banking</B></FONT></TD></TR>
+            <TR><TD STYLE="rounded" BGCOLOR="#c19a3a"><FONT COLOR="white"><B>Decentralized Banking</B></FONT></TD></TR>
             <TR><TD ALIGN="LEFT" BALIGN="LEFT">
                 <B>Satoshi Nakamoto</B><BR ALIGN="LEFT"/>
                 • academia + years of Fintech work<BR ALIGN="LEFT"/>
@@ -264,9 +264,9 @@ digraph HitchhikersFintech {
     >];
 
     DecentralCore [class="slide", label=<
-        <TABLE BORDER="1" CELLBORDER="0" CELLSPACING="0" CELLPADDING="6"
+        <TABLE BORDER="1" CELLBORDER="0" CELLSPACING="3" CELLPADDING="6"
                COLOR="#c19a3a" BGCOLOR="#fffaf0" STYLE="rounded">
-            <TR><TD BGCOLOR="#c19a3a"><FONT COLOR="white"><B>Decentralized Core Architecture in Scala</B></FONT></TD></TR>
+            <TR><TD STYLE="rounded" BGCOLOR="#c19a3a"><FONT COLOR="white"><B>Decentralized Core Architecture in Scala</B></FONT></TD></TR>
             <TR><TD ALIGN="LEFT" BALIGN="LEFT">
                 • <B>Peer-to-peer</B> network &amp; stateless nodes — ideal for ZIO<BR ALIGN="LEFT"/>
                 • Blockchain and Projections are <B>separated</B><BR ALIGN="LEFT"/>
@@ -280,9 +280,9 @@ digraph HitchhikersFintech {
     >];
 
     Relay [class="slide", label=<
-        <TABLE BORDER="1" CELLBORDER="0" CELLSPACING="0" CELLPADDING="6"
+        <TABLE BORDER="1" CELLBORDER="0" CELLSPACING="3" CELLPADDING="6"
                COLOR="#c19a3a" BGCOLOR="#fffaf0" STYLE="rounded">
-            <TR><TD BGCOLOR="#c19a3a"><FONT COLOR="white"><B>Relay &amp; Para Chains</B></FONT></TD></TR>
+            <TR><TD STYLE="rounded" BGCOLOR="#c19a3a"><FONT COLOR="white"><B>Relay &amp; Para Chains</B></FONT></TD></TR>
             <TR><TD ALIGN="LEFT" BALIGN="LEFT">
                 <I>How sustainability is achieved — through further decentralisation.</I><BR ALIGN="LEFT"/>
             </TD></TR>
@@ -291,9 +291,9 @@ digraph HitchhikersFintech {
     >];
 
     CryptoProofs [class="slide", label=<
-        <TABLE BORDER="1" CELLBORDER="0" CELLSPACING="0" CELLPADDING="6"
+        <TABLE BORDER="1" CELLBORDER="0" CELLSPACING="3" CELLPADDING="6"
                COLOR="#c19a3a" BGCOLOR="#fffaf0" STYLE="rounded">
-            <TR><TD BGCOLOR="#c19a3a"><FONT COLOR="white"><B>Crypto proofs for fast consensus</B></FONT></TD></TR>
+            <TR><TD STYLE="rounded" BGCOLOR="#c19a3a"><FONT COLOR="white"><B>Crypto proofs for fast consensus</B></FONT></TD></TR>
             <TR><TD ALIGN="LEFT" BALIGN="LEFT">
                 • <B>Merkelized Trie Database</B> (Firewood)<BR ALIGN="LEFT"/>
                 • <B>Patricia Merkle Trie</B> on RocksDB (Trie-db)<BR ALIGN="LEFT"/>
@@ -304,9 +304,9 @@ digraph HitchhikersFintech {
     >];
 
     Explorer [class="slide", label=<
-        <TABLE BORDER="1" CELLBORDER="0" CELLSPACING="0" CELLPADDING="6"
+        <TABLE BORDER="1" CELLBORDER="0" CELLSPACING="3" CELLPADDING="6"
                COLOR="#c19a3a" BGCOLOR="#fffaf0" STYLE="rounded">
-            <TR><TD BGCOLOR="#c19a3a"><FONT COLOR="white"><B>Blockchain Explorer decentralization</B></FONT></TD></TR>
+            <TR><TD STYLE="rounded" BGCOLOR="#c19a3a"><FONT COLOR="white"><B>Blockchain Explorer decentralization</B></FONT></TD></TR>
             <TR><TD ALIGN="LEFT" BALIGN="LEFT">
                 • Indexes chain data, exposes HTTP API / GraphQL<BR ALIGN="LEFT"/>
                 • Often provides analytical insights<BR ALIGN="LEFT"/>
@@ -329,9 +329,9 @@ digraph HitchhikersFintech {
     >];
 
     Advantages [class="slide", label=<
-        <TABLE BORDER="1" CELLBORDER="0" CELLSPACING="0" CELLPADDING="6"
+        <TABLE BORDER="1" CELLBORDER="0" CELLSPACING="3" CELLPADDING="6"
                COLOR="#c19a3a" BGCOLOR="#fffaf0" STYLE="rounded">
-            <TR><TD BGCOLOR="#c19a3a"><FONT COLOR="white"><B>Advantages of decentralization</B></FONT></TD></TR>
+            <TR><TD STYLE="rounded" BGCOLOR="#c19a3a"><FONT COLOR="white"><B>Advantages of decentralization</B></FONT></TD></TR>
             <TR><TD ALIGN="LEFT" BALIGN="LEFT">
                 • Clean standards of <B>Settlement / Consensus layer</B><BR ALIGN="LEFT"/>
                 &#160;&#160;◦ in a <B>peer-to-peer</B> network<BR ALIGN="LEFT"/>
@@ -348,9 +348,9 @@ digraph HitchhikersFintech {
     >];
 
     DApps [class="slide", label=<
-        <TABLE BORDER="1" CELLBORDER="0" CELLSPACING="0" CELLPADDING="6"
+        <TABLE BORDER="1" CELLBORDER="0" CELLSPACING="3" CELLPADDING="6"
                COLOR="#c19a3a" BGCOLOR="#fffaf0" STYLE="rounded">
-            <TR><TD BGCOLOR="#c19a3a"><FONT COLOR="white"><B>Decentralized Apps</B></FONT></TD></TR>
+            <TR><TD STYLE="rounded" BGCOLOR="#c19a3a"><FONT COLOR="white"><B>Decentralized Apps</B></FONT></TD></TR>
             <TR><TD FIXEDSIZE="TRUE" WIDTH="440" HEIGHT="331"><IMG SRC="img/3ae977de-99d3-407e-8452-5a6e92a453c1.png" SCALE="TRUE"/></TD></TR>
             <TR><TD ALIGN="LEFT" BALIGN="LEFT">
                 Smart-contracts as building blocks of finance<BR ALIGN="LEFT"/>
@@ -360,9 +360,9 @@ digraph HitchhikersFintech {
     >];
 
     ChainStandards [class="slide", label=<
-        <TABLE BORDER="1" CELLBORDER="0" CELLSPACING="0" CELLPADDING="6"
+        <TABLE BORDER="1" CELLBORDER="0" CELLSPACING="3" CELLPADDING="6"
                COLOR="#c19a3a" BGCOLOR="#fffaf0" STYLE="rounded">
-            <TR><TD BGCOLOR="#c19a3a"><FONT COLOR="white"><B>Blockchain Standards</B></FONT></TD></TR>
+            <TR><TD STYLE="rounded" BGCOLOR="#c19a3a"><FONT COLOR="white"><B>Blockchain Standards</B></FONT></TD></TR>
             <TR><TD ALIGN="LEFT" BALIGN="LEFT">
                 <I>Global, open set of standards — reminds of democracy.</I><BR ALIGN="LEFT"/>
             </TD></TR>
@@ -372,9 +372,9 @@ digraph HitchhikersFintech {
 
     // ── 2.3 Asset Custody (bridge) ─────────────────────────────────────
     AssetCustody [class="slide", label=<
-        <TABLE BORDER="1" CELLBORDER="0" CELLSPACING="0" CELLPADDING="6"
+        <TABLE BORDER="1" CELLBORDER="0" CELLSPACING="3" CELLPADDING="6"
                COLOR="#c19a3a" BGCOLOR="#fffaf0" STYLE="rounded">
-            <TR><TD BGCOLOR="#c19a3a"><FONT COLOR="white"><B>Asset Custody — bridge between worlds</B></FONT></TD></TR>
+            <TR><TD STYLE="rounded" BGCOLOR="#c19a3a"><FONT COLOR="white"><B>Asset Custody — bridge between worlds</B></FONT></TD></TR>
             <TR><TD ALIGN="LEFT" BALIGN="LEFT">
                 • Robust multi-client wallet backed by DB<BR ALIGN="LEFT"/>
                 • Classic cryptography — PGP, BouncyCastle<BR ALIGN="LEFT"/>
