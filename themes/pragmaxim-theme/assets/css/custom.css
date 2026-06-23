@@ -202,18 +202,97 @@ pre code,
     background: transparent !important;
 }
 
-.blog__content h3 {
-    font-size: 1.2em;
+/* ===== Blog post typography ===== */
+
+/* Overall reading size: a touch smaller and more compact than the theme default
+   (was 16px / 18px). This is the single knob for the article — headings and
+   lead-ins are sized in `em`, so they scale down with it; body text and lists are
+   pinned to 1em here so they follow the container instead of the theme's fixed
+   16px (`p`) / 16px (`.section li`). */
+.blog__content {
+    font-size: 14px;
+}
+.blog__content p,
+.blog__content li {
+    font-size: 1em;
+    line-height: 1.6;
+}
+@media (min-width: 992px) {
+    .blog__content {
+        font-size: 15px;
+    }
+}
+
+/* Headings: a consistent descending hierarchy with room to breathe above each
+   section. The theme's global rule makes h3/h4 32px on desktop, which dwarfs the
+   body text and inverted the hierarchy (a `####` h4 rendered larger than a styled
+   h3). Scale headings to the article and give each section top spacing. */
+.blog__content h1,
+.blog__content h2,
+.blog__content h3,
+.blog__content h4,
+.blog__content h5,
+.blog__content h6 {
+    margin-top: 1.6em;
+    margin-bottom: 0.4em;
+    line-height: 1.3;
+    color: #000;
+    opacity: 1;
+}
+
+.blog__content h2 { font-size: 1.45em; font-weight: 700; }
+.blog__content h3 { font-size: 1.25em; font-weight: 700; }
+.blog__content h4 { font-size: 1.1em;  font-weight: 700; }
+.blog__content h5 { font-size: 1em;    font-weight: 700; }
+.blog__content h6 {
+    font-size: 0.9em;
     font-weight: 700;
+    text-transform: uppercase;
+    letter-spacing: 0.04em;
+}
+
+.blog__content > :first-child {
+    margin-top: 0;
+}
+
+@media (min-width: 992px) {
+    .blog__content h2 { font-size: 1.6em; }
+    .blog__content h3 { font-size: 1.35em; }
+    .blog__content h4 { font-size: 1.15em; }
+}
+
+/* Bold must actually be bold. The theme sets `b, strong { font-weight: bolder }`,
+   but blog body text is weight 300, so `bolder` only resolves to 400 (normal) and
+   `**bold**` spans look identical to the surrounding text. Pin an absolute weight. */
+.blog__content strong,
+.blog__content b {
+    font-weight: 700;
+    color: #1a1a1a;
+}
+
+/* A paragraph that immediately introduces a heading is the section's framing
+   sentence. Give it lead-paragraph prominence so it stands out from ordinary body
+   copy instead of getting lost beside the headings. */
+.blog__content p:has(+ h2),
+.blog__content p:has(+ h3),
+.blog__content p:has(+ h4) {
+    margin-top: 0.4em;
+    margin-bottom: 0.4em;
+    font-size: 1.1em;
+    font-weight: 500;
+    line-height: 1.5;
+    color: #1a1a1a;
+    text-indent: 0;
+}
+
+/* ...and keep the following subsection heading tight to the lead sentence that
+   introduces it (the lead already sits close under its own section heading). */
+.blog__content p:has(+ h3) + h3,
+.blog__content p:has(+ h4) + h4 {
+    margin-top: 0.3em;
 }
 
 .blog__content p + ul,
 .blog__content p + ol {
     margin-top: -16px;
-}
-
-@media (min-width: 992px) {
-    .blog__content h3 {
-        font-size: 1.3em;
-    }
 }
